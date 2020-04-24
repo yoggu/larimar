@@ -1,22 +1,28 @@
 <template>
-  <div id="story">
-    <template v-for="(item, index) in content">
-      <p v-if="item.type === 'text'" :class="item.classes" :key="'paragraph-'+index">{{item.text}}</p>
-      <div v-else-if="item.type === 'image'" :class="item.container" :key="'images-'+index">
-        <img
-          v-for="(image, index) in item.images"
-          :src="image.src"
-          :key="'image-'+index"
-          :class="image.classes"
-        />
+  <div class="game">
+    <div class="menu">
+      <router-link to="/">Menu</router-link>
+    </div>
+    <div id="story">
+      <template v-for="(item, index) in content">
+        <p v-if="item.type === 'text'" :class="item.classes" :key="'paragraph-'+index">{{item.text}}</p>
+        <div v-else-if="item.type === 'image'" :class="item.container" :key="'images-'+index">
+          <img
+            v-for="(image, index) in item.images"
+            :src="image.src"
+            :key="'image-'+index"
+            :class="image.classes"
+          />
+        </div>
+      </template>
+      <div class="choices">
+        <a
+          class="choice"
+          v-on:click.prevent="select(choice)"
+          v-for="(choice, index) in choices"
+          :key="'choice-'+index"
+        >{{choice.text}}</a>
       </div>
-    </template>
-    <div class="choices">
-      <a class="choice"
-        v-on:click.prevent="select(choice)"
-        v-for="(choice, index) in choices"
-        :key="'choice-'+index"
-      >{{choice.text}}</a>
     </div>
   </div>
 </template>
@@ -70,22 +76,21 @@ export default {
     },
     // split tags at ":"
     splitTags: function(tags) {
-      return tags.map( tag => {
-          let propertySplitIdx = tag.indexOf(":");
-          let obj;
-          if (propertySplitIdx !== -1) {
-            obj = {
-              property: tag.substring(0, propertySplitIdx).trim(),
-              val: tag.substring(propertySplitIdx + 1).trim()
-            }
-          } else {
-            obj = {
-              property: tag.trim()
-            }
-          }
+      return tags.map(tag => {
+        let propertySplitIdx = tag.indexOf(":");
+        let obj;
+        if (propertySplitIdx !== -1) {
+          obj = {
+            property: tag.substring(0, propertySplitIdx).trim(),
+            val: tag.substring(propertySplitIdx + 1).trim()
+          };
+        } else {
+          obj = {
+            property: tag.trim()
+          };
+        }
         return obj;
-      }
-      );
+      });
     },
     // checks the type of tag
     checkTags: function(tags) {
@@ -114,7 +119,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #story {
   width: 600px;
   margin: 0 auto;

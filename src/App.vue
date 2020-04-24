@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/game">Start</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
@@ -27,6 +23,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   height: 100%;
+}
+
+h1 {
+  color: #85d0e7;
 }
 
 #nav {
