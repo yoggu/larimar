@@ -1,0 +1,82 @@
+=== dialog1 ===
+# CLEAR
+VAR frog = "Kröte"
+
+{name} betritt entschlossenen Schrittes den Wald. {male: Er|Sie} wusste, dass es nur einen Weg gab, um den Fluch, der alle Bewohner in Bäume verwandelte, aufzuheben: In den Wald gehen. Der Wald ist sehr dicht und die Bäume stehen so nah beieinander, so dass bereits nach wenigen Schritten kaum mehr Licht den Waldboden erreicht. {name} reisst sich an den dornigen Büschen die Kleidung auf, aber es kümmert {male: ihn|sie} nicht. {male: Er|Sie} spürt schon längst nicht mehr, dass die Dornen {male: seine|ihre} Beine zerkratzen. Zu geschockt ist {male: er|sie} immer noch von den Geschehnissen. Schuldgefühlte plagen {male: ihn|sie} zutiefst und {male: er|sie} bereut seine Tat. Trotzdem war es nicht fair. Woher sollte {male: er|sie} denn wissen, wo seine Stärken liegen, wenn er irgendwie alles aber gleichzeitig auch nichts zu können schien….
+
+    {name} hält plötzlich an und bleibt stehen. Wo soll {male: er|sie} jetzt eigntlich hin? Was jetzt? Erschöpft und mutlos lässt {male: er|sie} sich auf einem grossen Ast nieder.
+
+{frog}: "Ey, setz dich gefälligst wo anders hin."
+
+Was war das?
+
+{frog}: "Hey Lappen, hörst du mir überhaupt zu? Du sollst wo anders hin, hab' ich gesagt!"
+
++[aufstehen]
+    #CONTAINER: fire
+    #IMAGE: images/flame1.png; flame1
+    #IMAGE: images/flame2.png; flame2
+    #IMAGE: images/logs.png; logs
+
++[nichts sagen]
+    {name} senkt den Blick und vor {male: ihm|ihr} befindet sich eine hässliche Kröte.
+
+    "Wenn du nicht gleich deinen fetten Hintern woanders hinschwingst, kriegst du mächtig Ärger, man. Und glaub mir, den willst'e nicht haben!"
+
+
+-   {name} seufzt schwer, steht auf und geht weiter. 
+    {frog}: "Was? Keine Reaktion?"
+    Die Kröte landet mit einem grossen Sprung neben {name} auf einem dickeren Ast.
+    
+    #CONTAINER: jump
+    #IMAGE: images/frog.png; frog
+    #IMAGE: images/leaf.png; leaf
+
++ [wegdrehen]
+    {frog}: "Wenn du denkst du kannst mich einfach ignorieren, dann hast du falsch gedacht, Freundchen!" und in einem kurzen Augenblick schallt seine lange Zunge hervor und trifft {name} im Gesicht.
+    
++ [etwas sagen]
+-   {name}: "Aua, was soll das? Lass DU mich mal in Ruhe, du hässliche Kröte."
+    Mit einer ärgerlichen Handbewegung will {name} die Kröte vom Ast schlagen. Diese ist jedoch flinker und springt weiter zum nächsten Baum.
+    {frog}: "KRÖTE? Hat er mich gerade ernsthaft Kröte genannt?... Ich glaub's ja nicht. Ich bin ein Frosch. Crazy Frog, falls es dich interessiert."
+    ~frog = "Frosch"
+    {name} seufzt schwer. {male: er|sie} hat absolut keine Lust sich jetzt noch mit einem vorlauten Frosch zu unterhalten.
+    {name}: "Nein, tut es eigentlich nicht..."
+    {name} läuft weiter voran und kämpft sich durch das Gestrüpp. Doch der Frosch folgt ihm.
+    {frog}: "Wo geht’s überhaupt hin, Schnarchnase?"
+
++ [erzählen]
+    {name} erzählt in kurzen und knappen Worten, was passiert war. Aber ohne genaue Details. Und gewisse Stellen lässt {male: er|sie} extra aus. Die braucht ein Frosch doch nicht zu wissen.
+
+    {frog}: "Ganz schön hart. Ich halte eigentlich nichts von euch Menschen. Mitleid kannst du von mir nicht erwarten, quahahaha."
+    
+    ++ "Ich halte auch nichts von vorlauten Frosch-Kröten."
+        {frog}: "Ah du kannst also doch auch normal reden.."
+        
+    ++ "Und das alles ist meine Schuld..."
+    
+    --{frog}: "Oh man. Da hast du dir ja aber ganz schön was eingebrockt, ich nehm' an die kriegst du nicht mehr wieder zum laufen, ahahah. Also wenn ich ehrlich bin, bin ich sogar froh drum, ahahah."
+    
+        +++ [wütend reagieren]
+            {name}: "Mir reichts, wenn du noch ein Wort quackst, dann hacke ich dich in Stücke. Nicht einen Moment kannst du normal reden und wir kennen uns noch keine fünf Minuten, ich hoffe ein Storch frisst dich du fette KRÖTE! Meine Familie ist vielleicht tot oder wird für immer so bleiben, wenn ich nichts unternehme. Deine Probleme interessieren hier niemanden..."
+        +++ [abweisend reagieren]
+	    {name}:"..." {name} schnauft genervt. Eigentlich wäre es viel wichtiger, herauszufinden, wo es jetzt lang geht. Dabei würde dieser Frosch aber ganz sicher keine grosse Hilfe sein... 
+	    {name}:"Lass mich einfach in Ruhe und geh deinen Weg. War schön dich zu treffen..."
+    
++[schweigen]
+ {frog}: "Schön, dann eben nicht. Man man, bist ganz schön verschlossen..."
+
+-   {name} läuft davon, {male: er|sie} will alleine sein, aber der Frosch bleibt {male: ihm|ihr} dicht auf den Fersen. Plötzlich tut sich eine grosse Schlucht vor ihren Augen auf und {name} stürzt um ein Haar in die Tiefen. {male: Er|Sie} kann sich gerade noch an einem Busch festhalten.
+
+    {frog}: "Hab ich mich gerade erschrocken! Ich würde dir ja jetzt helfen, aber leider bin ich nur ein fetter Frosch."
+
+    Die Wurzeln des Busches fangen an zu zittern und lösen sich langsam vom trockenen Boden. {name} versucht mit den Füssen Halt zu finden, rutsch dabei nur aus und hängt jetzt nur noch mit einer Hand am Buschwerk. Die andere krallt sich verzweifelt in die steinige Erde. Währenddessen bröckelt immer mehr trockene Erde herunter, was soll {male: er|sie} tun?
+    
+    + [Versuchen sich selber hochzuziehen]
+        ~R++
+    + [Mit der freien Hand ein anderes Buschwerk ergreifen]
+        ~I++
+    + [Frosch überzeugen {male: ihm|ihr} doch zu helfen]
+        ~E++
+
+--> ending
