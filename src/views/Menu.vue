@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>LARIAMR</h1>
+    <h1>LARIMAR</h1>
     <div class="menu">
       <router-link class="menu-link" to="/game">Neues Spiel</router-link>
       <router-link class="menu-link" to="/">Laden (TODO)</router-link>

@@ -4,6 +4,7 @@
       <router-link to="/">Menu</router-link>
     </div>
     <div id="story">
+      <transition-group name="list">
       <template v-for="(item, index) in content">
         <p v-if="item.type === 'text'" :class="item.classes" :key="'paragraph-'+index">{{item.text}}</p>
         <div v-else-if="item.type === 'image'" :class="item.container" :key="'images-'+index">
@@ -15,6 +16,7 @@
           />
         </div>
       </template>
+      </transition-group>
       <div class="choices">
         <a
           class="choice"
@@ -73,6 +75,7 @@ export default {
       this.story.ChooseChoiceIndex(choice.index);
       this.choices = [];
       this.continueStory();
+
     },
     // split tags at ":"
     splitTags: function(tags) {
@@ -200,5 +203,13 @@ export default {
       top: -120px;
     }
   }
+
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+}
+.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  //transform: translateY(30px);
+}
 }
 </style>
