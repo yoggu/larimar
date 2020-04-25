@@ -25,6 +25,9 @@
           :key="'choice-'+index"
         >{{choice.text}}</a>
       </div>
+      <!-- <button v-on:click="restart">Restart</button>
+      <button v-on:click="save">Save</button>
+      <button v-on:click="load">Load</button> -->
     </div>
   </div>
 </template>
@@ -47,7 +50,12 @@ export default {
   },
   mounted: function() {
     this.story = new Story(json);
-    this.continueStory();
+    if (this.$route.params.state === "continue") {
+      this.load();
+    } else {
+      this.restart();
+    }
+    
   },
   methods: {
     // main gameplay loop
@@ -57,8 +65,7 @@ export default {
         let paragraphText = this.story.Continue();
 
         this.tags = this.splitTags(this.story.currentTags);
-        console.log(this.story.currentTags);
-        console.log(this.tags);
+        //console.log(this.story.currentTags);
         this.checkTags(this.tags);
 
         this.content.push({
@@ -66,13 +73,19 @@ export default {
           text: paragraphText,
           classes: this.customClasses
         });
+        console.log(this.content);
         this.customClasses = [];
       }
 
       this.choices = this.story.currentChoices;
+
+      if (!this.story.canContinue && !this.choices.length) {
+        this.ending();
+      }
     },
     select: function(choice) {
       this.story.ChooseChoiceIndex(choice.index);
+      this.save();
       this.choices = [];
       this.continueStory();
 
@@ -116,7 +129,35 @@ export default {
       });
     },
     restart: function() {
+      this.choices = [];
+      this.tags = [];
+      this.customClasses = [];
+      this.content = [];
       this.story.ResetState();
+      this.$store.commit('saveState', this.story.state.ToJson());
+      this.continueStory();
+    },
+    ending: function() {
+      console.log("end");
+    },
+    save: function() {
+      this.$store.commit('saveState', this.story.state.ToJson());
+      //console.log(JSON.parse(this.$store.state.story))
+    },
+    load: function() {
+      this.choices = [];
+      this.tags = [];
+      this.customClasses = [];
+      this.content = [];
+      this.story.state.LoadJson(this.$store.state.story);
+      console.log(JSON.parse(this.$store.state.story))
+      console.log(this.content);
+      // this.content.push({
+      //     type: "text",
+      //     text: this.story.currentText,
+      //     classes: this.customClasses
+      //   });
+      this.continueStory();
     }
   }
 };

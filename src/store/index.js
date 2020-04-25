@@ -5,8 +5,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    story: null,
   },
   mutations: {
+    saveState (state, stateJson) {
+      state.story = stateJson;
+    }
   },
   actions: {
   },

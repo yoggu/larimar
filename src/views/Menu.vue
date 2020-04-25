@@ -3,7 +3,7 @@
     <h1>LARIMAR</h1>
     <div class="menu">
       <router-link class="menu-link" to="/game">Neues Spiel</router-link>
-      <router-link class="menu-link" to="/">Laden (TODO)</router-link>
+      <router-link v-if="$store.state.story !== null" class="menu-link" :to="{ name: 'Game', params: {state: 'continue'}} ">Spiel fortsetzen</router-link>
       <router-link class="menu-link" to="/">Weitere Informationen (TODO)</router-link>
       <router-link class="menu-link" to="/">Credits (TODO)</router-link>
     </div> 
