@@ -50,12 +50,12 @@ export default {
   },
   mounted: function() {
     this.story = new Story(json);
-    if (this.$route.params.state === "continue") {
+    if (this.$store.state.story !== null) {
       this.load();
     } else {
       this.restart();
     }
-    
+
   },
   methods: {
     // main gameplay loop
