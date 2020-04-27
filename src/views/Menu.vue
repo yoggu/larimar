@@ -36,13 +36,13 @@ export default {
   justify-content: center;
 
   .menu-link {
-    color: white;
+    color: $white;
     text-decoration: none;
     margin: 12px 0;
     cursor: pointer;
 
     &:hover {
-      color: #85d0e7;
+      color: $color-primary;
     }
   }
 }

@@ -152,11 +152,6 @@ export default {
       this.story.state.LoadJson(this.$store.state.story);
       console.log(JSON.parse(this.$store.state.story))
       console.log(this.content);
-      // this.content.push({
-      //     type: "text",
-      //     text: this.story.currentText,
-      //     classes: this.customClasses
-      //   });
       this.continueStory();
     }
   }
@@ -181,7 +176,7 @@ export default {
 
     .choice {
       margin: 12px 0;
-      color: #cc8f1a;
+      color: $color-choice;
       font-weight: 700;
       font-size: 18px;
       text-decoration: none;

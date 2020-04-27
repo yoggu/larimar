@@ -13,8 +13,8 @@ html {
 
 body {
   min-height: 100%;
-  background: black;
-  color: white;
+  background: $black;
+  color: $white;
 }
 
 #app {
