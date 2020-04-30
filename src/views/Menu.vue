@@ -42,7 +42,7 @@ export default {
     cursor: pointer;
 
     &:hover {
-      color: $color-primary;
+      color: $l-light;
     }
   }
 }

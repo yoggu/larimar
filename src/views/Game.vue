@@ -4,6 +4,7 @@
       <router-link to="/">Menu</router-link>
     </div>
     <div id="story">
+      <div class="svg" ref="svg"></div>
       <transition-group name="list">
       <template v-for="(item, index) in content">
         <p v-if="item.type === 'text'" :class="item.classes" :key="'paragraph-'+index">{{item.text}}</p>
@@ -25,9 +26,6 @@
           :key="'choice-'+index"
         >{{choice.text}}</a>
       </div>
-      <!-- <button v-on:click="restart">Restart</button>
-      <button v-on:click="save">Save</button>
-      <button v-on:click="load">Load</button> -->
     </div>
   </div>
 </template>
@@ -35,6 +33,7 @@
 <script>
 import { Story } from "inkjs";
 import json from "../assets/story/story.json";
+import Vivus from "vivus";
 
 export default {
   name: "Game",
@@ -56,6 +55,10 @@ export default {
       this.restart();
     }
 
+  new Vivus(this.$refs.svg, { duration: 200, type: "oneByOne", file: require("@/assets/images/test3.svg")}, () => {
+      this.nextSVG();
+      console.log("end");
+  });
   },
   methods: {
     // main gameplay loop
@@ -153,6 +156,11 @@ export default {
       console.log(JSON.parse(this.$store.state.story))
       console.log(this.content);
       this.continueStory();
+    },
+    nextSVG: function() {
+      console.log("end");
+      this.$refs.svg.classList.add('finished');
+      //new Vivus(this.$refs.svg, { duration: 200, type: "oneByOne", file: require("@/assets/images/test2.svg")});
     }
   }
 };
@@ -247,5 +255,15 @@ export default {
   opacity: 0;
   //transform: translateY(30px);
 }
+
+.svg {
+  height: 600px;
+  fill-opacity: 0;
+  transition: fill-opacity 1s;
+}
+.finished {
+  fill-opacity: 1;
+}
+
 }
 </style>
