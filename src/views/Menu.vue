@@ -2,7 +2,7 @@
   <div>
     <h1>LARIMAR</h1>
     <div class="menu">
-      <a v-on:click.prevent="newGame" class="menu-link" to="/game">Neues Spiel</a>
+      <a v-on:click.prevent="newGame" class="menu-link">Neues Spiel</a>
       <router-link v-if="$store.state.story !== null" class="menu-link" to="/game">Spiel fortsetzen</router-link>
       <router-link class="menu-link" to="/">Weitere Informationen (TODO)</router-link>
       <router-link class="menu-link" to="/">Credits (TODO)</router-link>

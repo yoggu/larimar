@@ -158,7 +158,6 @@ export default {
       this.continueStory();
     },
     nextSVG: function() {
-      console.log("end");
       this.$refs.svg.classList.add('finished');
       //new Vivus(this.$refs.svg, { duration: 200, type: "oneByOne", file: require("@/assets/images/test2.svg")});
     }

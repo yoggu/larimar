@@ -29,6 +29,12 @@ h1 {
   color: #85d0e7;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 #nav {
   padding: 30px;
 
