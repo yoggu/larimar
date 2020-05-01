@@ -1,36 +1,33 @@
 === dialog1 ===
-# CLEAR
+#CLEAR
 VAR frog = "Kröte"
 
 {name} betritt entschlossenen Schrittes den Wald. {male: Er|Sie} wusste, dass es nur einen Weg gab, um den Fluch, der alle Bewohner in Bäume verwandelte, aufzuheben: In den Wald gehen. Der Wald ist sehr dicht und die Bäume stehen so nah beieinander, so dass bereits nach wenigen Schritten kaum mehr Licht den Waldboden erreicht. {name} reisst sich an den dornigen Büschen die Kleidung auf, aber es kümmert {male: ihn|sie} nicht. {male: Er|Sie} spürt schon längst nicht mehr, dass die Dornen {male: seine|ihre} Beine zerkratzen. Zu geschockt ist {male: er|sie} immer noch von den Geschehnissen. Schuldgefühlte plagen {male: ihn|sie} zutiefst und {male: er|sie} bereut seine Tat. Trotzdem war es nicht fair. Woher sollte {male: er|sie} denn wissen, wo seine Stärken liegen, wenn er irgendwie alles aber gleichzeitig auch nichts zu können schien….
 
+#CONTENT: {"type":"svg","src":"test3.svg","container":"drawing-test3"}
+
     {name} hält plötzlich an und bleibt stehen. Wo soll {male: er|sie} jetzt eigntlich hin? Was jetzt? Erschöpft und mutlos lässt {male: er|sie} sich auf einem grossen Ast nieder.
 
-{frog}: "Ey, setz dich gefälligst wo anders hin."
+{frog}: "Ey, setz dich gefälligst wo anders hin." #CLASS: test
 
 Was war das?
 
 {frog}: "Hey Lappen, hörst du mir überhaupt zu? Du sollst wo anders hin, hab' ich gesagt!"
 
 +[aufstehen]
-    #CONTAINER: fire
-    #IMAGE: images/flame1.png; flame1
-    #IMAGE: images/flame2.png; flame2
-    #IMAGE: images/logs.png; logs
+    #CONTENT: {"type":"image","images":[{"src":"flame1.png","classes":["flame1"]},{"src":"flame2.png","classes":["flame2"]},{"src":"logs.png","classes":["logs"]}],"container":"fire"}
 
 +[nichts sagen]
     {name} senkt den Blick und vor {male: ihm|ihr} befindet sich eine hässliche Kröte.
 
     "Wenn du nicht gleich deinen fetten Hintern woanders hinschwingst, kriegst du mächtig Ärger, man. Und glaub mir, den willst'e nicht haben!"
-
+    #CONTENT: {"type":"svg","src":"test.svg","container":"drawing-test"}
 
 -   {name} seufzt schwer, steht auf und geht weiter. 
     {frog}: "Was? Keine Reaktion?"
     Die Kröte landet mit einem grossen Sprung neben {name} auf einem dickeren Ast.
     
-    #CONTAINER: jump
-    #IMAGE: images/frog.png; frog
-    #IMAGE: images/leaf.png; leaf
+    #CONTENT: {"type":"image","container":"jump","images":[{"src":"frog.png","classes":["frog"]},{"src":"leaf.png","classes":["leaf"]}]}
 
 + [wegdrehen]
     {frog}: "Wenn du denkst du kannst mich einfach ignorieren, dann hast du falsch gedacht, Freundchen!" und in einem kurzen Augenblick schallt seine lange Zunge hervor und trifft {name} im Gesicht.

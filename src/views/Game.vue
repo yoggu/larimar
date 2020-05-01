@@ -4,7 +4,6 @@
       <router-link to="/menu">Menu</router-link>
     </div>
     <div class="story">
-      <div class="svg" ref="svg"></div>
       <transition-group name="list">
       <template v-for="(item, index) in content">
         <p v-if="item.type === 'text'" :class="item.classes" :key="'paragraph-'+index">{{item.text}}</p>
@@ -16,7 +15,7 @@
             :class="image.classes"
           />
         </div>
-        <div v-else-if="item.type === 'svg'" :class = item.container :key="'svg'+index"></div>
+        <draw-svg v-else-if="item.type === 'svg'" :class = item.container :key="'svg'+index" :vivusId ="'vivus'+index" :file= item.src type="oneByOne" :ref="'vivus'+index"></draw-svg>
       </template>
       </transition-group>
       <div class="choices">
@@ -34,11 +33,11 @@
 <script>
 import { Story } from "inkjs";
 import json from "../assets/story/story.json";
-import Vivus from "vivus";
+import DrawSvg from "../components/DrawSvg";
 
 export default {
   name: "Game",
-  components: {},
+  components: {DrawSvg},
   data: function() {
     return {
       story: null,
@@ -48,7 +47,7 @@ export default {
       content: []
     };
   },
-  mounted: function() {
+  mounted () {
     this.story = new Story(json);
     if (this.$store.state.story !== null) {
       this.load();
@@ -58,7 +57,7 @@ export default {
   },
   methods: {
     // main gameplay loop
-    continueStory: function() {
+    continueStory() {
       // Generate story text - loop through available content
       while (this.story.canContinue) {
         let paragraphText = this.story.Continue();
@@ -82,7 +81,7 @@ export default {
         this.ending();
       }
     },
-    select: function(choice) {
+    select(choice) {
       this.story.ChooseChoiceIndex(choice.index);
       this.save();
       this.choices = [];
@@ -90,7 +89,7 @@ export default {
 
     },
     // split tags at ":"
-    splitTags: function(tags) {
+    splitTags(tags) {
       return tags.map(tag => {
         let propertySplitIdx = tag.indexOf(":");
         let obj;
@@ -108,7 +107,7 @@ export default {
       });
     },
     // checks the type of tag
-    checkTags: function(tags) {
+    checkTags(tags) {
       tags.forEach(tag => {
         if (tag.property === "CLASS") {
           this.customClasses.push(tag.val);
@@ -131,7 +130,7 @@ export default {
         }
       });
     },
-    restart: function() {
+    restart() {
       this.choices = [];
       this.tags = [];
       this.customClasses = [];
@@ -140,14 +139,14 @@ export default {
       this.$store.commit('saveState', this.story.state.ToJson());
       this.continueStory();
     },
-    ending: function() {
+    ending() {
       console.log("end");
     },
-    save: function() {
+    save() {
       this.$store.commit('saveState', this.story.state.ToJson());
       //console.log(JSON.parse(this.$store.state.story))
     },
-    load: function() {
+    load() {
       this.choices = [];
       this.tags = [];
       this.customClasses = [];
@@ -156,7 +155,12 @@ export default {
       //console.log(JSON.parse(this.$store.state.story))
       //console.log(this.content);
       this.continueStory();
-    }
+    },
+    // finishDrawing(index) {
+    //   //console.log(this.$refs.vivus1)
+    //   //let vivus = 'vivus' + index
+    //   this.$refs.vivus1[0].$el.classList.add('finished');
+    // }
   }
 };
 </script>
@@ -268,15 +272,6 @@ export default {
 .list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
   opacity: 0;
   //transform: translateY(30px);
-}
-
-.svg {
-  height: 600px;
-  fill-opacity: 0;
-  transition: fill-opacity 1s;
-}
-.finished {
-  fill-opacity: 1;
 }
 
 }

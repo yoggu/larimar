@@ -18,11 +18,9 @@
 export default {
   name: 'Menu',
   components: {},
-  mounted: function() {
-
-  },
+  mounted() {},
   methods: {
-    newGame: function() {
+    newGame() {
       this.$store.commit('saveState', null);
       this.$router.push('/game')
     }

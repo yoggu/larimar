@@ -22,11 +22,8 @@
 export default {
   name: 'StartScreen',
   components: {},
-  mounted: function() {
-
-  },
-  methods: {
-  }
+  mounted() {},
+  methods: {}
 }
 </script>
 
