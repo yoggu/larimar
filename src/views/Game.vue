@@ -1,9 +1,9 @@
 <template>
   <div class="game">
     <div class="menu">
-      <router-link to="/">Menu</router-link>
+      <router-link to="/menu">Menu</router-link>
     </div>
-    <div id="story">
+    <div class="story">
       <div class="svg" ref="svg"></div>
       <transition-group name="list">
       <template v-for="(item, index) in content">
@@ -16,6 +16,7 @@
             :class="image.classes"
           />
         </div>
+        <div v-else-if="item.type === 'svg'" :class = item.container :key="'svg'+index"></div>
       </template>
       </transition-group>
       <div class="choices">
@@ -54,11 +55,6 @@ export default {
     } else {
       this.restart();
     }
-
-  new Vivus(this.$refs.svg, { duration: 200, type: "oneByOne", file: require("@/assets/images/test3.svg")}, () => {
-      this.nextSVG();
-      console.log("end");
-  });
   },
   methods: {
     // main gameplay loop
@@ -126,7 +122,11 @@ export default {
             content.images.forEach(image => {
               image.src = require("@/assets/images/" + image.src);
             });
+          } 
+          else if (content.type === "svg") {
+            content.src = require("@/assets/images/" + content.src)
           }
+
           this.content.push(content);
         }
       });
@@ -153,22 +153,37 @@ export default {
       this.customClasses = [];
       this.content = [];
       this.story.state.LoadJson(this.$store.state.story);
-      console.log(JSON.parse(this.$store.state.story))
-      console.log(this.content);
+      //console.log(JSON.parse(this.$store.state.story))
+      //console.log(this.content);
       this.continueStory();
-    },
-    nextSVG: function() {
-      this.$refs.svg.classList.add('finished');
-      //new Vivus(this.$refs.svg, { duration: 200, type: "oneByOne", file: require("@/assets/images/test2.svg")});
     }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-#story {
-  width: 600px;
+
+.game {
+  display: grid;
+  grid-template-rows: 50px 1fr ;
+  grid-template-columns: 1fr;
+  max-width: 800px;
   margin: 0 auto;
+}
+
+.menu {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.story {
+  margin: 0 10px;
+  grid-column: 1;
+  grid-row: 2;
 
   img {
     display: block;

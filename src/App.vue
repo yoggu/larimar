@@ -8,7 +8,7 @@
 @import "node_modules/normalize-scss/sass/normalize/import-now";
 
 html {
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -17,12 +17,16 @@ body {
   color: $white;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 #app {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  height: 100%;
+  min-height: 100vh;
 }
 
 h1 {
@@ -35,16 +39,18 @@ img {
   object-fit: contain;
 }
 
-#nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #ca5ed8;
+a {
+  font-weight: bold;
+  color: $white;
+  text-decoration: none;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  &:hover {
+    color: $l-light;
+  }
+
+  &.router-link-exact-active {
+    color: $l-light;
   }
 }
 </style>

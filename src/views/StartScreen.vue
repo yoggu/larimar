@@ -33,9 +33,10 @@ export default {
 <style lang="scss" scoped>
 .start-screen {
   display: grid;
-  grid-template-rows: 200px minmax(0,1fr) 200px ;
+  grid-template-rows: 200px minmax(0,300px) 200px ;
   grid-template-columns: 1fr;
-  max-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 
   .title {
     grid-row: 1;
