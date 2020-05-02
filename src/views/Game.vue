@@ -147,7 +147,6 @@ export default {
       this.continueStory();
     },
     ending() {
-      
       this.result.R = this.story.variablesState.$("R");
       this.result.I = this.story.variablesState.$("I");
       this.result.A = this.story.variablesState.$("A");
@@ -276,7 +275,7 @@ export default {
   }
 
 .list-enter-active, .list-leave-active {
-  transition: all 1s;
+  transition: all 0.2s;
 }
 .list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
   opacity: 0;
