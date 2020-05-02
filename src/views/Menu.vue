@@ -6,7 +6,7 @@
     <div class="menu-list">
       <a v-on:click.prevent="newGame" class="menu-link">Neues Spiel</a>
       <router-link v-if="$store.state.story !== null" class="menu-link" to="/game">Spiel fortsetzen</router-link>
-      <router-link class="menu-link" to="/">Weitere Informationen (TODO)</router-link>
+      <router-link class="menu-link" to="/info">Weitere Informationen</router-link>
       <router-link class="menu-link" to="/">Credits (TODO)</router-link>
     </div> 
   </div>

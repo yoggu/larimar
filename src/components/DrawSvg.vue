@@ -41,7 +41,7 @@ export default {
     callBack:{
       type:Function,
       default: function() {
-        console.log(this)
+        //console.log(this)
         this.parentEl.classList.add('finished');
       }
     },
@@ -138,10 +138,10 @@ export default {
     destroy(){
       this.svg.destroy()
     },
-    finishDrawing() {
-      console.log("done")
-      this.vivusId.classList.add('finished');
-    }
+    // finishDrawing() {
+    //   console.log("done")
+    //   this.vivusId.classList.add('finished');
+    // }
   },
   destroyed(){
     this.svg.destroy()

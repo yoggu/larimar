@@ -16,6 +16,11 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "menu" */ '../views/Menu.vue')
   },
   {
+    path: '/info',
+    name: 'Info',
+    component: () => import(/* webpackChunkName: "menu" */ '../views/Info.vue')
+  },
+  {
     path: '/game',
     name: 'Game',
     // route level code-splitting
