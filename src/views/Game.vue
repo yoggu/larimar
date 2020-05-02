@@ -27,6 +27,11 @@
         >{{choice.text}}</a>
       </div>
     </div>
+    <div class="result" v-if="finished"> 
+      <p v-for="(category, index) in result" :key="'category' + index" >
+        {{category}}
+      </p>
+    </div>
   </div>
 </template>
 
@@ -44,7 +49,9 @@ export default {
       choices: [],
       tags: [],
       customClasses: [],
-      content: []
+      content: [],
+      finished: false,
+      result: {},
     };
   },
   mounted () {
@@ -140,7 +147,16 @@ export default {
       this.continueStory();
     },
     ending() {
-      console.log("end");
+      
+      this.result.R = this.story.variablesState.$("R");
+      this.result.I = this.story.variablesState.$("I");
+      this.result.A = this.story.variablesState.$("A");
+      this.result.S = this.story.variablesState.$("S");
+      this.result.E = this.story.variablesState.$("E");
+      this.result.C = this.story.variablesState.$("C");
+      console.log(this.result);
+      this.finished = true;
+      this.content = [];
     },
     save() {
       this.$store.commit('saveState', this.story.state.ToJson());
@@ -152,15 +168,8 @@ export default {
       this.customClasses = [];
       this.content = [];
       this.story.state.LoadJson(this.$store.state.story);
-      //console.log(JSON.parse(this.$store.state.story))
-      //console.log(this.content);
       this.continueStory();
-    },
-    // finishDrawing(index) {
-    //   //console.log(this.$refs.vivus1)
-    //   //let vivus = 'vivus' + index
-    //   this.$refs.vivus1[0].$el.classList.add('finished');
-    // }
+    }
   }
 };
 </script>

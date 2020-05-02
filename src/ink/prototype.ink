@@ -28,11 +28,5 @@ Wähle deinen Namen
 
 
 === ending ===
-{R}
-{I}
-{A}
-{S}
-{E}
-{C}
 
 -> END
