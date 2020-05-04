@@ -3,10 +3,9 @@
     <div class="menu">
       <router-link to="/menu">Menu</router-link>
     </div>
-    <div class="story">
-      <transition-group name="list">
+    <div class="story" ref="story">
       <template v-for="(item, index) in content">
-        <p v-if="item.type === 'text'" :class="item.classes" :key="'paragraph-'+index">{{item.text}}</p>
+        <vue-typed-js v-if="item.type === 'text'" :typeSpeed="10" :key="'paragraph-'+index" :strings="[item.text]" :showCursor='false' :loop='false' @onComplete="continueStory()"><p :class="'typing ' +item.classes"></p></vue-typed-js>
         <div v-else-if="item.type === 'image'" :class="item.container" :key="'images-'+index">
           <img
             v-for="(image, index) in item.images"
@@ -15,9 +14,8 @@
             :class="image.classes"
           />
         </div>
-        <draw-svg v-else-if="item.type === 'svg'" :class = item.container :key="'svg'+index" :vivusId ="'vivus'+index" :file= item.src type="oneByOne" :ref="'vivus'+index"></draw-svg>
+        <draw-svg v-else-if="item.type === 'svg'" :duration=400 :class = item.container :key="'svg'+index" :vivusId ="'vivus'+index" :file= item.src type="oneByOne" :ref="'vivus'+index"></draw-svg>
       </template>
-      </transition-group>
       <div class="choices">
         <a
           class="choice"
@@ -42,7 +40,9 @@ import DrawSvg from "../components/DrawSvg";
 
 export default {
   name: "Game",
-  components: {DrawSvg},
+  components: {
+    DrawSvg
+  },
   data: function() {
     return {
       story: null,
@@ -62,11 +62,16 @@ export default {
       this.restart();
     }
   },
+  updated() {
+    // whenever data changes and the component re-renders, this is called.
+    this.$nextTick(() => this.scrollToEnd());
+  },
   methods: {
     // main gameplay loop
     continueStory() {
       // Generate story text - loop through available content
-      while (this.story.canContinue) {
+      if (this.story.canContinue) {
+        console.log(this.content);
         let paragraphText = this.story.Continue();
 
         this.tags = this.splitTags(this.story.currentTags);
@@ -119,6 +124,7 @@ export default {
         if (tag.property === "CLASS") {
           this.customClasses.push(tag.val);
         } else if (tag.property === "CLEAR") {
+          console.log("Clear")
           this.content = [];
         } else if (tag.property === "CONTENT") {
           let content = JSON.parse(tag.val.replace("\\", ""));
@@ -168,6 +174,15 @@ export default {
       this.content = [];
       this.story.state.LoadJson(this.$store.state.story);
       this.continueStory();
+    },
+    scrollToEnd() {
+    // scroll to the start of the last message
+    console.log(this.$refs.story.lastElementChild.offsetTop)
+    window.scrollTo({
+      top: this.$refs.story.lastElementChild.offsetTop + 40,
+      left: 0,
+      behavior: 'smooth'
+      })
     }
   }
 };
@@ -196,6 +211,7 @@ export default {
   margin: 0 10px;
   grid-column: 1;
   grid-row: 2;
+  padding-bottom: 40px;
 
   img {
     display: block;
@@ -274,13 +290,10 @@ export default {
     }
   }
 
-.list-enter-active, .list-leave-active {
-  transition: all 0.2s;
-}
-.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
-  opacity: 0;
-  //transform: translateY(30px);
-}
+  .right {
+    margin-left: 50%;
+  }
+
 
 }
 </style>

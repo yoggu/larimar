@@ -34,6 +34,7 @@ export default {
   display: grid;
   grid-template-rows: 200px 1fr ;
   grid-template-columns: 1fr;
+  text-align: center;
 }
 
 .title {
