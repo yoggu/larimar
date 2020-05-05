@@ -76,15 +76,18 @@ export default {
 
         this.tags = this.splitTags(this.story.currentTags);
         //console.log(this.story.currentTags);
+
         this.checkTags(this.tags);
 
-        this.content.push({
-          type: "text",
-          text: paragraphText,
-          classes: this.customClasses
-        });
-        console.log(this.content);
-        this.customClasses = [];
+        this.$nextTick(() => {
+          this.content.push({
+            type: "text",
+            text: paragraphText,
+            classes: this.customClasses
+          });
+          console.log(this.content);
+          this.customClasses = [];
+        })
       }
 
       this.choices = this.story.currentChoices;
@@ -177,7 +180,7 @@ export default {
     },
     scrollToEnd() {
     // scroll to the start of the last message
-    console.log(this.$refs.story.lastElementChild.offsetTop)
+    //console.log(this.$refs.story.lastElementChild.offsetTop)
     window.scrollTo({
       top: this.$refs.story.lastElementChild.offsetTop + 40,
       left: 0,
@@ -221,12 +224,12 @@ export default {
 
   .choices {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;    
 
     .choice {
       margin: 12px 0;
-      color: $color-choice;
+      padding: 0 12px;
+      color: $l-light;
       font-weight: 700;
       font-size: 18px;
       text-decoration: none;
@@ -291,7 +294,7 @@ export default {
   }
 
   .right {
-    margin-left: 50%;
+    margin-left: 30%;
   }
 
 
