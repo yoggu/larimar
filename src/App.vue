@@ -6,18 +6,20 @@
 
 <style lang="scss">
 @import "node_modules/normalize-scss/sass/normalize/import-now";
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url("https://use.typekit.net/lsr4kai.css");
 
 html {
   height: 100%;
-  font-family: 'Oswald', sans-serif;
+  font-family: ocr-a-std,monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
   min-height: 100%;
   background: $black;
   color: $white;
-  font-family: 'Oswald', sans-serif;
+  font-family: ocr-a-std,monospace;
 }
 
 * {
@@ -30,7 +32,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   //text-align: center;
   min-height: 100vh;
-  font-family: 'Oswald', sans-serif;
+  font-family: ocr-a-std,monospace;
 }
 
 h1 {
