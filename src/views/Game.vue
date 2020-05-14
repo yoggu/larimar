@@ -198,7 +198,7 @@ export default {
             position = -limit;
           }
         }
-      position = position / -10;
+      position = position / -1;
       console.log(position)
       let rotate = "rotateY(" + position + "deg)";
       this.$el.querySelector(".rotate").style.transform = rotate;
