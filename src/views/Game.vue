@@ -22,7 +22,7 @@
           v-on:click.prevent="select(choice)"
           v-for="(choice, index) in choices"
           :key="'choice-'+index"
-        >{{choice.text}}</a>
+        >&#x25BA; {{choice.text}}</a>
       </div>
     </div>
     <div class="result" v-if="finished"> 
@@ -198,7 +198,7 @@ export default {
             position = -limit;
           }
         }
-      position = position / -100;
+      //position = position / -100;
       console.log(position)
       let rotate = "rotateY(" + position + "deg)";
       this.$el.querySelector(".rotate").style.transform = rotate;
@@ -227,8 +227,11 @@ export default {
   display: grid;
   grid-template-rows: 50px 1fr ;
   grid-template-columns: 1fr;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
+  background-color: $white;
+  color: black;
+  font-size: 12px;
 }
 
 .menu {
@@ -238,10 +241,14 @@ export default {
   justify-content: left;
   align-items: center;
   padding-left: 12px;
+
+  a {
+    color: black;
+  }
+
 }
 
 .story {
-  margin: 0 10px;
   grid-column: 1;
   grid-row: 2;
   padding-bottom: 40px;
@@ -252,6 +259,10 @@ export default {
     max-width: 100%;
   }
 
+  p {
+    padding: 0 12px;
+  }
+
   .choices {
     display: flex;
     justify-content: space-evenly;    
@@ -259,9 +270,9 @@ export default {
     .choice {
       margin: 12px 0;
       padding: 0 12px;
-      color: $l-light;
-      font-weight: 700;
-      font-size: 18px;
+      color: black;
+      font-weight: 400;
+      //font-size: 18px;
       text-decoration: none;
       cursor: pointer;
 
@@ -331,23 +342,14 @@ export default {
   .forest {
     position: relative;
     background-color: white;
-    //width: 100vw;
-    //height: 100vh;
     overflow: hidden;
   }
 
   .ebene {
     position: absolute;
-    // max-width: 100%;
-    // max-height: 100%;
-    // height: auto;
-    // width: auto;
   }
 
   .ebene1 {
-    //position: relative;
-    //display: none;
-    //right: 0;
     z-index: 1;
     --scaleStart: 1.0;
     --scaleEnd: 2.0;
