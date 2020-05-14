@@ -1,11 +1,11 @@
 <template>
-  <div class="game" v-on:click="checkPermission()">
+  <div class="game">
     <div class="menu">
       <router-link to="/menu">Menu</router-link>
     </div>
     <div class="story" ref="story">
       <template v-for="(item, index) in content">
-        <vue-typed-js v-if="item.type === 'text'" :typeSpeed="10" :key="'paragraph-'+index" :strings="[item.text]" :showCursor='false' :loop='false' @onComplete="continueStory()"><p :class="'typing ' +item.classes"></p></vue-typed-js>
+        <typed-text v-if="item.type === 'text'" :typeSpeed="50" :key="'paragraph-'+index" :text="item.text" :class="item.classes" @onComplete="continueStory()"></typed-text>
         <div v-else-if="item.type === 'image'" :class="item.container" :key="'images-'+index">
           <img
             v-for="(image, index) in item.images"
@@ -37,11 +37,13 @@
 import { Story } from "inkjs";
 import json from "../ink/export/story.json";
 import DrawSvg from "../components/DrawSvg";
+import TypedText from "../components/TypedText"
 
 export default {
   name: "Game",
   components: {
-    DrawSvg
+    DrawSvg,
+    TypedText
   },
   data: function() {
     return {
@@ -62,6 +64,7 @@ export default {
     } else {
       this.restart();
     }
+    this.checkPermission();
 
   },
   updated() {
@@ -210,20 +213,24 @@ export default {
       }
     },
     checkPermission() {
-    console.log("checkPermission");
-    if (typeof DeviceOrientationEvent.requestPermission === 'function') {
-      DeviceOrientationEvent.requestPermission()
-        .then(permissionState => {
-          if (permissionState === 'granted') {
-            window.addEventListener('deviceorientation', (e) => {this.deviceOrientation(e)});
-          }
-        })
-        .catch(console.error);
-    } else {
-      window.addEventListener('deviceorientation', (e)=> {this.deviceOrientation(e);});
+      console.log("checkPermission");
+      if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+        DeviceOrientationEvent.requestPermission()
+          .then(permissionState => {
+            if (permissionState === 'granted') {
+              window.addEventListener('deviceorientation', (e) => {this.deviceOrientation(e)});
+            }
+          })
+          .catch(console.error);
+      } else {
+        window.addEventListener('deviceorientation', (e)=> {this.deviceOrientation(e);});
+      }
+    },
+    showAll() {
+      console.log("show");
+
     }
   }
-}
 };
 </script>
 
@@ -264,10 +271,6 @@ export default {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-  }
-
-  p {
-    padding: 0 12px;
   }
 
   .choices {
