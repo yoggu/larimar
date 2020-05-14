@@ -189,7 +189,7 @@ export default {
     },
     deviceOrientation(e) {
       console.log(e.alpha);
-      const limit = 45;
+      const limit = 30;
       let position = Math.round(e.alpha);
        if (Math.abs(position) > limit) {
        if (position > limit) {
@@ -399,34 +399,6 @@ export default {
     animation: forest-left ease-in-out 5s 2s forwards, forest2 2s 1s forwards;
   }
 
-  .ebene7 {
-    display: none;
-    left: 0;
-    z-index: 7;
-  }
-
-  .ebene8 {
-    left: -20%;
-    display: none;
-  }
-
-  .ebene9 {
-    left: 30%;
-    display: none;
-  }
-
-  .ebene10 {
-    display: none;
-  }
-
-  .ebene11 {
-    display: none;
-  }
-
-  .ebene12 {
-    display: none;
-  }
-
   @keyframes forest-right {
   0% {
     transform: scale(var(--scaleStart)) translateX(0);
@@ -452,6 +424,10 @@ export default {
   100% {
     opacity: 1;
   }
+}
+
+.tree {
+  perspective: 500px;
 }
 
 
