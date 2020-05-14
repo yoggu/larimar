@@ -52,6 +52,7 @@ export default {
       content: [],
       finished: false,
       result: {},
+      counter: 0,
     };
   },
   mounted () {
@@ -187,21 +188,26 @@ export default {
     //   behavior: 'smooth'
     //   })
     },
+    updateNow() {
+      return this.counter++ % 10 === 0;
+    },
     deviceOrientation(e) {
       console.log(e.alpha);
       const limit = 45;
-      let position = Math.round(e.alpha);
-       if (Math.abs(position) > limit) {
-       if (position > limit) {
-            position = limit;
-        } else {
-            position = -limit;
+      if(this.updateNow()) {
+        let position = Math.round(e.alpha);
+        if (Math.abs(position) > limit) {
+        if (position > limit) {
+              position = limit;
+          } else {
+              position = -limit;
+            }
           }
-        }
-      position = position / -100;
-      console.log(position)
-      let rotate = "rotateY(" + position + "deg)";
-      this.$el.querySelector(".rotate").style.transform = rotate;
+        position = position / -100;
+        console.log(position)
+        let rotate = "rotateY(" + position + "deg)";
+        this.$el.querySelector(".rotate").style.transform = rotate;
+      }
     },
     checkPermission() {
     console.log("checkPermission");
@@ -429,6 +435,10 @@ export default {
 .tree {
   perspective: 15px;
   overflow: hidden;
+}
+
+.leaf {
+  transition: transform 0.5s;
 }
 
 
