@@ -189,7 +189,7 @@ export default {
     },
     deviceOrientation(e) {
       console.log(e.alpha);
-      const limit = 30;
+      const limit = 45;
       let position = Math.round(e.alpha);
        if (Math.abs(position) > limit) {
        if (position > limit) {
@@ -198,7 +198,7 @@ export default {
             position = -limit;
           }
         }
-      position = position / -1;
+      position = position / -100;
       console.log(position)
       let rotate = "rotateY(" + position + "deg)";
       this.$el.querySelector(".rotate").style.transform = rotate;
@@ -427,7 +427,8 @@ export default {
 }
 
 .tree {
-  perspective: 500px;
+  perspective: 15px;
+  overflow: hidden;
 }
 
 
