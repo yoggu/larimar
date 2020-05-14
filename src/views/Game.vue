@@ -1,5 +1,5 @@
 <template>
-  <div class="game">
+  <div class="game" v-on:click="checkPermission()">
     <div class="menu">
       <router-link to="/menu">Menu</router-link>
     </div>
@@ -61,6 +61,7 @@ export default {
     } else {
       this.restart();
     }
+
   },
   updated() {
     // whenever data changes and the component re-renders, this is called.
@@ -185,8 +186,25 @@ export default {
     //   left: 0,
     //   behavior: 'smooth'
     //   })
+    },
+    deviceOrientation(e) {
+      console.log(e.gamma);
+    },
+    checkPermission() {
+      console.log("checkPermission");
+    if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+      DeviceOrientationEvent.requestPermission()
+        .then(permissionState => {
+          if (permissionState === 'granted') {
+            window.addEventListener('deviceorientation', (e) => {this.deviceOrientation(e)});
+          }
+        })
+        .catch(console.error);
+    } else {
+      window.addEventListener('deviceorientation', (e)=> {this.deviceOrientation(e);});
     }
   }
+}
 };
 </script>
 
