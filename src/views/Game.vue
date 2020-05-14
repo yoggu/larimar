@@ -188,9 +188,9 @@ export default {
     //   })
     },
     deviceOrientation(e) {
-      console.log(e.gamma);
+      console.log(e.alpha);
       const limit = 45;
-      let position = Math.round(event.gamma);
+      let position = Math.round(event.alpha);
        if (Math.abs(position) > limit) {
        if (position > limit) {
             position = limit;
@@ -199,8 +199,9 @@ export default {
           }
         }
       position = position / -100;
+      console.log(position)
       let rotate = "rotateY(" + position + "deg)";
-      this.$el.querySelectorAll(".rotate").style.transform = rotate;
+      this.$el.querySelector(".rotate").style.transform = rotate;
     },
     checkPermission() {
     console.log("checkPermission");
