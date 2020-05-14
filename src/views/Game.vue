@@ -5,8 +5,7 @@
     </div>
     <div class="story" ref="story">
       <template v-for="(item, index) in content">
-        <typed-text v-if="item.type === 'text'" :typeSpeed="50" :key="'paragraph-'+index" :text="item.text" :class="item.classes" @onComplete="continueStory()"></typed-text>
-        <div v-else-if="item.type === 'image'" :class="item.container" :key="'images-'+index">
+        <div v-if="item.type === 'image'" :class="item.container" :key="'images-'+index">
           <img
             v-for="(image, index) in item.images"
             :src="image.src"
@@ -14,6 +13,7 @@
             :class="image.classes"
           />
         </div>
+        <typed-text v-else-if="item.type === 'text'" :typeSpeed="50" :key="'paragraph-'+index" :text="item.text" :class="item.classes" @onComplete="continueStory()"></typed-text>
         <draw-svg v-else-if="item.type === 'svg'" :duration=200 :class = item.container :key="'svg'+index" :vivusId ="'vivus'+index" :file= item.src type="delayed" :ref="'vivus'+index"></draw-svg>
       </template>
       <div class="choices">
@@ -100,6 +100,7 @@ export default {
       if (!this.story.canContinue && !this.choices.length) {
         this.ending();
       }
+  
     },
     select(choice) {
       this.story.ChooseChoiceIndex(choice.index);
@@ -225,10 +226,6 @@ export default {
       } else {
         window.addEventListener('deviceorientation', (e)=> {this.deviceOrientation(e);});
       }
-    },
-    showAll() {
-      console.log("show");
-
     }
   }
 };
