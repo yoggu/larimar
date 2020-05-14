@@ -190,7 +190,7 @@ export default {
     deviceOrientation(e) {
       console.log(e.alpha);
       const limit = 45;
-      let position = Math.round(event.alpha);
+      let position = Math.round(e.alpha);
        if (Math.abs(position) > limit) {
        if (position > limit) {
             position = limit;
@@ -198,7 +198,7 @@ export default {
             position = -limit;
           }
         }
-      //position = position / -100;
+      position = position / -10;
       console.log(position)
       let rotate = "rotateY(" + position + "deg)";
       this.$el.querySelector(".rotate").style.transform = rotate;
@@ -232,6 +232,7 @@ export default {
   background-color: $white;
   color: black;
   font-size: 12px;
+  min-height: 100vh;
 }
 
 .menu {
@@ -268,7 +269,7 @@ export default {
     justify-content: space-evenly;    
 
     .choice {
-      margin: 12px 0;
+      margin: 24px 0 12px 0;
       padding: 0 12px;
       color: black;
       font-weight: 400;
