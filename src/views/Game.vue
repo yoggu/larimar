@@ -189,9 +189,21 @@ export default {
     },
     deviceOrientation(e) {
       console.log(e.gamma);
+      const limit = 45;
+      let position = Math.round(event.gamma);
+       if (Math.abs(position) > limit) {
+       if (position > limit) {
+            position = limit;
+        } else {
+            position = -limit;
+          }
+        }
+      position = position / -100;
+      let rotate = "rotateY(" + position + "deg)";
+      this.$el.querySelectorAll(".rotate").style.transform = rotate;
     },
     checkPermission() {
-      console.log("checkPermission");
+    console.log("checkPermission");
     if (typeof DeviceOrientationEvent.requestPermission === 'function') {
       DeviceOrientationEvent.requestPermission()
         .then(permissionState => {

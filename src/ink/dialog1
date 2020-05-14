@@ -4,10 +4,12 @@ VAR frog = "Kröte"
 
 #CONTENT: {"type":"image","images":[{"src":"bubble_1/Ebene1.png","classes":["ebene","ebene1"]},{"src":"bubble_1/Ebene2.png","classes":["ebene","ebene2"]},{"src":"bubble_1/Ebene3.png","classes":["ebene","ebene3"]},{"src":"bubble_1/Ebene4.png","classes":["ebene","ebene4"]},{"src":"bubble_1/Ebene5.png","classes":["ebene","ebene5"]},{"src":"bubble_1/Ebene6.png","classes":["ebene","ebene6"]},{"src":"bubble_1/Ebene7.png","classes":["ebene","ebene7"]},{"src":"bubble_1/Ebene8.png","classes":["ebene","ebene8"]},{"src":"bubble_1/Ebene9.png","classes":["ebene","ebene9"]},{"src":"bubble_1/Ebene10.png","classes":["ebene","ebene10"]},{"src":"bubble_1/Ebene11.png","classes":["ebene","ebene11"]},{"src":"bubble_1/Ebene12.png","classes":["ebene","ebene12"]}],"container":"forest"}
 
-{name} betritt entschlossenen Schrittes den Wald. {male: Er|Sie} wusste, dass es nur einen Weg gab, um den Fluch, der alle Bewohner in Bäume verwandelte, aufzuheben: In den Wald gehen. Der Wald ist sehr dicht und die Bäume stehen so nah beieinander, so dass bereits nach wenigen Schritten kaum mehr Licht den Waldboden erreicht. {name} reisst sich an den dornigen Büschen die Kleidung auf, aber es kümmert {male: ihn|sie} nicht. {male: Er|Sie} spürt schon längst nicht mehr, dass die Dornen {male: seine|ihre} Beine zerkratzen. Zu geschockt ist {male: er|sie} immer noch von den Geschehnissen. Schuldgefühlte plagen {male: ihn|sie} zutiefst und {male: er|sie} bereut seine Tat. Trotzdem war es nicht fair. Woher sollte {male: er|sie} denn wissen, wo seine Stärken liegen, wenn er irgendwie alles aber gleichzeitig auch nichts zu können schien….
+{name} betritt entschlossenen Schrittes den Wald.
+#CONTENT: {"type":"image","container":"jump","images":[{"src":"frog.png","classes":["frog", "rotate"]},{"src":"leaf.png","classes":["leaf"]}]}
 
-#CONTENT: {"type":"svg","src":"test2.svg","container":"drawing-test2"}
+
     {name} hält plötzlich an und bleibt stehen. Wo soll {male: er|sie} jetzt eigntlich hin? Was jetzt? Erschöpft und mutlos lässt {male: er|sie} sich auf einem grossen Ast nieder.
+#CONTENT: {"type":"svg","src":"test2.svg","container":"drawing-test2"}
 
 {frog}: "Ey, setz dich gefälligst wo anders hin." #CLASS: right
 
@@ -28,7 +30,6 @@ Was war das?
     {frog}: "Was? Keine Reaktion?" #CLASS: right
     Die Kröte landet mit einem grossen Sprung neben {name} auf einem dickeren Ast.
     
-    #CONTENT: {"type":"image","container":"jump","images":[{"src":"frog.png","classes":["frog"]},{"src":"leaf.png","classes":["leaf"]}]}
 
 + [wegdrehen]
     {frog}: "Wenn du denkst du kannst mich einfach ignorieren, dann hast du falsch gedacht, Freundchen!" und in einem kurzen Augenblick schallt seine lange Zunge hervor und trifft {name} im Gesicht.
