@@ -14,7 +14,7 @@
             :class="image.classes"
           />
         </div>
-        <draw-svg v-else-if="item.type === 'svg'" :duration=400 :class = item.container :key="'svg'+index" :vivusId ="'vivus'+index" :file= item.src type="oneByOne" :ref="'vivus'+index"></draw-svg>
+        <draw-svg v-else-if="item.type === 'svg'" :duration=200 :class = item.container :key="'svg'+index" :vivusId ="'vivus'+index" :file= item.src type="delayed" :ref="'vivus'+index"></draw-svg>
       </template>
       <div class="choices">
         <a
@@ -35,7 +35,7 @@
 
 <script>
 import { Story } from "inkjs";
-import json from "../assets/story/story.json";
+import json from "../ink/export/story.json";
 import DrawSvg from "../components/DrawSvg";
 
 export default {
@@ -180,12 +180,11 @@ export default {
     },
     scrollToEnd() {
     // scroll to the start of the last message
-    //console.log(this.$refs.story.lastElementChild.offsetTop)
-    window.scrollTo({
-      top: this.$refs.story.lastElementChild.offsetTop + 40,
-      left: 0,
-      behavior: 'smooth'
-      })
+    // window.scrollTo({
+    //   top: this.$refs.story.lastElementChild.offsetTop + 40,
+    //   left: 0,
+    //   behavior: 'smooth'
+    //   })
     }
   }
 };
@@ -296,6 +295,130 @@ export default {
   .right {
     margin-left: 30%;
   }
+
+
+  .forest {
+    position: relative;
+    background-color: white;
+    //width: 100vw;
+    //height: 100vh;
+    overflow: hidden;
+  }
+
+  .ebene {
+    position: absolute;
+    // max-width: 100%;
+    // max-height: 100%;
+    // height: auto;
+    // width: auto;
+  }
+
+  .ebene1 {
+    //position: relative;
+    //display: none;
+    //right: 0;
+    z-index: 1;
+    --scaleStart: 1.0;
+    --scaleEnd: 2.0;
+    animation: forest-right ease-in-out 5s 1s forwards;
+  }
+
+  .ebene2 {
+    //display: none;
+    --scaleStart: 1.0;
+    --scaleEnd: 2.0;
+    animation: forest-left ease-in-out 5s 1s forwards;
+  }
+
+  .ebene3 {
+    //display: none;    
+    --scaleStart: 1.0;
+    --scaleEnd: 2.0;
+    animation: forest-right ease-in-out 5s 1s forwards;
+  }
+
+  .ebene4 {
+    //display: none;
+    //left: 20%;
+    z-index: 1;
+    --scaleStart: 1.0;
+    --scaleEnd: 2.0;
+    animation: forest-left ease-in-out 5s 1s forwards;
+  }
+
+  .ebene5 {
+    //display: none;
+    opacity: 0;
+    transform: scale(0.8);
+    --scaleStart: 0.8;
+    --scaleEnd: 2.0;
+    animation: forest-left ease-in-out 5s 2s forwards, forest2 2s 1s forwards;
+  }
+
+  .ebene6 {
+    position: relative;
+    //display: none;
+    opacity: 0;
+    transform: scale(0.8);
+    --scaleStart: 0.8;
+    --scaleEnd: 2.0;
+    animation: forest-left ease-in-out 5s 2s forwards, forest2 2s 1s forwards;
+  }
+
+  .ebene7 {
+    display: none;
+    left: 0;
+    z-index: 7;
+  }
+
+  .ebene8 {
+    left: -20%;
+    display: none;
+  }
+
+  .ebene9 {
+    left: 30%;
+    display: none;
+  }
+
+  .ebene10 {
+    display: none;
+  }
+
+  .ebene11 {
+    display: none;
+  }
+
+  .ebene12 {
+    display: none;
+  }
+
+  @keyframes forest-right {
+  0% {
+    transform: scale(var(--scaleStart)) translateX(0);
+  }
+  100% {
+    transform: scale(var(--scaleEnd)) translateX(50%);
+  }
+}
+
+  @keyframes forest-left {
+  0% {
+    transform: scale(var(--scaleStart)) translateX(0);
+  }
+  100% {
+    transform: scale(var(--scaleEnd)) translateX(-50%);
+  }
+}
+
+  @keyframes forest2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 
 }
