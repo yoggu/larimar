@@ -1,0 +1,84 @@
+=== baum ===
+
+Es ist nun schon einige Stunden her, dass {name} den Baum zerstört hat. Im Dorf ist bestimmt die Hölle los.
+
+Aber eigentlich hätte schon längst jemand nach {male: ihm|ihr} suchen sollen. Seine Schwester wusste doch von seinem geheimen Rückzugsort...
+
+* [im Dorf nachsehen]
+    {name} macht sich also unsicheren Schrittes auf den Weg zurück ins Dorf.
+    -> dorf
+
+* [liegen bleiben]
+    Warum das Chaos aufsuchen, wenn es auch einen aufsuchen kann? Und hoffentlich hat niemand gesehen, dass er das war...
+    
+    {name} liegt noch eine Weile. Es ist absolut still.
+    
+    {name} hält die Ungewissheit nicht mehr aus und macht sich also unsicheren Schrittes auf den Weg zurück ins Dorf.
+    -> dorf
+
+
+= dorf
+Waren das schon immer so viele Bäume? Es werden immer mehr Bäume je näher {name} sich dem Dorf nähert.
+
+Plötzlich taucht ein Haus vor {male: ihm|ihr} auf...
+
+"Das ist ja mein Haus!"
+
+"SCHWESTER?"
+
+"{name}"
+
+{name} kämpft sich durch die vielen Äste hinein in sein Haus, er muss seine Familie retten, hoffentlich ist es noch nicht zu spät.
+
+"{name}... Est ist alles so schlimm..."
+
+* [es ist meine Schuld]
+    "{name}... was hast du getan... ich.. verwandle mich gleich. Geh über den Teich und nimm Onkels Boot.
+
+* [was ist passiert?]
+    "Wir waren alle dabei... die Vorbereitungen zu machen. Dann gab es plötzlich ein helles Licht. Und Mama... Papa, sie fingen an sich zu verwandeln...
+    
+    ** [es ist meine Schuld]
+    
+    ** [...]
+    
+    --"Du musst jetzt schnell weggehen. Ich verwandle mich... Geh über den Teich und nimm Onkels Boot.
+    
+- Du musst schnell sein, sonst...
+
+* ["Sonst...?"]
+
+* [Ich will dich aber nicht verlassen...]
+
+- Die Schwester gibt keine Antwort mehr, auch nachdem {name} noch mehrmals ihren Namen gerufen hat.
+    -> ausserhalb_des_dorfs
+
+= ausserhalb_des_dorfs
+"Oh nein, ich habe etwas wichtiges vergessen..."
+
+Der Familienkompass, der immer auf unser Zuhause zeigt, ohne den kann ich doch nicht weg...
+
+* [Onkel vor dem Fluch warnen]
+    -> see
+
+* [noch einmal zurück gehen?]
+
+    Die Bäume sind jedoch so dicht, dass die Wurzeln das Tor zugewachsen haben, es gibt keinen Durchgang
+    
+    ** [wieder umkehren]
+        -> see
+    ** [trotzdem versuchen]
+        Sich jetzt da durchzukämpfen würde zu viel Zeit kosten...
+        *** [wieder umkehren]
+            -> see
+        *** [trotzdem versuchen]   
+            {name} nähert sich dem Tor und versucht die Wurzeln aufzubrechen. Doch sie sind gross und fest und lassen sich nicht bewegen.
+            
+            Es gibt also wirklich keinen Weg mehr zurück...
+            -> see
+    
+
+= see
+{name} kämpft sich durch die vielen Bäume und Äste. Als {male:er|sie} endlich aus dem Wald tritt sieht {male:er|sie} bereits den Teich von weitem.
+
+--> ending

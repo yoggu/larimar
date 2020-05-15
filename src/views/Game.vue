@@ -253,30 +253,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/_animations.scss";
 
 .game {
-  display: grid;
-  grid-template-columns: auto minmax(auto, 768px ) auto;
-  grid-template-rows: 40px 1fr;
+  display: flex;
+  flex-flow: column;
   background-color: $white;
   color: black;
   font-size: 12px;
   height: 100vh;
-  //overflow: hidden;
-  grid-template-areas: 
-  "nav nav nav"
-  ". story .";
+  overflow: hidden;
+
 }
 
 .navbar {
   display: flex;
+  height: 40px;
   justify-content: left;
   align-items: center;
   padding-left: 12px;
   z-index: 99;
   background-color: white;
-  grid-area: nav;
-  height: 100%;
 
   a {
     color: black;
@@ -286,14 +283,17 @@ export default {
 
 
 .story {
-  grid-area: story;
+  margin: 0 auto;
+  max-width: 768px;
   display: flex;
   flex-flow: column;
-  max-height: 100%;
+  height: 100%;
+  width: 100%;
 
   .image-container {
     flex: 1;
     overflow: auto;
+    width: 100%;
 
     img {
       max-height: 100%;
@@ -308,6 +308,7 @@ export default {
     padding: 4px 12px 0 12px;
     display: flex;
     flex-flow: column;
+    width: 100%;
   }
 
 
@@ -329,155 +330,6 @@ export default {
       }
     }
   }
-
-  .fire {
-    position: relative;
-  }
-
-  .flame1 {
-    position: absolute;
-    animation: flame ease-in-out 2s infinite alternate;
-  }
-
-  .flame2 {
-    position: absolute;
-    animation: flame ease-in-out 2s infinite alternate-reverse;
-  }
-
-  .flame3 {
-    position: absolute;
-    animation: flame ease-in-out 2s infinite alternate-reverse;
-  }
-
-  @keyframes flame {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
-  .jump {
-    position: relative;
-  }
-
-  .frog {
-    z-index: 1;
-    position: absolute;
-  }
-
-  .frog-jump {
-    animation: jump 2s forwards;
-  }
-
-  @keyframes jump {
-    0% {
-      left: 0px;
-      top: 0px;
-    }
-    100% {
-      left: -60px;
-      top: -120px;
-    }
-  }
-
-  .forest {
-    position: relative;
-    background-color: white;
-    overflow: hidden;
-    height:100%;
-  }
-
-  .ebene {
-    position: absolute;
-  }
-
-  .ebene1 {
-    z-index: 1;
-    --scaleStart: 1.0;
-    --scaleEnd: 2.0;
-    animation: forest-right ease-in-out 5s 1s forwards;
-  }
-
-  .ebene2 {
-    //display: none;
-    --scaleStart: 1.0;
-    --scaleEnd: 2.0;
-    animation: forest-left ease-in-out 5s 1s forwards;
-  }
-
-  .ebene3 {
-    //display: none;    
-    --scaleStart: 1.0;
-    --scaleEnd: 2.0;
-    animation: forest-right ease-in-out 5s 1s forwards;
-  }
-
-  .ebene4 {
-    //display: none;
-    //left: 20%;
-    z-index: 1;
-    --scaleStart: 1.0;
-    --scaleEnd: 2.0;
-    animation: forest-left ease-in-out 5s 1s forwards;
-  }
-
-  .ebene5 {
-    //display: none;
-    opacity: 0;
-    transform: scale(0.8);
-    --scaleStart: 0.8;
-    --scaleEnd: 2.0;
-    animation: forest-left ease-in-out 5s 2s forwards, forest2 2s 1s forwards;
-  }
-
-  .ebene6 {
-    //display: none;
-    opacity: 0;
-    transform: scale(0.8);
-    --scaleStart: 0.8;
-    --scaleEnd: 2.0;
-    animation: forest-left ease-in-out 5s 2s forwards, forest2 2s 1s forwards;
-  }
-
-  @keyframes forest-right {
-  0% {
-    transform: scale(var(--scaleStart)) translateX(0);
-  }
-  100% {
-    transform: scale(var(--scaleEnd)) translateX(50%);
-  }
-}
-
-  @keyframes forest-left {
-  0% {
-    transform: scale(var(--scaleStart)) translateX(0);
-  }
-  100% {
-    transform: scale(var(--scaleEnd)) translateX(-50%);
-  }
-}
-
-  @keyframes forest2 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.tree {
-  position: relative;
-  overflow: hidden;
-  height:100%;
-}
-
-.leaf {
-  position: absolute;
-  transition: transform 0.5s;
-}
 
 
 }

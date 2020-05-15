@@ -1,0 +1,21 @@
+=== dorf ===
+
+
+Es ist nun schon einige Stunden her, dass {name} den Baum zerstört hat. Im Dorf ist bestimmt die Hölle los.
+
+Aber eigentlich hätte schon längst jemand nach {male: ihm|ihr} suchen sollen. Seine Schwester wusste doch von seinem geheimen Rückzugsort...
+
++ im Dorf nachsehen
+    {name} macht sich also unsicheren Schrittes auf den Weg zurück ins Dorf.
+    ->
+
++ liegen bleiben
+    Warum das Chaos aufsuchen, wenn es auch einen aufsuchen kann? Und hoffentlich hat niemand gesehen, dass er das war...
+    
+    {name} liegt noch eine Weile. Es ist absolut still.
+    
+    {name} hält die Ungewissheit nicht mehr aus und macht sich also unsicheren Schrittes auf den Weg zurück ins Dorf.
+
+
+
+--> ending
