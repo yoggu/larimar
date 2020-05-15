@@ -1,27 +1,33 @@
 <template>
   <div class="game">
-    <navigation></navigation>
+    <div class="navbar">
+      <router-link to="/menu">menU</router-link>
+    </div> 
     <div class="story" ref="story">
-      <template v-for="(item, index) in content">
-        <div v-if="item.type === 'image'" :class="item.container" :key="'images-'+index">
-          <img
-            v-for="(image, index) in item.images"
-            :src="image.src"
-            :key="'image-'+index"
-            :class="image.classes"
-          />
+      <!-- <template v-for="(item, index) in content"> -->
+        <div class="image-container">
+          <div v-if="currentImage.type === 'image'" :class="currentImage.container">
+            <img
+              v-for="(image, index) in currentImage.images"
+              :src="image.src"
+              :key="'image-'+index"
+              :class="image.classes"
+            />
+          </div>
+          <draw-svg v-else-if="currentImage.type === 'svg'" :duration=200 :class = currentImage.container :vivusId ="'vivus'+index" :file= currentImage.src type="delayed" :ref="'vivus'+index"></draw-svg>
+        </div>  
+        <div class="text-container">
+          <typed-text :typeSpeed="50" :text="currentText.text" :class="currentText.classes" @onComplete="continueStory()"></typed-text>
+          <div class="choices">
+            <a
+              class="choice"
+              v-on:click.prevent="select(choice)"
+              v-for="(choice, index) in choices"
+              :key="'choice-'+index"
+            >&#x25BA; {{choice.text}}</a>
+          </div>
         </div>
-        <typed-text v-else-if="item.type === 'text'" :typeSpeed="50" :key="'paragraph-'+index" :text="item.text" :class="item.classes" @onComplete="continueStory()"></typed-text>
-        <draw-svg v-else-if="item.type === 'svg'" :duration=200 :class = item.container :key="'svg'+index" :vivusId ="'vivus'+index" :file= item.src type="delayed" :ref="'vivus'+index"></draw-svg>
-      </template>
-      <div class="choices">
-        <a
-          class="choice"
-          v-on:click.prevent="select(choice)"
-          v-for="(choice, index) in choices"
-          :key="'choice-'+index"
-        >&#x25BA; {{choice.text}}</a>
-      </div>
+      <!-- </template> -->
     </div>
     <div class="result" v-if="finished"> 
       <p v-for="(category, index) in result" :key="'category' + index" >
@@ -36,15 +42,13 @@ let counter = 0
 import { Story } from "inkjs";
 import json from "../ink/export/story.json";
 import DrawSvg from "../components/DrawSvg";
-import TypedText from "../components/TypedText"
-import Navigation from "../components/Navigation"
+import TypedText from "../components/TypedText";
 
 export default {
   name: "Game",
   components: {
     DrawSvg,
-    TypedText,
-    Navigation
+    TypedText
   },
   data: function() {
     return {
@@ -52,6 +56,8 @@ export default {
       choices: [],
       tags: [],
       customClasses: [],
+      currentText: Object,
+      currentImage: Object,
       content: [],
       finished: false,
       result: {},
@@ -76,7 +82,7 @@ export default {
     continueStory() {
       // Generate story text - loop through available content
       if (this.story.canContinue) {
-        console.log(this.content);
+        //console.log(this.content);
         let paragraphText = this.story.Continue();
 
         this.tags = this.splitTags(this.story.currentTags);
@@ -84,15 +90,21 @@ export default {
 
         this.checkTags(this.tags);
 
-        this.$nextTick(() => {
-          this.content.push({
-            type: "text",
-            text: paragraphText,
-            classes: this.customClasses
-          });
-          console.log(this.content);
+        // this.$nextTick(() => {
+        this.currentText = {
+          type: "text",
+          text: paragraphText,
+          classes: this.customClasses
+        }
+        console.log(this.currentText);
+          // this.content.push({
+          //   type: "text",
+          //   text: paragraphText,
+          //   classes: this.customClasses
+          // });
+          
           this.customClasses = [];
-        })
+        // })
       }
 
       this.choices = this.story.currentChoices;
@@ -148,7 +160,9 @@ export default {
             content.src = require("@/assets/images/" + content.src)
           }
 
-          this.content.push(content);
+          this.currentImage = content;
+
+          //this.content.push(content);
         }
       });
     },
@@ -241,30 +255,68 @@ export default {
 <style lang="scss" scoped>
 
 .game {
-  max-width: 700px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto minmax(auto, 768px ) auto;
+  grid-template-rows: 40px 1fr;
   background-color: $white;
   color: black;
   font-size: 12px;
-  min-height: 100vh;
+  height: 100vh;
+  //overflow: hidden;
+  grid-template-areas: 
+  "nav nav nav"
+  ". story .";
+}
+
+.navbar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 12px;
+  z-index: 99;
+  background-color: white;
+  grid-area: nav;
+  height: 100%;
+
+  a {
+    color: black;
+    font-weight: 400;
+  }
 }
 
 
 .story {
-  padding: 40px 0;
+  grid-area: story;
+  display: flex;
+  flex-flow: column;
+  max-height: 100%;
 
-  img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
+  .image-container {
+    flex: 1;
+    overflow: auto;
+
+    img {
+      max-height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+
   }
+
+  .text-container {
+    height: 120px;
+    padding: 4px 12px 0 12px;
+    display: flex;
+    flex-flow: column;
+  }
+
 
   .choices {
     display: flex;
-    justify-content: space-evenly;    
+    justify-content: space-evenly; 
 
     .choice {
-      margin: 24px 0 12px 0;
+      margin: 24px 0 24px 0;
       padding: 0 12px;
       color: black;
       font-weight: 400;
@@ -273,7 +325,7 @@ export default {
       cursor: pointer;
 
       &:hover {
-        color: white;
+        color: black;
       }
     }
   }
@@ -330,15 +382,11 @@ export default {
     }
   }
 
-  .right {
-    margin-left: 30%;
-  }
-
-
   .forest {
     position: relative;
     background-color: white;
     overflow: hidden;
+    height:100%;
   }
 
   .ebene {
@@ -385,7 +433,6 @@ export default {
   }
 
   .ebene6 {
-    position: relative;
     //display: none;
     opacity: 0;
     transform: scale(0.8);
@@ -422,11 +469,13 @@ export default {
 }
 
 .tree {
-  perspective: 15px;
+  position: relative;
   overflow: hidden;
+  height:100%;
 }
 
 .leaf {
+  position: absolute;
   transition: transform 0.5s;
 }
 

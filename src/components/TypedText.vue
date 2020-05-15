@@ -1,6 +1,7 @@
 <template>
-    <div v-on:click="showAll()">
+    <div class="textbox" v-on:click="showAll()">
       <p>{{visibleText}}</p>
+      <span v-show="!this.isTyping">&#9660;</span>
     </div>  
 </template>
 
@@ -12,6 +13,12 @@ export default {
     typeSpeed: Number,
     delay: Number,
     onComplete: Function,
+  },
+  watch: { 
+    text: function() { // watch it
+      this.reset();
+      setTimeout(this.typeText, this.delay);
+    }
   },
   data() {
     return {
@@ -31,22 +38,38 @@ export default {
         setTimeout(this.typeText, this.typeSpeed);
       } else {
         this.isTyping = false;
-        this.completed();
       }
     },
     showAll() {
-      this.isTyping = false;
-      this.visibleText = this.text;
+      if (this.isTyping) {
+        this.isTyping = false;
+        this.visibleText = this.text;
+      }
+      else {
+        this.completed();
+      }
     },
     completed() {
+      console.log("complete")
       this.$emit("onComplete");
+    },
+    reset() {
+      this.visibleText = "";
+      this.position = 0;
+      this.isTyping = true;
     }
   },
 }
 </script>
 
 <style scoped lang="scss">
-  p {
-    padding: 0 12px;
+.textbox {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  p { 
+    margin: 0;
   }
+}
+
 </style>

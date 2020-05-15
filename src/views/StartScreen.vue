@@ -31,18 +31,20 @@ export default {
 .start-screen {
   display: grid;
   grid-template-rows: 200px minmax(0,300px) 200px ;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto minmax(auto, 768px ) auto;;
   height: 100vh;
   overflow: hidden;
 
   .title {
     grid-row: 1;
-    grid-column: 1;
+    grid-column: 2;
+    text-align: center;
   }
 
   .stone {
     grid-row: 2;
-    grid-column: 1;
+    grid-column: 2;
+    text-align: center;
 
     .move-stone {
       animation: move-stone 1s infinite alternate ease-in-out;
@@ -51,7 +53,8 @@ export default {
 
   .start {
     grid-row: 3;
-    grid-column: 1;
+    grid-column: 2;
+    text-align: center;
   }
 }
 

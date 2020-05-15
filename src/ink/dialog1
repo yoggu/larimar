@@ -9,13 +9,13 @@ VAR frog = "Kröte"
 
     {name} hält plötzlich an und bleibt stehen. Wo soll {male: er|sie} jetzt eigntlich hin? Was jetzt? Erschöpft und mutlos lässt {male: er|sie} sich auf einem grossen Ast nieder.
 
-#CONTENT: {"type":"image","images":[{"src":"bubble_1/Ebene1.png","classes":["ebene","ebene1"]},{"src":"bubble_1/Ebene2.png","classes":["ebene","ebene2"]},{"src":"bubble_1/Ebene3.png","classes":["ebene","ebene3"]},{"src":"bubble_1/Ebene4.png","classes":["ebene","ebene4"]},{"src":"bubble_1/Ebene5.png","classes":["ebene","ebene5"]},{"src":"bubble_1/Ebene6.png","classes":["ebene","ebene6"]},{"src":"bubble_1/Ebene7.png","classes":["ebene","ebene7"]},{"src":"bubble_1/Ebene8.png","classes":["ebene","ebene8"]},{"src":"bubble_1/Ebene9.png","classes":["ebene","ebene9"]},{"src":"bubble_1/Ebene10.png","classes":["ebene","ebene10"]},{"src":"bubble_1/Ebene11.png","classes":["ebene","ebene11"]},{"src":"bubble_1/Ebene12.png","classes":["ebene","ebene12"]}],"container":"forest"}
+#CONTENT: {"type":"image","images":[{"src":"bubble_1/Ebene1.png","classes":["ebene","ebene1"]},{"src":"bubble_1/Ebene2.png","classes":["ebene","ebene2"]},{"src":"bubble_1/Ebene3.png","classes":["ebene","ebene3"]},{"src":"bubble_1/Ebene4.png","classes":["ebene","ebene4"]},{"src":"bubble_1/Ebene5.png","classes":["ebene","ebene5"]},{"src":"bubble_1/Ebene6.png","classes":["ebene","ebene6"]}],"container":"forest"}
 
-{frog}: "Ey, setz dich gefälligst wo anders hin." #CLASS: right
+{frog}: "Ey, setz dich gefälligst wo anders hin."
 
 Was war das?
 
-{frog}: "Hey Lappen, hörst du mir überhaupt zu? Du sollst wo anders hin, hab' ich gesagt!" #CLASS: right
+{frog}: "Hey Lappen, hörst du mir überhaupt zu? Du sollst wo anders hin, hab' ich gesagt!"
 
 +[aufstehen]
     #CONTENT: {"type":"image","images":[{"src":"flame1.png","classes":["flame1"]},{"src":"flame2.png","classes":["flame2"]},{"src":"logs.png","classes":["logs"]}],"container":"fire"}
