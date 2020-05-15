@@ -63,6 +63,7 @@ export default {
 
   a {
     color: black;
+    font-weight: 400;
   }
 
   &.hidden-navbar {
