@@ -207,10 +207,11 @@ export default {
               position = -limit;
             }
           }
-        position = position / -100;
+        position = position / -1;
         console.log(position)
-        let rotate = "rotateY(" + position + "deg)";
-        this.$el.querySelector(".rotate").style.transform = rotate;
+        //let rotate = "rotateY(" + position + "deg)";
+        let translate = "translateX(" + position + "px)";
+        this.$el.querySelector(".rotate").style.transform = translate;
       }
     },
     checkPermission() {
