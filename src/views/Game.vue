@@ -196,21 +196,30 @@ export default {
       return this.counter++ % 10 === 0;
     },
     deviceOrientation(e) {
-      console.log(e.gamma);
+      //console.log(e.gamma);
       const limit = 45;
       if(this.updateNow()) {
-        let position = Math.round(e.gamma);
-        if (Math.abs(position) > limit) {
-        if (position > limit) {
-              position = limit;
+        let leftToRight = Math.round(e.gamma);
+        if (Math.abs(leftToRight) > limit) {
+        if (leftToRight > limit) {
+              leftToRight = limit;
           } else {
-              position = -limit;
+              leftToRight = -limit;
+          }
+        }
+        let frontToBack = Math.round(e.beta);
+        if (Math.abs(frontToBack) > limit) {
+        if (frontToBack > limit) {
+              frontToBack = limit;
+          } else {
+              frontToBack = -limit;
           }
         }    
-        position = position * -1;
-        console.log(position)
+        leftToRight = leftToRight * -1;
+        frontToBack = frontToBack * -1;
+        console.log(leftToRight +", "+ frontToBack)
         //let rotate = "rotateY(" + position + "deg)";
-        let translate = "translateX(" + position + "px)";
+        let translate = "translate(" + leftToRight + "px," + frontToBack +"px)";
         this.$el.querySelector(".rotate").style.transform = translate;
       }
     },
