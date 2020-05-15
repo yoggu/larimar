@@ -2,14 +2,14 @@
 #CLEAR
 VAR frog = "Kröte"
 
-#CONTENT: {"type":"image","images":[{"src":"bubble_1/Ebene1.png","classes":["ebene","ebene1"]},{"src":"bubble_1/Ebene2.png","classes":["ebene","ebene2"]},{"src":"bubble_1/Ebene3.png","classes":["ebene","ebene3"]},{"src":"bubble_1/Ebene4.png","classes":["ebene","ebene4"]},{"src":"bubble_1/Ebene5.png","classes":["ebene","ebene5"]},{"src":"bubble_1/Ebene6.png","classes":["ebene","ebene6"]},{"src":"bubble_1/Ebene7.png","classes":["ebene","ebene7"]},{"src":"bubble_1/Ebene8.png","classes":["ebene","ebene8"]},{"src":"bubble_1/Ebene9.png","classes":["ebene","ebene9"]},{"src":"bubble_1/Ebene10.png","classes":["ebene","ebene10"]},{"src":"bubble_1/Ebene11.png","classes":["ebene","ebene11"]},{"src":"bubble_1/Ebene12.png","classes":["ebene","ebene12"]}],"container":"forest"}
 
 {name} betritt entschlossenen Schrittes den Wald.
 #CONTENT: {"type":"image","container":"tree","images":[{"src":"bubble_1/Ebene1.png","classes":["leaf", "rotate"]}]}
 
 
     {name} hält plötzlich an und bleibt stehen. Wo soll {male: er|sie} jetzt eigntlich hin? Was jetzt? Erschöpft und mutlos lässt {male: er|sie} sich auf einem grossen Ast nieder.
-#CONTENT: {"type":"svg","src":"test2.svg","container":"drawing-test2"}
+
+#CONTENT: {"type":"image","images":[{"src":"bubble_1/Ebene1.png","classes":["ebene","ebene1"]},{"src":"bubble_1/Ebene2.png","classes":["ebene","ebene2"]},{"src":"bubble_1/Ebene3.png","classes":["ebene","ebene3"]},{"src":"bubble_1/Ebene4.png","classes":["ebene","ebene4"]},{"src":"bubble_1/Ebene5.png","classes":["ebene","ebene5"]},{"src":"bubble_1/Ebene6.png","classes":["ebene","ebene6"]},{"src":"bubble_1/Ebene7.png","classes":["ebene","ebene7"]},{"src":"bubble_1/Ebene8.png","classes":["ebene","ebene8"]},{"src":"bubble_1/Ebene9.png","classes":["ebene","ebene9"]},{"src":"bubble_1/Ebene10.png","classes":["ebene","ebene10"]},{"src":"bubble_1/Ebene11.png","classes":["ebene","ebene11"]},{"src":"bubble_1/Ebene12.png","classes":["ebene","ebene12"]}],"container":"forest"}
 
 {frog}: "Ey, setz dich gefälligst wo anders hin." #CLASS: right
 
@@ -29,7 +29,7 @@ Was war das?
 -   {name} seufzt schwer, steht auf und geht weiter. 
     {frog}: "Was? Keine Reaktion?" #CLASS: right
     Die Kröte landet mit einem grossen Sprung neben {name} auf einem dickeren Ast.
-    
+    #CONTENT: {"type":"svg","src":"test2.svg","container":"drawing-test2"}    
 
 + [wegdrehen]
     {frog}: "Wenn du denkst du kannst mich einfach ignorieren, dann hast du falsch gedacht, Freundchen!" und in einem kurzen Augenblick schallt seine lange Zunge hervor und trifft {name} im Gesicht.

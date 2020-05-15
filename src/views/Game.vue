@@ -196,18 +196,18 @@ export default {
       return this.counter++ % 10 === 0;
     },
     deviceOrientation(e) {
-      console.log(e.alpha);
+      console.log(e.gamma);
       const limit = 45;
       if(this.updateNow()) {
-        let position = Math.round(e.alpha);
+        let position = Math.round(e.gamma);
         if (Math.abs(position) > limit) {
         if (position > limit) {
               position = limit;
           } else {
               position = -limit;
-            }
           }
-        position = position / -1;
+        }    
+        position = position * -1;
         console.log(position)
         //let rotate = "rotateY(" + position + "deg)";
         let translate = "translateX(" + position + "px)";
