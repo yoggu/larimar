@@ -1,8 +1,6 @@
 <template>
   <div class="game">
-    <div class="menu">
-      <router-link to="/menu">Menu</router-link>
-    </div>
+    <navigation></navigation>
     <div class="story" ref="story">
       <template v-for="(item, index) in content">
         <div v-if="item.type === 'image'" :class="item.container" :key="'images-'+index">
@@ -34,16 +32,19 @@
 </template>
 
 <script>
+let counter = 0
 import { Story } from "inkjs";
 import json from "../ink/export/story.json";
 import DrawSvg from "../components/DrawSvg";
 import TypedText from "../components/TypedText"
+import Navigation from "../components/Navigation"
 
 export default {
   name: "Game",
   components: {
     DrawSvg,
-    TypedText
+    TypedText,
+    Navigation
   },
   data: function() {
     return {
@@ -54,7 +55,6 @@ export default {
       content: [],
       finished: false,
       result: {},
-      counter: 0,
     };
   },
   mounted () {
@@ -192,13 +192,10 @@ export default {
     //   behavior: 'smooth'
     //   })
     },
-    updateNow() {
-      return this.counter++ % 10 === 0;
-    },
     deviceOrientation(e) {
       //console.log(e.gamma);
       const limit = 45;
-      if(this.updateNow()) {
+      if(counter++ % 10 === 0) {
         let leftToRight = Math.round(e.gamma);
         if (Math.abs(leftToRight) > limit) {
         if (leftToRight > limit) {
@@ -244,9 +241,6 @@ export default {
 <style lang="scss" scoped>
 
 .game {
-  display: grid;
-  grid-template-rows: 50px 1fr ;
-  grid-template-columns: 1fr;
   max-width: 700px;
   margin: 0 auto;
   background-color: $white;
@@ -255,24 +249,9 @@ export default {
   min-height: 100vh;
 }
 
-.menu {
-  grid-column: 1;
-  grid-row: 1;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  padding-left: 12px;
-
-  a {
-    color: black;
-  }
-
-}
 
 .story {
-  grid-column: 1;
-  grid-row: 2;
-  padding-bottom: 40px;
+  padding: 40px 0;
 
   img {
     display: block;
