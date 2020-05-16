@@ -4,9 +4,7 @@
 
 Es ist nun schon einige Stunden her, dass {name} den Baum zerstört hat. Im Dorf ist bestimmt die Hölle los.
 
-#CONTENT: {"type":"image","images":[{"src":"bubble_1/tor/tor_0000_wurzeln.png","classes":["root"]},{"src":"bubble_1/tor/tor_0001_baum-2.png","classes":["tree-2"]},{"src":"bubble_1/tor/tor_0002_bäume-1.png","classes":["tree-1"]},{"src":"bubble_1/tor/tor_0003_tor.png","classes":["entry"]}],"container":"gate"}
-
-Aber eigentlich hätte schon längst jemand nach {male: ihm|ihr} suchen sollen. Seine Schwester wusste doch von seinem geheimen Rückzugsort...
+Aber eigentlich hätte schon längst jemand nach {s: ihm|ihr} suchen sollen. Seine Schwester wusste doch von seinem geheimen Rückzugsort...
 
 * [im Dorf nachsehen]
     {name} macht sich also unsicheren Schrittes auf den Weg zurück ins Dorf.
@@ -22,13 +20,19 @@ Aber eigentlich hätte schon längst jemand nach {male: ihm|ihr} suchen sollen. 
 
 
 = dorf
+#CONTENT: {"type":"image","images":[{"src":"bubble_1/wald/forest__0007_tree-1.png","classes":["tree","tree-1"]},{"src":"bubble_1/wald/forest__0006_tree-2.png","classes":["tree","tree-2"]},{"src":"bubble_1/wald/forest__0005_tree-3.png","classes":["tree","tree-3"]},{"src":"bubble_1/wald/forest__0004_tree-4.png","classes":["tree","tree-4"]},{"src":"bubble_1/wald/forest__0003_tree-5.png","classes":["tree","tree-5"]},{"src":"bubble_1/wald/forest__0011_tree-6.png","classes":["tree","tree-6"]},{"src":"bubble_1/wald/forest__0010_tree-7.png","classes":["tree","tree-7"]},{"src":"bubble_1/wald/forest__0009_tree-8.png","classes":["tree","tree-8"]},{"src":"bubble_1/wald/forest__0008_tree-9.png","classes":["tree","tree-9"]}],"container":"forest"}
+
 Waren das schon immer so viele Bäume? Es werden immer mehr Bäume je näher {name} sich dem Dorf nähert.
 
-Plötzlich taucht ein Haus vor {male: ihm|ihr} auf...
+Plötzlich taucht ein Haus vor {s: ihm|ihr} auf...
+
+#CONTENT: {"type":"image","images":[{"src":"bubble_1/haus/haus__0008_branch-1.png","classes":["branch","branch-1"]},{"src":"bubble_1/haus/haus__0009_branch-2.png","classes":["branch","branch-2"]},{"src":"bubble_1/haus/haus__0010_branch-3.png","classes":["branch","branch-3"]},{"src":"bubble_1/haus/haus__0011_branch-4.png","classes":["branch","branch-4"]},{"src":"bubble_1/haus/haus__0004_branch-5.png","classes":["branch","branch-5"]},{"src":"bubble_1/haus/haus__0003_branch-6.png","classes":["branch","branch-6"]},{"src":"bubble_1/haus/haus__0001_branch-7.png","classes":["branch","branch-7"]},{"src":"bubble_1/haus/haus__0000_branch-8.png","classes":["branch","branch-8"]},{"src":"bubble_1/haus/haus__0002_floor.png","classes":["floor"]},{"src":"bubble_1/haus/haus__0012_house.png","classes":["building"]},{"src":"bubble_1/haus/haus__0016_tree.png","classes":["tree"]}],"container":"house"}
 
 "Das ist ja mein Haus!"
 
 "SCHWESTER?"
+
+#CONTENT: {"type":"image","images":[{"src":"bubble_1/schwester/schwester__0000_wall.png","classes":["wall"]},{"src":"bubble_1/schwester/schwester__0001_trees.png","classes":["trees"]},{"src":"bubble_1/schwester/schwester__0002_body.png","classes":["body"]},{"src":"bubble_1/schwester/schwester__0003_face-1.png","classes":["face","face-1"]},{"src":"bubble_1/schwester/schwester__0004_face-2.png","classes":["face","face-2"]},{"src":"bubble_1/schwester/schwester__0005_face-3.png","classes":["face","face-3"]},{"src":"bubble_1/schwester/schwester__0006_branch-1.png","classes":["branch","branch-1"]},{"src":"bubble_1/schwester/schwester__0007_branch-2.png","classes":["branch","branch-2"]}],"container":"sister"}
 
 "{name}"
 
@@ -58,6 +62,9 @@ Plötzlich taucht ein Haus vor {male: ihm|ihr} auf...
     -> ausserhalb_des_dorfs
 
 = ausserhalb_des_dorfs
+
+#CONTENT: {"type":"image","images":[{"src":"bubble_1/wald/forest__0004_tree-4.png","classes":["tree","tree-4"]},{"src":"bubble_1/wald/forest__0010_tree-7.png","classes":["tree","tree-7"]},{"src":"bubble_1/wald/forest__0009_tree-8.png","classes":["tree","tree-8"]}],"container":"forest-2"}
+
 "Oh nein, ich habe etwas wichtiges vergessen..."
 
 Der Familienkompass, der immer auf unser Zuhause zeigt, ohne den kann ich doch nicht weg...
@@ -66,6 +73,8 @@ Der Familienkompass, der immer auf unser Zuhause zeigt, ohne den kann ich doch n
     -> see
 
 * [noch einmal zurück gehen?]
+
+#CONTENT: {"type":"image","images":[{"src":"bubble_1/tor/tor_0000_wurzeln.png","classes":["root"]},{"src":"bubble_1/tor/tor_0001_baum-2.png","classes":["tree-2"]},{"src":"bubble_1/tor/tor_0002_bäume-1.png","classes":["tree-1"]},{"src":"bubble_1/tor/tor_0003_tor.png","classes":["entry"]}],"container":"gate"}
 
     Die Bäume sind jedoch so dicht, dass die Wurzeln das Tor zugewachsen haben, es gibt keinen Durchgang
     
@@ -83,6 +92,8 @@ Der Familienkompass, der immer auf unser Zuhause zeigt, ohne den kann ich doch n
     
 
 = see
-{name} kämpft sich durch die vielen Bäume und Äste. Als {male:er|sie} endlich aus dem Wald tritt sieht {male:er|sie} bereits den Teich von weitem.
+{name} kämpft sich durch die vielen Bäume und Äste. Als {s:er|sie} endlich aus dem Wald tritt sieht {s:er|sie} bereits den Teich von weitem.
+
+#CONTENT: {"type":"image","images":[{"src":"bubble_1/weg_zum_see/weg_zum_see_0000_water-7.png","classes":["water","water-7"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0001_water-6.png","classes":["water","water-6"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0002_water-5.png","classes":["water","water-5"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0003_water-4.png","classes":["water","water-4"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0004_water-3.png","classes":["water","water-3"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0005_water-2.png","classes":["water","water-2"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0006_water-1.png","classes":["water","water-1"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0015_branch-1.png","classes":["branch","branch-1"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0014_branch-2.png","classes":["branch","branch-2"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0013_branch-3.png","classes":["branch","branch-3"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0012_branch-4.png","classes":["branch","branch-4"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0011_branch-5.png","classes":["branch","branch-5"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0009_stroke-1.png","classes":["stroke","stroke-1"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0008_stroke-2.png","classes":["stroke","stroke-2"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0007_stroke-3.png","classes":["stroke","stroke-3"]}],"container":"way-to-lake"}
 
 --> ending

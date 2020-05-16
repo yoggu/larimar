@@ -1,0 +1,19 @@
+.way-to-lake {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  height:100%;
+
+  .branch {
+    position: absolute;
+  }
+
+  .water {
+    position: absolute;
+  }
+
+  .stroke {
+    position: absolute;
+  }
+
+}

@@ -3,7 +3,7 @@
     <div class="navbar">
       <router-link to="/menu">menU</router-link>
     </div> 
-    <div class="story" ref="story">
+    <div v-if="!finished" class="story" ref="story">
       <!-- <template v-for="(item, index) in content"> -->
         <div class="image-container">
           <div v-if="currentImage.type === 'image'" :class="currentImage.container">
@@ -86,7 +86,7 @@ export default {
         let paragraphText = this.story.Continue();
 
         this.tags = this.splitTags(this.story.currentTags);
-        console.log(this.story.currentTags);
+        //console.log(this.story.currentTags);
 
         this.checkTags(this.tags);
 
@@ -159,7 +159,7 @@ export default {
             content.src = require("@/assets/images/" + content.src)
           }
 
-          console.log(content);
+          //console.log(content);
           this.currentImage = content;
 
           //this.content.push(content);

@@ -9,7 +9,7 @@ VAR S = 0
 VAR E = 0
 VAR C = 0
 VAR name = ""
-VAR male = ""
+VAR s = ""
 -> start
 
 === start ===
@@ -17,12 +17,12 @@ Wähle deinen Namen
 
 * [Nio]
     ~name = "Nio"
-    ~male = true
+    ~s = true
     -> baum
     
 * [Nera]
     ~name = "Nera"
-    ~male = false
+    ~s = false
     -> baum
 
 
