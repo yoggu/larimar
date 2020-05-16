@@ -28,5 +28,6 @@ Wähle deinen Namen
 
 
 === ending ===
+story end
 
 -> END

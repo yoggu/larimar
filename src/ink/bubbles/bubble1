@@ -1,6 +1,6 @@
 === baum ===
 
-#CONTENT: {"type":"image","images":[{"src":"bubble_1/start/start__0006_wind-7.png","classes":["wind","wind-7"]},{"src":"bubble_1/start/start__0005_wind-6.png","classes":["wind","wind-6"]},{"src":"bubble_1/start/start__0004_wind-5.png","classes":["wind","wind-5"]},{"src":"bubble_1/start/start__0003_wind-4.png","classes":["wind","wind-4"]},{"src":"bubble_1/start/start__0002_wind-3.png","classes":["wind","wind-3"]},{"src":"bubble_1/start/start__0001_wind-2.png","classes":["wind","wind-2"]},{"src":"bubble_1/start/start__0000_wind-1.png","classes":["wind","wind-1"]},{"src":"bubble_1/start/start__0007_gras-3.png","classes":["gras","gras-3"]},{"src":"bubble_1/start/start__0008_gras-2.png","classes":["gras","gras-2"]},{"src":"bubble_1/start/start__0009_gras-1.png","classes":["gras","gras-1"]}],"container":"start"}
+#CONTENT: {"type":"image","images":[{"src":"bubble_1/start/start__0006_wind-7.png","classes":["wind","wind-7"]},{"src":"bubble_1/start/start__0005_wind-6.png","classes":["wind","wind-6"]},{"src":"bubble_1/start/start__0004_wind-5.png","classes":["wind","wind-5"]},{"src":"bubble_1/start/start__0003_wind-4.png","classes":["wind","wind-4"]},{"src":"bubble_1/start/start__0002_wind-3.png","classes":["wind","wind-3"]},{"src":"bubble_1/start/start__0001_wind-2.png","classes":["wind","wind-2"]},{"src":"bubble_1/start/start__0000_wind-1.png","classes":["wind","wind-1"]},{"src":"bubble_1/start/start__0007_gras-3.png","classes":["gras","orient","gras-3"]},{"src":"bubble_1/start/start__0008_gras-2.png","classes":["gras","orient","gras-2"]},{"src":"bubble_1/start/start__0009_gras-1.png","classes":["gras","orient","gras-1"]}],"container":"start"}
 
 Es ist nun schon einige Stunden her, dass {name} den Baum zerstört hat. Im Dorf ist bestimmt die Hölle los.
 
@@ -92,8 +92,9 @@ Der Familienkompass, der immer auf unser Zuhause zeigt, ohne den kann ich doch n
     
 
 = see
-{name} kämpft sich durch die vielen Bäume und Äste. Als {s:er|sie} endlich aus dem Wald tritt sieht {s:er|sie} bereits den Teich von weitem.
 
 #CONTENT: {"type":"image","images":[{"src":"bubble_1/weg_zum_see/weg_zum_see_0000_water-7.png","classes":["water","water-7"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0001_water-6.png","classes":["water","water-6"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0002_water-5.png","classes":["water","water-5"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0003_water-4.png","classes":["water","water-4"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0004_water-3.png","classes":["water","water-3"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0005_water-2.png","classes":["water","water-2"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0006_water-1.png","classes":["water","water-1"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0015_branch-1.png","classes":["branch","branch-1"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0014_branch-2.png","classes":["branch","branch-2"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0013_branch-3.png","classes":["branch","branch-3"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0012_branch-4.png","classes":["branch","branch-4"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0011_branch-5.png","classes":["branch","branch-5"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0009_stroke-1.png","classes":["stroke","stroke-1"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0008_stroke-2.png","classes":["stroke","stroke-2"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0007_stroke-3.png","classes":["stroke","stroke-3"]}],"container":"way-to-lake"}
+
+{name} kämpft sich durch die vielen Bäume und Äste. Als {s:er|sie} endlich aus dem Wald tritt sieht {s:er|sie} bereits den Teich von weitem.
 
 --> ending

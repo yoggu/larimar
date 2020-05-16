@@ -3,7 +3,7 @@
     <div class="navbar">
       <router-link to="/menu">menU</router-link>
     </div> 
-    <div v-if="!finished" class="story" ref="story">
+    <div class="story" ref="story" v-if="!finished">
       <!-- <template v-for="(item, index) in content"> -->
         <div class="image-container">
           <div v-if="currentImage.type === 'image'" :class="currentImage.container">
@@ -90,20 +90,13 @@ export default {
 
         this.checkTags(this.tags);
 
-        // this.$nextTick(() => {
         this.currentText = {
           type: "text",
           text: paragraphText,
           classes: this.customClasses
         }
-          // this.content.push({
-          //   type: "text",
-          //   text: paragraphText,
-          //   classes: this.customClasses
-          // });
-          
-          this.customClasses = [];
-        // })
+  
+        this.customClasses = [];
       }
 
       this.choices = this.story.currentChoices;
@@ -162,7 +155,6 @@ export default {
           //console.log(content);
           this.currentImage = content;
 
-          //this.content.push(content);
         }
       });
     },
@@ -198,14 +190,6 @@ export default {
       this.story.state.LoadJson(this.$store.state.story);
       this.continueStory();
     },
-    scrollToEnd() {
-    // scroll to the start of the last message
-    // window.scrollTo({
-    //   top: this.$refs.story.lastElementChild.offsetTop + 40,
-    //   left: 0,
-    //   behavior: 'smooth'
-    //   })
-    },
     deviceOrientation(e) {
       //console.log(e.gamma);
       const limit = 45;
@@ -229,9 +213,10 @@ export default {
         leftToRight = leftToRight * -1;
         frontToBack = frontToBack * -1;
         console.log(leftToRight +", "+ frontToBack)
-        //let rotate = "rotateY(" + position + "deg)";
         let translate = "translate(" + leftToRight + "px," + frontToBack +"px)";
-        this.$el.querySelector(".rotate").style.transform = translate;
+        this.$el.querySelectorAll(".orient").forEach((el) => {
+          el.style.transform = translate;
+        });
       }
     },
     checkPermission() {
@@ -264,6 +249,10 @@ export default {
   height: 100vh;
   overflow: hidden;
 
+}
+
+.result {
+  
 }
 
 .navbar {
