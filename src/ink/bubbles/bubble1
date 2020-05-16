@@ -1,6 +1,10 @@
 === baum ===
 
+#CONTENT: {"type":"image","images":[{"src":"bubble_1/start/start__0006_wind-7.png","classes":["wind","wind-7"]},{"src":"bubble_1/start/start__0005_wind-6.png","classes":["wind","wind-6"]},{"src":"bubble_1/start/start__0004_wind-5.png","classes":["wind","wind-5"]},{"src":"bubble_1/start/start__0003_wind-4.png","classes":["wind","wind-4"]},{"src":"bubble_1/start/start__0002_wind-3.png","classes":["wind","wind-3"]},{"src":"bubble_1/start/start__0001_wind-2.png","classes":["wind","wind-2"]},{"src":"bubble_1/start/start__0000_wind-1.png","classes":["wind","wind-1"]},{"src":"bubble_1/start/start__0007_gras-3.png","classes":["gras","gras-3"]},{"src":"bubble_1/start/start__0008_gras-2.png","classes":["gras","gras-2"]},{"src":"bubble_1/start/start__0009_gras-1.png","classes":["gras","gras-1"]}],"container":"start"}
+
 Es ist nun schon einige Stunden her, dass {name} den Baum zerstört hat. Im Dorf ist bestimmt die Hölle los.
+
+#CONTENT: {"type":"image","images":[{"src":"bubble_1/tor/tor_0000_wurzeln.png","classes":["root"]},{"src":"bubble_1/tor/tor_0001_baum-2.png","classes":["tree-2"]},{"src":"bubble_1/tor/tor_0002_bäume-1.png","classes":["tree-1"]},{"src":"bubble_1/tor/tor_0003_tor.png","classes":["entry"]}],"container":"gate"}
 
 Aber eigentlich hätte schon längst jemand nach {male: ihm|ihr} suchen sollen. Seine Schwester wusste doch von seinem geheimen Rückzugsort...
 

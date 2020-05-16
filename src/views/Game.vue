@@ -86,7 +86,7 @@ export default {
         let paragraphText = this.story.Continue();
 
         this.tags = this.splitTags(this.story.currentTags);
-        //console.log(this.story.currentTags);
+        console.log(this.story.currentTags);
 
         this.checkTags(this.tags);
 
@@ -96,7 +96,6 @@ export default {
           text: paragraphText,
           classes: this.customClasses
         }
-        console.log(this.currentText);
           // this.content.push({
           //   type: "text",
           //   text: paragraphText,
@@ -160,6 +159,7 @@ export default {
             content.src = require("@/assets/images/" + content.src)
           }
 
+          console.log(content);
           this.currentImage = content;
 
           //this.content.push(content);
@@ -274,6 +274,7 @@ export default {
   padding-left: 12px;
   z-index: 99;
   background-color: white;
+  flex-shrink: 0;
 
   a {
     color: black;
@@ -296,9 +297,9 @@ export default {
     width: 100%;
 
     img {
-      max-height: 100%;
-      width: 100%;
       object-fit: contain;
+      width: 100%;
+      max-height: 100%;
     }
 
   }
