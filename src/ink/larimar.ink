@@ -18,12 +18,12 @@ Wähle deinen Namen
 * [Nio]
     ~name = "Nio"
     ~s = true
-    -> baum
+    -> bubble1
     
 * [Nera]
     ~name = "Nera"
     ~s = false
-    -> baum
+    -> bubble1
 
 
 

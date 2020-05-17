@@ -1,71 +1,116 @@
-=== baum ===
+=== bubble1 ===
+-> wiese
+
+= wiese
 
 #CONTENT: {"type":"image","images":[{"src":"bubble_1/start/start__0006_wind-7.png","classes":["wind","wind-7"]},{"src":"bubble_1/start/start__0005_wind-6.png","classes":["wind","wind-6"]},{"src":"bubble_1/start/start__0004_wind-5.png","classes":["wind","wind-5"]},{"src":"bubble_1/start/start__0003_wind-4.png","classes":["wind","wind-4"]},{"src":"bubble_1/start/start__0002_wind-3.png","classes":["wind","wind-3"]},{"src":"bubble_1/start/start__0001_wind-2.png","classes":["wind","wind-2"]},{"src":"bubble_1/start/start__0000_wind-1.png","classes":["wind","wind-1"]},{"src":"bubble_1/start/start__0007_gras-3.png","classes":["gras","orient","gras-3"]},{"src":"bubble_1/start/start__0008_gras-2.png","classes":["gras","orient","gras-2"]},{"src":"bubble_1/start/start__0009_gras-1.png","classes":["gras","orient","gras-1"]}],"container":"start"}
 
-Es ist nun schon einige Stunden her, dass {name} den Baum zerstört hat. Im Dorf ist bestimmt die Hölle los.
+ Nio befindet sich auf einer Wiese etwas abseits vom Dorf und liegt im Gras. 
 
-Aber eigentlich hätte schon längst jemand nach {s: ihm|ihr} suchen sollen. Seine Schwester wusste doch von seinem geheimen Rückzugsort...
+Die Sonne steht bereits im Zenit und scheint heiss auf {name}s Gesicht.
 
-* [im Dorf nachsehen]
-    {name} macht sich also unsicheren Schrittes auf den Weg zurück ins Dorf.
-    -> dorf
+Eigentlich hätte schon längst jemand nach {s: ihm|ihr} suchen müssen. 
+
+ Es konnte aber auch einfach ein gutes Zeichen sein, weil niemand seine Tat gesehen hatte...
+Aber er war auch sonst nie lange weg. Vom Dorf waren auch keine lauten Geräusche oder erschrockene Schreie zu hören...
+
+Dabei wusste {s: seine Schwester|ihr Bruder} ganz  genau, wo sich {s: sein/ihr} geheimer Rückzugsort befand.
+
+* [ins Dorf gehen und nachsehen]
+    -> weg_ins_dorf
 
 * [liegen bleiben]
-    Warum das Chaos aufsuchen, wenn es auch einen aufsuchen kann? Und hoffentlich hat niemand gesehen, dass er das war...
+    Gleichzeitig aber hatte {name} auch keine Lust auf ein riesiges Chaos. Hier zu liegen war doch viel schöner.
     
-    {name} liegt noch eine Weile. Es ist absolut still.
+    {name} liegt noch eine Weile im Gras und starrt ins helle Blaum am Himmel. Eigentlich war es schon ungewöhnlich still.
+    {s: Er|Sie} horchte auf.
     
-    {name} hält die Ungewissheit nicht mehr aus und macht sich also unsicheren Schrittes auf den Weg zurück ins Dorf.
-    -> dorf
+    Es war ungewöhnlich still. Keine Vögel waren mehr zu hören, nur der Wind, der leise durch die Gräser strich...
+    
+    {name} hält es nicht mehr aus, nicht zu wissen, was passiert ist und macht sich auf den Weg zurück ins Dorf.
+    -> weg_ins_dorf
 
 
-= dorf
+= weg_ins_dorf
+//animation mit den Bäumen
 #CONTENT: {"type":"image","images":[{"src":"bubble_1/wald/forest__0007_tree-1.png","classes":["tree","tree-1"]},{"src":"bubble_1/wald/forest__0006_tree-2.png","classes":["tree","tree-2"]},{"src":"bubble_1/wald/forest__0005_tree-3.png","classes":["tree","tree-3"]},{"src":"bubble_1/wald/forest__0004_tree-4.png","classes":["tree","tree-4"]},{"src":"bubble_1/wald/forest__0003_tree-5.png","classes":["tree","tree-5"]},{"src":"bubble_1/wald/forest__0011_tree-6.png","classes":["tree","tree-6"]},{"src":"bubble_1/wald/forest__0010_tree-7.png","classes":["tree","tree-7"]},{"src":"bubble_1/wald/forest__0009_tree-8.png","classes":["tree","tree-8"]},{"src":"bubble_1/wald/forest__0008_tree-9.png","classes":["tree","tree-9"]}],"container":"forest"}
+
+
+Das Dorf liegt in der Nähe des Waldes. Trotzdem scheint {name}, dass es viel mehr Bäume waren, als sonst.
+Die Äste waren ungewöhnlich dicht und erschwerten {s: ihm|ihr} den Weg.
 
 Waren das schon immer so viele Bäume? Es werden immer mehr Bäume je näher {name} sich dem Dorf nähert.
 
-Plötzlich taucht ein Haus vor {s: ihm|ihr} auf...
+-> haus
 
+= haus
 #CONTENT: {"type":"image","images":[{"src":"bubble_1/haus/haus__0008_branch-1.png","classes":["branch","branch-1"]},{"src":"bubble_1/haus/haus__0009_branch-2.png","classes":["branch","branch-2"]},{"src":"bubble_1/haus/haus__0010_branch-3.png","classes":["branch","branch-3"]},{"src":"bubble_1/haus/haus__0011_branch-4.png","classes":["branch","branch-4"]},{"src":"bubble_1/haus/haus__0004_branch-5.png","classes":["branch","branch-5"]},{"src":"bubble_1/haus/haus__0003_branch-6.png","classes":["branch","branch-6"]},{"src":"bubble_1/haus/haus__0001_branch-7.png","classes":["branch","branch-7"]},{"src":"bubble_1/haus/haus__0000_branch-8.png","classes":["branch","branch-8"]},{"src":"bubble_1/haus/haus__0002_floor.png","classes":["floor"]},{"src":"bubble_1/haus/haus__0012_house.png","classes":["building"]},{"src":"bubble_1/haus/haus__0016_tree.png","classes":["tree"]}],"container":"house"}
 
-"Das ist ja mein Haus!"
+Plötzlich taucht ein Haus vor {s: ihm|ihr} auf...
+Das Haus ist voller Moos und zugewachsen. Drei grosse Bäume ragen aus dem Dach heraus.
 
-"SCHWESTER?"
+"Das ist ja mein Haus!", ruft {name} erschrocken.
+"Was ist hier passiert?"
 
+"{name}?", eine leise Stimme kommt aus dem Inneren des Hauses.
+
+"Nera?", {name} erkennt die Stimme {s: seiner Schwester/ihres Bruders} und kämpft sich durch die Büsche und Äste hinein ins Haus.
+{s: Er|Sie}  muss {s: seine|ihre} Familie retten, hoffentlich ist es noch nicht zu spät...
+
+-> schwester
+
+= schwester
 #CONTENT: {"type":"image","images":[{"src":"bubble_1/schwester/schwester__0000_wall.png","classes":["wall"]},{"src":"bubble_1/schwester/schwester__0001_trees.png","classes":["trees"]},{"src":"bubble_1/schwester/schwester__0002_body.png","classes":["body"]},{"src":"bubble_1/schwester/schwester__0003_face-1.png","classes":["face","face-1"]},{"src":"bubble_1/schwester/schwester__0004_face-2.png","classes":["face","face-2"]},{"src":"bubble_1/schwester/schwester__0005_face-3.png","classes":["face","face-3"]},{"src":"bubble_1/schwester/schwester__0006_branch-1.png","classes":["branch","branch-1"]},{"src":"bubble_1/schwester/schwester__0007_branch-2.png","classes":["branch","branch-2"]}],"container":"sister"}
 
-"{name}"
+Inmitten vieler Äste erkennt {name} {s: seine Schwester|ihr Bruder}. Die Hälfte {s: seines|ihres} Körpers verschmolz mit einem riesigen Baum, welcher durch die Decke hinaus schoss. Die Finger waren lang und an den Enden waren knorrige Äste.
 
-{name} kämpft sich durch die vielen Äste hinein in sein Haus, er muss seine Familie retten, hoffentlich ist es noch nicht zu spät.
+Als {s: nera|nio} {s: ihn|sie} erblickt, schreit {s: er|sie} laut auf:
+"{name}!"
 
-"{name}... Est ist alles so schlimm..."
+* ["Was ist passiert?"]
 
-* [es ist meine Schuld]
-    "{name}... was hast du getan... ich.. verwandle mich gleich. Geh über den Teich und nimm Onkels Boot.
+"{name}... Es ist so schlimm... Wir waren alle dabei das Fest vorzubereiten. Und plötzlich fingen meine Beine an, sich am Boden zu verankern...
+Mama... und Papa... Sie sind bereits... 
 
-* [was ist passiert?]
-    "Wir waren alle dabei... die Vorbereitungen zu machen. Dann gab es plötzlich ein helles Licht. Und Mama... Papa, sie fingen an sich zu verwandeln...
+    ** ["Das ist meine Schuld."]
+    "Wieso, was ist passiert? Nimm Onkels Boot und fliehe über den Teich.."
+       
+    ** ["..."]
+    " Bitte nimm Onkels Boot und fliehe über den Teich... Das ist der schnellste Weg."
     
-    ** [es ist meine Schuld]
+//hier bin ich mir nicht sicher, checkt das Spiel, dass es nach ** Entscheidungen dann zu -" Du musst jetzt gehen..." geht?    
     
-    ** [...]
-    
-    --"Du musst jetzt schnell weggehen. Ich verwandle mich... Geh über den Teich und nimm Onkels Boot.
-    
-- Du musst schnell sein, sonst...
+* ["Es tut mir so leid, das ist meine Schuld..."]
+    "...Was hast du getan? ...Ich.. ich verwandle mich gleich. Bitte flieh. Gehe über den Teich und nimm Onkels Boot.
 
-* ["Sonst...?"]
+-"Du musst jetzt gehen. Bitte sei schnell, sonst..."
+
+* ["Sonst?"]
 
 * [Ich will dich aber nicht verlassen...]
 
-#CONTENT: {"type":"image","images":[{"src":"bubble_1/haus/haus__0008_branch-1.png","classes":["branch","branch-1"]},{"src":"bubble_1/haus/haus__0009_branch-2.png","classes":["branch","branch-2"]},{"src":"bubble_1/haus/haus__0010_branch-3.png","classes":["branch","branch-3"]},{"src":"bubble_1/haus/haus__0011_branch-4.png","classes":["branch","branch-4"]},{"src":"bubble_1/haus/haus__0004_branch-5.png","classes":["branch","branch-5"]},{"src":"bubble_1/haus/haus__0003_branch-6.png","classes":["branch","branch-6"]},{"src":"bubble_1/haus/haus__0001_branch-7.png","classes":["branch","branch-7"]},{"src":"bubble_1/haus/haus__0000_branch-8.png","classes":["branch","branch-8"]},{"src":"bubble_1/haus/haus__0002_floor.png","classes":["floor"]},{"src":"bubble_1/haus/haus__0012_house.png","classes":["building"]},{"src":"bubble_1/haus/haus__0016_tree.png","classes":["tree"]}],"container":"house"}
+- Die Schwester gibt keine Antwort mehr, auch nachdem {name} mehrmals {s: seinen|ihren} Namen gerufen hat.
+    
+    {name} sieht sich noch ein letztes Mal im Haus um und packt schnell eine Tasche. Die Tasche ist jedoch nicht gross und es hat nicht viel platz. Nur noch ein Gegenstand passt hinein...
+    
+-> Items
 
-- Die Schwester gibt keine Antwort mehr, auch nachdem {name} noch mehrmals ihren Namen gerufen hat.
-    -> ausserhalb_des_dorfs
+
+= Items
+
+//# CONTENT: Items die 6 Gegenstände und er muss auf einen draufklicken können
+
+Welcher Gegenstand soll {name} noch einpacken?
+
+-> ausserhalb_des_dorfs
+
+
 
 = ausserhalb_des_dorfs
 
 #CONTENT: {"type":"image","images":[{"src":"bubble_1/wald/forest__0004_tree-4.png","classes":["tree","tree-4"]},{"src":"bubble_1/wald/forest__0010_tree-7.png","classes":["tree","tree-7"]},{"src":"bubble_1/wald/forest__0009_tree-8.png","classes":["tree","tree-8"]}],"container":"forest-2"}
+
+// #CONTENT: vergessen (siehe in miro board) zeigt es diese Striche, die einen Gedankenbliz simulieren sollen.
 
 "Oh nein, ich habe etwas wichtiges vergessen..."
 
@@ -76,9 +121,9 @@ Der Familienkompass, der immer auf unser Zuhause zeigt, ohne den kann ich doch n
 
 * [noch einmal zurück gehen?]
 
-#CONTENT: {"type":"image","images":[{"src":"bubble_1/tor/tor_0000_wurzeln.png","classes":["root"]},{"src":"bubble_1/tor/tor_0001_baum-1.png","classes":["tree-1"]},{"src":"bubble_1/tor/tor_0002_baum-2.png","classes":["tree-2"]},{"src":"bubble_1/tor/tor_0003_tor.png","classes":["entry"]}],"container":"gate"}
+#CONTENT: {"type":"image","images":[{"src":"bubble_1/tor/tor_0000_wurzeln.png","classes":["root"]},{"src":"bubble_1/tor/tor_0001_baum-2.png","classes":["tree-2"]},{"src":"bubble_1/tor/tor_0002_bäume-1.png","classes":["tree-1"]},{"src":"bubble_1/tor/tor_0003_tor.png","classes":["entry"]}],"container":"gate"}
 
-    Die Bäume sind jedoch so dicht, dass die Wurzeln das Tor zugewachsen haben, es gibt keinen Durchgang
+Nio rennt noch einmal zurück. Doch als er beim Tor zum Dorf ankommt, ist es zugewachsen. Dicke wurzeln klammen sich fest um die Türen zum Dorf. Dort wo vorhin noch vereinzelte Bäume standen, ist nun ein dichter Wald gewachsen.
     
     ** [wieder umkehren]
         -> see
@@ -87,16 +132,205 @@ Der Familienkompass, der immer auf unser Zuhause zeigt, ohne den kann ich doch n
         *** [wieder umkehren]
             -> see
         *** [trotzdem versuchen]   
-            {name} nähert sich dem Tor und versucht die Wurzeln aufzubrechen. Doch sie sind gross und fest und lassen sich nicht bewegen.
+            {name} nähert sich entschlossen dem zugewachsenen Tor und versucht die Wurzeln aufzubrechen. Doch sie sind gross und fest und lassen sich nicht bewegen.
             
-            Es gibt also wirklich keinen Weg mehr zurück...
+            Es gibt also wirklich keinen Weg mehr zurück... {name} kehrt um und macht sich auf den Weg zum Teich. Hoffentlich ist es für den Onkel noch nicht zu spät...
             -> see
     
-
 = see
 
 #CONTENT: {"type":"image","images":[{"src":"bubble_1/weg_zum_see/weg_zum_see_0000_water-7.png","classes":["water","water-7"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0001_water-6.png","classes":["water","water-6"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0002_water-5.png","classes":["water","water-5"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0003_water-4.png","classes":["water","water-4"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0004_water-3.png","classes":["water","water-3"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0005_water-2.png","classes":["water","water-2"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0006_water-1.png","classes":["water","water-1"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0015_branch-1.png","classes":["branch","branch-1"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0014_branch-2.png","classes":["branch","branch-2"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0013_branch-3.png","classes":["branch","branch-3"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0012_branch-4.png","classes":["branch","branch-4"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0011_branch-5.png","classes":["branch","branch-5"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0009_stroke-1.png","classes":["stroke","stroke-1"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0008_stroke-2.png","classes":["stroke","stroke-2"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0007_stroke-3.png","classes":["stroke","stroke-3"]}],"container":"way-to-lake"}
 
 {name} kämpft sich durch die vielen Bäume und Äste. Als {s:er|sie} endlich aus dem Wald tritt sieht {s:er|sie} bereits den Teich von weitem.
 
+Als er beim Ufer ankommt ist es still und verlassen.
+
+* [Ufer untersuchen]
+{name} nähert sich dem Ufer. -> Uferteile
+* [nach Onkel rufen]
+{name} ruft laut nach seinem Onkel, doch es kommt keine Antwort. Vorsichtig nähert sich {name} dem Ufer.
+-> Uferteile
+
+= Uferteile
+
+//#Content: Bild vom Ufer mit den einzelnen Teilen
+
+- Als {name} näher ans Ufer tritt, erkennt er, dass alle Boote zerstört sind. Nur noch einzelne Teile schwimmen an der Wasseroberfläche.
+
+* [Teile näher untersuchen]
+Bei der Untersuchung sticht {name} ein grosser Baum ins Auge. 
+-> oktopusbaum
+
+* [Gegend nach Ursache absuchen]
+Ansonsten scheint alles normal zu sein. Ausser, dass das sonst so belebte Seeufer menschenleer ist. Als sich {name} genauer umschaut erkennt er einen grossen Baum im Wasser.
+-> oktopusbaum
+
+= oktopusbaum
+
+// CONTENT: der Oktopusbaum aka Onkel als Baum
+
+- Der Baum steht ziemlich weit aussen im Wasser. Die Wurzeln sehen aus wie Arme und erinnern an einen Oktopus. Es sieht aus, als hätten sie in einem Kampf die umliegenden Boote zerstört... Damit konnte {name} den Teich nicht mehr überqueren...
+
+* [an Land einen Weg suchen]
+
+// CONTENT: Bild von einem weg
+
+    {name} verlässt das Ufer und verfolgt den steinigen Weg, der vom Ufer wegführt. Doch bereits nach einem kurzen Abschnitt endet dieser und zeigt zurück ins Dorf. Und mit einem Schiff den Teich zu überqueren ist der schnellste Weg, vielleicht lässt sich auch einen anderen Weg finden...
+    -> Uferteile2
+* [schwimmen]
+
+// CONTENT: Bild von kaltem Wasser
+
+{name} zieht seine Schuhe aus und betritt das Wasser. Er schreckt aber sofort wieder zurück. Es ist eiskalt und er würde erfrieren...
+->Uferteile2
+
+=Uferteile2
+//CONTENT: und dann käme wieder das Bild von den kaputten teilen im Wasser
+
+{name} steht am Ufer und betrachtet die zerstörten Teile...
+
+* [ein Boot versuchen zu reparieren]
+Vielleicht gibt es ein Boot, welches nur wenig beschädigt ist? 
+
+{name} versucht einige Teile aus dem Wasser zu fischen, doch er hat weder Werkzeuge noch Material, um die Teile neu zusammenzufügen...
+
+* [Teile nach Karten oder anderen Wegweisen untersuchen]
+{name} kniet sich hin und betrachtet die Teile genauer. Doch die meisten Teile sind kleine Holzsplitter und die Boote sind so tief gesunken, dass sie zu betreten nur eine grosse Gefahr wäre.
+
+- von der Seite knarren und knacken laut die Äste des Baumes.
+-> Oktopusbaum2
+
+= Oktopusbaum2
+
+// CONTENT: Hier noch einmal den Baum, oder vielleicht zeichne ich auch noch eine andere Perspektive auf den Baum...?
+{name} nähert sich dem Baum. War das sein Onkel? Er erkennt zwei kleine, traurige Augen, welche aus dem Baum hervorlugen. Und mit viel Fantasie konnte er ebenfalls den grossen Bart des Onkels erkennen. 
+
+Das konnte alles doch nicht wahr sein...
+
+"Blub."
+-> Blasen
+
+= Blasen
+
+// #CONTENT: Zoom auf die Wurzeln mit kleiner Animation der Blasen/Bubbels
+
+Plötzlich steigen von den Wurzeln des Baumes kleine Blasen an die Wasseroberfläche.
+
+* [hinein langen, es könnte jemand am leben sein...]
+    {name} langt ohne lange nachzudenken ins kalte Wasser wo er am meisten Blasen sieht.
+
+* [beobachten, es könnte gefährlich sein]
+    Bereits als {name} noch einmal genauer hinschaut, erkennt er, wie sich etwas Braunes in den Wurzeln verfangen hat.
+    ** [herausziehen]
+    
+    ** [weiter beobachten]
+    Noch mehr Blasen steigen auf und {name} bildet sich ein, leise Schreie zu hören...
+        *** [herausziehen]
+    
+        *** [noch länger warten]
+         ...nach einigen Sekunden werden die Blasen auch schon wieder weniger.
+    
+            **** [herausziehen]
+    
+            ****[warten]
+            ...?
+            Noch länger kann {name} sich das nicht ansehen und langt kurzerhand ins kalte Wasser.
+            
+- ...nach wenigen Sekunden zieht {name} eine glitschige Kugel heraus.
+-> frosch
+
+= frosch
+
+//#CONTENT: Animation oder Bild wie die Kugel sich ausrollt und zum Frosch wird.
+
+Die Kugel rollt {name} aus der Hand, keucht und rollt sich auf.
+
+Vor sich erblickt {name} eine fette Kröte.
+
+//#Content: Danach ein Standbild vom Frosch zu sehen über das gesamte Gespräch.
+"KEUCH.. Uff."
+
+"Jetzt wäre ich fast erstickt. Noch länger hättest du nicht warten können, mit deiner Rettung, oder was?"
+
+"Aber man, eure Boote hat es ganz schön erwischt, wa? Ich war nur fröhlich am schwimmen und dann hat mich diese fette Wurzel von diesem blöden Baum einfach so gepackt..."
+
+* ["Ja, ich habe alle in Bäume verwandelt..."]
+
+* ["dieser blöde Baum ist mein Onkel!"]
+
+"Ohh, jetzt braus mal nich' gleich so auf, man."
+
+"Ich wollte ja nur meine Runden drehen, da kann ich doch nix für, wenn da plötzlich irgendjemand den Fluch ausgelöst hat..."
+
+    ** [...]
+    
+    **[Ja, das war ich...]
+
+- "Ach, das warst du? Du siehst mir aber jetzt nicht besonders rebellisch aus..." Die Kröte quakt laut und es hört sich fast wie ein Lachen an.
+
+* ["Was weisst du über die Verwandlung?"]
+
+"Was fragst du mich? Jeder kennt doch die Legende. Von den machtgierigen Menschen, die in einen Vertrag gezuwungen wurden, bla bla blaaa..."
+
+"Das interessiert doch niemanden."
+
+* ["Wie kann ich das rückgängig machen?"]
+
+"Rückgängig? Sehe ich aus wie ein Magier?"
+
+- "Hmm aber lass mal sehen, wie ich dir helfen kann. Schliesslich hast du mich ja gerettet..." Geschickt schnappt sie nach einer Fliege, die herumschwirrt.
+
+"Ich war eh gerade auf Durchreise und muss zurück in den Wald. Ich kenne da eine Hexe, die dir vielleicht helfen könnte..."
+
+* ["Kann die zaubern?"]
+"Frag nicht so blöd...
+... und folge mir."
+
+* ["Und wo finde ich die?"]
+"Hast du mir gerade zugehört? Ich kann dich da hin bringen. Aber das mache ich nur, weil du echt wie ein trauriger Jammerlappen aussiehst."
+
+- Die Kröte quackt noch einmal. 
+"Ich heisse übrigens Alexa." Und damit springt sie ins Wasser.
+
+"Was, kommst du nicht mit?" Quakt sie und war bereits einige Meter geschwommen.
+
+* ["Das Wasser ist zu kalt."]
+
+* ["Alle Boote sind zerstört..."]
+
+- "Natürlich, was erwarte ich auch..." 
+Alexa schwimmt zurück und murmelt etwas vor sich hin.
+
+"Hast du auch schon versucht die Boote zu reparieren? Los sammle ein paar Teile und bring sie mir, ich kann sie mit meiner Spucke zusammenkleben."
+
+* [genervt]
+{name} seufzt. Das könnte ja anstrengend werden. 
+-> Puzzle
+
+* [dankbar]
+Nun hatte {name} endlich einen Plan, wie er seine Familie retten könnte, ohne einfach aus dem Tal zu fliehen und alles hinter sich zu lassen.
+-> Puzzle
+
+= Puzzle
+
+// Content: Hier bild von den einzelnen Teilen in gross, die sich zu einem Puzzle zusammenfügen lassen. (falls das möglich ist.)
+// sonst einfach nur Text.
+
+{name} bückt sich und fängt an Holzteile aus dem Wasser zu fischen.
+
+-> Segelschiff
+
+= Segelschiff
+
+// Content: Bild von Segelschiff
+
+Das Segelschiff schwimmt nun auf dem Wasser und {name} springt drauf. Es schwankt gefährlich, aber scheint das Gewicht tragen zu können.
+
+* [Das Segelschiff selber steuern]
+{name} zieht ds Segel auf und ein Windstoss trägt sie voran und die beiden überqueren ohne Weiteres den Teich.
+
+* [Der Kröte beibringen, wie man segelt]
+Da die Kröte schwimmen kann, verzichtet sie darauf, unterrichtet zu werden. Ein bisschen beleidigt schwimmt sie vor dem Segelschiff her und die beiden überqueren ohne Weiteres den Teich.
+
+// Content: wieder das Segelschiff aber es wird kleiner bis nur noch alles weiss ist. Es geht zur nächsten Bubble.
 --> ending
