@@ -5,13 +5,13 @@
 
 #CONTENT: {"type":"image","images":[{"src":"bubble_1/start/start__0006_wind-7.png","classes":["wind","wind-7"]},{"src":"bubble_1/start/start__0005_wind-6.png","classes":["wind","wind-6"]},{"src":"bubble_1/start/start__0004_wind-5.png","classes":["wind","wind-5"]},{"src":"bubble_1/start/start__0003_wind-4.png","classes":["wind","wind-4"]},{"src":"bubble_1/start/start__0002_wind-3.png","classes":["wind","wind-3"]},{"src":"bubble_1/start/start__0001_wind-2.png","classes":["wind","wind-2"]},{"src":"bubble_1/start/start__0000_wind-1.png","classes":["wind","wind-1"]},{"src":"bubble_1/start/start__0007_gras-3.png","classes":["gras","orient","gras-3"]},{"src":"bubble_1/start/start__0008_gras-2.png","classes":["gras","orient","gras-2"]},{"src":"bubble_1/start/start__0009_gras-1.png","classes":["gras","orient","gras-1"]}],"container":"start"}
 
- Nio befindet sich auf einer Wiese etwas abseits vom Dorf und liegt im Gras. 
+ {name} befindet sich auf einer Wiese etwas abseits vom Dorf und liegt im Gras. 
 
 Die Sonne steht bereits im Zenit und scheint heiss auf {name}s Gesicht.
 
 Eigentlich hätte schon längst jemand nach {s: ihm|ihr} suchen müssen. 
 
- Es konnte aber auch einfach ein gutes Zeichen sein, weil niemand seine Tat gesehen hatte...
+ Es konnte aber auch einfach ein gutes Zeichen sein, weil niemand {s: seine|ihre} Tat gesehen hatte...
 Aber er war auch sonst nie lange weg. Vom Dorf waren auch keine lauten Geräusche oder erschrockene Schreie zu hören...
 
 Dabei wusste {s: seine Schwester|ihr Bruder} ganz  genau, wo sich {s: sein/ihr} geheimer Rückzugsort befand.
@@ -23,9 +23,9 @@ Dabei wusste {s: seine Schwester|ihr Bruder} ganz  genau, wo sich {s: sein/ihr} 
     Gleichzeitig aber hatte {name} auch keine Lust auf ein riesiges Chaos. Hier zu liegen war doch viel schöner.
     
     {name} liegt noch eine Weile im Gras und starrt ins helle Blaum am Himmel. Eigentlich war es schon ungewöhnlich still.
-    {s: Er|Sie} horchte auf.
+    {s: Er|Sie} horcht auf.
     
-    Es war ungewöhnlich still. Keine Vögel waren mehr zu hören, nur der Wind, der leise durch die Gräser strich...
+    Es ist ungewöhnlich still. Keine Vögel sind mehr zu hören, nur der Wind, der leise durch die Gräser strich...
     
     {name} hält es nicht mehr aus, nicht zu wissen, was passiert ist und macht sich auf den Weg zurück ins Dorf.
     -> weg_ins_dorf
@@ -36,8 +36,8 @@ Dabei wusste {s: seine Schwester|ihr Bruder} ganz  genau, wo sich {s: sein/ihr} 
 #CONTENT: {"type":"image","images":[{"src":"bubble_1/wald/forest__0007_tree-1.png","classes":["tree","tree-1"]},{"src":"bubble_1/wald/forest__0006_tree-2.png","classes":["tree","tree-2"]},{"src":"bubble_1/wald/forest__0005_tree-3.png","classes":["tree","tree-3"]},{"src":"bubble_1/wald/forest__0004_tree-4.png","classes":["tree","tree-4"]},{"src":"bubble_1/wald/forest__0003_tree-5.png","classes":["tree","tree-5"]},{"src":"bubble_1/wald/forest__0011_tree-6.png","classes":["tree","tree-6"]},{"src":"bubble_1/wald/forest__0010_tree-7.png","classes":["tree","tree-7"]},{"src":"bubble_1/wald/forest__0009_tree-8.png","classes":["tree","tree-8"]},{"src":"bubble_1/wald/forest__0008_tree-9.png","classes":["tree","tree-9"]}],"container":"forest"}
 
 
-Das Dorf liegt in der Nähe des Waldes. Trotzdem scheint {name}, dass es viel mehr Bäume waren, als sonst.
-Die Äste waren ungewöhnlich dicht und erschwerten {s: ihm|ihr} den Weg.
+Das Dorf liegt in der Nähe des Waldes. Trotzdem scheint {name}, dass es viel mehr Bäume sind, als sonst.
+Die Äste sind ungewöhnlich dicht und erschweren {s: ihm|ihr} den Weg.
 
 Waren das schon immer so viele Bäume? Es werden immer mehr Bäume je näher {name} sich dem Dorf nähert.
 
@@ -52,9 +52,11 @@ Das Haus ist voller Moos und zugewachsen. Drei grosse Bäume ragen aus dem Dach 
 "Das ist ja mein Haus!", ruft {name} erschrocken.
 "Was ist hier passiert?"
 
-"{name}?", eine leise Stimme kommt aus dem Inneren des Hauses.
+"{name}?" 
 
-"Nera?", {name} erkennt die Stimme {s: seiner Schwester/ihres Bruders} und kämpft sich durch die Büsche und Äste hinein ins Haus.
+Eine leise Stimme kommt aus dem Inneren des Hauses.
+
+"{s: Nera|Nio}", {name} erkennt die Stimme {s: seiner Schwester/ihres Bruders} und kämpft sich durch die Büsche und Äste hinein ins Haus.
 {s: Er|Sie}  muss {s: seine|ihre} Familie retten, hoffentlich ist es noch nicht zu spät...
 
 -> schwester
@@ -89,7 +91,7 @@ Mama... und Papa... Sie sind bereits...
 
 * [Ich will dich aber nicht verlassen...]
 
-- Die Schwester gibt keine Antwort mehr, auch nachdem {name} mehrmals {s: seinen|ihren} Namen gerufen hat.
+- {s: Die|Der} {s: Schwester|Bruder} gibt keine Antwort mehr, auch nachdem {name} mehrmals {s: seinen|ihren} Namen gerufen hat.
     
     {name} sieht sich noch ein letztes Mal im Haus um und packt schnell eine Tasche. Die Tasche ist jedoch nicht gross und es hat nicht viel platz. Nur noch ein Gegenstand passt hinein...
     
@@ -123,7 +125,7 @@ Der Familienkompass, der immer auf unser Zuhause zeigt, ohne den kann ich doch n
 
 #CONTENT: {"type":"image","images":[{"src":"bubble_1/tor/tor_0000_wurzeln.png","classes":["root"]},{"src":"bubble_1/tor/tor_0001_baum-2.png","classes":["tree-2"]},{"src":"bubble_1/tor/tor_0002_bäume-1.png","classes":["tree-1"]},{"src":"bubble_1/tor/tor_0003_tor.png","classes":["entry"]}],"container":"gate"}
 
-Nio rennt noch einmal zurück. Doch als er beim Tor zum Dorf ankommt, ist es zugewachsen. Dicke wurzeln klammen sich fest um die Türen zum Dorf. Dort wo vorhin noch vereinzelte Bäume standen, ist nun ein dichter Wald gewachsen.
+{name} rennt noch einmal zurück. Doch als er beim Tor zum Dorf ankommt, ist es zugewachsen. Dicke wurzeln klammen sich fest um die Türen zum Dorf. Dort wo vorhin noch vereinzelte Bäume standen, ist nun ein dichter Wald gewachsen.
     
     ** [wieder umkehren]
         -> see
@@ -162,7 +164,7 @@ Bei der Untersuchung sticht {name} ein grosser Baum ins Auge.
 -> oktopusbaum
 
 * [Gegend nach Ursache absuchen]
-Ansonsten scheint alles normal zu sein. Ausser, dass das sonst so belebte Seeufer menschenleer ist. Als sich {name} genauer umschaut erkennt er einen grossen Baum im Wasser.
+Ansonsten scheint alles normal zu sein. Ausser, dass das sonst so belebte Seeufer menschenleer ist. Als sich {name} genauer umschaut erkennt {s: er|sie} einen grossen Baum im Wasser.
 -> oktopusbaum
 
 = oktopusbaum
@@ -177,11 +179,12 @@ Ansonsten scheint alles normal zu sein. Ausser, dass das sonst so belebte Seeufe
 
     {name} verlässt das Ufer und verfolgt den steinigen Weg, der vom Ufer wegführt. Doch bereits nach einem kurzen Abschnitt endet dieser und zeigt zurück ins Dorf. Und mit einem Schiff den Teich zu überqueren ist der schnellste Weg, vielleicht lässt sich auch einen anderen Weg finden...
     -> Uferteile2
+    
 * [schwimmen]
 
 // CONTENT: Bild von kaltem Wasser
 
-{name} zieht seine Schuhe aus und betritt das Wasser. Er schreckt aber sofort wieder zurück. Es ist eiskalt und er würde erfrieren...
+{name} zieht seine Schuhe aus und betritt das Wasser. {s: Er|Sie} schreckt aber sofort wieder zurück. Es ist eiskalt und {s: er|sie} würde erfrieren...
 ->Uferteile2
 
 =Uferteile2
@@ -192,7 +195,7 @@ Ansonsten scheint alles normal zu sein. Ausser, dass das sonst so belebte Seeufe
 * [ein Boot versuchen zu reparieren]
 Vielleicht gibt es ein Boot, welches nur wenig beschädigt ist? 
 
-{name} versucht einige Teile aus dem Wasser zu fischen, doch er hat weder Werkzeuge noch Material, um die Teile neu zusammenzufügen...
+{name} versucht einige Teile aus dem Wasser zu fischen, doch {s: er|sie} hat weder Werkzeuge noch Material, um die Teile neu zusammenzufügen...
 
 * [Teile nach Karten oder anderen Wegweisen untersuchen]
 {name} kniet sich hin und betrachtet die Teile genauer. Doch die meisten Teile sind kleine Holzsplitter und die Boote sind so tief gesunken, dass sie zu betreten nur eine grosse Gefahr wäre.
@@ -203,11 +206,12 @@ Vielleicht gibt es ein Boot, welches nur wenig beschädigt ist?
 = Oktopusbaum2
 
 // CONTENT: Hier noch einmal den Baum, oder vielleicht zeichne ich auch noch eine andere Perspektive auf den Baum...?
-{name} nähert sich dem Baum. War das sein Onkel? Er erkennt zwei kleine, traurige Augen, welche aus dem Baum hervorlugen. Und mit viel Fantasie konnte er ebenfalls den grossen Bart des Onkels erkennen. 
+{name} nähert sich dem Baum. War das {s: sein|ihr} Onkel? {s: Er|Sie} erkennt zwei kleine, traurige Augen, welche aus dem Baum hervorlugen. Und mit viel Fantasie konnte {s: er|sie} ebenfalls den grossen Bart des Onkels erkennen. 
 
 Das konnte alles doch nicht wahr sein...
 
 "Blub."
+
 -> Blasen
 
 = Blasen
@@ -217,10 +221,10 @@ Das konnte alles doch nicht wahr sein...
 Plötzlich steigen von den Wurzeln des Baumes kleine Blasen an die Wasseroberfläche.
 
 * [hinein langen, es könnte jemand am leben sein...]
-    {name} langt ohne lange nachzudenken ins kalte Wasser wo er am meisten Blasen sieht.
+    {name} langt ohne lange nachzudenken ins kalte Wasser wo {s: er|sie} am meisten Blasen sieht.
 
 * [beobachten, es könnte gefährlich sein]
-    Bereits als {name} noch einmal genauer hinschaut, erkennt er, wie sich etwas Braunes in den Wurzeln verfangen hat.
+    Bereits als {name} noch einmal genauer hinschaut, erkennt {s: er|sie}, wie sich etwas Braunes in den Wurzeln verfangen hat.
     ** [herausziehen]
     
     ** [weiter beobachten]
@@ -308,7 +312,7 @@ Alexa schwimmt zurück und murmelt etwas vor sich hin.
 -> Puzzle
 
 * [dankbar]
-Nun hatte {name} endlich einen Plan, wie er seine Familie retten könnte, ohne einfach aus dem Tal zu fliehen und alles hinter sich zu lassen.
+Nun hatte {name} endlich einen Plan, wie {s: er|sie} seine Familie retten könnte, ohne einfach aus dem Tal zu fliehen und alles hinter sich zu lassen.
 -> Puzzle
 
 = Puzzle
@@ -327,7 +331,7 @@ Nun hatte {name} endlich einen Plan, wie er seine Familie retten könnte, ohne e
 Das Segelschiff schwimmt nun auf dem Wasser und {name} springt drauf. Es schwankt gefährlich, aber scheint das Gewicht tragen zu können.
 
 * [Das Segelschiff selber steuern]
-{name} zieht ds Segel auf und ein Windstoss trägt sie voran und die beiden überqueren ohne Weiteres den Teich.
+{name} zieht ds Segel auf und ein Windstoss trägt {s: ihn|sie} voran und die beiden überqueren ohne Weiteres den Teich.
 
 * [Der Kröte beibringen, wie man segelt]
 Da die Kröte schwimmen kann, verzichtet sie darauf, unterrichtet zu werden. Ein bisschen beleidigt schwimmt sie vor dem Segelschiff her und die beiden überqueren ohne Weiteres den Teich.
