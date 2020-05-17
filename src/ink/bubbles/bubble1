@@ -58,6 +58,8 @@ Plötzlich taucht ein Haus vor {s: ihm|ihr} auf...
 
 * [Ich will dich aber nicht verlassen...]
 
+#CONTENT: {"type":"image","images":[{"src":"bubble_1/haus/haus__0008_branch-1.png","classes":["branch","branch-1"]},{"src":"bubble_1/haus/haus__0009_branch-2.png","classes":["branch","branch-2"]},{"src":"bubble_1/haus/haus__0010_branch-3.png","classes":["branch","branch-3"]},{"src":"bubble_1/haus/haus__0011_branch-4.png","classes":["branch","branch-4"]},{"src":"bubble_1/haus/haus__0004_branch-5.png","classes":["branch","branch-5"]},{"src":"bubble_1/haus/haus__0003_branch-6.png","classes":["branch","branch-6"]},{"src":"bubble_1/haus/haus__0001_branch-7.png","classes":["branch","branch-7"]},{"src":"bubble_1/haus/haus__0000_branch-8.png","classes":["branch","branch-8"]},{"src":"bubble_1/haus/haus__0002_floor.png","classes":["floor"]},{"src":"bubble_1/haus/haus__0012_house.png","classes":["building"]},{"src":"bubble_1/haus/haus__0016_tree.png","classes":["tree"]}],"container":"house"}
+
 - Die Schwester gibt keine Antwort mehr, auch nachdem {name} noch mehrmals ihren Namen gerufen hat.
     -> ausserhalb_des_dorfs
 
@@ -74,7 +76,7 @@ Der Familienkompass, der immer auf unser Zuhause zeigt, ohne den kann ich doch n
 
 * [noch einmal zurück gehen?]
 
-#CONTENT: {"type":"image","images":[{"src":"bubble_1/tor/tor_0000_wurzeln.png","classes":["root"]},{"src":"bubble_1/tor/tor_0001_baum-2.png","classes":["tree-2"]},{"src":"bubble_1/tor/tor_0002_bäume-1.png","classes":["tree-1"]},{"src":"bubble_1/tor/tor_0003_tor.png","classes":["entry"]}],"container":"gate"}
+#CONTENT: {"type":"image","images":[{"src":"bubble_1/tor/tor_0000_wurzeln.png","classes":["root"]},{"src":"bubble_1/tor/tor_0001_baum-1.png","classes":["tree-1"]},{"src":"bubble_1/tor/tor_0002_baum-2.png","classes":["tree-2"]},{"src":"bubble_1/tor/tor_0003_tor.png","classes":["entry"]}],"container":"gate"}
 
     Die Bäume sind jedoch so dicht, dass die Wurzeln das Tor zugewachsen haben, es gibt keinen Durchgang
     

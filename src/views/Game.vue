@@ -73,10 +73,6 @@ export default {
     this.checkPermission();
 
   },
-  updated() {
-    // whenever data changes and the component re-renders, this is called.
-    this.$nextTick(() => this.scrollToEnd());
-  },
   methods: {
     // main gameplay loop
     continueStory() {
