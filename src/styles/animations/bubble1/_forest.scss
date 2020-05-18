@@ -1,0 +1,102 @@
+.forest {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  height:100%;
+
+
+  .tree {
+    position: absolute;
+  }
+
+  .tree-1 {
+    --scaleStart: 1.0;
+    --scaleEnd: 2.0;
+    animation: forest-right ease-in-out 5s 2s forwards;
+  }
+
+  .tree-2 {
+    --scaleStart: 1.0;
+    --scaleEnd: 2.0;
+    animation: forest-left ease-in-out 5s 2s forwards;
+  }
+
+  .tree-3 { 
+    --scaleStart: 1.0;
+    --scaleEnd: 2.0;
+    animation: forest-right ease-in-out 5s 2s forwards;
+  }
+
+  .tree-4 {
+    z-index: 1;
+    --scaleStart: 1.0;
+    --scaleEnd: 2.0;
+    animation: forest-left ease-in-out 5s 2s forwards;
+  }
+
+  .tree-5 {
+    --scaleStart: 1;
+    --scaleEnd: 2.0;
+    animation: forest-left ease-in-out 5s 2s forwards;
+  }
+
+  .tree-6 {
+    opacity: 0;
+    transform: scale(0.8);
+    --scaleStart: 0.8;
+    --scaleEnd: 2.0;
+    animation: forest-left ease-in-out 5s 4s forwards, forest-layer2 2s 3s forwards;
+  }
+
+  .tree-7 {
+    opacity: 0;
+    transform: scale(0.8);
+    --scaleStart: 0.8;
+    --scaleEnd: 2.0;
+    animation: forest-right ease-in-out 5s 4s forwards, forest-layer2 2s 3s forwards;
+  }
+
+  .tree-8 {
+    opacity: 0;
+    transform: scale(0.8);
+    --scaleStart: 0.8;
+    --scaleEnd: 2.0;
+    animation: forest-right ease-in-out 5s 4s forwards, forest-layer2 2s 3s forwards;
+  }
+
+  .tree-9 {
+    opacity: 0;
+    transform: scale(0.8);
+    --scaleStart: 0.8;
+    --scaleEnd: 2.0;
+    animation: forest-left ease-in-out 5s 4s forwards, forest-layer2 2s 3s forwards;
+  }
+
+}
+
+@keyframes forest-right {
+0% {
+  transform: scale(var(--scaleStart)) translateX(0);
+}
+100% {
+  transform: scale(var(--scaleEnd)) translateX(50%);
+}
+}
+
+@keyframes forest-left {
+0% {
+  transform: scale(var(--scaleStart)) translateX(0);
+}
+100% {
+  transform: scale(var(--scaleEnd)) translateX(-50%);
+}
+}
+
+@keyframes forest-layer2 {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}

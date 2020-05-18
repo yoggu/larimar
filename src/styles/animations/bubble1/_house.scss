@@ -1,0 +1,24 @@
+.house {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  height:100%;
+
+  .building {
+    position: absolute;
+  }
+
+  .tree {
+    position: absolute;
+  }
+
+  .branch {
+    position: absolute;
+  }
+
+  .gras {
+    position: absolute;
+  }
+
+
+}

@@ -1,0 +1,20 @@
+.sailing-ship {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  height:100%;
+
+  .frog {
+    position: absolute;
+  }
+  
+  .water {
+    position: absolute;
+  }
+
+  .ship {
+    position: absolute;
+  }
+
+}
+

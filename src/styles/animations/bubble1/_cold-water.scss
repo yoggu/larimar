@@ -1,0 +1,15 @@
+.cold-water {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  height:100%;
+
+  .fish {
+    position: absolute;
+  }
+
+  .water {
+    position: absolute;
+  }
+
+}

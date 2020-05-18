@@ -1,0 +1,18 @@
+.shore {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  height:100%;
+
+  .parts-1 {
+    position: absolute;
+  }
+
+  .parts-2 {
+    position: absolute;
+  }
+
+  .bridge {
+    position: absolute;
+  }
+}

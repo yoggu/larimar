@@ -1,0 +1,16 @@
+.frog {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  height:100%;
+
+  .ball {
+    position: absolute;
+  }
+  
+  .body {
+    position: absolute;
+  }
+
+}
+

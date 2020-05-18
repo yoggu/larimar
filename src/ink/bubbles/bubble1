@@ -5,7 +5,8 @@ INCLUDE bubbles/bubble2
 
 = wiese
 
-#CONTENT: {"type":"image","images":[{"src":"bubble_1/start/start__0006_wind-7.png","classes":["wind","wind-7"]},{"src":"bubble_1/start/start__0005_wind-6.png","classes":["wind","wind-6"]},{"src":"bubble_1/start/start__0004_wind-5.png","classes":["wind","wind-5"]},{"src":"bubble_1/start/start__0003_wind-4.png","classes":["wind","wind-4"]},{"src":"bubble_1/start/start__0002_wind-3.png","classes":["wind","wind-3"]},{"src":"bubble_1/start/start__0001_wind-2.png","classes":["wind","wind-2"]},{"src":"bubble_1/start/start__0000_wind-1.png","classes":["wind","wind-1"]},{"src":"bubble_1/start/start__0007_gras-3.png","classes":["gras","orient","gras-3"]},{"src":"bubble_1/start/start__0008_gras-2.png","classes":["gras","orient","gras-2"]},{"src":"bubble_1/start/start__0009_gras-1.png","classes":["gras","orient","gras-1"]}],"container":"start"}
+// wiese
+#CONTENT: {"type":"image","images":[{"src":"bubble1/wiese/wiese_0000_wind-7.png","classes":["wind","wind-7"]},{"src":"bubble1/wiese/wiese_0001_wind-6.png","classes":["wind","wind-6"]},{"src":"bubble1/wiese/wiese_0002_wind-5.png","classes":["wind","wind-5"]},{"src":"bubble1/wiese/wiese_0003_wind-4.png","classes":["wind","wind-4"]},{"src":"bubble1/wiese/wiese_0004_wind-3.png","classes":["wind","wind-3"]},{"src":"bubble1/wiese/wiese_0005_wind-2.png","classes":["wind","wind-2"]},{"src":"bubble1/wiese/wiese_0006_wind-1.png","classes":["wind","wind-1"]},{"src":"bubble1/wiese/wiese_0007_gras-3.png","classes":["gras","orient","gras-3"]},{"src":"bubble1/wiese/wiese_0008_gras-2.png","classes":["gras","orient","gras-2"]},{"src":"bubble1/wiese/wiese_0009_gras-1.png","classes":["gras","orient","gras-1"]}],"container":"meadow"}
 
  {name} befindet sich auf einer Wiese etwas abseits vom Dorf und liegt im Gras. 
 
@@ -34,8 +35,9 @@ Dabei wusste {s: seine Schwester|ihr Bruder} ganz  genau, wo sich {s: sein/ihr} 
 
 
 = weg_ins_dorf
-//animation mit den Bäumen
-#CONTENT: {"type":"image","images":[{"src":"bubble_1/wald/forest__0007_tree-1.png","classes":["tree","tree-1"]},{"src":"bubble_1/wald/forest__0006_tree-2.png","classes":["tree","tree-2"]},{"src":"bubble_1/wald/forest__0005_tree-3.png","classes":["tree","tree-3"]},{"src":"bubble_1/wald/forest__0004_tree-4.png","classes":["tree","tree-4"]},{"src":"bubble_1/wald/forest__0003_tree-5.png","classes":["tree","tree-5"]},{"src":"bubble_1/wald/forest__0011_tree-6.png","classes":["tree","tree-6"]},{"src":"bubble_1/wald/forest__0010_tree-7.png","classes":["tree","tree-7"]},{"src":"bubble_1/wald/forest__0009_tree-8.png","classes":["tree","tree-8"]},{"src":"bubble_1/wald/forest__0008_tree-9.png","classes":["tree","tree-9"]}],"container":"forest"}
+
+// wald
+#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/wald_0002_ast-front-1.png","classes":["branch","branch-1"]},{"src":"bubble1/wald/wald_0001_ast-front-2.png","classes":["branch","branch-2"]},{"src":"bubble1/wald/wald_0000_ast-front-3.png","classes":["branch","branch-3"]},{"src":"bubble1/wald/wald_0007_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble1/wald/wald_0006_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble1/wald/wald_0005_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble1/wald/wald_0004_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble1/wald/wald_0003_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble1/wald/wald_0008_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble1/wald/wald_0009_baum-7.png","classes":["tree","tree-7"]},{"src":"bubble1/wald/wald_0010_baum-8.png","classes":["tree","tree-8"]},{"src":"bubble1/wald/wald_0011_baum-9.png","classes":["tree","tree-9"]}],"container":"forest"}
 
 
 Das Dorf liegt in der Nähe des Waldes. Trotzdem scheint {name}, dass es viel mehr Bäume sind, als sonst.
@@ -46,7 +48,9 @@ Waren das schon immer so viele Bäume? Es werden immer mehr Bäume je näher {na
 -> haus
 
 = haus
-#CONTENT: {"type":"image","images":[{"src":"bubble_1/haus/haus__0008_branch-1.png","classes":["branch","branch-1"]},{"src":"bubble_1/haus/haus__0009_branch-2.png","classes":["branch","branch-2"]},{"src":"bubble_1/haus/haus__0010_branch-3.png","classes":["branch","branch-3"]},{"src":"bubble_1/haus/haus__0011_branch-4.png","classes":["branch","branch-4"]},{"src":"bubble_1/haus/haus__0004_branch-5.png","classes":["branch","branch-5"]},{"src":"bubble_1/haus/haus__0003_branch-6.png","classes":["branch","branch-6"]},{"src":"bubble_1/haus/haus__0001_branch-7.png","classes":["branch","branch-7"]},{"src":"bubble_1/haus/haus__0000_branch-8.png","classes":["branch","branch-8"]},{"src":"bubble_1/haus/haus__0002_floor.png","classes":["floor"]},{"src":"bubble_1/haus/haus__0012_house.png","classes":["building"]},{"src":"bubble_1/haus/haus__0016_tree.png","classes":["tree"]}],"container":"house"}
+
+// haus
+#CONTENT: {"type":"image","images":[{"src":"bubble1/haus/haus_0012_ast-1.png","classes":["branch","branch-1"]},{"src":"bubble1/haus/haus_0011_ast-2.png","classes":["branch","branch-2"]},{"src":"bubble1/haus/haus_0010_ast-3.png","classes":["branch","branch-3"]},{"src":"bubble1/haus/haus_0009_ast-4.png","classes":["branch","branch-4"]},{"src":"bubble1/haus/haus_0005_ast-5.png","classes":["branch","branch-5"]},{"src":"bubble1/haus/haus_0004_ast-6.png","classes":["branch","branch-6"]},{"src":"bubble1/haus/haus_0002_gras.png","classes":["gras"]},{"src":"bubble1/haus/haus_0013_haus.png","classes":["building"]},{"src":"bubble1/haus/haus_0000_ast-front-2.png","classes":["branch-front","branch-front-2"]},{"src":"bubble1/haus/haus_0001_ast-front-1.png","classes":["branch-front","branch-front-2"]}],"container":"house"}
 
 Plötzlich taucht ein Haus vor {s: ihm|ihr} auf...
 Das Haus ist voller Moos und zugewachsen. Drei grosse Bäume ragen aus dem Dach heraus.
@@ -64,7 +68,9 @@ Eine leise Stimme kommt aus dem Inneren des Hauses.
 -> schwester
 
 = schwester
-#CONTENT: {"type":"image","images":[{"src":"bubble_1/schwester/schwester__0000_wall.png","classes":["wall"]},{"src":"bubble_1/schwester/schwester__0001_trees.png","classes":["trees"]},{"src":"bubble_1/schwester/schwester__0002_body.png","classes":["body"]},{"src":"bubble_1/schwester/schwester__0003_face-1.png","classes":["face","face-1"]},{"src":"bubble_1/schwester/schwester__0004_face-2.png","classes":["face","face-2"]},{"src":"bubble_1/schwester/schwester__0005_face-3.png","classes":["face","face-3"]},{"src":"bubble_1/schwester/schwester__0006_branch-1.png","classes":["branch","branch-1"]},{"src":"bubble_1/schwester/schwester__0007_branch-2.png","classes":["branch","branch-2"]}],"container":"sister"}
+
+// schwester
+#CONTENT: {"type":"image","images":[{"src":"bubble1/schwester/schwester_0000_hintergrund.png","classes":["background"]},{"src":"bubble1/schwester/schwester_0001_eltern.png","classes":["parents"]},{"src":"bubble1/schwester/schwester_0002_schwester.png","classes":["body"]},{"src":"bubble1/schwester/schwester_0004_gesicht-1.png","classes":["face","face-1"]},{"src":"bubble1/schwester/schwester_0003_gesicht-2.png","classes":["face","face-2"]},{"src":"bubble1/schwester/schwester_0006_arm-1.png","classes":["branch","branch-1"]},{"src":"bubble1/schwester/schwester_0005_arm-2.png","classes":["branch","branch-2"]}],"container":"sister"}
 
 Inmitten vieler Äste erkennt {name} {s: seine Schwester|ihr Bruder}. Die Hälfte {s: seines|ihres} Körpers verschmolz mit einem riesigen Baum, welcher durch die Decke hinaus schoss. Die Finger waren lang und an den Enden waren knorrige Äste.
 
@@ -102,19 +108,18 @@ Mama... und Papa... Sie sind bereits...
 
 = Items
 
-//# CONTENT: Items die 6 Gegenstände und er muss auf einen draufklicken können
+// werkzeuge
+#CONTENT: {"type":"image","images":[{"src":"bubble1/werkzeuge/werkzeuge_0000_säge.png","classes":["saw"]},{"src":"bubble1/werkzeuge/werkzeuge_0001_pflaster.png","classes":["patch"]},{"src":"bubble1/werkzeuge/werkzeuge_0002_malkasten.png","classes":["paint"]},{"src":"bubble1/werkzeuge/werkzeuge_0003_lupe.png","classes":["magnifier"]},{"src":"bubble1/werkzeuge/werkzeuge_0004_rechtsbuch.png","classes":["code-of-law"]},{"src":"bubble1/werkzeuge/werkzeuge_0005_goldstück.png","classes":["gold"]}],"container":"tools"}
 
 Welcher Gegenstand soll {name} noch einpacken?
 
 -> ausserhalb_des_dorfs
 
 
-
 = ausserhalb_des_dorfs
 
-#CONTENT: {"type":"image","images":[{"src":"bubble_1/wald/forest__0004_tree-4.png","classes":["tree","tree-4"]},{"src":"bubble_1/wald/forest__0010_tree-7.png","classes":["tree","tree-7"]},{"src":"bubble_1/wald/forest__0009_tree-8.png","classes":["tree","tree-8"]}],"container":"forest-2"}
-
-// #CONTENT: vergessen (siehe in miro board) zeigt es diese Striche, die einen Gedankenbliz simulieren sollen.
+// vergessen
+#CONTENT: {"type":"image","images":[{"src":"bubble1/zum_ufer/zum-ufer_0007_aha-3.png","classes":["aha"]}],"container":"surprise"}
 
 "Oh nein, ich habe etwas wichtiges vergessen..."
 
@@ -125,7 +130,8 @@ Der Familienkompass, der immer auf unser Zuhause zeigt, ohne den kann ich doch n
 
 * [noch einmal zurück gehen?]
 
-#CONTENT: {"type":"image","images":[{"src":"bubble_1/tor/tor_0000_wurzeln.png","classes":["root"]},{"src":"bubble_1/tor/tor_0001_baum-2.png","classes":["tree-2"]},{"src":"bubble_1/tor/tor_0002_bäume-1.png","classes":["tree-1"]},{"src":"bubble_1/tor/tor_0003_tor.png","classes":["entry"]}],"container":"gate"}
+// tor
+#CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor_0000_wurzeln.png","classes":["roots"]},{"src":"bubble1/tor/tor_0001_bäume.png","classes":["trees"]},{"src":"bubble1/tor/tor_0002_tor.png","classes":["door"]}],"container":"gate"}
 
 {name} rennt noch einmal zurück. Doch als er beim Tor zum Dorf ankommt, ist es zugewachsen. Dicke wurzeln klammen sich fest um die Türen zum Dorf. Dort wo vorhin noch vereinzelte Bäume standen, ist nun ein dichter Wald gewachsen.
     
@@ -143,7 +149,8 @@ Der Familienkompass, der immer auf unser Zuhause zeigt, ohne den kann ich doch n
     
 = see
 
-#CONTENT: {"type":"image","images":[{"src":"bubble_1/weg_zum_see/weg_zum_see_0000_water-7.png","classes":["water","water-7"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0001_water-6.png","classes":["water","water-6"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0002_water-5.png","classes":["water","water-5"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0003_water-4.png","classes":["water","water-4"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0004_water-3.png","classes":["water","water-3"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0005_water-2.png","classes":["water","water-2"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0006_water-1.png","classes":["water","water-1"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0015_branch-1.png","classes":["branch","branch-1"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0014_branch-2.png","classes":["branch","branch-2"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0013_branch-3.png","classes":["branch","branch-3"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0012_branch-4.png","classes":["branch","branch-4"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0011_branch-5.png","classes":["branch","branch-5"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0009_stroke-1.png","classes":["stroke","stroke-1"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0008_stroke-2.png","classes":["stroke","stroke-2"]},{"src":"bubble_1/weg_zum_see/weg_zum_see_0007_stroke-3.png","classes":["stroke","stroke-3"]}],"container":"way-to-lake"}
+// zum_ufer
+#CONTENT: {"type":"image","images":[{"src":"bubble1/zum_ufer/zum-ufer_0002_wasser-5.png","classes":["water","water-5"]},{"src":"bubble1/zum_ufer/zum-ufer_0003_wasser-4.png","classes":["water","water-4"]},{"src":"bubble1/zum_ufer/zum-ufer_0004_wasser-3.png","classes":["water","water-3"]},{"src":"bubble1/zum_ufer/zum-ufer_0005_wasser-2.png","classes":["water","water-2"]},{"src":"bubble1/zum_ufer/zum-ufer_0006_wasser-1.png","classes":["water","water-1"]},{"src":"bubble1/zum_ufer/zum-ufer_0009_aha-1.png","classes":["aha","aha-1"]},{"src":"bubble1/zum_ufer/zum-ufer_0008_aha-2.png","classes":["aha","aha-2"]},{"src":"bubble1/zum_ufer/zum-ufer_0007_aha-3.png","classes":["aha","aha-3"]}],"container":"go-to-shore"}
 
 {name} kämpft sich durch die vielen Bäume und Äste. Als {s:er|sie} endlich aus dem Wald tritt sieht {s:er|sie} bereits den Teich von weitem.
 
@@ -157,7 +164,8 @@ Als er beim Ufer ankommt ist es still und verlassen.
 
 = Uferteile
 
-//#Content: Bild vom Ufer mit den einzelnen Teilen
+// uferteile
+#CONTENT: {"type":"image","images":[{"src":"bubble1/uferteile/uferteile_0000_teile-2.png","classes":["parts-2"]},{"src":"bubble1/uferteile/uferteile_0001_teile-1.png","classes":["parts-1"]},{"src":"bubble1/uferteile/uferteile_0002_steg.png","classes":["bridge"]}],"container":"shore"}
 
 - Als {name} näher ans Ufer tritt, erkennt er, dass alle Boote zerstört sind. Nur noch einzelne Teile schwimmen an der Wasseroberfläche.
 
@@ -171,26 +179,31 @@ Ansonsten scheint alles normal zu sein. Ausser, dass das sonst so belebte Seeufe
 
 = oktopusbaum
 
-// CONTENT: der Oktopusbaum aka Onkel als Baum
+//oktopusbaum
+#CONTENT: {"type":"image","images":[{"src":"bubble1/Oktopusbaum/oktopusbaum_0002_teile.png","classes":["parts"]},{"src":"bubble1/uferteile/oktopusbaum_0006_baum.png","classes":["tree"]}],"container":"octopus-tree"}
 
 - Der Baum steht ziemlich weit aussen im Wasser. Die Wurzeln sehen aus wie Arme und erinnern an einen Oktopus. Es sieht aus, als hätten sie in einem Kampf die umliegenden Boote zerstört... Damit konnte {name} den Teich nicht mehr überqueren...
 
 * [an Land einen Weg suchen]
 
-// CONTENT: Bild von einem weg
+// weg
+#CONTENT: {"type":"image","images":[{"src":"bubble1/weg/weg_0000_gras.png","classes":["gras"]},{"src":"bubble1/weg/weg_0001_weg.png","classes":["road"]}],"container":"path"}
 
     {name} verlässt das Ufer und verfolgt den steinigen Weg, der vom Ufer wegführt. Doch bereits nach einem kurzen Abschnitt endet dieser und zeigt zurück ins Dorf. Und mit einem Schiff den Teich zu überqueren ist der schnellste Weg, vielleicht lässt sich auch einen anderen Weg finden...
     -> Uferteile2
     
 * [schwimmen]
 
-// CONTENT: Bild von kaltem Wasser
+// kaltes_wasser
+#CONTENT: {"type":"image","images":[{"src":"bubble1/kaltes_wasser/kaltes-wasser_0000_fisch-3.png","classes":["fish","fish-3"]},{"src":"bubble1/kaltes_wasser/kaltes-wasser_0001_fisch-2.png","classes":["fish","fish-2"]},{"src":"bubble1/kaltes_wasser/kaltes-wasser_0002_fisch-1.png","classes":["fish","fish-1"]},{"src":"bubble1/kaltes_wasser/kaltes-wasser_0003_wasser-animation-3.png","classes":["water","water-3"]},{"src":"bubble1/kaltes_wasser/kaltes-wasser_0004_wasser-animation-2.png","classes":["water","water-2"]},{"src":"bubble1/kaltes_wasser/kaltes-wasser_0005_wasser-animation-1.png","classes":["water","water-1"]}],"container":"cold-water"}
 
 {name} zieht seine Schuhe aus und betritt das Wasser. {s: Er|Sie} schreckt aber sofort wieder zurück. Es ist eiskalt und {s: er|sie} würde erfrieren...
 ->Uferteile2
 
 =Uferteile2
-//CONTENT: und dann käme wieder das Bild von den kaputten teilen im Wasser
+
+// uferteile
+#CONTENT: {"type":"image","images":[{"src":"bubble1/uferteile/uferteile_0000_teile-2.png","classes":["parts-2"]},{"src":"bubble1/uferteile/uferteile_0001_teile-1.png","classes":["parts-1"]},{"src":"bubble1/uferteile/uferteile_0002_steg.png","classes":["bridge"]}],"container":"shore"}
 
 {name} steht am Ufer und betrachtet die zerstörten Teile...
 
@@ -207,7 +220,9 @@ Vielleicht gibt es ein Boot, welches nur wenig beschädigt ist?
 
 = Oktopusbaum2
 
-// CONTENT: Hier noch einmal den Baum, oder vielleicht zeichne ich auch noch eine andere Perspektive auf den Baum...?
+// oktopusbaum (mit Gesicht)
+#CONTENT: {"type":"image","images":[{"src":"bubble1/oktopusbaum/oktopusbaum_0002_teile.png","classes":["parts"]},{"src":"bubble1/oktopusbaum/oktopusbaum_0006_baum.png","classes":["tree"]},{"src":"bubble1/oktopusbaum/oktopusbaum_0001_gesicht.png","classes":["face"]},{"src":"bubble1/oktopusbaum/oktopusbaum_0000_bart.png","classes":["beard"]}],"container":"octopus-tree"}
+
 {name} nähert sich dem Baum. War das {s: sein|ihr} Onkel? {s: Er|Sie} erkennt zwei kleine, traurige Augen, welche aus dem Baum hervorlugen. Und mit viel Fantasie konnte {s: er|sie} ebenfalls den grossen Bart des Onkels erkennen. 
 
 Das konnte alles doch nicht wahr sein...
@@ -218,7 +233,9 @@ Das konnte alles doch nicht wahr sein...
 
 = Blasen
 
-// #CONTENT: Zoom auf die Wurzeln mit kleiner Animation der Blasen/Bubbels
+// blasen_baum
+// Zoom auf die Wurzeln mit kleiner Animation der Blasen/Bubbels
+#CONTENT: {"type":"image","images":[{"src":"bubble1/blasen_baum/blasen-baum_0000_bubble-schwach-3.png","classes":["bubble","bubble-weak-3"]},{"src":"bubble1/blasen_baum/blasen-baum_0001_bubble-schwach-2.png","classes":["bubble","bubble-weak-2"]},{"src":"bubble1/blasen_baum/blasen-baum_0002_bubble-schwach-1.png","classes":["bubble","bubble-weak-1"]},{"src":"bubble1/blasen_baum/blasen-baum_0004_bubble-mittel-4.png","classes":["bubble","bubble-medium-4"]},{"src":"bubble1/blasen_baum/blasen-baum_0005_bubble-mittel-3.png","classes":["bubble","bubble-medium-3"]},{"src":"bubble1/blasen_baum/blasen-baum_0006_bubble-mittel-2.png","classes":["bubble","bubble-medium-2"]},{"src":"bubble1/blasen_baum/blasen-baum_0007_buuble-mittel-1.png","classes":["bubble","bubble-medium-1"]},{"src":"bubble1/blasen_baum/blasen-baum_0009_bubble-stark-6.png","classes":["bubble","bubble-strong-6"]},{"src":"bubble1/blasen_baum/blasen-baum_0010_bubble-stark-5.png","classes":["bubble","bubble-strong-5"]},{"src":"bubble1/blasen_baum/blasen-baum_0011_bubble-stark-4.png","classes":["bubble","bubble-strong-4"]},{"src":"bubble1/blasen_baum/blasen-baum_0012_bubble-stark-3.png","classes":["bubble","bubble-strong-3"]},{"src":"bubble1/blasen_baum/blasen-baum_0013_bubble-stark-2.png","classes":["bubble","bubble-strong-2"]},{"src":"bubble1/blasen_baum/blasen-baum_0014_bubble-stark-1.png","classes":["bubble","bubble-strong-1"]},{"src":"bubble1/blasen_baum/blasen-baum_0015_baum.png","classes":["tree"]}],"container":"bubble-tree"}
 
 Plötzlich steigen von den Wurzeln des Baumes kleine Blasen an die Wasseroberfläche.
 
@@ -247,13 +264,14 @@ Plötzlich steigen von den Wurzeln des Baumes kleine Blasen an die Wasseroberfl�
 
 = frosch
 
-//#CONTENT: Animation oder Bild wie die Kugel sich ausrollt und zum Frosch wird.
-
 Die Kugel rollt {name} aus der Hand, keucht und rollt sich auf.
+
+// frosch
+// Animation oder Bild wie die Kugel sich ausrollt und zum Frosch wird.
+#CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/frosch_0001_kugel.png","classes":["ball"]},{"src":"bubble1/frosch/frosch_0000_frosch.png","classes":["body"]}],"container":"frog"}
 
 Vor sich erblickt {name} eine fette Kröte.
 
-//#Content: Danach ein Standbild vom Frosch zu sehen über das gesamte Gespräch.
 "KEUCH.. Uff."
 
 "Jetzt wäre ich fast erstickt. Noch länger hättest du nicht warten können, mit deiner Rettung, oder was?"
@@ -328,7 +346,8 @@ Nun hatte {name} endlich einen Plan, wie {s: er|sie} seine Familie retten könnt
 
 = Segelschiff
 
-// Content: Bild von Segelschiff
+//segelschiff
+#CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff_0000_segelschiff.png","classes":["ship"]},{"src":"bubble1/segelschiff/segelschiff_0004_frosch.png","classes":["frog"]},{"src":"bubble1/segelschiff/segelschiff_0003_wasseranimation-1.png","classes":["water","water-1"]},{"src":"bubble1/segelschiff/segelschiff_0002_wasseranimation-2.png","classes":["water","water-2"]},{"src":"bubble1/segelschiff/segelschiff_0001_wasseranimation-3.png","classes":["water","water-3"]}],"container":"sailing-ship"}
 
 Das Segelschiff schwimmt nun auf dem Wasser und {name} springt drauf. Es schwankt gefährlich, aber scheint das Gewicht tragen zu können.
 
@@ -338,5 +357,5 @@ Das Segelschiff schwimmt nun auf dem Wasser und {name} springt drauf. Es schwank
 * [Der Kröte beibringen, wie man segelt]
 Da die Kröte schwimmen kann, verzichtet sie darauf, unterrichtet zu werden. Ein bisschen beleidigt schwimmt sie vor dem Segelschiff her und die beiden überqueren ohne Weiteres den Teich.
 
-// Content: wieder das Segelschiff aber es wird kleiner bis nur noch alles weiss ist. Es geht zur nächsten Bubble.
+// wieder das Segelschiff aber es wird kleiner bis nur noch alles weiss ist. Es geht zur nächsten Bubble.
 --> bubble2

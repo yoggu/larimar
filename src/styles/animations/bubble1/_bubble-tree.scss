@@ -1,0 +1,16 @@
+.bubble-tree {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  height:100%;
+
+  .bubble {
+    position: absolute;
+  }
+  
+  .tree {
+    position: absolute;
+  }
+
+}
+

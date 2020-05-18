@@ -1,0 +1,28 @@
+.sister {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  height:100%;
+
+  .background {
+    position: absolute;
+  }
+
+  .parents {
+    position: absolute;
+  }
+
+  .body {
+    position: absolute;
+  }
+
+  .face {
+    position: absolute;
+  }
+
+  .branch {
+    position: absolute;
+  }
+
+
+}
