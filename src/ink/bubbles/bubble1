@@ -1,3 +1,5 @@
+INCLUDE bubbles/bubble2
+
 === bubble1 ===
 -> wiese
 
@@ -337,4 +339,4 @@ Das Segelschiff schwimmt nun auf dem Wasser und {name} springt drauf. Es schwank
 Da die Kröte schwimmen kann, verzichtet sie darauf, unterrichtet zu werden. Ein bisschen beleidigt schwimmt sie vor dem Segelschiff her und die beiden überqueren ohne Weiteres den Teich.
 
 // Content: wieder das Segelschiff aber es wird kleiner bis nur noch alles weiss ist. Es geht zur nächsten Bubble.
---> ending
+--> bubble2
