@@ -1,4 +1,112 @@
 === bubble2 ===
 
+// #CONTENT: ankunft wald
+Nach einem längeren Weg über den Teich kommen {name} und Alexa endlich auf der anderen Seite des Ufers an.
+
+Die Kröte springt aus dem Wasser und landet mit einem grossen Sprung vor dem anliegenden Wald.
+
+"Hmmmm", murmelt Alexa.
+
+*["Was ist los?"]
+
+*["Wo geht es weiter?"]
+
+- "Ich muss gestehen, dass ich den Wald noch nie von dieser Seite betreten habe...
+
+... dementsprechend weiss ich auch nicht, wie wir da hin kommen."
+
+*["Dein Ernst?"]
+
+*["..."]
+
+- "Jaaa, jetzt guck nicht so. Gehen wir einfach mal rein da, du zuerst."
+
+* ["Geh du doch zuerst..."]
+    "Werd' jetzt nicht frech, sonst kannst du dich gleich selbst auf die Suche machen..."
+
+* [In den Wald gehen.]
+
+// #CONTENT: wald
+
+- {name} betritt also den Wald.
+
+Die Bäume stehen ziemlich dicht, bereits nach wenigen Schritten scheinen sie vollständig eingeschlossen zu sein.
+
+Nur wenig Licht erreicht den Waldboden und bereits nach wenigen Minuten scheint {name} die Orientierung verloren zu haben.
+
+{name} hält an...
+
+"Was ist los, machst du schon schlapp, oder was?"
+
+* ["Ich habe den Kompass zuhause vergessen..."]
+    "Sag mal, was bist du für ein Spaten? Ach du meine Güte, worauf habe ich mich hier nur eingelassen, ich hätte doch lieber einfach gleich wegschwimmen sollen...."
+
+*["Wir haben uns verlaufen..."]
+
+-"Ich dachte du lebst in der Nähe von einem Wald, eigentlich solltest du dich damit ja auskennen? Ich meine, ich lebe im Sumpf, da muss ich mich nicht mit Bäumen rumschlagen...."
+
+// I
+*[Uhrzeit mit der Sonnenrichtung kombinieren, um die Richtung zu bestimmen]
+    // #CONTENT: baumkrone
+    
+    {name} blickt hinauf in den Himmel. Jedoch sind die Blätter so dicht, dass sich nicht mehr erkennen lässt, woher die Sonne scheint.
+
+// C
+*[Noch einmal alles im Rucksack durchgehen und nach Hilfsmöglichkeiten überprüfen]
+     // #CONTENT: rucksack
+     
+    {name} kramt im Rucksack. Kompass, Karte, irgendwelche Wegweiser.. Nichts davon befindet sich in seinem Rucksack..
+    
+    Ausserdem ist {name} nach der langen Fahrt über den Teich bereits sehr erschöpft...
+
+- Was jetzt?
+
+// #CONTENT: wald und frosch
+
+"Ich wusste nicht, dass du so einfach aufgibst?" kräht Alexa laut.
+
+*[Alexa um Rat fragen]
+    "Fragst du mich gerade ernsthaft, ob ich einen Kompass dabei habe? Sehe ich aus, als hätte ich einen Rucksack dabei?"
+
+*[Umgebung untersuchen]
+
+// #CONTENT: wald
+- {name} macht sich also auf, um die Umgebung abzusuchen. Vielleicht haben sie ja etwas übersehen...
+
+// #CONTENT: bäume mit gesichter
+Als {name} dabei die Bäume einmal genauer untersucht, stellt {s: er|sie} fest, dass da überall ebenfalls Gesichter waren.
+
+Sie sind weniger deutlich zu sehen, weshalb sie {name} bis jetzt gar nicht aufgefallen sind.
+
+*["Die haben alle Gesichter?"]
+
+*["Was ist mit denen passiert?"]
+
+// #CONTENT: wald frosch gesichter
+-"Ahh, der Gesichterwald... Ja, eigentlich hätte ich mir denken können, dass das hier der Gesichterwald sein muss.."
+
+*["Was ist mit denen passiert?"]
+    "Das sind Protester. Sie haben sich vor vielen Jahren gegen die Gesetze gestellt und wollten eine freie Welt für alle. hahahaha..."
+
+*["Gibt es eine Möglichkeit sie zu befreien?"]
+
+- "Man, du kennst dich echt nicht aus? ...Also... Man sagt es gäbe einen Stein, welcher die Waldgötter heraufbeschwört."
+
+*["Protester?"]
+    "Keine Ahnung man, ich sag dir auch nur, was ich weiss. Aber auf jeden Fall brauchst du den Stein."
+    
+*["Stein?"]
+    "Seuftz... Jaaa. Ein Kristall oder so. Und vielleicht haben sie Mitleid mit dir und lösen den Fluch auf."
+
+-Doch wie soll dies jetzt helfen, einen Weg zu finden?
+
+// I
+*[Gesichter untersuchen und analysieren]
+
+// S
+*[versuchen mit den Bäumen zu kommunizieren]
+
+// #CONTENT: baum Nahaufnahme
+- {name} geht näher an einen Baum heran und betrachtet diesen.
 
 ->ending

@@ -144,8 +144,6 @@ export default {
           else if (content.type === "svg") {
             content.src = require("@/assets/images/" + content.src)
           }
-
-          //console.log(content);
           
           this.currentImage = content;
 
