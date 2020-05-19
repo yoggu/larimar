@@ -38,6 +38,7 @@ export default {
         setTimeout(this.typeText, this.typeSpeed);
       } else {
         this.isTyping = false;
+        this.completed();
       }
     },
     showAll() {
@@ -46,8 +47,11 @@ export default {
         this.visibleText = this.text;
       }
       else {
-        this.completed();
+        this.next();
       }
+    },
+    next() {
+      this.$emit("next");
     },
     completed() {
       console.log("complete")
