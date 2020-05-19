@@ -4,7 +4,7 @@
       <router-link to="/menu">menU</router-link>
     </div> 
     <div class="story" ref="story" v-if="!finished">
-        <div class="image-container">
+        <div class="image-container" v-on:click="showText()">
           <div v-if="currentImage.type === 'image'" :class="currentImage.container">
             <img
               v-for="(image, index) in currentImage.images"
@@ -16,7 +16,7 @@
           <draw-svg v-else-if="currentImage.type === 'svg'" :duration=200 :class = currentImage.container :vivusId ="'vivus'+index" :file= currentImage.src type="delayed" :ref="'vivus'+index"></draw-svg>
         </div>  
         <div class="text-container">
-          <typed-text :typeSpeed="25" :text="currentText.text" :class="currentText.classes" @next="continueStory()" @onComplete="showChoice = true"></typed-text>
+          <typed-text ref="typedText" :typeSpeed="25" :text="currentText.text" :class="currentText.classes" @next="continueStory()" @onComplete="showChoice = true"></typed-text>
           <div class="choices" v-show="showChoice">
             <a
               class="choice"
@@ -153,6 +153,9 @@ export default {
 
         }
       });
+    },
+    showText() {
+      this.$refs.typedText.showAll();
     },
     restart() {
       this.choices = [];
