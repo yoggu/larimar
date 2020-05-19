@@ -9,14 +9,14 @@
             <img
               v-for="(image, index) in currentImage.images"
               :src="image.src"
-              :key="'image-'+index"
+              :key="'image-'+index+image.src"
               :class="image.classes"
             />
           </div>
           <draw-svg v-else-if="currentImage.type === 'svg'" :duration=200 :class = currentImage.container :vivusId ="'vivus'+index" :file= currentImage.src type="delayed" :ref="'vivus'+index"></draw-svg>
         </div>  
         <div class="text-container">
-          <typed-text ref="typedText" :typeSpeed="25" :text="currentText.text" :class="currentText.classes" @next="continueStory()" @onComplete="showChoice = true"></typed-text>
+          <typed-text ref="typedText" :typeSpeed="20" :text="currentText.text" :class="currentText.classes" @next="continueStory()" @onComplete="showChoice = true"></typed-text>
           <div class="choices" v-show="showChoice">
             <a
               class="choice"
@@ -56,10 +56,9 @@ export default {
       customClasses: [],
       currentText: Object,
       currentImage: Object,
-      content: [],
       finished: false,
       result: {},
-      showChoice: false,
+      showChoice: false
     };
   },
   mounted () {
@@ -75,7 +74,6 @@ export default {
   methods: {
     // main gameplay loop
     continueStory() {
-      // Generate story text - loop through available content
       if (this.story.canContinue) {
         this.showChoice = false;
         //console.log(this.content);
@@ -134,7 +132,6 @@ export default {
           this.customClasses.push(tag.val);
         } else if (tag.property === "CLEAR") {
           console.log("Clear")
-          this.content = [];
         } else if (tag.property === "CONTENT") {
           let content = JSON.parse(tag.val.replace("\\", ""));
 
@@ -149,6 +146,7 @@ export default {
           }
 
           //console.log(content);
+          
           this.currentImage = content;
 
         }
@@ -161,7 +159,6 @@ export default {
       this.choices = [];
       this.tags = [];
       this.customClasses = [];
-      this.content = [];
       this.story.ResetState();
       this.$store.commit('saveState', this.story.state.ToJson());
       this.finished = false;
@@ -176,7 +173,6 @@ export default {
       this.result.C = this.story.variablesState.$("C");
       console.log(this.result);
       this.finished = true;
-      this.content = [];
     },
     save() {
       this.$store.commit('saveState', this.story.state.ToJson());
@@ -186,7 +182,6 @@ export default {
       this.choices = [];
       this.tags = [];
       this.customClasses = [];
-      this.content = [];
       this.story.state.LoadJson(this.$store.state.story);
       this.continueStory();
     },

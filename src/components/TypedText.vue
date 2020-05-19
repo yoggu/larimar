@@ -54,7 +54,7 @@ export default {
       this.$emit("next");
     },
     completed() {
-      console.log("complete")
+      //console.log("complete")
       this.$emit("onComplete");
     },
     reset() {
