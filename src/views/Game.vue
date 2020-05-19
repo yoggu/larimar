@@ -290,7 +290,7 @@ export default {
   }
 
   .text-container {
-    height: 120px;
+    min-height: 120px;
     padding: 4px 12px 0 12px;
     display: flex;
     flex-flow: column;

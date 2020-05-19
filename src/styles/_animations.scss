@@ -1,6 +1,6 @@
 // bubble1
 @import "@/styles/animations/bubble1/_bubble-tree.scss";
-@import "@/styles/animations/bubble1/_cold-waterscss";
+@import "@/styles/animations/bubble1/_cold-water.scss";
 @import "@/styles/animations/bubble1/_forest.scss";
 @import "@/styles/animations/bubble1/_frog.scss";
 @import "@/styles/animations/bubble1/_gate.scss";
@@ -14,64 +14,3 @@
 @import "@/styles/animations/bubble1/_sister.scss";
 @import "@/styles/animations/bubble1/_surprise.scss";
 @import "@/styles/animations/bubble1/_tools.scss";
-
-
-.fire {
-  position: relative;
-}
-
-.flame1 {
-  position: absolute;
-  animation: flame ease-in-out 2s infinite alternate;
-}
-
-.flame2 {
-  position: absolute;
-  animation: flame ease-in-out 2s infinite alternate-reverse;
-}
-
-@keyframes flame {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.jump {
-  position: relative;
-}
-
-.frog {
-  z-index: 1;
-  position: absolute;
-}
-
-.frog-jump {
-  animation: jump 2s forwards;
-}
-
-@keyframes jump {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  100% {
-    left: -60px;
-    top: -120px;
-  }
-}
-
-
-
-.tree {
-position: relative;
-overflow: hidden;
-height:100%;
-}
-
-.leaf {
-position: absolute;
-transition: transform 0.5s;
-}

@@ -180,7 +180,7 @@ Ansonsten scheint alles normal zu sein. Ausser, dass das sonst so belebte Seeufe
 = oktopusbaum
 
 //oktopusbaum
-#CONTENT: {"type":"image","images":[{"src":"bubble1/Oktopusbaum/oktopusbaum_0002_teile.png","classes":["parts"]},{"src":"bubble1/uferteile/oktopusbaum_0006_baum.png","classes":["tree"]}],"container":"octopus-tree"}
+#CONTENT: {"type":"image","images":[{"src":"bubble1/oktopusbaum/oktopusbaum_0002_teile.png","classes":["parts"]},{"src":"bubble1/uferteile/oktopusbaum_0006_baum.png","classes":["tree"]}],"container":"octopus-tree"}
 
 - Der Baum steht ziemlich weit aussen im Wasser. Die Wurzeln sehen aus wie Arme und erinnern an einen Oktopus. Es sieht aus, als hätten sie in einem Kampf die umliegenden Boote zerstört... Damit konnte {name} den Teich nicht mehr überqueren...
 
@@ -347,7 +347,7 @@ Nun hatte {name} endlich einen Plan, wie {s: er|sie} seine Familie retten könnt
 = Segelschiff
 
 //segelschiff
-#CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff_0000_segelschiff.png","classes":["ship"]},{"src":"bubble1/segelschiff/segelschiff_0004_frosch.png","classes":["frog"]},{"src":"bubble1/segelschiff/segelschiff_0003_wasseranimation-1.png","classes":["water","water-1"]},{"src":"bubble1/segelschiff/segelschiff_0002_wasseranimation-2.png","classes":["water","water-2"]},{"src":"bubble1/segelschiff/segelschiff_0001_wasseranimation-3.png","classes":["water","water-3"]}],"container":"sailing-ship"}
+#CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff_0004_frosch.png","classes":["frog"]},{"src":"bubble1/segelschiff/segelschiff_0000_segelschiff.png","classes":["ship"]},{"src":"bubble1/segelschiff/segelschiff_0003_wasseranimation-1.png","classes":["water","water-1"]},{"src":"bubble1/segelschiff/segelschiff_0002_wasseranimation-2.png","classes":["water","water-2"]},{"src":"bubble1/segelschiff/segelschiff_0001_wasseranimation-3.png","classes":["water","water-3"]}],"container":"sailing-ship"}
 
 Das Segelschiff schwimmt nun auf dem Wasser und {name} springt drauf. Es schwankt gefährlich, aber scheint das Gewicht tragen zu können.
 

@@ -4,6 +4,9 @@
   overflow: hidden;
   height:100%;
 
+  .branch {
+    position: absolute;
+  }
 
   .tree {
     position: absolute;
@@ -18,13 +21,13 @@
   .tree-2 {
     --scaleStart: 1.0;
     --scaleEnd: 2.0;
-    animation: forest-left ease-in-out 5s 2s forwards;
+    animation: forest-right ease-in-out 5s 2s forwards;
   }
 
   .tree-3 { 
     --scaleStart: 1.0;
     --scaleEnd: 2.0;
-    animation: forest-right ease-in-out 5s 2s forwards;
+    animation: forest-left ease-in-out 5s 2s forwards;
   }
 
   .tree-4 {
@@ -45,7 +48,7 @@
     transform: scale(0.8);
     --scaleStart: 0.8;
     --scaleEnd: 2.0;
-    animation: forest-left ease-in-out 5s 4s forwards, forest-layer2 2s 3s forwards;
+    animation: forest-left ease-in-out 5s 4s forwards, forest-layer-2 2s 3s forwards;
   }
 
   .tree-7 {
@@ -53,7 +56,7 @@
     transform: scale(0.8);
     --scaleStart: 0.8;
     --scaleEnd: 2.0;
-    animation: forest-right ease-in-out 5s 4s forwards, forest-layer2 2s 3s forwards;
+    animation: forest-right ease-in-out 5s 4s forwards, forest-layer-2 2s 3s forwards;
   }
 
   .tree-8 {
@@ -61,7 +64,7 @@
     transform: scale(0.8);
     --scaleStart: 0.8;
     --scaleEnd: 2.0;
-    animation: forest-right ease-in-out 5s 4s forwards, forest-layer2 2s 3s forwards;
+    animation: forest-right ease-in-out 5s 4s forwards, forest-layer-2 2s 3s forwards;
   }
 
   .tree-9 {
@@ -69,7 +72,7 @@
     transform: scale(0.8);
     --scaleStart: 0.8;
     --scaleEnd: 2.0;
-    animation: forest-left ease-in-out 5s 4s forwards, forest-layer2 2s 3s forwards;
+    animation: forest-left ease-in-out 5s 4s forwards, forest-layer-2 2s 3s forwards;
   }
 
 }
@@ -92,7 +95,7 @@
 }
 }
 
-@keyframes forest-layer2 {
+@keyframes forest-layer-2 {
 0% {
   opacity: 0;
 }
