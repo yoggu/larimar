@@ -1,0 +1,243 @@
+INCLUDE bubbles/bubble4
+
+=== bubble3 ===
+
+// Turm
+// #CONTENT:
+
+Nach einem kurzen Stück erreichen {name} und Alexa endlich den grossen Turm.
+
+Ein paar Treppen führen zu einer riesigen Tür.
+
+*[Klopfen]
+
+*[Einfach eintreten]
+    {name} legt seine Hand an den schweren Türgriff und versucht die Tür aufzustossen.
+    
+- "Wer wagt es, mich hier einfach unangekündigt aufzusuchen?", erklingt eine hohe Stimme durch die Tür hindurch.
+
+//  tür Auge
+// #CONTENT:
+Die Tür öffnet sich einen spaltbreit und ein langes Auge schaut hervor und mustert die Beiden.
+
+"Was wollt ihr? Ich empfange keinen Besuch."
+
+*["Wir brauchen deine Hilfe."]
+
+*["Weisst du etwas über einen Stein, der Götter heraufbeschwört?"]
+
+-"...Das interessiert mich nicht. Ich habe kein Interesse, euch zu helfen. Und jetzt verschwindet!"
+
+// tür zu
+// #CONTENT:
+Das Auge verschwindet wieder hinter der Tür und die Tür schliesst sich mit einem lauten Knall.
+
+"Uff, das lief ja mal nicht sonderlich glatt.. quak. Aber ich bin mir sicher, dass dir schon was einfällt..."
+
+*["Wir suchen den Stein und wir wissen, dass du ihn hast!"]
+
+*["Die Welt ist in Gefahr... und nur du kannst sie retten..."]
+    Es bleibt still.
+    
+    "Wir suchen den Stein und wir wissen, dass du ihn hast!"
+    
+-Es bleibt still.
+
+Dann nach einer Weile sind schlurfende Schritte zu hören.
+
+// tür auf
+// #CONTENT:
+Die Tür öffnet sich und die hohe Stimme meint breitwillig:
+
+"Dann kommt halt rein, ich habe im Moment sowieso nichts vor..."
+
+// turm innen
+// #CONTENT:
+{name} betritt als erstes den Turm. Gleich schlägt ihr eine dicke Duftwolke aus Blumen und Kräutern entgegen. Alexa hustet und keucht.
+
+// turm innen mit Hexe
+// #CONTENT:
+"So, jetzt sagt mir, weshalb ich euch den Stein überhaupt geben sollte..."
+
+*[nicht erzählen]
+    "Wenn ihr mir nicht erzählt, worum es geht, dann verwandle ich euch in Ratten! Ich sehe sofort, wenn mir jemand nicht die Wahrheit erzählt."
+    
+    **[lügen]
+        {name} erzählt eine Geschichte, von Gespenstern und einem bitteren Kampf, dem er gerade noch so entkommen konnte.
+        
+        Im Hintergrund hustet Alexa und es klingt, als müsse sie sich ein Lachen verkneifen.
+        
+        Doch die Hexe bemerkt sie nicht und hört ganz gespannt der Geschichte zu.
+        ->interessant
+    
+    **[erzählen]
+    
+        {name} erzählt wie sein ganzes Dorf sich in grosse Bäume verwandelt hat.
+        
+        {name} erzählt auch, dass er von einem Stein gehört hat, der dies wieder rückgängig machen kann.
+        
+        ->interessant
+        
+        
+*[Geschichte erzählen]
+    {name} erzählt wie sein ganzes Dorf sich in grosse Bäume verwandelt hat.
+    
+    {name} erzählt auch, dass er von einem Stein gehört hat, der dies wieder rückgängig machen kann.
+    
+    ->interessant
+
+
+=interessant
+"Interessant... Höchst interessant..."
+
+"Der Stein...", fährt die Hexe fort "ist ein Kompass."
+
+"Es handelt sich dabei um einen Kristall, der Larimar. Er soll bei richtiger Anwendung die Fähigkeit haben, die Götter des Waldes hervorzurufen..."
+
+"Aber jetzt entschuldigt mich einen Moment. Ich muss noch in den Garten und meine Kobolde füttern... Ihr könnt hier warten."
+
+// turm innen
+// #CONTENT:
+Und damit verschwindet die Hexe durch die Hintertür hinaus in ihren Garten.
+
+{name} schaut sich noch genauer um. Überall stehen Kerzen, Kräuter und eingelegte Tiere, von denen er gar nicht wissen möchte, wie die da hin kamen.
+
+// typo im bild?
+"SCHEPPER...KNALL"
+
+
+// Figur
+// #CONTENT:
+Es scheppert und Alexa ist ausversehen gegen eine umstehende Figur gekommen. Die Figur ist noch ganz aber von der Beschichtung hat sich Farbe gelöst
+
+
+// A
+*[die kaputte Stelle übermalen]
+// TODO falls malkasten
+// {name} ist so froh den Malkasten eingepackt zu haben und übermalt die Stelle. Sie sieht aus wie zuvor und nichts ist zu sehen.
+
+    {name} hat aber natürlich keinen Malkasten dabei. "Hätte ich einen Malkasten dabei, könnte ich den jetzt gebrauchen..."
+    
+    "Dabei hast du doch extra diese fette Tasche dabei... hahahah", lacht Alexa und stellt die Figur wieder hin, jedoch mit der kaputten Stelle zur Wand gedreht.
+    
+    ->garten
+
+// S
+*[gemeinsam den Schaden melden gehen]
+    "Willst du uns umbringen?", quakt Alexa. Also ich gehe sicher nicht zu dieser Hexe...
+
+    ->garten
+
+
+=garten
+// typo im bild?
+"NEEEEIIIINNNNN"
+
+Der Schrei kommt von der Hexe aus dem Garten, schnell läuft {name} in den Graten hinaus.
+
+// im Garten
+// #CONTENT:
+Als sie dort ankommen kniet die Hexe am Boden und starrt auf einen Zettel in der Hand
+
+Sie hält den Zettel genau so, dass {name} lesen kann, was drauf steht.
+
+"Wir haben deinen Gartenzwerg an uns genommen. Er ist jetzt gut in unserer Sammlung aufgehoben. Danke!"
+
+Darunter ist ein Pfotenabdruck zu erkennen.
+
+// im Garten mit Hexe
+// #CONTENT:
+"Nein, mein Stein..." murmelt die Hexe.
+
+*[ansprechen]
+
+    {name} und die Kröte schauen sich an. {name} räuspert sich und will die Hexe ansprechen...
+    
+    ...da dreht sich diese mit einem Ruck um und entdeckt die beiden.
+
+*[zurück ins Haus gehen]
+    {name} will leise zurück in den Turm schleichen, weil {s: er|sie} das Gefühl hat, dass sie nicht hier sein sollten.
+    
+    Doch genau in dem Moment dreht sich die Hexe um und entdeckt sie.
+
+// im Garten mit Hexe von vorne
+// #CONTENT:
+-Die Hexe erschrickt und steckt das Papier schnell in die Tasche.
+
+// im Garten mit Hexe augen
+// #CONTENT:
+Funken sprühen aus ihren Augen: "Was sucht ihr hier???"
+
+Doch sie beruhigt sich sofort wieder und spricht weiter süsser Stimme:
+
+"Jetzt habt ihr mich total erschrocken, gehen wir doch wieder rein..."
+
+// Turm innen mit Hexe
+// #CONTENT:
+Wieder im Turm angekommen fährt sie fort:
+
+"Also wegen eurem Stein... Ich habe ihn natürlich nicht hier, aber ich weiss genau, wie ihr zu ihm kommt..."
+
+*[zuhören]
+
+*[kaputte Figure beichten]
+
+    // Turm innen mit Hexe augen
+    // #CONTENT:
+    Ihre Augen blitzen kurz auf, aber sie lächelt nur.
+    
+    "Das habe ich schon gewusst, aber schön, dass du es mir noch sagst..."
+
+- "Also..."
+
+"Ich habe einen Wagen für euch vorbereitet und ihn so verhext, dass er euch ans Ziel führt."
+
+*[Misstrauen]
+    "Ich braucht keine Angst zu haben und könnt mir vertrauen. Weshalb sollte ich euch nicht helfen?"
+
+*[Vertrauen]
+
+-"Ich habe bereits alles vorbereitet. Er steht direkt vor dem Ausgang und sobald ihr einsteigt, fährt er los."
+
+// wagen
+// #CONTENT:
+
+{name} bleibt keine andere Möglichkeit, wenn er erfahren möchte, wo sich der Stein befindet und steigt ein.
+
+Sofort fängt der Wagen an, sich zu bewegen und steuert ins Unbekannte.
+
+*["Wo führt uns dieser Wagen hin?"]
+    "Was weiss ich, bin ich die allwissende Kröte? Ich weiss genauso viel wie du, eh.."
+    
+    "Aber ich sag dir mal was anderes... Die Hexe war schon ein bisschen merkwürdig, oder nicht?"
+
+*["Was war das im Garten der Hexe?"]
+
+-"Weisst du, wir Kröten sammeln Gartenzwerge. Sehen wir einen - zack, weg."
+
+"Und wir hinterlassen immer einen Zettel und bedanken uns dafür... Und jetzt frag nicht. Wir sind einfach höflich und kennen Anstand.."
+
+*["Stein..."]
+
+*["..."]
+
+-"Aber es ist eine gute Frage, weshalb sie etwas vom Stein gemurmelt hat, hast du das auch gehört?"
+
+*["Ja!"]
+
+*["Vielleicht.."]
+
+    "Ich war mir eigentlich sogar ziemlich sicher. Meine Öhrchen funktionieren sehr gut, weisst du..."
+
+-"Heisst das, der Stein war im Gartenzwerg? Wo führt uns dann dieser Wagen hin?"
+
+Der Wagen ruckelt plötzlich.
+
+// Abgrund
+// #CONTENT:
+
+Alexa schreit und als {name} über den Rand des Wagens schaut, sieht  {s: er|sie} nur ein dunkler Abgrund
+
+*[SPRINGEN]
+    ->bubble4
+

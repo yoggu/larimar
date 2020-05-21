@@ -2,6 +2,10 @@ INCLUDE bubbles/bubble1
 
 
 
+
+
+
+
 VAR R = 0
 VAR I = 0
 VAR A = 0
