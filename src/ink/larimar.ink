@@ -1,7 +1,8 @@
 INCLUDE bubbles/bubble1
-
-
-
+//INCLUDE bubbles/bubble2
+//INCLUDE bubbles/bubble3
+//INCLUDE bubbles/bubble4
+//INCLUDE bubbles/bubble5
 
 
 
