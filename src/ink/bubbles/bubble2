@@ -156,14 +156,16 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     // R
     ** [Du versuchst darüber zu klettern, obwohl der Stein sehr glatt erscheint und wenig Halt aufweist]
         // auf dem Stein
-        // #CONTENT: 
+        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein_0001_white-background.png","classes":["background"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0002_stein-details.png","classes":["stone"]}],"container":"stone-top"} 
+        
         {name} schafft es mit Müh und Not den Felsen zu besteigen und klettert hinauf.
         
         //TODO säge fällt aus der Tasche
         // Dabei fällt ihm aber die grosse Säge aus der Tasche. Jetzt noch einmal herunter zu klettern wäre aber viel zu gefährlich...
         
         // auf dem Stein mit maus
-        // #CONTENT: 
+        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein_0001_white-background.png","classes":["background"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0002_stein-details.png","classes":["stone"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0000_maus.png","classes":["mouse"]}],"container":"stone-top-mouse"}
+        
         Auf dem Stein sitzt eine kleine, graue Maus. Sie kneift die Augen zu und kurz danach schreit sie: "KIAAAA"
         
         "Gesundheit!" meint Alexa. "Das war also dieses gruselige Geräusch? Man, dass so ein kleines Wesen so laut niesen kann..."
@@ -228,7 +230,7 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     ** [Du untersuchst das Gestein nach möglichen Rissen und Spuren]
         
         // auf dem Stein
-        // #CONTENT: 
+        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein_0001_white-background.png","classes":["background"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0002_stein-details.png","classes":["stone"]}],"container":"stone-top"} 
         Der Stein ist zu glatt und es gibt keine Möglichkeit oder Halt, um zu klettern.
         
         // spalt
@@ -362,7 +364,7 @@ Sie konnten tatsächlich passieren und die unsichtbare Mauer war plötzlich vers
 
 =turm
 // turm
-#CONTENT: {"type":"image","images":[{"src":"bubble2/turm/turm_0000_turm.png","classes":["tower-1"]}],"container":"tower"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/turm/turm_0000_turm.png","classes":["tower"]}],"container":"tower-far"}
 Als sie am anderen Ende ankommen sehen sie plötzlich einen grossen Turm in Sichtweite.
 
 "Ahh, siehst du, wie gekonnt! Ich wusste doch, dass es hier lang geht..." Meint Alexa schnippisch und zeigt auf den Turm.

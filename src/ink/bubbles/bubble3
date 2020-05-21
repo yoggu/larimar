@@ -3,7 +3,7 @@ INCLUDE bubbles/bubble4
 === bubble3 ===
 
 // Turm
-// #CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble3/turm/turm_0003_background-color.png","classes":["background"]},{"src":"bubble3/turm/turm_0000_wald.png","classes":["forest"]},{"src":"bubble3/turm/turm_0001_turm.png","classes":["tower"]},{"src":"bubble3/turm/turm_0002_wolken.png","classes":["clouds"]}],"container":"tower-close"}
 
 Nach einem kurzen Stück erreichen {name} und Alexa endlich den grossen Turm.
 
@@ -17,7 +17,8 @@ Ein paar Treppen führen zu einer riesigen Tür.
 - "Wer wagt es, mich hier einfach unangekündigt aufzusuchen?", erklingt eine hohe Stimme durch die Tür hindurch.
 
 //  tür Auge
-// #CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble3/tür_auge/tür-auge_0002_Hintergrund.png","classes":["background"]},{"src":"bubble3/tür_auge/tür-auge_0000_Auge-zu.png","classes":["eye-closed"]},{"src":"bubble3/tür_auge/tür-auge_0001_Auge-auf.png","classes":["eye-open"]}],"container":"door-eye"}
+
 Die Tür öffnet sich einen spaltbreit und ein langes Auge schaut hervor und mustert die Beiden.
 
 "Was wollt ihr? Ich empfange keinen Besuch."
@@ -29,7 +30,8 @@ Die Tür öffnet sich einen spaltbreit und ein langes Auge schaut hervor und mus
 -"...Das interessiert mich nicht. Ich habe kein Interesse, euch zu helfen. Und jetzt verschwindet!"
 
 // tür zu
-// #CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble3/tür_zu/tür-zu_0000_tür.png","classes":["door"]}],"container":"door-closed"}
+
 Das Auge verschwindet wieder hinter der Tür und die Tür schliesst sich mit einem lauten Knall.
 
 "Uff, das lief ja mal nicht sonderlich glatt.. quak. Aber ich bin mir sicher, dass dir schon was einfällt..."
@@ -46,17 +48,18 @@ Das Auge verschwindet wieder hinter der Tür und die Tür schliesst sich mit ein
 Dann nach einer Weile sind schlurfende Schritte zu hören.
 
 // tür auf
-// #CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble3/tür_auf/tür-zu_0000_tür.png","classes":["door"]}],"container":"door-open"}
 Die Tür öffnet sich und die hohe Stimme meint breitwillig:
 
 "Dann kommt halt rein, ich habe im Moment sowieso nichts vor..."
 
 // turm innen
-// #CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0001_hexe.png","classes":["witch"]},{"src":"bubble3/im_turm/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"tower-inside"}
+
 {name} betritt als erstes den Turm. Gleich schlägt ihr eine dicke Duftwolke aus Blumen und Kräutern entgegen. Alexa hustet und keucht.
 
 // turm innen mit Hexe
-// #CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0001_hexe.png","classes":["witch"]},{"src":"bubble3/im_turm/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"tower-inside-witch"}
 "So, jetzt sagt mir, weshalb ich euch den Stein überhaupt geben sollte..."
 
 *[nicht erzählen]
@@ -97,7 +100,7 @@ Die Tür öffnet sich und die hohe Stimme meint breitwillig:
 "Aber jetzt entschuldigt mich einen Moment. Ich muss noch in den Garten und meine Kobolde füttern... Ihr könnt hier warten."
 
 // turm innen
-// #CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0001_hexe.png","classes":["witch"]},{"src":"bubble3/im_turm/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"tower-inside"}
 Und damit verschwindet die Hexe durch die Hintertür hinaus in ihren Garten.
 
 {name} schaut sich noch genauer um. Überall stehen Kerzen, Kräuter und eingelegte Tiere, von denen er gar nicht wissen möchte, wie die da hin kamen.
@@ -107,7 +110,7 @@ Und damit verschwindet die Hexe durch die Hintertür hinaus in ihren Garten.
 
 
 // Figur
-// #CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble3/figur/figur_0000_figur.png","classes":["figur-1"]},{"src":"bubble3/figur/figur_0001_hintergrund.png","classes":["background"]}],"container":"figur"}
 Es scheppert und Alexa ist ausversehen gegen eine umstehende Figur gekommen. Die Figur ist noch ganz aber von der Beschichtung hat sich Farbe gelöst
 
 
@@ -136,7 +139,7 @@ Es scheppert und Alexa ist ausversehen gegen eine umstehende Figur gekommen. Die
 Der Schrei kommt von der Hexe aus dem Garten, schnell läuft {name} in den Graten hinaus.
 
 // im Garten
-// #CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble3/garten/garten_0002_background-color.png","classes":["color"]},{"src":"bubble3/garten/garten_0001_bachground.png","classes":["background"]},{"src":"bubble3/garten/garten_0000_hexe-hinten.png","classes":["witch-back"]},{"src":"bubble3/garten/im-turm_0001_hexe.png","classes":["witch-front"]},{"src":"bubble3/garten/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"garden"}
 Als sie dort ankommen kniet die Hexe am Boden und starrt auf einen Zettel in der Hand
 
 Sie hält den Zettel genau so, dass {name} lesen kann, was drauf steht.
@@ -146,7 +149,7 @@ Sie hält den Zettel genau so, dass {name} lesen kann, was drauf steht.
 Darunter ist ein Pfotenabdruck zu erkennen.
 
 // im Garten mit Hexe
-// #CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble3/garten/garten_0002_background-color.png","classes":["color"]},{"src":"bubble3/garten/garten_0001_bachground.png","classes":["background"]},{"src":"bubble3/garten/garten_0000_hexe-hinten.png","classes":["witch-back"]},{"src":"bubble3/garten/im-turm_0001_hexe.png","classes":["witch-front"]},{"src":"bubble3/garten/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"garden-witch-back"}
 "Nein, mein Stein..." murmelt die Hexe.
 
 *[ansprechen]
@@ -161,11 +164,11 @@ Darunter ist ein Pfotenabdruck zu erkennen.
     Doch genau in dem Moment dreht sich die Hexe um und entdeckt sie.
 
 // im Garten mit Hexe von vorne
-// #CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble3/garten/garten_0002_background-color.png","classes":["color"]},{"src":"bubble3/garten/garten_0001_bachground.png","classes":["background"]},{"src":"bubble3/garten/garten_0000_hexe-hinten.png","classes":["witch-back"]},{"src":"bubble3/garten/im-turm_0001_hexe.png","classes":["witch-front"]},{"src":"bubble3/garten/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"garden-witch-front"}
 -Die Hexe erschrickt und steckt das Papier schnell in die Tasche.
 
 // im Garten mit Hexe augen
-// #CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble3/garten/garten_0002_background-color.png","classes":["color"]},{"src":"bubble3/garten/garten_0001_bachground.png","classes":["background"]},{"src":"bubble3/garten/garten_0000_hexe-hinten.png","classes":["witch-back"]},{"src":"bubble3/garten/im-turm_0001_hexe.png","classes":["witch-front"]},{"src":"bubble3/garten/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"garden-eyes"}
 Funken sprühen aus ihren Augen: "Was sucht ihr hier???"
 
 Doch sie beruhigt sich sofort wieder und spricht weiter süsser Stimme:
@@ -173,7 +176,7 @@ Doch sie beruhigt sich sofort wieder und spricht weiter süsser Stimme:
 "Jetzt habt ihr mich total erschrocken, gehen wir doch wieder rein..."
 
 // Turm innen mit Hexe
-// #CONTENT:
+#CONTENT: #CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0001_hexe.png","classes":["witch"]},{"src":"bubble3/im_turm/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"tower-inside-witch"}
 Wieder im Turm angekommen fährt sie fort:
 
 "Also wegen eurem Stein... Ich habe ihn natürlich nicht hier, aber ich weiss genau, wie ihr zu ihm kommt..."
@@ -183,7 +186,7 @@ Wieder im Turm angekommen fährt sie fort:
 *[kaputte Figure beichten]
 
     // Turm innen mit Hexe augen
-    // #CONTENT:
+    #CONTENT: #CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0001_hexe.png","classes":["witch"]},{"src":"bubble3/im_turm/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"tower-inside-eyes"}
     Ihre Augen blitzen kurz auf, aber sie lächelt nur.
     
     "Das habe ich schon gewusst, aber schön, dass du es mir noch sagst..."
@@ -200,7 +203,7 @@ Wieder im Turm angekommen fährt sie fort:
 -"Ich habe bereits alles vorbereitet. Er steht direkt vor dem Ausgang und sobald ihr einsteigt, fährt er los."
 
 // wagen
-// #CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble3/wagen/wagen_0004_background-color.png","classes":["color"]},{"src":"bubble3/wagen/wagen_0003_background-stehen.png","classes":["background-standing"]},{"src":"bubble3/wagen/wagen_0002_background-fahren.png","classes":["background-driving"]},{"src":"bubble3/wagen/wagen_0001_wagen.png","classes":["vehicle"]},{"src":"bubble3/wagen/wagen_0000_wolken.png","classes":["clouds"]}],"container":"wagon"}
 
 {name} bleibt keine andere Möglichkeit, wenn er erfahren möchte, wo sich der Stein befindet und steigt ein.
 
@@ -234,7 +237,7 @@ Sofort fängt der Wagen an, sich zu bewegen und steuert ins Unbekannte.
 Der Wagen ruckelt plötzlich.
 
 // Abgrund
-// #CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble3/abgrund/abgrund_0002_schwarz.png","classes":["color"]},{"src":"bubble3/abgrund/abgrund_0001_boden.png","classes":["ground"]},{"src":"bubble3/abgrund/abgrund_0000_wolken.png","classes":["clouds"]}],"container":"abyss"}
 
 Alexa schreit und als {name} über den Rand des Wagens schaut, sieht  {s: er|sie} nur ein dunkler Abgrund
 
