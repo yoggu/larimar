@@ -1,0 +1,40 @@
+
+=== bubble7 ===
+"{name}..."
+
+"Komm du Schnarchnase.."
+
+Etwas kitzelt an {name}s Gesicht.
+
+"Halloooo, aufwachennn!"
+
+{name} öffnet die Augen und {s: seine|ihre} Schwester hat sich über {s: ihn|sie} gebeugt.
+
+*["Du lebst?"]
+
+*["Was ist passiert?"]
+
+-"Jetzt guck' nicht so blöd. Das fest fängt gleich an, die Vorbereitungen sind fast abgeschlossen..."
+
+"Du wachst jetzt lieber richtig auf, damit du fit für das Ritual bist...", damit rennt die Schwester wieder davon zurück Richtung Dorf.
+
+{name} schaut sich um.
+
+{s: Er|Sie} liegt in seinem Versteck im Gras.
+
+Als {name} aufsteht piekst {s: ihn|sie} etwas in die Seite.
+
+Als {name} in die Hosentasche greift, zieht {s: er|sie} einen blauen Stein heraus.
+
+Der Larimar?
+
+Was ist passiert? War das doch kein Traum?
+
+{name} steckt den Stein zurück und  geht Richtung Dorf.
+
+->ending
+
+
+
+
+

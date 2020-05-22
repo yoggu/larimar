@@ -1,0 +1,108 @@
+INCLUDE bubbles/bubble7
+
+=== bubble6 ===
+
+"{name}"
+
+{name} schaut sich um, aber kann niemanden erkennen.
+
+"{name}, komm zu mir, ich warte bereits..."
+
+Der Stein in {s: seiner |ihrer} Tasche wird warm und fängt an zu leuchten, {name} nimmt ihn in die Hand.
+
+"Es ist nicht mehr weit, {name}"
+
+Die Stimme scheint aus dem Stein zu kommen.
+
+Tropf, tropf.... tropf..
+
+Ein dicker Tropfen landet auf {name}s Kopf. {s: Er|Sie} schaut sich um.
+
+{name} befindet sich plötzlich in einer Höhle und er hat keine Ahnung, wie er hier hingekommen ist.
+
+*[sprechen]
+    {name} Worte hallen an den feuchten Wänden wieder.
+
+*[still bleiben]
+
+-"Komm noch ein bisschen näher...", die Stimme ist nun ganz klar.
+
+Nach ein paar Schritten fängt der Stein noch heller an zu leuchten.
+
+"{name}, endlich bist du da. Einen weiten Weg bist du zu uns gekommen."
+
+"Und wir waren immer bei dir..."
+
+"Jap, waren wir."
+
+Die Stimmen sind schwer zu unterscheiden, es könnte auch immer dieselbe sein...
+
+"Erzähl uns dein Anliegen. {name}"
+
+*[Familie]
+
+*[Schuld]
+
+- "Ich sehe... Viel Mut und Kraft hast du bewiesen. Aber ich spüre auch etwas Dunkles..."
+
+"Bruder?", eine andere Stimme unterbricht.
+
+"Bruder, es ist so dunkel, ohne dich..."
+
+Etwas huscht im Schatten der Höhle umher.
+
+"Das ist die Seele der Füchsin aus der Höhle, sie kann ihn nicht loslassen...."
+
+{name} schluckt...
+
+*[Entschuldigen]
+
+*[Ausversehen]
+
+-{name} flüstert leise dem Schatten zu und entschuldigt sich.
+
+"Es gibt Dinge, die liegen nicht in deiner Macht."
+
+"Aber ich sehe, dass du es aufrichtig meinst."
+
+"Wir denken, haben nur eine Chance im Leben. Aber in Wahrheit haben wir unzählige."
+
+"Es gibt immer Möglichkeiten, auch wenn man eine Entscheidung schon getroffen hat..."
+
+"Ich hoffe, du hast es jetzt eingesehen, {name}... Vielleicht ist das hier auch deine richtige Prüfung..."
+
+
+*[ja]
+
+*[nein]
+
+-Der Stein wird auf einmal hell und alles wird weiss. {name} ist blind.
+->bubble7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,5 @@
+INCLUDE bubbles/bubble6
+
 === bubble5 ===
 // Auf einer Wiese
 #CONTENT:
@@ -380,5 +382,5 @@ Wenn sich {name} jetzt auf den Weg machen würde, würde es nicht auffallen...
 
 Alle sind so beschäftigt, dass niemand bemerkt, wie {name} zurück in den Wald geht...
 
-
+->bubble6
 
