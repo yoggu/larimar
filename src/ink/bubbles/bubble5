@@ -1,2 +1,384 @@
 === bubble5 ===
-->ending
+// Auf einer Wiese
+#CONTENT:
+Nach einer längeren Strecke hält {name} an.
+
+// Tasche nah 
+#CONTENT:
+
+"Und jetzt lass mich endlich raus, du Rüppel!!", brüllt eine Stimme aus {name}s Tasche und boxt gegen den Deckel.
+
+// Tasche auf
+#CONTENT:
+
+{name} öffnet seine Tasche und lässt Alexa raus.
+
+// Auf einer Wiese
+#CONTENT:
+
+"Ahh, frische Luft. Es müffelt in deiner Tasche, weisst du?", sagt Alexa und streckt sich.
+
+"Wir sind bald da..", fährt sie fort. "Hast du schon dein Willkommensgeschenk?"
+
+*["Geschenk?"]
+    "Ja das macht man bei uns Fröschen so, man schenkt sich etwas, wenn man sich sieht."
+    ->geschenk 
+
+*["...Nein."]
+    "Dann überleg dir besser erstmal was, sonst kommst du nicht rein."
+    ->geschenk
+    
+= geschenk
+// R
+*[Etwas aus Holz schnitzen]
+    Mit einem spitzen Stein fängt {name} an, eine kleine Figur aus Holz zu schnitzen. Dies hatte {s: er|sie} von seinem Onkel gelernt.
+    
+// A
+*[Blumen pflücken und zu einem schönen Strauss binden]
+    {name} macht einen kurzen Umweg über ein Blumenfeld und plückt ein paar schöne Blumen.
+    
+    
+
+// Lager
+#CONTENT:
+-Als {name} und Alexa dann endlich beim Sumpf ankommen werden sie gross begrüsst.
+
+
+// Lager mit vielen Fröschen
+#CONTENT:
+
+Das Geschenk wird {s: ihm|ihr} direkt aus der Hand genommen und verschwindet in der Menge, die sich um die beiden bildet.
+
+"Alexaaaa."
+
+"Alexa ist zurück."
+
+Die Stimmen sind durcheinander und laut und sie drängen die beiden in ein grosses Zelt.
+
+// Zelt
+#CONTENT:
+
+Der Vorhang wird angehoben und {name} findet sich in einem geräumigen Zelt wieder.
+
+In der Mitte sitzt ein dünner Frosch.
+
+Er ist grün und sieht überhaupt nicht aus, wie Alexa...
+
+
+// husten
+#CONTENT:
+
+"hh... Ahhhhhhhhh.", der dünne Frosch röchelt und fängt an zu husten.
+
+// Zelt
+#CONTENT:
+
+Als er sich beruhigt hat, spuckt er eine grüne, glitschige Masse auf den Boden. Sofort kommt jemand von der Seite ins Zelt und wischt es auf.
+
+*["Wir müssen zum Froschkönig!"]
+    "hhhh... der bin ich!", röchelt der Frosch und hustet wieder.
+
+    "Der Sumpf ist in Gefahr, ihr müsst euch vorbereiten!", sagt {name} und erzählt ausführlich, was sie in der Höhle gehört haben.
+    
+*["Der Sumpf ist in Gefahr!"]
+    {name} erzählt schnell und ausführlich, was sie in der Höhle gehört haben.
+
+
+-"Hhhhhhhh...", der dünne frosch hustet erneut.
+
+"Dann werden wir... hhhh.. alle möglichen Vorbereitungen sofort treffen....", fährt er fort.
+
+Wir wären natürlich sehr froh über deine Hilfe...
+
+// E 
+*[Anbieten einen Teil der Truppen zu leiten]
+    Selbstbewusst meint {name}, dass {s: er|sie} sich dazu bereitstellen würde, einen Teil der Gruppen zu leiten.
+
+// C 
+*[Einen Plan für die Strategie aufzeigen]
+    {name} nimmt ein Stück Papier, welches im Raum liegt und zeichnet dem König einen ungefähren Strategieplan auf.
+
+
+-Der König nickt und möchte zu einer Antwort ansetzen, aber bricht erneut in einen Hustenanfall aus.
+
+// Lager 
+#CONTENT:
+
+{name} und Alexa werden von zwei Fröschen aus dem Zelt gebeten. Der König bräuchte seine Ruhe.
+
+// Alexa hysterisch
+#CONTENT:
+
+Gerade als {name} etwas später versucht sich auszuruhen, ertönt plötzlich ein lautes Zirpen. Alexa springt auf.
+
+"Das ist das Signal, das Signal, hast du gehört, das Signal, wir müssen weg!", schreit sie.
+
+// Frösche ins Bild 
+#CONTENT:
+
+Von allen Seiten stürmen plötzlich rote Füchse auf das Lager der Frösche ein.
+
+// Tumult
+#CONTENT:
+
+Ein riesiges Chaos entsteht und {name} hat überhaupt keinen Überblick.
+
+
+// TODO falls Truppen leiten
+{s: er|sie} erkennt nicht einmal mehr formatierte Gruppen, die er leiten könnte.
+
+// TODO falls Strategie planen 
+Der König scheint seinen Strategieplan überhaupt nicht anzuwenden.
+
+-Plötzlich hört {name} laute Schreie. Direkt neben ihm wurden ein paar Frösche von einem Fuchs angegriffen. Sie wehren sich und der Fuchs ist sofort tot, aber einige davon sind stark verletzt.
+
+// S 
+*[den verletzten helfen]
+
+// E
+*[sich in den Kampf stürzen und andere anweisen, sich um die Verletzten zu kümmern.]
+
+
+// Fuchs
+#CONTENT:
+
+-{name} kämpft sich durch das Getümmel doch der Weg wird ihm von einem Fuchs abgeschnitten.
+
+"DU!!!", knurrt ein Fuchs "du hast meine SCHWESTER GETÖTET."
+
+"DU UND DEINE HÄSSLICHE KRÖTENFREUNDIN. DAFÜR WIRST DU BÜSSEN!!"
+
+Der Fuchs fletscht seine Zähne und rennt auf {name} zu.
+
+*[ausweichen]
+
+*[kämpfen]
+
+// Getümmel
+#CONTENT:
+Doch bevor sich {name} bewegen kann, knallt etwas Braunes gegen den Fuchs.
+
+Dieser war gerade mitten in der Luft und wird durch den Knall zur Seite geworfen.
+
+Sein Kopf schlägt hart an einem Stein am Boden auf, er ist sofort tot.
+
+Was war das? {name} schaut sich um.
+
+
+// Boden vibrieren 
+#CONTENT:
+
+Unter {name}s Füsse fängt plötzlich der Boden zu vibrieren an.
+
+Ein immens lauter Pfiff ertönt und {name} sieht wie rote Flecken den Sumpf verlassen und durch das Schilf verschwinden.
+
+
+// quellen 
+#CONTENT:
+Der Boden vibriert weiter und Wasser fängt an, aus allen löcher zu quellen.
+
+
+"Hey, Langnase!", die vertraute Stimme von Alexa krächzt von hinten.
+
+// alexa aus fell
+{name} dreht sich um und sieht Alexa aus dem Fell des toten Fuchses kriechen.
+
+
+"Fast wärst du drauf gegang'n, hehehe, jetzt hab ich dich auch mal gerettet.", sie grinst stolz.
+
+
+// blatt 
+#CONTENT:
+
+Das Wasser reicht {name} nun bereits zur Hüfte und von rechts kommt der Froschkönig auf einem Blatt angeschwommen.
+
+"hhhhh... dank deiner Hilfe konnten wir unsere Wasserquelle überprüfen... hhhh"
+
+"Und die Füchse hatten sie gestaut, um sich einen Vorteil zu erlauben, aber nun haben wir die Mauer gesprengt... hihihhhhhhh"
+
+Das sind zu viele Wörter für den alten Froschkönig gewesen und er hustet wieder und treibt davon.
+
+// Lager 
+#CONTENT:
+
+Nach einer Weile hat sich der Wasserspiegel wieder gesenkt und {name} watet zum Lager der Frösche zurück.
+
+Dort wird {name} freudig empfangen.
+
+"Wir haben gehört... hhhh, dass ihr auf der Suche nach dem hier seid..."
+
+
+// Alter Gartenzwerg  
+#CONTENT:
+Der Froschkönig zeigt auf einen Gartenzwerg.
+
+"Den hier kann ich dir leider nicht geben, dieser ist seit hhhhhhh Jahrtausenden in unserem Besitz."
+
+// Gartenzwerg  
+#CONTENT:
+
+Und er fährt fort: "Hhh, doch als Dank darfst du dir hhh einer von unserer Sammlung aussuchen."
+
+*["..."]
+
+*["Welches ist der richtige?"]
+
+
+-"Wir können dir leider nicht beantworten, welcher der Stein beherbergt..", meint ein anderer Frosch.
+
+"Aber eine Chance ist besser als nichts, nicht?", krächzt ein anderer Frosch.
+
+// TODO Zwerge
+
+"GENAU DER GEHÖRT MIIIRR", meint laut eine hohe Stimme hinter {name}
+
+
+// Hexe  
+#CONTENT:
+
+{name} dreht sich um und erkennt die Hexe.
+
+"Claudia, hhhh schon lange nicht mehr gesehen", keucht der Froschkönig.
+
+"Aus dem Weg!", kreischt die Hexe hysterisch und fegt achtlos einige Frösche aus dem Weg.
+
+// Hexe wütend  
+#CONTENT:
+
+Als sie die Sammlung erblickt fängt sie darin herumzuwüten.
+
+Es klirrt laut und einige Gartenzwerge gehen kaputt.
+
+Die Frösche schreien laut auf und wieder entfacht sich ein grosses Getümmel.
+
+
+// E 
+*[Andere anweisen, die Gartenzwerge besser zu beschützen, damit nicht noch mehr zu Bruch gehen]
+
+// I 
+*[Bruchstücke analysieren und untersuchen]
+    Die Gartenzwerge sind alle aus Porzellan, stellt {name} fest...
+    
+    Vielleicht liesse sich der Stein durch schütteln herausfinden...
+
+
+-{name} wird grob zur Seite geschoben.
+
+// TODO falls richtiger Gartenzwerg 
+->richtiger_zwerg
+->falscher_zwerg
+
+
+= richtiger_zwerg
+// Der Gartenzwerg   
+#CONTENT:
+
+{name} weiss nicht, was {s: er|sie} tun soll und hält den Gartenzwerg fest in den Händen.
+
+Der Gartenzwerg fühlt sich ungewöhnlich schwer an...
+
+{name} schüttelt ihn leicht und hört ein leises Klirren.
+
+{name} schüttelt ihn nochmals. Es muss sich etwas darin befinden...
+
+// Der Gartenzwerg offen   
+#CONTENT:
+Als {s: er|sie} den Gartenzwerg dreht erkennt {name} eine kleine Öffnung auf der Rückseite.
+
+// Der Gartenzwerg larimar 
+#CONTENT:
+Vorsichtig dreht {name} den Gartenzwerg und ein blauer Stein fällt {name} in die Hand.
+->stein
+
+
+=falscher_zwerg
+// Bruchstücke 
+#CONTENT:
+Dabei tritt {name} gegen einen Gartenzwerg. Dieser fällt um und zerbricht.
+
+Im lauten Getümmel ist dies jedoch niemandem aufgefallen.
+
+{name} schaut kurz hinunter und sieht etwas Blaues zwischen den Scherben hervorblitzen.
+
+{s: er|sie} bückt sich und schiebt die Scherben zur Seite.
+
+// Bruchstücke larimar 
+#CONTENT:
+Auf dem Boden liegt ein blauer Stein.
+->stein
+
+=stein
+Der Larimar!
+
+Schnell steckt {name} ihn in seine Hosentasche.
+
+// Scherben getümmel 
+#CONTENT:
+
+Um {s: ihn|sie} herum ist immer noch das laute Klirren der Gartenzwerge und die gemischten Schreie der Frösche und der Hexe.
+
+Wenn sich {name} jetzt auf den Weg machen würde, würde es nicht auffallen...
+
+*[einfach gehen]
+-> gehen 
+
+*[den Fröschen helfen]
+
+    {name} kann die Frösche nicht einfach zurücklassen und stürzt ins Getümmel.
+    
+    Dabei sieht {name} eine bekannte Pfote aus einem Haufen von Trümmern hervorschauen.
+    
+    // Alexa trümmer  
+    #CONTENT:
+    
+    Als sich {name} nähert und die Trümmer zur Seite schiebt, erkennt {s: er|sie} Alexa.
+    
+    "Du lebst immer noch? Kahaha..", Alexa lacht und spuckt Blut.
+
+    **["Ich habe den Stein!"]
+        "Grandios! Endlich kannst du auch mal was, hehehe"
+
+    **["Was ist passiert?"]
+        "Das ist egal, sag, hast du den Stein?"
+        
+        ***["Natürlich!"]
+        
+        ***["Ja klar!"]
+        
+    --{name} kramt den Stein hervor und zeigt ihn Alexa.
+    
+    "Des Ding is' ja noch hübscher als ich dachte, heheheh", Alexa keucht.
+
+    **["Komm mit!"]
+        "Ich gebe das ungern zu, aber ich kann nicht mehr aufstehen..."
+    
+    **[Alexa aufhelfen]
+        "PFOTEN WEG", Alexa quäkt.
+        
+    --"Sieh, mein Freundchen. Nicht alle schaffen es ans Ziel, aber jetzt hör auf den Weichen zu spielen und geh, nur so rettest du alle..."    
+
+    // Splitter  
+    #CONTENT:
+    
+    Plötzlich kracht es laut neben {name} und ein Splitter trifft {s: ihn|sie} an der Schulter.
+    
+    // Alexa tot  
+    #CONTENT:
+
+    Als {name} wieder zu Alexa blickt sind ihre Augen geschlossen.
+
+    "Alexa?"
+    
+    Sie antwortet nicht mehr.
+
+    gehen
+    ->gehen
+    
+=gehen
+// wald  
+#CONTENT:
+
+Alle sind so beschäftigt, dass niemand bemerkt, wie {name} zurück in den Wald geht...
+
+
+
