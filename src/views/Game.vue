@@ -5,7 +5,7 @@
     </div> 
     <div class="story" ref="story" v-if="!finished">
         <div class="image-container" v-on:click="showText()">
-          <div v-if="currentImage.type === 'image'" :class="currentImage.container">
+          <div v-if="currentImage.type === 'image'" :class="currentImage.container" class="container">
             <img
               v-for="(image, index) in currentImage.images"
               :src="image.src"
@@ -278,11 +278,17 @@ export default {
     overflow: auto;
     width: 100%;
 
-    img {
-      object-fit: contain;
-      width: 100%;
-      max-height: 100%;
-      position: absolute;
+    .container {
+      position: relative;
+      height: 100%;
+      overflow: hidden; 
+
+      img {
+        object-fit: contain;
+        width: 100%;
+        max-height: 100%;
+        position: absolute;
+      }
     }
 
   }

@@ -2,21 +2,21 @@ INCLUDE bubbles/bubble6
 
 === bubble5 ===
 // Auf einer Wiese
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/wiese/wiese_0000_background.gif","classes":["background"]},{"src":"bubble5/wiese/grashalme.gif","classes":["gras"]}],"container":"b5-gras"}
 Nach einer längeren Strecke hält {name} an.
 
 // Tasche nah 
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/tasche/tasche-bewegen.gif","classes":["background"]}],"container":"b5-bag-close"}
 
 "Und jetzt lass mich endlich raus, du Rüppel!!", brüllt eine Stimme aus {name}s Tasche und boxt gegen den Deckel.
 
 // Tasche auf
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/tasche/tasche-auf_blinzeln.gif","classes":["eyes"]},{"src":"bubble5/tasche/tasche-auf.gif","classes":["bag"]}],"container":"b5-bag-open"}
 
 {name} öffnet seine Tasche und lässt Alexa raus.
 
 // Auf einer Wiese
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/wiese/wiese_0000_background.gif","classes":["background"]},{"src":"bubble5/wiese/grashalme.gif","classes":["gras"]}],"container":"b5-gras"}
 
 "Ahh, frische Luft. Es müffelt in deiner Tasche, weisst du?", sagt Alexa und streckt sich.
 
@@ -42,12 +42,12 @@ Nach einer längeren Strecke hält {name} an.
     
 
 // Lager
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/lager/lager-background.png","classes":["background"]}],"container":"b5-camp"}
 -Als {name} und Alexa dann endlich beim Sumpf ankommen werden sie gross begrüsst.
 
 
 // Lager mit vielen Fröschen
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/lager/lager-background.png","classes":["background"]},{"src":"bubble5/lager/lager_0003_frosch-1.png","classes":["frog-1"]},{"src":"bubble5/lager/lager_0002_frosch-2.png","classes":["frog-2"]},{"src":"bubble5/lager/lager_0001_frosch-3.png","classes":["frog-3"]},{"src":"bubble5/lager/lager_0000_frosch-4.png","classes":["frog-4"]},{"src":"bubble5/lager/frosch-5-animation.gif","classes":["frog-5"]}],"container":"b5-camp-frogs"}
 
 Das Geschenk wird {s: ihm|ihr} direkt aus der Hand genommen und verschwindet in der Menge, die sich um die beiden bildet.
 
@@ -58,7 +58,7 @@ Das Geschenk wird {s: ihm|ihr} direkt aus der Hand genommen und verschwindet in 
 Die Stimmen sind durcheinander und laut und sie drängen die beiden in ein grosses Zelt.
 
 // Zelt
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/zelt/zelt_background.png","classes":["background"]},{"src":"bubble5/zelt/zelt_könig_blinzeln.gif","classes":["eyes"]}],"container":"b5-tent"}
 
 Der Vorhang wird angehoben und {name} findet sich in einem geräumigen Zelt wieder.
 
@@ -67,13 +67,10 @@ In der Mitte sitzt ein dünner Frosch.
 Er ist grün und sieht überhaupt nicht aus, wie Alexa...
 
 
-// husten
-#CONTENT:
-
 "hh... Ahhhhhhhhh.", der dünne Frosch röchelt und fängt an zu husten.
 
 // Zelt
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/zelt/zelt_background.png","classes":["background"]},{"src":"bubble5/zelt/zelt_könig_blinzeln.gif","classes":["eyes"]},{"src":"bubble5/zelt/zelt_0006_spucke-1.png","classes":["pucke-1"]},{"src":"bubble5/zelt/zelt_0005_spucke-2.png","classes":["pucke-2"]},{"src":"bubble5/zelt/zelt_0004_spucke-3.png","classes":["pucke-3"]},{"src":"bubble5/zelt/zelt_0003_spucke-4.png","classes":["pucke-4"]},{"src":"bubble5/zelt/zelt_0002_spucke-5.png","classes":["pucke-5"]},{"src":"bubble5/zelt/zelt_0001_spucke-6.png","classes":["pucke-6"]},{"src":"bubble5/zelt/zelt_0000_spucke-7.png","classes":["pucke-7"]}],"container":"b5-tent-pucke"}
 
 Als er sich beruhigt hat, spuckt er eine grüne, glitschige Masse auf den Boden. Sofort kommt jemand von der Seite ins Zelt und wischt es auf.
 
@@ -104,24 +101,24 @@ Wir wären natürlich sehr froh über deine Hilfe...
 -Der König nickt und möchte zu einer Antwort ansetzen, aber bricht erneut in einen Hustenanfall aus.
 
 // Lager 
-#CONTENT:
+#CONTENT: #CONTENT: {"type":"image","images":[{"src":"bubble5/lager/lager-background.png","classes":["background"]}],"container":"b5-camp"}
 
 {name} und Alexa werden von zwei Fröschen aus dem Zelt gebeten. Der König bräuchte seine Ruhe.
 
 // Alexa hysterisch
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/alexa_hysterisch/alexa-hysterisch.gif","classes":["alexa"]}],"container":"b5-alexa-hysterical"}
 
 Gerade als {name} etwas später versucht sich auszuruhen, ertönt plötzlich ein lautes Zirpen. Alexa springt auf.
 
 "Das ist das Signal, das Signal, hast du gehört, das Signal, wir müssen weg!", schreit sie.
 
 // Frösche ins Bild 
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/frösche/froschinsbild_0010_frosch-1.png","classes":["frog-1"]},{"src":"bubble5/frösche/froschinsbild_0009_frosch-2.png","classes":["frog-2"]},{"src":"bubble5/frösche/froschinsbild_0008_frosch-3.png","classes":["frog-3"]},{"src":"bubble5/frösche/froschinsbild_0007_frosch-4.png","classes":["frog-4"]},{"src":"bubble5/frösche/froschinsbild_0006_frosch-5.png","classes":["frog-5"]},{"src":"bubble5/frösche/froschinsbild_0005_frosch-6.png","classes":["frog-6"]},{"src":"bubble5/frösche/froschinsbild_0004_frosch-7.png","classes":["frog-7"]},{"src":"bubble5/frösche/froschinsbild_0003_frosch-8.png","classes":["frog-8"]},{"src":"bubble5/frösche/froschinsbild_0002_frosch-9.png","classes":["frog-9"]},{"src":"bubble5/frösche/froschinsbild_0001_frosch-10.png","classes":["frog-10"]}],"container":"b5-frogs"}
 
 Von allen Seiten stürmen plötzlich rote Füchse auf das Lager der Frösche ein.
 
 // Tumult
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/tumult/tumult_background-color.png","classes":["background"]},{"src":"bubble5/tumult/tumult_frosch.gif","classes":["frog"]},{"src":"bubble5/tumult/tumult_fuchs.gif","classes":["fox"]},{"src":"bubble5/tumult/tumult_gekribel.gif","classes":["scribble"]}],"container":"b5-turmoil"}
 
 Ein riesiges Chaos entsteht und {name} hat überhaupt keinen Überblick.
 
@@ -142,7 +139,7 @@ Der König scheint seinen Strategieplan überhaupt nicht anzuwenden.
 
 
 // Fuchs
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/fuchs/fuchs_background-color.png","classes":["background"]},{"src":"bubble5/fuchs/fuchs_böse.gif","classes":["evil"]},{"src":"bubble5/fuchs/fuchs_fuchs.gif","classes":["fox"]}],"container":"b5-fox"}
 
 -{name} kämpft sich durch das Getümmel doch der Weg wird ihm von einem Fuchs abgeschnitten.
 
@@ -156,8 +153,8 @@ Der Fuchs fletscht seine Zähne und rennt auf {name} zu.
 
 *[kämpfen]
 
-// Getümmel
-#CONTENT:
+// Tumult
+#CONTENT: {"type":"image","images":[{"src":"bubble5/tumult/tumult_background-color.png","classes":["background"]},{"src":"bubble5/tumult/tumult_frosch.gif","classes":["frog"]},{"src":"bubble5/tumult/tumult_fuchs.gif","classes":["fox"]},{"src":"bubble5/tumult/tumult_gekribel.gif","classes":["scribble"]}],"container":"b5-turmoil"}
 Doch bevor sich {name} bewegen kann, knallt etwas Braunes gegen den Fuchs.
 
 Dieser war gerade mitten in der Luft und wird durch den Knall zur Seite geworfen.
@@ -168,21 +165,21 @@ Was war das? {name} schaut sich um.
 
 
 // Boden vibrieren 
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/boden_vibrieren/boden vibrieren_wasser-background.png","classes":["background"]},{"src":"bubble5/boden_vibrieren/boden-vibrieren_schilf.gif","classes":["gras"]},{"src":"bubble5/boden_vibrieren/boden-vibrieren_wasser.gif","classes":["water"]}],"container":"b5-vibration"}
 
 Unter {name}s Füsse fängt plötzlich der Boden zu vibrieren an.
 
 Ein immens lauter Pfiff ertönt und {name} sieht wie rote Flecken den Sumpf verlassen und durch das Schilf verschwinden.
 
 
-// quellen 
-#CONTENT:
 Der Boden vibriert weiter und Wasser fängt an, aus allen löcher zu quellen.
 
 
 "Hey, Langnase!", die vertraute Stimme von Alexa krächzt von hinten.
 
-// alexa aus fell
+// fell 
+#CONTENT: {"type":"image","images":[{"src":"bubble5/fell/fell_fell.png","classes":["fur"]}],"container":"b5-fur"}
+
 {name} dreht sich um und sieht Alexa aus dem Fell des toten Fuchses kriechen.
 
 
@@ -190,7 +187,7 @@ Der Boden vibriert weiter und Wasser fängt an, aus allen löcher zu quellen.
 
 
 // blatt 
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/blatt/blatt_wasser_background.png","classes":["background"]},{"src":"bubble5/blatt/blatt_könig.png","classes":["king"]},{"src":"bubble5/blatt/blatt_wasser.png","classes":["water"]}],"container":"b5-leaf"}
 
 Das Wasser reicht {name} nun bereits zur Hüfte und von rechts kommt der Froschkönig auf einem Blatt angeschwommen.
 
@@ -200,9 +197,6 @@ Das Wasser reicht {name} nun bereits zur Hüfte und von rechts kommt der Froschk
 
 Das sind zu viele Wörter für den alten Froschkönig gewesen und er hustet wieder und treibt davon.
 
-// Lager 
-#CONTENT:
-
 Nach einer Weile hat sich der Wasserspiegel wieder gesenkt und {name} watet zum Lager der Frösche zurück.
 
 Dort wird {name} freudig empfangen.
@@ -210,14 +204,14 @@ Dort wird {name} freudig empfangen.
 "Wir haben gehört... hhhh, dass ihr auf der Suche nach dem hier seid..."
 
 
-// Alter Gartenzwerg  
-#CONTENT:
+// alter Gartenzwerg ohne Zwerg
+#CONTENT: {"type":"image","images":[{"src":"bubble5/alter_gartenzwerg/alter-gartenzwerg_0001_background.png","classes":["background"]}],"container":"b5-gnome-old"}
 Der Froschkönig zeigt auf einen Gartenzwerg.
 
 "Den hier kann ich dir leider nicht geben, dieser ist seit hhhhhhh Jahrtausenden in unserem Besitz."
 
-// Gartenzwerg  
-#CONTENT:
+// alter Gartenzwerg  
+#CONTENT: {"type":"image","images":[{"src":"bubble5/alter_gartenzwerg/alter-gartenzwerg_0001_background.png","classes":["background"]},{"src":"bubble5/alter_gartenzwerg/alter-gartenzwerg_0000_gartenzwerg.png","classes":["gnome"]}],"container":"b5-gnome-old"}
 
 Und er fährt fort: "Hhh, doch als Dank darfst du dir hhh einer von unserer Sammlung aussuchen."
 
@@ -230,13 +224,14 @@ Und er fährt fort: "Hhh, doch als Dank darfst du dir hhh einer von unserer Samm
 
 "Aber eine Chance ist besser als nichts, nicht?", krächzt ein anderer Frosch.
 
-// TODO Zwerge
+// Zwerge
+#CONTENT: {"type":"image","images":[{"src":"bubble5/gartenzwerge/gartenzwerge.png","classes":["gnomes"]}],"container":"b5-gnomes"}
 
 "GENAU DER GEHÖRT MIIIRR", meint laut eine hohe Stimme hinter {name}
 
 
 // Hexe  
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/hexe/hexe_0001_hintergrund.png","classes":["background"]},{"src":"bubble5/hexe/hexe_0000_hexe.png","classes":["witch"]}],"container":"b5-witch"}
 
 {name} dreht sich um und erkennt die Hexe.
 
@@ -244,8 +239,8 @@ Und er fährt fort: "Hhh, doch als Dank darfst du dir hhh einer von unserer Samm
 
 "Aus dem Weg!", kreischt die Hexe hysterisch und fegt achtlos einige Frösche aus dem Weg.
 
-// Hexe wütend  
-#CONTENT:
+// Hexe wüten
+#CONTENT: {"type":"image","images":[{"src":"bubble5/hexe_wüten/kribbel.gif","classes":["scribble"]},{"src":"bubble5/hexe_wüten/scherben.gif","classes":["shards"]}],"container":"b5-witch-rage"}
 
 Als sie die Sammlung erblickt fängt sie darin herumzuwüten.
 
@@ -273,7 +268,7 @@ Die Frösche schreien laut auf und wieder entfacht sich ein grosses Getümmel.
 
 = richtiger_zwerg
 // Der Gartenzwerg   
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/gartenzwerg_larimar/gartenzwerg.png","classes":["gnome"]}],"container":"b5-gnome"}
 
 {name} weiss nicht, was {s: er|sie} tun soll und hält den Gartenzwerg fest in den Händen.
 
@@ -284,18 +279,18 @@ Der Gartenzwerg fühlt sich ungewöhnlich schwer an...
 {name} schüttelt ihn nochmals. Es muss sich etwas darin befinden...
 
 // Der Gartenzwerg offen   
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/gartenzwerg_larimar/gartenzwerg-öffnung.png","classes":["gnome"]}],"container":"b5-gnome-open"}
 Als {s: er|sie} den Gartenzwerg dreht erkennt {name} eine kleine Öffnung auf der Rückseite.
 
 // Der Gartenzwerg larimar 
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/gartenzwerg_larimar/gartenzwerg-nah.png","classes":["gnome"]},{"src":"bubble5/gartenzwerg_larimar/gartenzwerg-larimar.png","classes":["larimar"]}],"container":"b5-gnome-larimar"}
 Vorsichtig dreht {name} den Gartenzwerg und ein blauer Stein fällt {name} in die Hand.
 ->stein
 
 
 =falscher_zwerg
 // Bruchstücke 
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/bruchstücke_larimar/bruchstücke_larimar_background.png","classes":["background"]},{"src":"bubble5/bruchstücke_larimar/bruchstück-2.png","classes":["fragment-2"]},{"src":"bubble5/bruchstücke_larimar/bruchstück-2.png","classes":["fragment-1"]}],"container":"b5-fragments"}
 Dabei tritt {name} gegen einen Gartenzwerg. Dieser fällt um und zerbricht.
 
 Im lauten Getümmel ist dies jedoch niemandem aufgefallen.
@@ -305,7 +300,7 @@ Im lauten Getümmel ist dies jedoch niemandem aufgefallen.
 {s: er|sie} bückt sich und schiebt die Scherben zur Seite.
 
 // Bruchstücke larimar 
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/bruchstücke_larimar/bruchstücke_larimar_background.png","classes":["background"]},{"src":"bubble5/bruchstücke_larimar/bruchstück-2.png","classes":["fragment-2"]},{"src":"bubble5/bruchstücke_larimar/bruchstück-2.png","classes":["fragment-1"]},{"src":"bubble5/bruchstücke_larimarlarimar.png","classes":["larimar"]}],"container":"b5-fragments-larimar"}
 Auf dem Boden liegt ein blauer Stein.
 ->stein
 
@@ -314,8 +309,8 @@ Der Larimar!
 
 Schnell steckt {name} ihn in seine Hosentasche.
 
-// Scherben getümmel 
-#CONTENT:
+// Hexe wüten 
+#CONTENT: {"type":"image","images":[{"src":"bubble5/hexe_wüten/kribbel.gif","classes":["scribble"]},{"src":"bubble5/hexe_wüten/scherben.gif","classes":["shards"]}],"container":"b5-witch-rage"}
 
 Um {s: ihn|sie} herum ist immer noch das laute Klirren der Gartenzwerge und die gemischten Schreie der Frösche und der Hexe.
 
@@ -328,10 +323,13 @@ Wenn sich {name} jetzt auf den Weg machen würde, würde es nicht auffallen...
 
     {name} kann die Frösche nicht einfach zurücklassen und stürzt ins Getümmel.
     
+    // Alexa trümmer  
+    #CONTENT: {"type":"image","images":[{"src":"bubble5/alexa_tot/alexa tot_background.png","classes":["background"]},{"src":"bubble5/alexa_tot/alexa_tot_scherbe-1.png","classes":["shard-1"]},{"src":"bubble5/alexa_tot/alexa_tot_scherbe-2.png","classes":["shard-2"]}],"container":"b5-alexa-ruins"}
+    
     Dabei sieht {name} eine bekannte Pfote aus einem Haufen von Trümmern hervorschauen.
     
-    // Alexa trümmer  
-    #CONTENT:
+    // Alexa sterben  
+    #CONTENT: {"type":"image","images":[{"src":"bubble5/alexa_tot/alexa tot_background.png","classes":["background"]},{"src":"bubble5/alexa_tot/alexa_tot_scherbe-1.png","classes":["shard-1"]},{"src":"bubble5/alexa_tot/alexa_tot_scherbe-2.png","classes":["shard-2"]},{"src":"bubble5/alexa_tot/alexa-tot_blinzeln.gif","classes":["eyes"]},{"src":"bubble5/alexa_tot/alexa-tot_bluten.gif","classes":["blood"]}],"container":"b5-alexa-dying"}
     
     Als sich {name} nähert und die Trümmer zur Seite schiebt, erkennt {s: er|sie} Alexa.
     
@@ -357,15 +355,15 @@ Wenn sich {name} jetzt auf den Weg machen würde, würde es nicht auffallen...
     **[Alexa aufhelfen]
         "PFOTEN WEG", Alexa quäkt.
         
-    --"Sieh, mein Freundchen. Nicht alle schaffen es ans Ziel, aber jetzt hör auf den Weichen zu spielen und geh, nur so rettest du alle..."    
-
+    --"Sieh, mein Freundchen. Nicht alle schaffen es ans Ziel, aber jetzt hör auf den Weichen zu spielen und geh, nur so rettest du alle..."
+    
     // Splitter  
-    #CONTENT:
+    #CONTENT: {"type":"image","images":[{"src":"bubble5/splitter/splitter.gif","classes":["splitter"]}],"container":"b5-splitter"}
     
     Plötzlich kracht es laut neben {name} und ein Splitter trifft {s: ihn|sie} an der Schulter.
     
     // Alexa tot  
-    #CONTENT:
+    #CONTENT: {"type":"image","images":[{"src":"bubble5/alexa_tot/alexa_tot_alexa_tot.png","classes":["background"]}],"container":"b5-alexa-dead"}
 
     Als {name} wieder zu Alexa blickt sind ihre Augen geschlossen.
 
@@ -378,7 +376,7 @@ Wenn sich {name} jetzt auf den Weg machen würde, würde es nicht auffallen...
     
 =gehen
 // wald  
-#CONTENT:
+#CONTENT: {"type":"image","images":[{"src":"bubble5/wald/wald_0002_wald-background.png","classes":["background"]},{"src":"bubble5/wald/wald_0001_baum-1.png","classes":["tree-1"]},{"src":"bubble5/wald/wald_0000_baum-2.png","classes":["tree-2"]}],"container":"b5-forest"}
 
 Alle sind so beschäftigt, dass niemand bemerkt, wie {name} zurück in den Wald geht...
 

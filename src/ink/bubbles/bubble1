@@ -113,6 +113,27 @@ Mama... und Papa... Sie sind bereits...
 
 Welcher Gegenstand soll {name} noch einpacken?
 
+// R
+*[Spitzhacke]
+~item = "Spitzhacke"
+
+*[Lupe]
+~item = "Lupe"
+
+*[Malkasten]
+~item = "Malkasten"
+
+*[Pflaster]
+~item = "Pflaster"
+
+*[Gold]
+~item = "Gold"
+
+*[Rechtsbuch]
+~item = "Rechtsbuch"
+
+- {name} packt {item} in {s: seinen|ihren} Rucksack und stürmt aus der Tür.
+
 -> ausserhalb_des_dorfs
 
 
