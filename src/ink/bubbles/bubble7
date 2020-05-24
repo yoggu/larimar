@@ -1,12 +1,25 @@
 
 === bubble7 ===
+
+// Auge
+#CONTENT: {"type":"image","images":[{"src":"bubble7/auge/Auge-animation.gif","classes":["eye"]}],"container":"b6-eye"}
+
 "{name}..."
+
+// Auge
+#CONTENT: {"type":"image","images":[{"src":"bubble7/auge/Auge-animation.gif","classes":["eye"]}],"container":"b6-eye"}
 
 "Komm du Schnarchnase.."
 
 Etwas kitzelt an {name}s Gesicht.
 
+// Auge
+#CONTENT: {"type":"image","images":[{"src":"bubble7/auge/Auge-animation.gif","classes":["eye"]}],"container":"b6-eye"}
+
 "Halloooo, aufwachennn!"
+
+// Schwester
+#CONTENT: {"type":"image","images":[{"src":"bubble7/schwester/gesicht.png","classes":["face"]},{"src":"bubble7/schwester/haar-animation.gif","classes":["hair"]}],"container":"b6-sister"}
 
 {name} öffnet die Augen und {s: seine|ihre} Schwester hat sich über {s: ihn|sie} gebeugt.
 
@@ -20,6 +33,9 @@ Etwas kitzelt an {name}s Gesicht.
 
 {name} schaut sich um.
 
+// Wiese
+#CONTENT: {"type":"image","images":[{"src":"bubble7/wiese/wiese-background.png","classes":["background"]},{"src":"bubble7/wiese/wolken.png","classes":["clouds"]},{"src":"bubble7/wiese/flower-1-animation.gif","classes":["flower-1"]},{"src":"bubble7/wiese/flower-2-animation.gif","classes":["flower-2"]}],"container":"b6-meadow"}
+
 {s: Er|Sie} liegt in seinem Versteck im Gras.
 
 Als {name} aufsteht piekst {s: ihn|sie} etwas in die Seite.
@@ -29,6 +45,9 @@ Als {name} in die Hosentasche greift, zieht {s: er|sie} einen blauen Stein herau
 Der Larimar?
 
 Was ist passiert? War das doch kein Traum?
+
+// schluss 
+#CONTENT: {"type":"image","images":[{"src":"bubble7/schluss/schluss_background.png","classes":["background"]},{"src":"bubble7/schluss/wolken.png","classes":["clouds"]},{"src":"bubble7/wiese/frosch-ins-bild-hüpfen.gif","classes":["frog"]}],"container":"b6-end"}
 
 {name} steckt den Stein zurück und  geht Richtung Dorf.
 
