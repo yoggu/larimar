@@ -201,7 +201,7 @@ Ansonsten scheint alles normal zu sein. Ausser, dass das sonst so belebte Seeufe
 = oktopusbaum
 
 //oktopusbaum
-#CONTENT: {"type":"image","images":[{"src":"bubble1/oktopusbaum/oktopusbaum_0002_teile.png","classes":["parts"]},{"src":"bubble1/uferteile/oktopusbaum_0006_baum.png","classes":["tree"]}],"container":"octopus-tree"}
+#CONTENT: {"type":"image","images":[{"src":"bubble1/oktopusbaum/oktopusbaum_0002_teile.png","classes":["parts"]},{"src":"bubble1/oktopusbaum/oktopusbaum_0006_baum.png","classes":["tree"]}],"container":"octopus-tree"}
 
 - Der Baum steht ziemlich weit aussen im Wasser. Die Wurzeln sehen aus wie Arme und erinnern an einen Oktopus. Es sieht aus, als hätten sie in einem Kampf die umliegenden Boote zerstört... Damit konnte {name} den Teich nicht mehr überqueren...
 
