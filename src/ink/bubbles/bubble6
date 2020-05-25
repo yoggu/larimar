@@ -1,6 +1,7 @@
 INCLUDE bubbles/bubble7
 
 === bubble6 ===
+#THEME: dark
 
 // einzelnes Echo 
 #CONTENT: {"type":"image","images":[{"src":"bubble6/einzelnes_echo/einzelnes-echo.gif","classes":["echo"]}],"container":"b6-echo"}
@@ -97,9 +98,11 @@ Etwas huscht im Schatten der Höhle umher.
 *[nein]
 
 // es wird hell
-#CONTENT: {"type":"image","images":[{"src":"bubble6/einzelnes_echo/es-wird-hell.gif","classes":["light"]}],"container":"b6-light"}
+-#CONTENT: {"type":"image","images":[{"src":"bubble6/einzelnes_echo/es-wird-hell.gif","classes":["light"]}],"container":"b6-light"}
 
 -Der Stein wird auf einmal hell und alles wird weiss. {name} ist blind.
+
+
 ->bubble7
 
 

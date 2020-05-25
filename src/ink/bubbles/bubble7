@@ -1,22 +1,24 @@
 
 === bubble7 ===
-
+#THEME: dark
 // Auge
 #CONTENT: {"type":"image","images":[{"src":"bubble7/auge/Auge-animation.gif","classes":["eye"]}],"container":"b6-eye"}
 
 "{name}..."
 
 // Auge
-#CONTENT: {"type":"image","images":[{"src":"bubble7/auge/Auge-animation.gif","classes":["eye"]}],"container":"b6-eye"}
+#CONTENT: {"type":"image","images":[{"src":"bubble7/auge/Auge-animation-2.gif","classes":["eye"]}],"container":"b6-eye"}
 
 "Komm du Schnarchnase.."
 
 Etwas kitzelt an {name}s Gesicht.
 
 // Auge
-#CONTENT: {"type":"image","images":[{"src":"bubble7/auge/Auge-animation.gif","classes":["eye"]}],"container":"b6-eye"}
+#CONTENT: {"type":"image","images":[{"src":"bubble7/auge/Auge-animation-3.gif","classes":["eye"]}],"container":"b6-eye"}
 
 "Halloooo, aufwachennn!"
+
+#THEME: light
 
 // Schwester
 #CONTENT: {"type":"image","images":[{"src":"bubble7/schwester/gesicht.png","classes":["face"]},{"src":"bubble7/schwester/haar-animation.gif","classes":["hair"]}],"container":"b6-sister"}
@@ -47,7 +49,7 @@ Der Larimar?
 Was ist passiert? War das doch kein Traum?
 
 // schluss 
-#CONTENT: {"type":"image","images":[{"src":"bubble7/schluss/schluss_background.png","classes":["background"]},{"src":"bubble7/schluss/wolken.png","classes":["clouds"]},{"src":"bubble7/wiese/frosch-ins-bild-hüpfen.gif","classes":["frog"]}],"container":"b6-end"}
+#CONTENT: {"type":"image","images":[{"src":"bubble7/schluss/schluss_background.png","classes":["background"]},{"src":"bubble7/schluss/wolken.png","classes":["clouds"]},{"src":"bubble7/schluss/frosch-ins-bild-hüpfen.gif","classes":["frog"]}],"container":"b6-end"}
 
 {name} steckt den Stein zurück und  geht Richtung Dorf.
 
