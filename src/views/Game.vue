@@ -318,14 +318,15 @@ export default {
 
   .choices {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
 
     .choice {
       margin: 24px 0 24px 0;
       padding: 0 12px;
       color: inherit;
       font-weight: 400;
-      //font-size: 18px;
+      max-width: 50%;
       text-decoration: none;
       cursor: pointer;
 
