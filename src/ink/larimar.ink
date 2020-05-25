@@ -24,14 +24,28 @@ Wähle deinen Namen
 * [Nio]
     ~name = "Nio"
     ~s = true
-    -> bubble4
+    -> bubbles
     
 * [Nera]
     ~name = "Nera"
     ~s = false
-    -> bubble4
+    -> bubbles
 
-
+=bubbles
+*[bubble1]
+    ->bubble1
+*[bubble2]
+    ->bubble2
+*[bubble3]
+    ->bubble3
+*[bubble4]
+    ->bubble4
+*[bubble5]
+    ->bubble5
+*[bubble6]
+    ->bubble6
+*[bubble7]
+    ->bubble7
 
 === ending ===
 story end
