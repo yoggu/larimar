@@ -1,15 +1,6 @@
 INCLUDE bubbles/bubble1
 
 
-//INCLUDE bubbles/bubble2
-//INCLUDE bubbles/bubble3
-//INCLUDE bubbles/bubble4
-//INCLUDE bubbles/bubble5
-//INCLUDE bubbles/bubble6
-//INCLUDE bubbles/bubble7
-
-
-
 
 VAR R = 0
 VAR I = 0
@@ -33,12 +24,12 @@ Wähle deinen Namen
 * [Nio]
     ~name = "Nio"
     ~s = true
-    -> bubble2
+    -> bubble4
     
 * [Nera]
     ~name = "Nera"
     ~s = false
-    -> bubble2
+    -> bubble4
 
 
 

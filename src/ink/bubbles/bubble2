@@ -250,6 +250,9 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     
 
 =bruecke
+
+#THEME: light
+
 // brücke mit mann
 #CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0001_mann.png","classes":["man"]}],"container":"b2-bridge-man"}
 Nach einer Weile biegen sie ab und sie stehen vor einer Brücke.
