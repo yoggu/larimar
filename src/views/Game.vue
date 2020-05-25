@@ -1,5 +1,5 @@
 <template>
-  <div class="game">
+  <div class="game" :class="{dark: dark}">
     <div class="navbar">
       <router-link to="/menu">menU</router-link>
     </div> 
@@ -58,7 +58,8 @@ export default {
       currentImage: Object,
       finished: false,
       result: {},
-      showChoice: false
+      showChoice: false,
+      dark: false
     };
   },
   mounted () {
@@ -147,6 +148,13 @@ export default {
           
           this.currentImage = content;
 
+        } else if (tag.property === "THEME") { 
+          if (tag.val == 'dark') {
+            this.dark = true;
+          } else if (tag.val == 'light') {
+            this.dark = false;
+          }
+          this.$store.commit('setTheme', this.dark); 
         }
       });
     },
@@ -157,6 +165,7 @@ export default {
       this.choices = [];
       this.tags = [];
       this.customClasses = [];
+      this.$store.commit('setTheme', this.dark);
       this.story.ResetState();
       this.$store.commit('saveState', this.story.state.ToJson());
       this.finished = false;
@@ -180,6 +189,7 @@ export default {
       this.choices = [];
       this.tags = [];
       this.customClasses = [];
+      this.dark = this.$store.state.isDark;
       this.story.state.LoadJson(this.$store.state.story);
       this.continueStory();
     },
@@ -242,6 +252,11 @@ export default {
   height: 100vh;
   overflow: hidden;
 
+  &.dark {
+    color:white;
+    background-color: black;
+  }
+
 }
 
 .result {
@@ -255,11 +270,10 @@ export default {
   align-items: center;
   padding-left: 12px;
   z-index: 99;
-  background-color: white;
   flex-shrink: 0;
 
   a {
-    color: black;
+    color: inherit;
     font-weight: 400;
   }
 }
@@ -309,14 +323,14 @@ export default {
     .choice {
       margin: 24px 0 24px 0;
       padding: 0 12px;
-      color: black;
+      color: inherit;
       font-weight: 400;
       //font-size: 18px;
       text-decoration: none;
       cursor: pointer;
 
       &:hover {
-        color: black;
+        color: inherit;
       }
     }
   }

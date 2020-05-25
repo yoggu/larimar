@@ -1,7 +1,7 @@
 INCLUDE bubbles/bubble3
 === bubble2 ===
 // ankunft wald
-#CONTENT: {"type":"image","images":[{"src":"bubble2/ankunft_wald/ankunft_0007_background-black.png","classes":["background"]},{"src":"bubble2/ankunft_wald/ankunft_0000_grass.png","classes":["gras"]},{"src":"bubble2/ankunft_wald/ankunft_0000_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/ankunft_wald/ankunft_0003_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/ankunft_wald/ankunft_0004_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/ankunft_wald/ankunft_0006_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/ankunft_wald/ankunft_0005_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/ankunft_wald/ankunft_0002_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/ankunft_wald/ankunft_0001_baum-7.png","classes":["tree","tree-7"]},{"src":"bubble2/ankunft_wald/ankunft_0001_wasserdetails.png","classes":["water"]}],"container":"arrival-forest"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/ankunft_wald/ankunft_0007_background-black.png","classes":["background"]},{"src":"bubble2/ankunft_wald/ankunft_0000_grass.png","classes":["gras"]},{"src":"bubble2/ankunft_wald/ankunft_0000_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/ankunft_wald/ankunft_0003_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/ankunft_wald/ankunft_0004_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/ankunft_wald/ankunft_0006_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/ankunft_wald/ankunft_0005_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/ankunft_wald/ankunft_0002_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/ankunft_wald/ankunft_0001_baum-7.png","classes":["tree","tree-7"]},{"src":"bubble2/ankunft_wald/ankunft_0001_wasserdetails.png","classes":["water"]}],"container":"b2-arrival-forest"}
 
 Nach einem längeren Weg über den Teich kommen {name} und Alexa endlich auf der anderen Seite des Ufers an.
 
@@ -27,10 +27,13 @@ Die Kröte springt aus dem Wasser und landet mit einem grossen Sprung vor dem an
     "Werd' jetzt nicht frech, sonst kannst du dich gleich selbst auf die Suche machen..."
 
 * [In den Wald gehen.]
-// wald
-#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]}],"container":"forest"}
 
-- {name} betritt also den Wald.
+-#THEME: dark
+
+// wald
+-#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]}],"container":"b2-forest"}
+
+-{name} betritt also den Wald.
 
 Die Bäume stehen ziemlich dicht, bereits nach wenigen Schritten scheinen sie vollständig eingeschlossen zu sein.
 
@@ -49,15 +52,17 @@ Nur wenig Licht erreicht den Waldboden und bereits nach wenigen Minuten scheint 
 
 // I
 *[Uhrzeit mit der Sonnenrichtung kombinieren, um die Richtung zu bestimmen]
+    ~I++
     // baumkrone
-    #CONTENT: {"type":"image","images":[{"src":"bubble2/baumkrone/baumkrone_0000_baumkrone.png","classes":["trees"]}],"container":"treetop"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble2/baumkrone/baumkrone_0000_baumkrone.png","classes":["trees"]}],"container":"b2-treetop"}
     
     {name} blickt hinauf in den Himmel. Jedoch sind die Blätter so dicht, dass sich nicht mehr erkennen lässt, woher die Sonne scheint.
 
 // C
 *[Noch einmal alles im Rucksack durchgehen und nach Hilfsmöglichkeiten überprüfen]
+    ~C++
     // rucksack
-     #CONTENT: {"type":"image","images":[{"src":"bubble2/rucksack/rucksack_0000_tasche.png","classes":["bag"]}],"container":"backpack"}
+     #CONTENT: {"type":"image","images":[{"src":"bubble2/rucksack/rucksack_0000_tasche.png","classes":["bag"]}],"container":"b2-backpack"}
      
     {name} kramt im Rucksack. Kompass, Karte, irgendwelche Wegweiser.. Nichts davon befindet sich in seinem Rucksack..
     
@@ -65,10 +70,8 @@ Nur wenig Licht erreicht den Waldboden und bereits nach wenigen Minuten scheint 
 
 - Was jetzt?
 
-wald und frosch
-
-// wald und frosch
-#CONTENT: wald und frosch
+// wald frosch
+#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/frosch/frosch_0000_frosch-black.png","classes":["frog"]}],"container":"b2-forest-frog"}
 
 "Ich wusste nicht, dass du so einfach aufgibst?" kräht Alexa laut.
 
@@ -77,13 +80,13 @@ wald und frosch
 
 *[Umgebung untersuchen]
 
-// wald frosch
-#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/frosch/frosch_0000_frosch-black.png","classes":["frog"]}],"container":"forest-frog"}
+// wald
+-#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]}],"container":"b2-forest"}
 
-- {name} macht sich also auf, um die Umgebung abzusuchen. Vielleicht haben sie ja etwas übersehen...
+{name} macht sich also auf, um die Umgebung abzusuchen. Vielleicht haben sie ja etwas übersehen...
 
 // bäume mit gesichter
-#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"forest-faces"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"b2-forest-faces"}
 
 Als {name} dabei die Bäume einmal genauer untersucht, stellt {s: er|sie} fest, dass da überall ebenfalls Gesichter waren.
 
@@ -94,7 +97,7 @@ Sie sind weniger deutlich zu sehen, weshalb sie {name} bis jetzt gar nicht aufge
 *["Was ist mit denen passiert?"]
 
 // wald frosch gesichter
-#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/frosch/frosch_0000_frosch-black.png","classes":["frog"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"forest-frog-faces"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/frosch/frosch_0000_frosch-black.png","classes":["frog"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"b2-forest-frog-faces"}
 
 -"Ahh, der Gesichterwald... Ja, eigentlich hätte ich mir denken können, dass das hier der Gesichterwald sein muss.."
 
@@ -115,17 +118,18 @@ Sie sind weniger deutlich zu sehen, weshalb sie {name} bis jetzt gar nicht aufge
 
 // I
 *[Gesichter untersuchen und analysieren]
+    ~I++
 
 // S
 *[versuchen mit den Bäumen zu kommunizieren]
-
+    ~S++
 // baum Nahaufnahme
-#CONTENT: {"type":"image","images":[{"src":"bubble2/baum_nahaufnahme/baum-nahaufnahme_0000_baum-1.png","classes":["tree"]}],"container":"tree-closeup"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/baum_nahaufnahme/baum-nahaufnahme_0000_baum-1.png","classes":["tree"]}],"container":"b2-tree-closeup"}
 - {name} geht näher an einen Baum heran und betrachtet diesen.
 
 Zwei kleine, braune Augen blicken starr und milchig aus der Rinde entgegen.
 // Schrei
-#CONTENT: {"type":"image","images":[{"src":"bubble2/schrei/schrei_0002_animation-1.png","classes":["scream-1"]},{"src":"bubble2/schrei/schrei_0001_animation-2.png","classes":["scream-2"]},{"src":"bubble2/schrei/schrei_0000_animation-3.png","classes":["scream-3"]}],"container":"scream"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/schrei/schrei_0002_animation-1.png","classes":["scream-1"]},{"src":"bubble2/schrei/schrei_0001_animation-2.png","classes":["scream-2"]},{"src":"bubble2/schrei/schrei_0000_animation-3.png","classes":["scream-3"]}],"container":"b2-scream"}
 
 "KRIAAAAAAAAAAAAAAAAAAAAAAAA"
 
@@ -141,37 +145,37 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     
 = schrei
     // wald
-    #CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]}],"container":"forest"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]}],"container":"b2-forest"}
     
     Der Schrei ertönt noch einmal, diesmal lauter. {name} und die Kröte bewegen sich in die Richtung, aus welcher sie den Schrei vernehmen.
 
     Plötzlich treten sie hinaus aus dem Wald und es ist alles hell.
     
     // schlucht stein
-    #CONTENT: {"type":"image","images":[{"src":"bubble2/schlucht_stein/schlucht_stein_0001_stein.png","classes":["stone"]}],"container":"canyon-stone"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble2/schlucht_stein/schlucht_stein_0001_stein.png","classes":["stone"]}],"container":"b2-canyon-stone"}
     Vor ihnen öffnet sich eine grosse Schlucht und nur ein schmaler Weg führt sie weiter.
     
     Jedoch versperrt ein riesiger Fels den Weg.
     
     // R
     ** [Du versuchst darüber zu klettern, obwohl der Stein sehr glatt erscheint und wenig Halt aufweist]
+        //TODO Den Stein mit der Spitzhacke zerschlagen
+        
+        ~R++
         // auf dem Stein
-        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein_0001_white-background.png","classes":["background"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0002_stein-details.png","classes":["stone"]}],"container":"stone-top"} 
+        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein_0001_white-background.png","classes":["background"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0002_stein-details.png","classes":["stone"]}],"container":"b2-stone-top"} 
         
         {name} schafft es mit Müh und Not den Felsen zu besteigen und klettert hinauf.
         
-        //TODO säge fällt aus der Tasche
-        // Dabei fällt ihm aber die grosse Säge aus der Tasche. Jetzt noch einmal herunter zu klettern wäre aber viel zu gefährlich...
-        
         // auf dem Stein mit maus
-        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein_0001_white-background.png","classes":["background"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0002_stein-details.png","classes":["stone"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0000_maus.png","classes":["mouse"]}],"container":"stone-top-mouse"}
+        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein_0001_white-background.png","classes":["background"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0002_stein-details.png","classes":["stone"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0000_maus.png","classes":["mouse"]}],"container":"b2-stone-top-mouse"}
         
         Auf dem Stein sitzt eine kleine, graue Maus. Sie kneift die Augen zu und kurz danach schreit sie: "KIAAAA"
         
         "Gesundheit!" meint Alexa. "Das war also dieses gruselige Geräusch? Man, dass so ein kleines Wesen so laut niesen kann..."
         
         // spalt
-        #CONTENT: {"type":"image","images":[{"src":"bubble2/spalt/spalt_0000_spalt.png","classes":["gap-1"]}],"container":"gap"}
+        #CONTENT: {"type":"image","images":[{"src":"bubble2/spalt/spalt_0000_spalt.png","classes":["gap-1"]}],"container":"b2-gap"}
         Die kleine Maus hatte die beiden bis dahin gar nicht bemerkt. Vor Schreck steht sie auf und flitzt durch einen Spalt davon.
         
         Alexa lacht und gemeinsam gehen sie weiter.
@@ -179,11 +183,12 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
 
     // I
     ** [Du untersuchst das Gestein nach möglichen Rissen und Spuren]
+        ~I++
     
     Der Stein ist zu glatt und es gibt keine Möglichkeit oder Halt, um zu klettern.
     
     // schlucht stein maus
-    #CONTENT: {"type":"image","images":[{"src":"bubble2/schlucht_stein/schlucht_stein_0001_stein.png","classes":["stone"]},{"src":"bubble2/schlucht_stein/schlucht_stein_0000_maus.png","classes":["mouse"]}],"container":"canyon-stone-mouse"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble2/schlucht_stein/schlucht_stein_0001_stein.png","classes":["stone"]},{"src":"bubble2/schlucht_stein/schlucht_stein_0000_maus.png","classes":["mouse"]}],"container":"b2-canyon-stone-mouse"}
     Auf dem Stein sitzt eine kleine, graue Maus. Sie kneift die Augen zu und kurz danach schreit sie: "KIAAAA"
     
     "Gesundheit!" meint Alexa. "Das war also diese vielversprechende Geräusch..."
@@ -191,7 +196,7 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     Die kleine Maus hatte die beiden bis dahin gar nicht bemerkt. Vor Schreck steht sie auf und flitzt durch einen Spalt davon.
     
     // spalt
-    #CONTENT: {"type":"image","images":[{"src":"bubble2/spalt/spalt_0000_spalt.png","classes":["gap-1"]}],"container":"gap"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble2/spalt/spalt_0000_spalt.png","classes":["gap-1"]}],"container":"b2-gap"}
     "Hey Nase, komm mal!", ruft Alexa und weist auf einen Schleichweg, den sie zuvor übersehen haben.
     
     {name} quetscht sich mühsam durch.
@@ -205,21 +210,22 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     
 = gesichter
     // bäume mit gesichter
-    #CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"forest-faces"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"b2-forest-faces"}
     
     Die Gesichter zeigen alle in die gleiche Richtung...
     
     Alle Bäume zeigen in die Richtung eines grossen Felsens...
     
     // wald stein
-    # CONTENT: {"type":"image","images":[{"src":"bubble2/wald_stein/wald-stein_0000_maus.png","classes":["mouse"]},{"src":"bubble2/wald_stein/wald-stein_0001_stein.png","classes":["stone"]},{"src":"bubble2/wald_stein/wald-stein_0002_bäume.png","classes":["trees"]}],"container":"forest-stone"}
+    # CONTENT: {"type":"image","images":[{"src":"bubble2/wald_stein/wald-stein_0000_maus.png","classes":["mouse"]},{"src":"bubble2/wald_stein/wald-stein_0001_stein.png","classes":["stone"]},{"src":"bubble2/wald_stein/wald-stein_0002_bäume.png","classes":["trees"]}],"container":"b2-forest-stone"}
     
     Der Fels erscheint riesig und versperrt den Weg. {name} läuft in die eine Richtung und Alexa in die andere, jedoch geben sie nach wenigen Metern auf. Das Gebüsch ist zu dicht und voller Dornen.
 
     // R
     ** [Du versuchst darüber zu klettern, obwohl der Stein sehr glatt erscheint und wenig Halt aufweist]
+        ~R++
         // auf dem Stein
-        // #CONTENT: 
+        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein_0001_white-background.png","classes":["background"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0002_stein-details.png","classes":["stone"]}],"container":"b2-stone-top"} 
     
         {name} schafft es mit Müh und Not den Felsen zu besteigen und klettert hinauf.
     
@@ -228,13 +234,13 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
         
     // I
     ** [Du untersuchst das Gestein nach möglichen Rissen und Spuren]
-        
+       ~I++ 
         // auf dem Stein
-        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein_0001_white-background.png","classes":["background"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0002_stein-details.png","classes":["stone"]}],"container":"stone-top"} 
+        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein_0001_white-background.png","classes":["background"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0002_stein-details.png","classes":["stone"]}],"container":"b2-stone-top"} 
         Der Stein ist zu glatt und es gibt keine Möglichkeit oder Halt, um zu klettern.
         
         // spalt
-        #CONTENT: {"type":"image","images":[{"src":"bubble2/spalt/spalt_0000_spalt.png","classes":["gap-1"]}],"container":"gap"}
+        #CONTENT: {"type":"image","images":[{"src":"bubble2/spalt/spalt_0000_spalt.png","classes":["gap-1"]}],"container":"b2-gap"}
         "Hey Nase, komm mal!", ruft Alexa und weist auf einen Schleichweg, den sie zuvor übersehen haben.
         
         {name} quetscht sich mühsam durch.
@@ -243,11 +249,9 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
         ->bruecke
     
 
-
-
 =bruecke
 // brücke mit mann
-#CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0001_mann.png","classes":["man"]}],"container":"bridge-man"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0001_mann.png","classes":["man"]}],"container":"b2-bridge-man"}
 Nach einer Weile biegen sie ab und sie stehen vor einer Brücke.
 
 An der Brücke steht ein kleiner, runder Mann.
@@ -259,7 +263,7 @@ An der Brücke steht ein kleiner, runder Mann.
 *[ignorieren und einfach durchmarschieren]
 
     // brücke mit mauer
-    #CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0000_mauern.png","classes":["wall"]}],"container":"bridge-wall"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0000_mauern.png","classes":["wall"]}],"container":"b2-bridge-wall"}
     {name} läuft einfach vorbei und will über die Brücke gehen. Doch wie eine riesige unsichtbare Barriere prallt er gegen eine harte Wand.
     
     "So, mein Freundchen, geht das nicht."
@@ -267,23 +271,38 @@ An der Brücke steht ein kleiner, runder Mann.
     
 -"Ich kann nur wiederholen: Wer nicht zahlt, kommt nicht durch...", schreit der kleine Mann.
 
+// A
 *[Ein Lied singen, in welchem es darum geht, dass sie unbedingt über diese Brücke müssen]
+    ~A++   
 
-*[dem Zollwärter zuhören und sich mit ihm anfreunden]
-
+// E
+*[hartnäckig um einen niedrigeren Preis handeln]
+    ~E++
 
 -"Das ist ja schön und gut... Aber ich lebe von dieser Brücke."
 
-// TODO falls goldstücke
-* [goldstücke anbieten]
+{ item == "Geldstücke": 
+    -> geldstuecke
+- else: 
+    -> fragen
+}
+
+= geldstuecke
+// falls Geldstücke
+* [Geldstücke anbieten]
     // brücke goldstücke
-    #CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0001_mann.png","classes":["man"]},{"src":"bubble2/goldstücke/goldstücke_0000_goldstücken.png","classes":["gold"]}],"container":"bridge-gold"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0001_mann.png","classes":["man"]},{"src":"bubble2/goldstücke/goldstücke_0000_goldstücken.png","classes":["gold"]}],"container":"b2-bridge-gold"}
     "Vielen Dank, ihr könnt nun passieren!" meint der kleine Mann. Er wirkt erstaunt, als hätte er nicht damit gerechnet, aber auch ein bisschen enttäuscht. Er winkt den beiden nach, als sie die Brücke überqueren.
     -> turm
 
+* [Geldstücke behalten]
+    -> fragen
+    
+ 
 
+= fragen
 // brücke mit mann und mauer
-#CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0001_mann.png","classes":["man"]},{"src":"bubble2/brücke/brücke_0000_mauer.png","classes":["wall"]}],"container":"bridge-man-wall"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0001_mann.png","classes":["man"]},{"src":"bubble2/brücke/brücke_0000_mauer.png","classes":["wall"]}],"container":"b2-bridge-man-wall"}
 
 "Aber vielleicht könnt ihr für mich diese Fragen beantworten. Wenn ihr sie richtig habt, dann lasse ich euch vielleicht durch..."
 
@@ -350,7 +369,7 @@ Die erst Frage lautet: "Wie viele Tote würde es bei einem Asteroideneinschlag (
 *[Alexa nicht eintauschen]
 
 // brücke frosch
-#CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0000_frosch.png","classes":["frog"]}],"container":"bridge-frog"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0000_frosch.png","classes":["frog"]}],"container":"b2-bridge-frog"}
 -Doch bevor sich {name} äussern kann, springt Alexa dazwischen:
 
 "Also mir reichts. Komm, wir gehen." Und sie hüpft auf die Brücke.
@@ -364,7 +383,7 @@ Sie konnten tatsächlich passieren und die unsichtbare Mauer war plötzlich vers
 
 =turm
 // turm
-#CONTENT: {"type":"image","images":[{"src":"bubble2/turm/turm_0000_turm.png","classes":["tower"]}],"container":"tower-far"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/turm/turm_0000_turm.png","classes":["tower"]}],"container":"b2-tower-far"}
 Als sie am anderen Ende ankommen sehen sie plötzlich einen grossen Turm in Sichtweite.
 
 "Ahh, siehst du, wie gekonnt! Ich wusste doch, dass es hier lang geht..." Meint Alexa schnippisch und zeigt auf den Turm.

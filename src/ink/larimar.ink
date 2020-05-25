@@ -33,12 +33,12 @@ Wähle deinen Namen
 * [Nio]
     ~name = "Nio"
     ~s = true
-    -> bubble1
+    -> bubble2
     
 * [Nera]
     ~name = "Nera"
     ~s = false
-    -> bubble1
+    -> bubble2
 
 
 
