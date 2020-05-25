@@ -1,10 +1,8 @@
 INCLUDE bubbles/bubble6
 
 === bubble5 ===
-VAR correct_gnome = false
-
 // Auf einer Wiese
-#CONTENT: {"type":"image","images":[{"src":"bubble5/wiese/wiese_0000_background.png","classes":["background"]},{"src":"bubble5/wiese/grashalme.gif","classes":["gras"]}],"container":"b5-gras"}
+#CONTENT: {"type":"image","images":[{"src":"bubble5/wiese/wiese_0000_background.gif","classes":["background"]},{"src":"bubble5/wiese/grashalme.gif","classes":["gras"]}],"container":"b5-gras"}
 Nach einer längeren Strecke hält {name} an.
 
 // Tasche nah 
@@ -13,12 +11,12 @@ Nach einer längeren Strecke hält {name} an.
 "Und jetzt lass mich endlich raus, du Rüppel!!", brüllt eine Stimme aus {name}s Tasche und boxt gegen den Deckel.
 
 // Tasche auf
-#CONTENT: {"type":"image","images":[{"src":"bubble5/tasche/tasche-auf_blinzeln.gif","classes":["eyes"]},{"src":"bubble5/tasche/tasche-auf.png","classes":["bag"]}],"container":"b5-bag-open"}
+#CONTENT: {"type":"image","images":[{"src":"bubble5/tasche/tasche-auf_blinzeln.gif","classes":["eyes"]},{"src":"bubble5/tasche/tasche-auf.gif","classes":["bag"]}],"container":"b5-bag-open"}
 
 {name} öffnet seine Tasche und lässt Alexa raus.
 
 // Auf einer Wiese
-#CONTENT: {"type":"image","images":[{"src":"bubble5/wiese/wiese_0000_background.png","classes":["background"]},{"src":"bubble5/wiese/grashalme.gif","classes":["gras"]}],"container":"b5-gras"}
+#CONTENT: {"type":"image","images":[{"src":"bubble5/wiese/wiese_0000_background.gif","classes":["background"]},{"src":"bubble5/wiese/grashalme.gif","classes":["gras"]}],"container":"b5-gras"}
 
 "Ahh, frische Luft. Es müffelt in deiner Tasche, weisst du?", sagt Alexa und streckt sich.
 
@@ -35,12 +33,10 @@ Nach einer längeren Strecke hält {name} an.
 = geschenk
 // R
 *[Etwas aus Holz schnitzen]
-    ~R++
     Mit einem spitzen Stein fängt {name} an, eine kleine Figur aus Holz zu schnitzen. Dies hatte {s: er|sie} von seinem Onkel gelernt.
     
 // A
 *[Blumen pflücken und zu einem schönen Strauss binden]
-    ~A++
     {name} macht einen kurzen Umweg über ein Blumenfeld und plückt ein paar schöne Blumen.
     
     
@@ -94,20 +90,18 @@ Als er sich beruhigt hat, spuckt er eine grüne, glitschige Masse auf den Boden.
 Wir wären natürlich sehr froh über deine Hilfe...
 
 // E 
-*(truppen) [Anbieten einen Teil der Truppen zu leiten]
-    ~E++
+*[Anbieten einen Teil der Truppen zu leiten]
     Selbstbewusst meint {name}, dass {s: er|sie} sich dazu bereitstellen würde, einen Teil der Gruppen zu leiten.
 
 // C 
-*(plan) [Einen Plan für die Strategie aufzeigen]
-    ~C++
+*[Einen Plan für die Strategie aufzeigen]
     {name} nimmt ein Stück Papier, welches im Raum liegt und zeichnet dem König einen ungefähren Strategieplan auf.
 
 
 -Der König nickt und möchte zu einer Antwort ansetzen, aber bricht erneut in einen Hustenanfall aus.
 
 // Lager 
-#CONTENT: {"type":"image","images":[{"src":"bubble5/lager/lager-background.png","classes":["background"]}],"container":"b5-camp"}
+#CONTENT: #CONTENT: {"type":"image","images":[{"src":"bubble5/lager/lager-background.png","classes":["background"]}],"container":"b5-camp"}
 
 {name} und Alexa werden von zwei Fröschen aus dem Zelt gebeten. Der König bräuchte seine Ruhe.
 
@@ -128,24 +122,24 @@ Von allen Seiten stürmen plötzlich rote Füchse auf das Lager der Frösche ein
 
 Ein riesiges Chaos entsteht und {name} hat überhaupt keinen Überblick.
 
-// falls Truppen leiten
-{truppen: {s: er|sie} erkennt nicht einmal mehr formatierte Gruppen, die er leiten könnte.} 
 
-// falls Strategie planen 
-{plan: Der König scheint seinen Strategieplan überhaupt nicht anzuwenden.} 
+// TODO falls Truppen leiten
+{s: er|sie} erkennt nicht einmal mehr formatierte Gruppen, die er leiten könnte.
+
+// TODO falls Strategie planen 
+Der König scheint seinen Strategieplan überhaupt nicht anzuwenden.
 
 -Plötzlich hört {name} laute Schreie. Direkt neben ihm wurden ein paar Frösche von einem Fuchs angegriffen. Sie wehren sich und der Fuchs ist sofort tot, aber einige davon sind stark verletzt.
 
 // S 
 *[den verletzten helfen]
-    ~S++
 
 // E
 *[sich in den Kampf stürzen und andere anweisen, sich um die Verletzten zu kümmern.]
-    ~E++
+
 
 // Fuchs
-#CONTENT: {"type":"image","images":[{"src":"bubble5/fuchs/fuchs_background-color.png","classes":["background"]},{"src":"bubble5/fuchs/fuchs_böse.gif","classes":["evil"]},{"src":"bubble5/fuchs/fuchs_fuchs.png","classes":["fox"]}],"container":"b5-fox"}
+#CONTENT: {"type":"image","images":[{"src":"bubble5/fuchs/fuchs_background-color.png","classes":["background"]},{"src":"bubble5/fuchs/fuchs_böse.gif","classes":["evil"]},{"src":"bubble5/fuchs/fuchs_fuchs.gif","classes":["fox"]}],"container":"b5-fox"}
 
 -{name} kämpft sich durch das Getümmel doch der Weg wird ihm von einem Fuchs abgeschnitten.
 
@@ -160,8 +154,8 @@ Der Fuchs fletscht seine Zähne und rennt auf {name} zu.
 *[kämpfen]
 
 // Tumult
--#CONTENT: {"type":"image","images":[{"src":"bubble5/tumult/tumult_background-color.png","classes":["background"]},{"src":"bubble5/tumult/tumult_frosch.gif","classes":["frog"]},{"src":"bubble5/tumult/tumult_fuchs.gif","classes":["fox"]},{"src":"bubble5/tumult/tumult_gekribel.gif","classes":["scribble"]}],"container":"b5-turmoil"}
--Doch bevor sich {name} bewegen kann, knallt etwas Braunes gegen den Fuchs.
+#CONTENT: {"type":"image","images":[{"src":"bubble5/tumult/tumult_background-color.png","classes":["background"]},{"src":"bubble5/tumult/tumult_frosch.gif","classes":["frog"]},{"src":"bubble5/tumult/tumult_fuchs.gif","classes":["fox"]},{"src":"bubble5/tumult/tumult_gekribel.gif","classes":["scribble"]}],"container":"b5-turmoil"}
+Doch bevor sich {name} bewegen kann, knallt etwas Braunes gegen den Fuchs.
 
 Dieser war gerade mitten in der Luft und wird durch den Knall zur Seite geworfen.
 
@@ -193,7 +187,7 @@ Der Boden vibriert weiter und Wasser fängt an, aus allen löcher zu quellen.
 
 
 // blatt 
-#CONTENT: {"type":"image","images":[{"src":"bubble5/blatt/blatt_wasser_background.png","classes":["background"]},{"src":"bubble5/blatt/blatt_könig.png","classes":["king"]},{"src":"bubble5/blatt/blatt_wasser.gif","classes":["water"]}],"container":"b5-leaf"}
+#CONTENT: {"type":"image","images":[{"src":"bubble5/blatt/blatt_wasser_background.png","classes":["background"]},{"src":"bubble5/blatt/blatt_könig.png","classes":["king"]},{"src":"bubble5/blatt/blatt_wasser.png","classes":["water"]}],"container":"b5-leaf"}
 
 Das Wasser reicht {name} nun bereits zur Hüfte und von rechts kommt der Froschkönig auf einem Blatt angeschwommen.
 
@@ -233,21 +227,8 @@ Und er fährt fort: "Hhh, doch als Dank darfst du dir hhh einer von unserer Samm
 // Zwerge
 #CONTENT: {"type":"image","images":[{"src":"bubble5/gartenzwerge/gartenzwerge.png","classes":["gnomes"]}],"container":"b5-gnomes"}
 
-{name} nimmt den..
-*[pinken Zwerg]
+"GENAU DER GEHÖRT MIIIRR", meint laut eine hohe Stimme hinter {name}
 
-*[grünen Zwerg]
-
-*[orangen Zwerg]
-    ~correct_gnome = true
-    
-*[violleten Zwerg]
-
-*[roten Zwerg]
-
-*[blauen Zwerg]
-
--"GENAU DER GEHÖRT MIIIRR", meint laut eine hohe Stimme hinter {name}
 
 // Hexe  
 #CONTENT: {"type":"image","images":[{"src":"bubble5/hexe/hexe_0001_hintergrund.png","classes":["background"]},{"src":"bubble5/hexe/hexe_0000_hexe.png","classes":["witch"]}],"container":"b5-witch"}
@@ -270,11 +251,9 @@ Die Frösche schreien laut auf und wieder entfacht sich ein grosses Getümmel.
 
 // E 
 *[Andere anweisen, die Gartenzwerge besser zu beschützen, damit nicht noch mehr zu Bruch gehen]
-    ~E++
 
 // I 
 *[Bruchstücke analysieren und untersuchen]
-    ~I++
     Die Gartenzwerge sind alle aus Porzellan, stellt {name} fest...
     
     Vielleicht liesse sich der Stein durch schütteln herausfinden...
@@ -282,12 +261,9 @@ Die Frösche schreien laut auf und wieder entfacht sich ein grosses Getümmel.
 
 -{name} wird grob zur Seite geschoben.
 
-// falls richtiger Gartenzwerg 
-{correct_gnome: 
-    ->richtiger_zwerg
--else:
-    ->falscher_zwerg
-}
+// TODO falls richtiger Gartenzwerg 
+->richtiger_zwerg
+->falscher_zwerg
 
 
 = richtiger_zwerg
@@ -324,7 +300,7 @@ Im lauten Getümmel ist dies jedoch niemandem aufgefallen.
 {s: er|sie} bückt sich und schiebt die Scherben zur Seite.
 
 // Bruchstücke larimar 
-#CONTENT: {"type":"image","images":[{"src":"bubble5/bruchstücke_larimar/bruchstücke_larimar_background.png","classes":["background"]},{"src":"bubble5/bruchstücke_larimar/bruchstück-2.png","classes":["fragment-2"]},{"src":"bubble5/bruchstücke_larimar/bruchstück-2.png","classes":["fragment-1"]},{"src":"bubble5/bruchstücke_larimar/larimar.png","classes":["larimar"]}],"container":"b5-fragments-larimar"}
+#CONTENT: {"type":"image","images":[{"src":"bubble5/bruchstücke_larimar/bruchstücke_larimar_background.png","classes":["background"]},{"src":"bubble5/bruchstücke_larimar/bruchstück-2.png","classes":["fragment-2"]},{"src":"bubble5/bruchstücke_larimar/bruchstück-2.png","classes":["fragment-1"]},{"src":"bubble5/bruchstücke_larimarlarimar.png","classes":["larimar"]}],"container":"b5-fragments-larimar"}
 Auf dem Boden liegt ein blauer Stein.
 ->stein
 
@@ -348,12 +324,12 @@ Wenn sich {name} jetzt auf den Weg machen würde, würde es nicht auffallen...
     {name} kann die Frösche nicht einfach zurücklassen und stürzt ins Getümmel.
     
     // Alexa trümmer  
-    #CONTENT: {"type":"image","images":[{"src":"bubble5/alexa_tot/alexa_tot_background.png","classes":["background"]},{"src":"bubble5/alexa_tot/alexa_tot_scherbe-1.png","classes":["shard-1"]},{"src":"bubble5/alexa_tot/alexa_tot_scherbe-2.png","classes":["shard-2"]}],"container":"b5-alexa-ruins"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble5/alexa_tot/alexa tot_background.png","classes":["background"]},{"src":"bubble5/alexa_tot/alexa_tot_scherbe-1.png","classes":["shard-1"]},{"src":"bubble5/alexa_tot/alexa_tot_scherbe-2.png","classes":["shard-2"]}],"container":"b5-alexa-ruins"}
     
     Dabei sieht {name} eine bekannte Pfote aus einem Haufen von Trümmern hervorschauen.
     
     // Alexa sterben  
-    #CONTENT: {"type":"image","images":[{"src":"bubble5/alexa_tot/alexa_tot_background.png","classes":["background"]},{"src":"bubble5/alexa_tot/alexa_tot_scherbe-1.png","classes":["shard-1"]},{"src":"bubble5/alexa_tot/alexa_tot_scherbe-2.png","classes":["shard-2"]},{"src":"bubble5/alexa_tot/alexa-tot_blinzeln.gif","classes":["eyes"]},{"src":"bubble5/alexa_tot/alexa-tot_bluten.gif","classes":["blood"]}],"container":"b5-alexa-dying"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble5/alexa_tot/alexa tot_background.png","classes":["background"]},{"src":"bubble5/alexa_tot/alexa_tot_scherbe-1.png","classes":["shard-1"]},{"src":"bubble5/alexa_tot/alexa_tot_scherbe-2.png","classes":["shard-2"]},{"src":"bubble5/alexa_tot/alexa-tot_blinzeln.gif","classes":["eyes"]},{"src":"bubble5/alexa_tot/alexa-tot_bluten.gif","classes":["blood"]}],"container":"b5-alexa-dying"}
     
     Als sich {name} nähert und die Trümmer zur Seite schiebt, erkennt {s: er|sie} Alexa.
     
@@ -381,15 +357,13 @@ Wenn sich {name} jetzt auf den Weg machen würde, würde es nicht auffallen...
         
     --"Sieh, mein Freundchen. Nicht alle schaffen es ans Ziel, aber jetzt hör auf den Weichen zu spielen und geh, nur so rettest du alle..."
     
-    #THEME: dark
     // Splitter  
     #CONTENT: {"type":"image","images":[{"src":"bubble5/splitter/splitter.gif","classes":["splitter"]}],"container":"b5-splitter"}
     
     Plötzlich kracht es laut neben {name} und ein Splitter trifft {s: ihn|sie} an der Schulter.
     
-    #THEME: light
     // Alexa tot  
-    #CONTENT: {"type":"image","images":[{"src":"bubble5/alexa_tot/alexa_tot_alexa_tot.png","classes":["alexa"]}],"container":"b5-alexa-dead"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble5/alexa_tot/alexa_tot_alexa_tot.png","classes":["background"]}],"container":"b5-alexa-dead"}
 
     Als {name} wieder zu Alexa blickt sind ihre Augen geschlossen.
 
