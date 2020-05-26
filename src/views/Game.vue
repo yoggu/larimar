@@ -140,13 +140,19 @@ export default {
           if (content.type === "image") {
             content.images.forEach(image => {
               image.src = require("@/assets/images/" + image.src);
+              this.currentImage = content;
             });
           } 
           else if (content.type === "svg") {
             content.src = require("@/assets/images/" + content.src)
+            this.currentImage = content;
+          } else if (content.type === "audio") {
+            content.src = require("@/assets/audio/" + content.src)
+            var audio = new Audio(content.src);
+            audio.play();
           }
           
-          this.currentImage = content;
+          
 
         } else if (tag.property === "THEME") { 
           if (tag.val == 'dark') {

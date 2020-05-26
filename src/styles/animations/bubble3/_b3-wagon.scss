@@ -1,0 +1,30 @@
+.b3-wagon {
+
+  .vehicle {
+    transform: translateX(-100%);
+    animation: vehicle 15s linear infinite;
+  }
+
+  .clouds {
+    transform: translateX(100%);
+    animation: clouds 30s linear infinite;
+  } 
+
+  @keyframes clouds {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes vehicle {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}

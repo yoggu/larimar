@@ -30,7 +30,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  //text-align: center;
   min-height: 100vh;
   font-family: ocr-a-std,monospace;
 }

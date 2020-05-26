@@ -180,7 +180,7 @@ Doch sie beruhigt sich sofort wieder und spricht weiter süsser Stimme:
 "Jetzt habt ihr mich total erschrocken, gehen wir doch wieder rein..."
 
 // Turm innen mit Hexe
-#CONTENT: #CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0001_hexe.png","classes":["witch"]},{"src":"bubble3/im_turm/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"b3-tower-inside-witch"}
+#CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0001_hexe.png","classes":["witch"]},{"src":"bubble3/im_turm/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"b3-tower-inside-witch"}
 Wieder im Turm angekommen fährt sie fort:
 
 "Also wegen eurem Stein... Ich habe ihn natürlich nicht hier, aber ich weiss genau, wie ihr zu ihm kommt..."
@@ -190,7 +190,7 @@ Wieder im Turm angekommen fährt sie fort:
 *[kaputte Figure beichten]
 
     // Turm innen mit Hexe augen
-    #CONTENT: #CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0001_hexe.png","classes":["witch"]},{"src":"bubble3/im_turm/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"b3-tower-inside-eyes"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0001_hexe.png","classes":["witch"]},{"src":"bubble3/im_turm/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"b3-tower-inside-eyes"}
     Ihre Augen blitzen kurz auf, aber sie lächelt nur.
     
     "Das habe ich schon gewusst, aber schön, dass du es mir noch sagst..."
@@ -208,6 +208,8 @@ Wieder im Turm angekommen fährt sie fort:
 
 // wagen
 #CONTENT: {"type":"image","images":[{"src":"bubble3/wagen/wagen_0004_background-color.png","classes":["color"]},{"src":"bubble3/wagen/wagen_0003_background-stehen.png","classes":["background-standing"]},{"src":"bubble3/wagen/wagen_0002_background-fahren.png","classes":["background-driving"]},{"src":"bubble3/wagen/wagen_0001_wagen.png","classes":["vehicle"]},{"src":"bubble3/wagen/wagen_0000_wolken.png","classes":["clouds"]}],"container":"b3-wagon"}
+
+#CONTENT: {"type": "audio", "src": "cart.wav"}
 
 {name} bleibt keine andere Möglichkeit, wenn er erfahren möchte, wo sich der Stein befindet und steigt ein.
 
