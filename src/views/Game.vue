@@ -2,6 +2,7 @@
   <div class="game" :class="{dark: dark}">
     <div class="navbar">
       <router-link to="/menu">menU</router-link>
+      <a v-on:click.prevent="toggleMute()">Mute {{mute}}</a>
     </div> 
     <div class="story" ref="story" v-if="!finished">
         <div class="image-container" v-on:click="showText()">
@@ -38,6 +39,7 @@
 <script>
 let counter = 0
 import { Story } from "inkjs";
+import {Howl, Howler} from 'howler';
 import json from "../ink/export/story.json";
 import DrawSvg from "../components/DrawSvg";
 import TypedText from "../components/TypedText";
@@ -56,10 +58,12 @@ export default {
       customClasses: [],
       currentText: Object,
       currentImage: Object,
+      currentAudio: Object,
       finished: false,
       result: {},
       showChoice: false,
-      dark: false
+      dark: false,
+      mute: false
     };
   },
   mounted () {
@@ -129,27 +133,39 @@ export default {
     // checks the type of tag
     checkTags(tags) {
       tags.forEach(tag => {
+        // css classes
         if (tag.property === "CLASS") {
           this.customClasses.push(tag.val);
         } else if (tag.property === "CLEAR") {
           console.log("Clear")
+        } else if (tag.property === "AUDIO_STOP") {
+          this.currentAudio.stop();
         } else if (tag.property === "CONTENT") {
           let content = JSON.parse(tag.val.replace("\\", ""));
 
-          // require images
+          // images
           if (content.type === "image") {
             content.images.forEach(image => {
               image.src = require("@/assets/images/" + image.src);
               this.currentImage = content;
             });
           } 
+          // svg 
           else if (content.type === "svg") {
             content.src = require("@/assets/images/" + content.src)
             this.currentImage = content;
+          // audio  
           } else if (content.type === "audio") {
             content.src = require("@/assets/audio/" + content.src)
-            var audio = new Audio(content.src);
-            audio.play();
+            this.currentAudio = new Howl({
+              src: [content.src],
+              loop: content.loop,
+              volume: content.volume,
+              onend: function() {
+                console.log('Finished!');
+              }
+            });
+            this.currentAudio.play();
           }
           
           
@@ -166,6 +182,10 @@ export default {
     },
     showText() {
       this.$refs.typedText.showAll();
+    },
+    toggleMute() {
+      this.mute = !this.mute;
+      Howler.mute(this.mute);
     },
     restart() {
       this.choices = [];
@@ -272,9 +292,9 @@ export default {
 .navbar {
   display: flex;
   height: 40px;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 12px;
+  padding: 0 12px;
   z-index: 99;
   flex-shrink: 0;
 

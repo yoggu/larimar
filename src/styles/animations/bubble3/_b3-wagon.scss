@@ -7,10 +7,11 @@
 
   .clouds {
     transform: translateX(100%);
-    animation: clouds 30s linear infinite;
+    animation: clouds 45s linear infinite;
   } 
 
   @keyframes clouds {
+    
     0% {
       transform: translateX(100%);
     }

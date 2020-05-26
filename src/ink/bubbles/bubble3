@@ -54,7 +54,7 @@ Die Tür öffnet sich und die hohe Stimme meint breitwillig:
 "Dann kommt halt rein, ich habe im Moment sowieso nichts vor..."
 
 // turm innen
-#CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"b3-tower-inside"}
+#CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]}],"container":"b3-tower-inside"}
 
 {name} betritt als erstes den Turm. Gleich schlägt ihr eine dicke Duftwolke aus Blumen und Kräutern entgegen. Alexa hustet und keucht.
 
@@ -100,7 +100,7 @@ Die Tür öffnet sich und die hohe Stimme meint breitwillig:
 "Aber jetzt entschuldigt mich einen Moment. Ich muss noch in den Garten und meine Kobolde füttern... Ihr könnt hier warten."
 
 // turm innen
-#CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"b3-tower-inside"}
+#CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]}],"container":"b3-tower-inside"}
 Und damit verschwindet die Hexe durch die Hintertür hinaus in ihren Garten.
 
 {name} schaut sich noch genauer um. Überall stehen Kerzen, Kräuter und eingelegte Tiere, von denen er gar nicht wissen möchte, wie die da hin kamen.
@@ -180,7 +180,7 @@ Doch sie beruhigt sich sofort wieder und spricht weiter süsser Stimme:
 "Jetzt habt ihr mich total erschrocken, gehen wir doch wieder rein..."
 
 // Turm innen mit Hexe
-#CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0001_hexe.png","classes":["witch"]},{"src":"bubble3/im_turm/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"b3-tower-inside-witch"}
+#CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0001_hexe.png","classes":["witch"]}],"container":"b3-tower-inside-witch"}
 Wieder im Turm angekommen fährt sie fort:
 
 "Also wegen eurem Stein... Ich habe ihn natürlich nicht hier, aber ich weiss genau, wie ihr zu ihm kommt..."
@@ -209,7 +209,8 @@ Wieder im Turm angekommen fährt sie fort:
 // wagen
 #CONTENT: {"type":"image","images":[{"src":"bubble3/wagen/wagen_0004_background-color.png","classes":["color"]},{"src":"bubble3/wagen/wagen_0003_background-stehen.png","classes":["background-standing"]},{"src":"bubble3/wagen/wagen_0002_background-fahren.png","classes":["background-driving"]},{"src":"bubble3/wagen/wagen_0001_wagen.png","classes":["vehicle"]},{"src":"bubble3/wagen/wagen_0000_wolken.png","classes":["clouds"]}],"container":"b3-wagon"}
 
-#CONTENT: {"type": "audio", "src": "cart.wav"}
+// wagen audio
+#CONTENT: {"type": "audio", "src": "bubble3/cart.wav", "loop": true, "volume": 1}
 
 {name} bleibt keine andere Möglichkeit, wenn er erfahren möchte, wo sich der Stein befindet und steigt ein.
 
@@ -241,6 +242,9 @@ Sofort fängt der Wagen an, sich zu bewegen und steuert ins Unbekannte.
 -"Heisst das, der Stein war im Gartenzwerg? Wo führt uns dann dieser Wagen hin?"
 
 Der Wagen ruckelt plötzlich.
+
+// wagen audio stop
+#AUDIO_STOP
 
 // Abgrund
 #CONTENT: {"type":"image","images":[{"src":"bubble3/abgrund/abgrund_0002_schwarz.png","classes":["color"]},{"src":"bubble3/abgrund/abgrund_0001_boden.png","classes":["ground"]},{"src":"bubble3/abgrund/abgrund_0000_wolken.png","classes":["clouds"]}],"container":"b3-abyss"}
