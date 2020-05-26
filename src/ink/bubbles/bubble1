@@ -99,7 +99,7 @@ Die Schwester weint.
 
     
 * ["Es tut mir so leid..."]
-    "
+    
  ...Ich.. ich verwandle mich gleich. Bitte flieh. Gehe über den Teich und nimm Onkel Willis Boot."
     
 -"Du musst jetzt gehen. Sei schnell, sonst..."
@@ -159,6 +159,9 @@ Welchen Gegenstand soll {name} noch einpacken?
   Bereits tief einige Schritte hinter dem Dorf, fällt {s: ihm|ihr} ein, dass {s: er|sie} etwas vergessen hat.
 
   Der alte Familienkompass! Dieser besondere Kompass führt {s: ihn|sie} immer nach Hause zurück...
+  
+  // wald stehen bleiben
+#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/durch-den-wald-anhalten.gif","classes":["trees"]}],"container":"b1-forest"}
    
 * [trotzdem weitergehen]
     -> see
@@ -177,7 +180,7 @@ Welchen Gegenstand soll {name} noch einpacken?
         // whip audio
         #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5}
         // tor schlag
-        #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor_animation-schlag.gif","classes":["hit"]}],"container":"b1-gate"}
+        #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.png","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag.gif","classes":["hit"]}],"container":"b1-gate"}
        {name} nähert sich dem Tor. Die Wurzeln fangen sich an zu bewegen und eine schlägt nach {s: ihm|ihr}. 
        
        Gerade rechtzeitig kann {s:er|sie} dem Schlag noch ausweichen...
@@ -189,19 +192,18 @@ Welchen Gegenstand soll {name} noch einpacken?
             // whip audio
             #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5}
             // tor schlag 2
-            #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor_animation-schlag-2.gif","classes":["hit-2"]}],"container":"b1-gate"}
-            
+            #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.png","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag-2.gif","classes":["hit-2"]}],"container":"b1-gate"}
             Wieder schlagen die Wurzeln nach {s: ihm|ihr} aus. {name} weicht aus.
             // whip audio
             #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5}
             // tor schlag 3
-            #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor_animation-schlag-3.gif","classes":["hit-3"]}],"container":"b1-gate"}
+            #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.png","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag-3.gif","classes":["hit-3"]}],"container":"b1-gate"}
             
             Doch dabei trifft {s: ihn|sie} ein zweiter Schlag am Bein. {s: Er|Sie} fällt zu Boden.
             // whip audio
             #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5}
             // tor schlag 4
-            #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor_animation-schlag-4.gif","classes":["hit-4"]}],"container":"b1-gate"}
+            #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.png","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag-4.gif","classes":["hit-4"]}],"container":"b1-gate"}
             
             Ein dritter Schlag, aber {name} rollt schnell zur Seite und steht auf.
             
@@ -217,13 +219,12 @@ Welchen Gegenstand soll {name} noch einpacken?
 Als {s: er|sie} beim Ufer ankommt, scheint dies komplett verlassen. Onkel Willis Boot ist nicht zu sehen und nichts ist zu hören. Wieder Totenstille.
 
 // waves audio
-#CONTENT: {"type": "audio", "src": "bubble1/waves.wav", "loop": true, "volume": 0.5}
+#CONTENT: {"type": "audio", "src": "bubble1/waves.wav", "loop": true, "volume": 0.3}
 
 // weg zum wasser 2
 #CONTENT: {"type":"image","images":[{"src":"bubble1/weg_zum_wasser/ufer-nähern-2.gif","classes":["water-2"]}],"container":"b1-go-to-shore"}
 
 Was ist hier passiert?
-
 * [Ufer untersuchen]
 // uferteile
 #CONTENT: {"type":"image","images":[{"src":"bubble1/uferteile/ufer-teile.gif","classes":["parts"]}],"container":"b1-shore"}
@@ -404,17 +405,17 @@ Die Kugel fängt an zu husten, keucht und vier kurze Beine strecken sich.
 
 Die Kröte schaut sich um und entdeckt die Bruchstücke im Wasser.
 
-"Eure Boote hat es ganz schön erwischt, wa? Ich war nur fröhlich am schwimmen und dann hat mich eine Wurzel von diesem blöden Baum gepackt..."
+"Eure Boote hat es ganz schön erwischt, was? Ich war nur fröhlich am schwimmen und dann hat mich eine Wurzel von diesem blöden Baum gepackt..."
 
 * ["Alle wurden plötzlich zu Bäumen..."]
 
-“Da du als einziger noch hier bist, denke ich mal, dass du den Fluch ausgelöst hast… Auch, wenn du mir nicht gerade sehr rebellisch aussiehst…”
+    “Da du als einziger noch hier bist, denke ich mal, dass du den Fluch ausgelöst hast… Auch, wenn du mir nicht gerade sehr rebellisch aussiehst…”
 
 * ["dieser blöde Baum ist mein Onkel..."]
 
-"Jetzt braus mal nicht gleich so auf, man.", die Kröte quakt und schnappt mit ihrer Zunge.
+    "Jetzt braus mal nicht gleich so auf, man.", die Kröte quakt und schnappt mit ihrer Zunge.
 
-"Ich wollte ja nur meine Runden drehen, da kann ich doch nix für, wenn da plötzlich irgendjemand den Fluch ausgelöst hat..."
+    "Ich wollte ja nur meine Runden drehen, da kann ich doch nix für, wenn da plötzlich irgendjemand den Fluch ausgelöst hat..."
 
     ** [“Was für ein Fluch?”]
     “Bist du überhaupt von hier? Aber du warst das schon, oder?”
@@ -423,6 +424,8 @@ Die Kröte schaut sich um und entdeckt die Bruchstücke im Wasser.
     **[“Ja, das war ich…”]
 
 -- "Also doch du..." Die Kröte quakt laut, es hört sich fast wie ein Lachen an.
+
+-blabla bla für alle // SELINE
 
 * ["Was weisst du über die Verwandlung?"]
 
@@ -483,5 +486,9 @@ Ein bisschen angewidert und unsicher klettert {name} auf das Schiff. Es schwankt
     “Was soll ich damit? Ich kann gut schwimmen.”, ohne ein weiteres Wort springt Alexa wieder ins Wasser und zeigt {name} den Weg.
     
 - #AUDIO_STOP
+
+//segelschiff small
+#CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat"]}],"container":"b1-boat"}
+
 --> bubble2
 
