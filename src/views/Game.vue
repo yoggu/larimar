@@ -139,7 +139,8 @@ export default {
         } else if (tag.property === "CLEAR") {
           console.log("Clear")
         } else if (tag.property === "AUDIO_STOP") {
-          this.currentAudio.stop();
+          Howler.stop();
+          console.log("stop audio");
         } else if (tag.property === "CONTENT") {
           let content = JSON.parse(tag.val.replace("\\", ""));
 
@@ -162,13 +163,11 @@ export default {
               loop: content.loop,
               volume: content.volume,
               onend: function() {
-                console.log('Finished!');
+                console.log('audio finished!');
               }
             });
             this.currentAudio.play();
           }
-          
-          
 
         } else if (tag.property === "THEME") { 
           if (tag.val == 'dark') {
