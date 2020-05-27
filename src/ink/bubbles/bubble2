@@ -156,7 +156,9 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
 
     Plötzlich treten sie hinaus aus dem Wald und es ist alles hell.
     
-    // schlucht stein
+    #THEME: light
+    
+    // schlucht stein -> background ist noch falsch
     #CONTENT: {"type":"image","images":[{"src":"bubble2/schlucht_stein/schlucht_stein_0001_stein.png","classes":["stone"]}],"container":"b2-canyon-stone"}
     Vor ihnen öffnet sich eine grosse Schlucht und nur ein schmaler Weg führt sie weiter.
     
@@ -168,12 +170,12 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
         
         ~R++
         // auf dem Stein
-        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein_0001_white-background.png","classes":["background"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0002_stein-details.png","classes":["stone"]}],"container":"b2-stone-top"} 
+        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein-ohne.png","classes":["stone"]}],"container":"b2-stone-top"} 
         
         {name} schafft es mit Müh und Not den Felsen zu besteigen und klettert hinauf.
         
         // auf dem Stein mit maus
-        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein_0001_white-background.png","classes":["background"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0002_stein-details.png","classes":["stone"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0000_maus.png","classes":["mouse"]}],"container":"b2-stone-top-mouse"}
+        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein-maus.gif","classes":["mouse"]}],"container":"b2-stone-top-mouse"}
         
         Auf dem Stein sitzt eine kleine, graue Maus. Sie kneift die Augen zu und kurz danach schreit sie: "KIAAAA"
         
@@ -230,7 +232,7 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     ** [Du versuchst darüber zu klettern, obwohl der Stein sehr glatt erscheint und wenig Halt aufweist]
         ~R++
         // auf dem Stein
-        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein_0001_white-background.png","classes":["background"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0002_stein-details.png","classes":["stone"]}],"container":"b2-stone-top"} 
+        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein-ohne.png","classes":["stone"]}],"container":"b2-stone-top"}
     
         {name} schafft es mit Müh und Not den Felsen zu besteigen und klettert hinauf.
     
@@ -241,7 +243,7 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     ** [Du untersuchst das Gestein nach möglichen Rissen und Spuren]
        ~I++ 
         // auf dem Stein
-        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein_0001_white-background.png","classes":["background"]},{"src":"bubble2/auf_dem_stein/auf-dem-stein_0002_stein-details.png","classes":["stone"]}],"container":"b2-stone-top"} 
+        #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein-ohne.png","classes":["stone"]}],"container":"b2-stone-top"}
         Der Stein ist zu glatt und es gibt keine Möglichkeit oder Halt, um zu klettern.
         
         // spalt
@@ -259,7 +261,7 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
 #THEME: light
 
 // brücke mit mann
-#CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0001_mann.png","classes":["man"]}],"container":"b2-bridge-man"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke.gif","classes":["bridge"]},{"src":"bubble2/brücke/wolken.png","classes":["clouds"]}],"container":"b2-bridge-man"}
 Nach einer Weile biegen sie ab und sie stehen vor einer Brücke.
 
 An der Brücke steht ein kleiner, runder Mann.
@@ -271,7 +273,7 @@ An der Brücke steht ein kleiner, runder Mann.
 *[ignorieren und einfach durchmarschieren]
 
     // brücke mit mauer
-    #CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0000_mauern.png","classes":["wall"]}],"container":"b2-bridge-wall"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke.gif","classes":["bridge"]},{"src":"bubble2/brücke/wolken.png","classes":["clouds"]},{"src":"bubble2/brücke/brücke_0000_mauer.png","classes":["wall"]}],"container":"b2-bridge-wall"}
     {name} läuft einfach vorbei und will über die Brücke gehen. Doch wie eine riesige unsichtbare Barriere prallt er gegen eine harte Wand.
     
     "So, mein Freundchen, geht das nicht."
@@ -299,7 +301,7 @@ An der Brücke steht ein kleiner, runder Mann.
 // falls Geldstücke
 * [Geldstücke anbieten]
     // brücke goldstücke
-    #CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0001_mann.png","classes":["man"]},{"src":"bubble2/goldstücke/goldstücke_0000_goldstücken.png","classes":["gold"]}],"container":"b2-bridge-gold"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke.gif","classes":["bridge"]},{"src":"bubble2/brücke/wolken.png","classes":["clouds"]},{"src":"bubble2/goldstücke/goldstücke_0000_goldstücken.png","classes":["gold"]}],"container":"b2-bridge-gold"}
     "Vielen Dank, ihr könnt nun passieren!" meint der kleine Mann. Er wirkt erstaunt, als hätte er nicht damit gerechnet, aber auch ein bisschen enttäuscht. Er winkt den beiden nach, als sie die Brücke überqueren.
     -> turm
 
@@ -310,7 +312,7 @@ An der Brücke steht ein kleiner, runder Mann.
 
 = fragen
 // brücke mit mann und mauer
-#CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0001_mann.png","classes":["man"]},{"src":"bubble2/brücke/brücke_0000_mauer.png","classes":["wall"]}],"container":"b2-bridge-man-wall"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke.gif","classes":["bridge"]},{"src":"bubble2/brücke/wolken.png","classes":["clouds"]},{"src":"bubble2/brücke/brücke_0000_mauer.png","classes":["wall"]}],"container":"b2-bridge-man-wall"}
 
 "Aber vielleicht könnt ihr für mich diese Fragen beantworten. Wenn ihr sie richtig habt, dann lasse ich euch vielleicht durch..."
 
@@ -377,7 +379,7 @@ Die erst Frage lautet: "Wie viele Tote würde es bei einem Asteroideneinschlag (
 *[Alexa nicht eintauschen]
 
 // brücke frosch
-#CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke_0002_brücke.png","classes":["bridge"]},{"src":"bubble2/brücke/brücke_0000_frosch.png","classes":["frog"]}],"container":"b2-bridge-frog"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/brücke/brücke.gif","classes":["bridge"]},{"src":"bubble2/brücke/wolken.png","classes":["clouds"]},{"src":"bubble2/brücke/brücke_0000_frosch.png","classes":["frog"]}],"container":"b2-bridge-frog"}
 -Doch bevor sich {name} äussern kann, springt Alexa dazwischen:
 
 "Also mir reichts. Komm, wir gehen." Und sie hüpft auf die Brücke.
