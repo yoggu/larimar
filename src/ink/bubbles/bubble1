@@ -156,13 +156,13 @@ Welchen Gegenstand soll {name} noch einpacken?
 // wald
 #CONTENT: {"type":"image","images":[{"src":"bubble1/wald/durch-den-wald-loop.gif","classes":["trees"]}],"container":"b1-forest"}
 
-  Bereits tief einige Schritte hinter dem Dorf, fällt {s: ihm|ihr} ein, dass {s: er|sie} etwas vergessen hat.
+Bereits tief einige Schritte hinter dem Dorf, fällt {s: ihm|ihr} ein, dass {s: er|sie} etwas vergessen hat.
 
-  Der alte Familienkompass! Dieser besondere Kompass führt {s: ihn|sie} immer nach Hause zurück...
-  
   // wald stehen bleiben
 #CONTENT: {"type":"image","images":[{"src":"bubble1/wald/durch-den-wald-anhalten.gif","classes":["trees"]}],"container":"b1-forest"}
-   
+
+Der alte Familienkompass! Dieser besondere Kompass führt {s: ihn|sie} immer nach Hause zurück...
+
 * [trotzdem weitergehen]
     -> see
 * [noch einmal zurückgehen?]
@@ -243,8 +243,6 @@ Etwas Rotes schwimmt im Wasser. {name} geht noch näher und erkennt die Bruchst�
 "AHOI" steht immer noch deutlich auf dem roten Lack. Etwas muss das Boot zerstört haben...
 
 Fast, als möchte {s: ihn|sie} jemand aufhalten, das Dorf zu verlassen...
-// audio stop
-#AUDIO_STOP
 
 * [Teile näher untersuchen]
 
@@ -331,6 +329,8 @@ Vielleicht gibt es ein Boot, welches nur wenig beschädigt ist?
 #CONTENT: {"type":"image","images":[{"src":"bubble1/oktopus_teile/oktopus-untersuchen-animation.gif","classes":["face-2"]}],"container":"b1-octopus-tree-face"}
 
 Das kann doch alles doch nicht wahr sein...
+// audio stop
+#AUDIO_STOP
 
 "Blub."
 

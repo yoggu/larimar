@@ -7,17 +7,17 @@
     </div> 
     <div class="story" ref="story" v-if="!finished">
         <div class="image-container" v-on:click="showText()">
-          <transition name="fade">
           <div v-if="currentImage.type === 'image'" :class="currentImage.container" class="container">
+            <transition-group name="fade">
             <img
               v-for="(image, index) in currentImage.images"
               :src="image.src"
               :key="'image-'+index+image.src"
               :class="image.classes"
             />
+            </transition-group>
           </div>
           <draw-svg v-else-if="currentImage.type === 'svg'" :duration=200 :class = currentImage.container :vivusId ="'vivus'+index" :file= currentImage.src type="delayed" :ref="'vivus'+index"></draw-svg>
-          </transition>
         </div>  
         <div class="text-container">
           <typed-text ref="typedText" :typeSpeed="20" :text="currentText.text" :class="currentText.classes" @next="continueStory()" @onComplete="showChoice = true"></typed-text>
