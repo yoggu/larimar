@@ -118,7 +118,7 @@ Nur noch ein Gegenstand passt hinein.
 
 = items
 // werkzeuge
-#CONTENT: {"type":"image","images":[{"src":"bubble1/werkzeuge/werkzeuge_0000_säge.png","classes":["saw"]},{"src":"bubble1/werkzeuge/werkzeuge_0001_pflaster.png","classes":["patch"]},{"src":"bubble1/werkzeuge/werkzeuge_0002_malkasten.png","classes":["paint"]},{"src":"bubble1/werkzeuge/werkzeuge_0003_lupe.png","classes":["magnifier"]},{"src":"bubble1/werkzeuge/werkzeuge_0004_rechtsbuch.png","classes":["code-of-law"]},{"src":"bubble1/werkzeuge/werkzeuge_0005_goldstück.png","classes":["gold"]}],"container":"b1-tools"}
+#CONTENT: {"type":"image","images":[{"src":"bubble1/werkzeuge/background-color.png","classes":["background"]},{"src":"bubble1/werkzeuge/werkzeuge_0000_spitzhacke.png","classes":["pickaxe"]},{"src":"bubble1/werkzeuge/werkzeuge_0001_pflaster.png","classes":["patch"]},{"src":"bubble1/werkzeuge/werkzeuge_0002_malkasten.png","classes":["paint"]},{"src":"bubble1/werkzeuge/werkzeuge_0003_lupe.png","classes":["magnifier"]},{"src":"bubble1/werkzeuge/werkzeuge_0004_rechtsbuch.png","classes":["code-of-law"]},{"src":"bubble1/werkzeuge/werkzeuge_0005_goldstück.png","classes":["gold"]}],"container":"b1-tools"}
 
 Welchen Gegenstand soll {name} noch einpacken?
 
@@ -150,8 +150,8 @@ Welchen Gegenstand soll {name} noch einpacken?
 -> ausserhalb_des_dorfs
 
 = ausserhalb_des_dorfs
-// wald
-#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/background.png","classes":["background"]},{"src":"bubble1/wald/wald_0007_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble1/wald/wald_0006_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble1/wald/wald_0003_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble1/wald/wald_0009_baum-7.png","classes":["tree","tree-7"]},{"src":"bubble1/wald/wald_0010_baum-8.png","classes":["tree","tree-8"]}],"container":"b1-forest-once"}
+// wald anhalten
+#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/background.png","classes":["background"]},{"src":"bubble1/wald/wald_0007_baum-1.png","classes":["tree","tree-1-stop"]},{"src":"bubble1/wald/wald_0006_baum-2.png","classes":["tree","tree-2-stop"]},{"src":"bubble1/wald/wald_0003_baum-5.png","classes":["tree","tree-5-stop"]},{"src":"bubble1/wald/wald_0009_baum-7.png","classes":["tree","tree-7-stop"]},{"src":"bubble1/wald/wald_0010_baum-8.png","classes":["tree","tree-8-stop"]}],"container":"b1-forest"}
 
 Bereits tief einige Schritte hinter dem Dorf, fällt {s: ihm|ihr} ein, dass {s: er|sie} etwas vergessen hat.
 
@@ -314,12 +314,9 @@ Vielleicht gibt es ein Boot, welches nur wenig beschädigt ist?
 = oktopusbaum2
 
 // oktopusbaum (mit Gesicht)
-#CONTENT: {"type":"image","images":[{"src":"bubble1/oktopus_teile/oktopus-teile.gif","classes":["face-1"]}],"container":"b1-octopus-tree-face"}
+#CONTENT: {"type":"image","images":[{"src":"bubble1/oktopus_teile/oktopus-untersuchen-animation.gif","classes":["face"]}],"container":"b1-octopus-tree-face"}
 
 {name} nähert sich dem Baum und erkennt zwei traurige, braune Augen aus den Furchen der Rinde hervorlugen. {s: Er|Sie} konnte sogar den grossen Schnurrbart von Onkel Willi erkennen. 
-
-// oktopusbaum (mit Gesicht)
-#CONTENT: {"type":"image","images":[{"src":"bubble1/oktopus_teile/oktopus-untersuchen-animation.gif","classes":["face-2"]}],"container":"b1-octopus-tree-face"}
 
 Das kann doch alles doch nicht wahr sein...
 // audio stop
@@ -393,8 +390,8 @@ Die braune Kugel rollt {name} aus der Hand und landet mit einem lauten Klatschen
 Die Kugel fängt an zu husten, keucht und vier kurze Beine strecken sich.
 {name} erblickt vor sich eine fette Kröte.
 
-// frosch normal
-#CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/frosch-normal.gif","classes":["frog"]}],"container":"b1-frog"}
+// frosch standbild
+#CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/frosch-standbild.gif","classes":["frog"]}],"container":"b1-frog"}
 
 “Oh MAANN..”, quakt diese laut.
 
@@ -436,7 +433,13 @@ Die Kröte schaut sich um und entdeckt die Bruchstücke im Wasser.
 
 "Rückgängig? Sehe ich aus wie ein Magier?", die Kröte lacht wieder.
 
+// frosch schnappen
+#CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/frosch-schnappen.gif","classes":["frog"]}],"container":"b1-frog"}
+
 - "Lass mal sehen, wie ich dir helfen kann. Schliesslich hast du mich ja gerettet...", während sie überlegt, schnappt sie nach einer dicken Fliege.
+
+// frosch standbild
+#CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/frosch-standbild.gif","classes":["frog"]}],"container":"b1-frog"}
 
 "Ich war gerade auf Durchreise und muss zurück in den Sumpf. Aber ich kenne da eine Hexe, die dir vielleicht helfen könnte..."
 
@@ -477,17 +480,19 @@ Ein bisschen angewidert und unsicher klettert {name} auf das Schiff. Es schwankt
 // R
 * [das Segelschiff steuern]
     ~R++
+    
+    //segelschiff small
+    #CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat-small"]}],"container":"b1-boat"}
     {name} zieht das Segel auf und ein Windstoss trägt {s: ihn|sie} über den Teich.
 
 // S
 * [ihr das Segeln beibringen]
     ~S++
-    “Was soll ich damit? Ich kann gut schwimmen.”, ohne ein weiteres Wort springt Alexa wieder ins Wasser und zeigt {name} den Weg.
     
-- #AUDIO_STOP
+    //segelschiff small
+    #CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat-small"]}],"container":"b1-boat"}
 
-//segelschiff small
-#CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat"]}],"container":"b1-boat"}
+    “Was soll ich damit? Ich kann gut schwimmen.”, ohne ein weiteres Wort springt Alexa wieder ins Wasser und zeigt {name} den Weg.
 
 --> bubble2
 

@@ -1,0 +1,21 @@
+.b1-boat {
+
+
+  .boat-small {
+    opacity: 0;
+    animation: boat-small 5s forwards;
+  }
+
+  @keyframes boat-small {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    }
+}

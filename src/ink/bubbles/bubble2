@@ -1,9 +1,14 @@
 INCLUDE bubbles/bubble3
 === bubble2 ===
+
+
+
 // ankunft wald
-#CONTENT: {"type":"image","images":[{"src":"bubble2/ankunft_wald/ankunft_0007_background-black.png","classes":["background"]},{"src":"bubble2/ankunft_wald/ankunft_0000_grass.png","classes":["gras"]},{"src":"bubble2/ankunft_wald/ankunft_0000_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/ankunft_wald/ankunft_0003_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/ankunft_wald/ankunft_0004_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/ankunft_wald/ankunft_0006_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/ankunft_wald/ankunft_0005_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/ankunft_wald/ankunft_0002_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/ankunft_wald/ankunft_0001_baum-7.png","classes":["tree","tree-7"]},{"src":"bubble2/ankunft_wald/ankunft_0001_wasserdetails.png","classes":["water"]}],"container":"b2-arrival-forest"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/ankunft_wald/ankunft-wald.gif","classes":["forest"]}],"container":"b2-arrival-forest"}
 
 Nach einem längeren Weg über den Teich kommen {name} und Alexa endlich auf der anderen Seite des Ufers an.
+
+#AUDIO_STOP
 
 Die Kröte springt aus dem Wasser und landet mit einem grossen Sprung vor dem anliegenden Wald.
 
