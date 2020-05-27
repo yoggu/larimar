@@ -2,7 +2,8 @@
   <div class="game" :class="{dark: dark}">
     <div class="navbar">
       <router-link to="/menu">menU</router-link>
-      <a v-on:click.prevent="toggleMute()">Mute {{mute}}</a>
+      <a v-on:click.prevent="toggleMute()" class="audio" :class="{'audio-dark': dark, 'mute': mute}">
+      </a>
     </div> 
     <div class="story" ref="story" v-if="!finished">
         <div class="image-container" v-on:click="showText()">
@@ -296,11 +297,38 @@ export default {
   padding: 0 12px;
   z-index: 99;
   flex-shrink: 0;
+  max-width: 1440px;
 
   a {
     color: inherit;
     font-weight: 400;
   }
+
+  .audio {
+    background-image: url("../assets/images/icons/sound-on-black.png");
+    background-size: contain;
+    height: 40px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+
+    &.audio-dark { 
+      background-image: url("../assets/images/icons/sound-on-white.png");
+
+      &.mute {
+        background-image: url("../assets/images/icons/sound-off-white.png");
+      }
+    }
+
+    &.mute {
+      background-image: url("../assets/images/icons/sound-off-black.png");
+
+    }
+
+  }
+
+
 }
 
 
