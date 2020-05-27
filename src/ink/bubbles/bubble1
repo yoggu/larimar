@@ -32,10 +32,7 @@ Es ist doch unmöglich, dass {s:seine|ihre} Tat noch nicht bemerkt wurde.
 #AUDIO_STOP
 
 // wald
-#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/durch-den-wald-loop.gif","classes":["trees"]}],"container":"b1-forest"}
-/*
-#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/wald_0002_ast-front-1.png","classes":["branch","branch-1"]},{"src":"bubble1/wald/wald_0001_ast-front-2.png","classes":["branch","branch-2"]},{"src":"bubble1/wald/wald_0000_ast-front-3.png","classes":["branch","branch-3"]},{"src":"bubble1/wald/wald_0007_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble1/wald/wald_0006_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble1/wald/wald_0005_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble1/wald/wald_0004_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble1/wald/wald_0003_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble1/wald/wald_0008_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble1/wald/wald_0009_baum-7.png","classes":["tree","tree-7"]},{"src":"bubble1/wald/wald_0010_baum-8.png","classes":["tree","tree-8"]},{"src":"bubble1/wald/wald_0011_baum-9.png","classes":["tree","tree-9"]}],"container":"b1-forest"}
-*/
+#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/background.png","classes":["background"]},{"src":"bubble1/wald/wald_0007_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble1/wald/wald_0006_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble1/wald/wald_0003_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble1/wald/wald_0009_baum-7.png","classes":["tree","tree-7"]},{"src":"bubble1/wald/wald_0010_baum-8.png","classes":["tree","tree-8"]}],"container":"b1-forest"}
 
 Die Gegend erscheint {s: ihm|ihr} plötzlich anders als sonst. Eigentlich sollte {s: er|sie} doch schon längst im Dorf angekommen sein?
  War {s: er|sie} so tief in Gedanken versunken, dass {s: er|sie} sich verlaufen hat?
@@ -154,12 +151,9 @@ Welchen Gegenstand soll {name} noch einpacken?
 
 = ausserhalb_des_dorfs
 // wald
-#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/durch-den-wald-loop.gif","classes":["trees"]}],"container":"b1-forest"}
+#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/background.png","classes":["background"]},{"src":"bubble1/wald/wald_0007_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble1/wald/wald_0006_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble1/wald/wald_0003_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble1/wald/wald_0009_baum-7.png","classes":["tree","tree-7"]},{"src":"bubble1/wald/wald_0010_baum-8.png","classes":["tree","tree-8"]}],"container":"b1-forest-once"}
 
 Bereits tief einige Schritte hinter dem Dorf, fällt {s: ihm|ihr} ein, dass {s: er|sie} etwas vergessen hat.
-
-  // wald stehen bleiben
-#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/durch-den-wald-anhalten.gif","classes":["trees"]}],"container":"b1-forest"}
 
 Der alte Familienkompass! Dieser besondere Kompass führt {s: ihn|sie} immer nach Hause zurück...
 
@@ -388,13 +382,19 @@ Kleine Blasen steigen von den Wurzeln des Baumes an die Wasseroberfläche. {name
 -> frosch
 
 = frosch
-// frog
-#CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/animation-frosch-aufrollen.gif","classes":["frog"]}],"container":"b1-frog"}
+// frosch kugel
+#CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/kugel-standbild.gif","classes":["frog"]}],"container":"b1-frog"}
 
 Die braune Kugel rollt {name} aus der Hand und landet mit einem lauten Klatschen auf dem morschen Holz.
 
+// frosch aufrollen
+#CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/animation-frosch-aufrollen.gif","classes":["frog"]}],"container":"b1-frog"}
+
 Die Kugel fängt an zu husten, keucht und vier kurze Beine strecken sich.
 {name} erblickt vor sich eine fette Kröte.
+
+// frosch normal
+#CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/frosch-normal.gif","classes":["frog"]}],"container":"b1-frog"}
 
 “Oh MAANN..”, quakt diese laut.
 

@@ -1,50 +1,31 @@
 .b1-forest {
 
-  .branch {
-    position: absolute;
-  }
-
   .tree {
     position: absolute;
   }
 
   .tree-1 {
-    --scaleStart: 1.0;
-    --scaleEnd: 2.0;
-    animation: forest-right ease-in-out 5s 2s forwards;
-  }
-
-  .tree-2 {
-    --scaleStart: 1.0;
-    --scaleEnd: 2.0;
-    animation: forest-right ease-in-out 5s 2s forwards;
-  }
-
-  .tree-3 { 
-    --scaleStart: 1.0;
-    --scaleEnd: 2.0;
-    animation: forest-left ease-in-out 5s 2s forwards;
-  }
-
-  .tree-4 {
-    z-index: 1;
-    --scaleStart: 1.0;
-    --scaleEnd: 2.0;
-    animation: forest-left ease-in-out 5s 2s forwards;
-  }
-
-  .tree-5 {
-    --scaleStart: 1;
-    --scaleEnd: 2.0;
-    animation: forest-left ease-in-out 5s 2s forwards;
-  }
-
-  .tree-6 {
     opacity: 0;
     transform: scale(0.8);
     --scaleStart: 0.8;
     --scaleEnd: 2.0;
-    animation: forest-left ease-in-out 5s 4s forwards, forest-layer-2 2s 3s forwards;
+    animation: forest-right ease-in-out 10s 1s infinite;
+  }
+
+  .tree-2 {
+    opacity: 0;
+    transform: scale(0.8);
+    --scaleStart: 0.8;
+    --scaleEnd: 2.0;
+    animation: forest-left ease-in-out 10s 2s infinite;
+  }
+
+  .tree-5 {
+    opacity: 0;
+    transform: scale(0.8);
+    --scaleStart: 0.8;
+    --scaleEnd: 2.0;
+    animation: forest-left ease-in-out 10s 5s infinite;
   }
 
   .tree-7 {
@@ -52,7 +33,7 @@
     transform: scale(0.8);
     --scaleStart: 0.8;
     --scaleEnd: 2.0;
-    animation: forest-right ease-in-out 5s 4s forwards, forest-layer-2 2s 3s forwards;
+    animation: forest-left ease-in-out 10s 6s infinite
   }
 
   .tree-8 {
@@ -60,42 +41,42 @@
     transform: scale(0.8);
     --scaleStart: 0.8;
     --scaleEnd: 2.0;
-    animation: forest-right ease-in-out 5s 4s forwards, forest-layer-2 2s 3s forwards;
-  }
-
-  .tree-9 {
-    opacity: 0;
-    transform: scale(0.8);
-    --scaleStart: 0.8;
-    --scaleEnd: 2.0;
-    animation: forest-left ease-in-out 5s 4s forwards, forest-layer-2 2s 3s forwards;
+    animation: forest-right ease-in-out 10s 7s infinite
   }
 
 }
 
 @keyframes forest-right {
 0% {
+  opacity: 0;
   transform: scale(var(--scaleStart)) translateX(0);
 }
-100% {
+10% {
+  opacity: 1;
+}
+50%, 100% {
   transform: scale(var(--scaleEnd)) translateX(50%);
 }
 }
 
 @keyframes forest-left {
 0% {
+  opacity: 0;
   transform: scale(var(--scaleStart)) translateX(0);
 }
-100% {
+10% {
+  opacity: 1;
+}
+50%, 100% {
   transform: scale(var(--scaleEnd)) translateX(-50%);
 }
 }
 
-@keyframes forest-layer-2 {
-0% {
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-}
-}
+// @keyframes forest-layer {
+// 0% {
+//   opacity: 0;
+// }
+// 100% {
+//   opacity: 1;
+// }
+// }
