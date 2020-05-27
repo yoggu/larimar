@@ -79,6 +79,9 @@ export default {
     this.checkPermission();
 
   },
+  destroyed() {
+    Howler.stop();
+  }, 
   methods: {
     // main gameplay loop
     continueStory() {
@@ -164,12 +167,10 @@ export default {
             this.currentAudio = new Howl({
               src: [content.src],
               loop: content.loop,
-              volume: content.volume,
-              onend: function() {
-                console.log('audio finished!');
-              }
+              volume: content.volume
             });
             this.currentAudio.play();
+            this.currentAudio.fade(0.0, this.currentAudio.volume(), content.fade);
           }
 
         } else if (tag.property === "THEME") { 

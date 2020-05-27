@@ -7,7 +7,7 @@ INCLUDE bubbles/bubble2
 #CONTENT: {"type":"image","images":[{"src":"bubble1/wiese/wiese-background.png","classes":["background"]},{"src":"bubble1/wiese/wolken.png","classes":["clouds"]},{"src":"bubble1/wiese/flower-1-animation.gif","classes":["flower-1"]},{"src":"bubble1/wiese/flower-2-animation.gif","classes":["flower-2"]}],"container":"b1-meadow"}
 
 // wind audio
-#CONTENT: {"type": "audio", "src": "bubble1/wind.wav", "loop": true, "volume": 0.5}
+#CONTENT: {"type": "audio", "src": "bubble1/wind.wav", "loop": true, "volume": 0.3, "fade": 3000}
 
 Etwas abseits vom Dorf auf einer Wiese liegt {name}.
 Die Sonne steht bereits im Zenit und scheint {s: ihm|ihr} heiss ins Gesicht.
@@ -178,30 +178,29 @@ Der alte Familienkompass! Dieser besondere Kompass führt {s: ihn|sie} immer nac
     ** [trotzdem versuchen]
     
         // whip audio
-        #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5}
+        #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5, "fade": 0}
         // tor schlag
         #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.png","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag.gif","classes":["hit"]}],"container":"b1-gate"}
        {name} nähert sich dem Tor. Die Wurzeln fangen sich an zu bewegen und eine schlägt nach {s: ihm|ihr}. 
        
        Gerade rechtzeitig kann {s:er|sie} dem Schlag noch ausweichen...
-       
         *** [wieder umkehren]
             -> see
-        *** [trotzdem versuchen]   
+        *** [trotzdem versuchen]
             {name} nähert sich nochmals dem Tor, diesmal fest entschlossen auszuweichen. 
             // whip audio
-            #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5}
+            #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5, "fade": 0}
             // tor schlag 2
             #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.png","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag-2.gif","classes":["hit-2"]}],"container":"b1-gate"}
             Wieder schlagen die Wurzeln nach {s: ihm|ihr} aus. {name} weicht aus.
             // whip audio
-            #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5}
+            #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5, "fade": 0}
             // tor schlag 3
             #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.png","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag-3.gif","classes":["hit-3"]}],"container":"b1-gate"}
             
             Doch dabei trifft {s: ihn|sie} ein zweiter Schlag am Bein. {s: Er|Sie} fällt zu Boden.
             // whip audio
-            #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5}
+            #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5, "fade": 0}
             // tor schlag 4
             #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.png","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag-4.gif","classes":["hit-4"]}],"container":"b1-gate"}
             
@@ -219,7 +218,7 @@ Der alte Familienkompass! Dieser besondere Kompass führt {s: ihn|sie} immer nac
 Als {s: er|sie} beim Ufer ankommt, scheint dies komplett verlassen. Onkel Willis Boot ist nicht zu sehen und nichts ist zu hören. Wieder Totenstille.
 
 // waves audio
-#CONTENT: {"type": "audio", "src": "bubble1/waves.wav", "loop": true, "volume": 0.3}
+#CONTENT: {"type": "audio", "src": "bubble1/waves.wav", "loop": true, "volume": 0.2, "fade": 3000}
 
 // weg zum wasser 2
 #CONTENT: {"type":"image","images":[{"src":"bubble1/weg_zum_wasser/ufer-nähern-2.gif","classes":["water-2"]}],"container":"b1-go-to-shore"}
@@ -338,7 +337,7 @@ Das kann doch alles doch nicht wahr sein...
 
 = blasen
 // bubbles audio
-#CONTENT: {"type": "audio", "src": "bubble1/bubbles.wav", "loop": true, "volume": 0.3}
+#CONTENT: {"type": "audio", "src": "bubble1/bubbles.wav", "loop": true, "volume": 0.3, "fade": 0}
 // blasen_baum schwach
 #CONTENT: {"type":"image","images":[{"src":"bubble1/oktopusbaum_blasen/baum-background.png","classes":["background"]},{"src":"bubble1/oktopusbaum_blasen/blasen-schwach-animation.gif","classes":["bubbles-small"]}],"container":"b1-bubbles"}
 
@@ -349,7 +348,7 @@ Kleine Blasen steigen von den Wurzeln des Baumes an die Wasseroberfläche. {name
 
 * [beobachten]
     // bubbles audio
-    #CONTENT: {"type": "audio", "src": "bubble1/bubbles.wav", "loop": true, "volume": 0.6}
+    #CONTENT: {"type": "audio", "src": "bubble1/bubbles.wav", "loop": true, "volume": 0.6, "fade": 0}
     // blasen_baum mittel
     #CONTENT: {"type":"image","images":[{"src":"bubble1/oktopusbaum_blasen/baum-background.png","classes":["background"]},{"src":"bubble1/oktopusbaum_blasen/blasen-mittel-animation.gif","classes":["bubbles-medium"]}],"container":"b1-bubbles"}
     Noch mehr Blasen steigen auf und das Wasser spritzt {name} ins Gesicht.
@@ -360,7 +359,7 @@ Kleine Blasen steigen von den Wurzeln des Baumes an die Wasseroberfläche. {name
 
     ** [weiter beobachten]
     // bubbles audio
-    #CONTENT: {"type": "audio", "src": "bubble1/bubbles.wav", "loop": true, "volume": 1}
+    #CONTENT: {"type": "audio", "src": "bubble1/bubbles.wav", "loop": true, "volume": 1, "fade": 0}
    // blasen_baum gross
     #CONTENT: {"type":"image","images":[{"src":"bubble1/oktopusbaum_blasen/baum-background.png","classes":["background"]},{"src":"bubble1/oktopusbaum_blasen/blasen-stark-animation.gif","classes":["bubbles-large"]}],"container":"b1-bubbles"} 
     
@@ -370,7 +369,7 @@ Kleine Blasen steigen von den Wurzeln des Baumes an die Wasseroberfläche. {name
     
         *** [noch länger warten]
             // bubbles audio
-            #CONTENT: {"type": "audio", "src": "bubble1/bubbles.wav", "loop": true, "volume": 0.3}
+            #CONTENT: {"type": "audio", "src": "bubble1/bubbles.wav", "loop": true, "volume": 0.3, "fade": 0}
             // blasen_baum schwach
             #CONTENT: {"type":"image","images":[{"src":"bubble1/oktopusbaum_blasen/baum-background.png","classes":["background"]},{"src":"bubble1/oktopusbaum_blasen/blasen-schwach-animation.gif","classes":["bubbles-small"]}],"container":"b1-bubbles"}
          ...nach einigen Sekunden werden die Blasen auch schon wieder weniger.
@@ -463,7 +462,7 @@ Nach einigen Metern blickt sie zurück auf {name}, {s: der|welche} sich immer no
 Als {name} genügend Teile gesammelt hat, fängt Alexa an, diese mit ihrer Spucke zusammenzukleben.
 
 // waves audio
-#CONTENT: {"type": "audio", "src": "bubble1/waves.wav", "loop": true, "volume": 0.3}
+#CONTENT: {"type": "audio", "src": "bubble1/waves.wav", "loop": true, "volume": 0.2, "fade": 3000}
 
 //segelschiff
 #CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat"]}],"container":"b1-boat"}
