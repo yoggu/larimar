@@ -7,10 +7,12 @@
 <style lang="scss">
 @import "node_modules/normalize-scss/sass/normalize/import-now";
 @import url("https://use.typekit.net/lsr4kai.css");
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 
 html {
   height: 100%;
-  font-family: ocr-a-std,monospace;
+  font-family: 'Nanum Gothic Coding', monospace;
+  //font-family: ocr-a-std,monospace;
   font-weight: 400;
   font-style: normal;
 }
@@ -19,7 +21,7 @@ body {
   min-height: 100%;
   background: $black;
   color: $white;
-  font-family: ocr-a-std,monospace;
+  font-family: 'Nanum Gothic Coding', monospace;
 }
 
 * {
@@ -31,7 +33,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  font-family: ocr-a-std,monospace;
+  font-family: 'Nanum Gothic Coding', monospace;
 }
 
 h1 {

@@ -1,7 +1,7 @@
 <template>
     <div class="textbox" v-on:click="showAll()">
       <p>{{visibleText}}</p>
-      <span v-show="!this.isTyping">&#9660;</span>
+      <span v-show="!this.isTyping">&#x25bd;</span>
     </div>  
 </template>
 

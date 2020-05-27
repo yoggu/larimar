@@ -27,7 +27,7 @@
               v-on:click.prevent="select(choice)"
               v-for="(choice, index) in choices"
               :key="'choice-'+index"
-            >&#x25BA; {{choice.text}}</a>
+            >&#x25b7; {{choice.text}}</a>
           </div>
         </div>
     </div>
@@ -277,7 +277,7 @@ export default {
   flex-flow: column;
   background-color: $white;
   color: black;
-  font-size: 12px;
+  font-size: 13px;
   height: 100vh;
   overflow: hidden;
 
