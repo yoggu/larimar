@@ -7,6 +7,7 @@
     </div> 
     <div class="story" ref="story" v-if="!finished">
         <div class="image-container" v-on:click="showText()">
+          <transition name="fade">
           <div v-if="currentImage.type === 'image'" :class="currentImage.container" class="container">
             <img
               v-for="(image, index) in currentImage.images"
@@ -16,6 +17,7 @@
             />
           </div>
           <draw-svg v-else-if="currentImage.type === 'svg'" :duration=200 :class = currentImage.container :vivusId ="'vivus'+index" :file= currentImage.src type="delayed" :ref="'vivus'+index"></draw-svg>
+          </transition>
         </div>  
         <div class="text-container">
           <typed-text ref="typedText" :typeSpeed="20" :text="currentText.text" :class="currentText.classes" @next="continueStory()" @onComplete="showChoice = true"></typed-text>
@@ -388,6 +390,13 @@ export default {
       }
     }
   }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
 
 
 }
