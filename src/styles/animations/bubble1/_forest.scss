@@ -42,7 +42,7 @@
 
 
   .tree-1-stop {
-    opacity: 0;
+    opacity: 1;
     transform: scale(0.5);
     --scaleStart: 0.5;
     --scaleEnd: 1.5;
@@ -50,7 +50,7 @@
   }
 
   .tree-2-stop {
-    opacity: 0;
+    opacity: 1;
     transform: scale(0.5);
     --scaleStart: 0.5;
     --scaleEnd: 1.5;
@@ -58,7 +58,7 @@
   }
 
   .tree-5-stop {
-    opacity: 0;
+    opacity: 1;
     transform: scale(0.5);
     --scaleStart: 0.5;
     --scaleEnd: 1.5;
@@ -66,7 +66,7 @@
   }
 
   .tree-7-stop {
-    opacity: 0;
+    opacity: 1;
     transform: scale(0.5);
     --scaleStart: 0.5;
     --scaleEnd: 1.5;
@@ -74,7 +74,7 @@
   }
 
   .tree-8-stop {
-    opacity: 0;
+    opacity: 1;
     transform: scale(0.5);
     --scaleStart: 0.5;
     --scaleEnd: 1.5;
@@ -125,4 +125,13 @@
   100% {
     transform: scale(var(--scaleEnd)) translateX(-25%);
   }
+  }
+
+
+  .tree {
+    opacity: 0;
+  
+    &.fade-leave-active {
+      transition: opacity 0s;
+    }
   }
