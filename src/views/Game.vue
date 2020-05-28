@@ -76,7 +76,7 @@ export default {
     } else {
       this.restart();
     }
-    this.checkPermission();
+    //this.checkPermission();
 
   },
   destroyed() {
@@ -208,6 +208,7 @@ export default {
       this.result.E = this.story.variablesState.$("E");
       this.result.C = this.story.variablesState.$("C");
       console.log(this.result);
+      this.$store.commit('saveResult', this.result);
       this.finished = true;
     },
     save() {

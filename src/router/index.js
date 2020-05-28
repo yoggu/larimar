@@ -16,9 +16,14 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "menu" */ '../views/Menu.vue')
   },
   {
-    path: '/info',
-    name: 'Info',
-    component: () => import(/* webpackChunkName: "menu" */ '../views/Info.vue')
+    path: '/result',
+    name: 'Result',
+    component: () => import(/* webpackChunkName: "menu" */ '../views/Result.vue')
+  },
+  {
+    path: '/credits',
+    name: 'Credits',
+    component: () => import(/* webpackChunkName: "menu" */ '../views/Credits.vue')
   },
   {
     path: '/game',

@@ -8,6 +8,14 @@ export default new Vuex.Store({
   state: {
     story: null,
     isDark: false,
+    result: {
+      R: 5,
+      I: 2,
+      A: 1,
+      S: 3,
+      E: 4,
+      C: 2
+    }
   },
   mutations: {
     saveState (state, stateJson) {
@@ -15,6 +23,9 @@ export default new Vuex.Store({
     },
     setTheme (state, value) {
       state.isDark = value;
+    },
+    saveResult (state, value) {
+      state.result = value;
     }
   },
   actions: {
