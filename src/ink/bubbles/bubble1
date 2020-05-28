@@ -6,7 +6,7 @@ INCLUDE bubbles/bubble2
 // wiese
 #CONTENT: {"type":"image","images":[{"src":"bubble1/wiese/wiese-background.png","classes":["background"]},{"src":"bubble1/wiese/wolken.png","classes":["clouds"]},{"src":"bubble1/wiese/flower-1-animation.gif","classes":["flower-1"]},{"src":"bubble1/wiese/flower-2-animation.gif","classes":["flower-2"]}],"container":"b1-meadow"}
 
-// wind audio
+// wind audioo
 #CONTENT: {"type": "audio", "src": "bubble1/wind.wav", "loop": true, "volume": 0.3, "fade": 3000}
 
 Etwas abseits vom Dorf auf einer Wiese liegt {name}.
