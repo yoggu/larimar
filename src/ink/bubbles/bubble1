@@ -16,10 +16,10 @@ Seltsam, dass niemand nach {s: ihm|ihr} sucht... Vom Dorf ist nichts zu hören. 
 
 Es ist doch unmöglich, dass {s:seine|ihre} Tat noch nicht bemerkt wurde.
 
-* [ {s:Er|Sie} geht ins Dorf]
+* [ ins Dorf gehen]
     -> weg_ins_dorf
     
-* [ {s:Er|Sie} bleibt liegen]
+* [ liegen bleiben]
     Bienen surren, der Wind rauscht und {name} geniesst die Stille.
     
     {s:Er|Sie} liegt noch eine Weile im Gras und starrt ins helle Blau am Himmel. Eigentlich ist es schon ungewöhnlich still...
@@ -74,7 +74,7 @@ Wieso sind hier so viele Bäume? Und die Äste sind ungewöhnlich dicht und ersc
     
     {s: Er|Sie} erkennt {s: seine|ihre} Schwester sofort. Auch wenn die Hälfte ihres Körpers ein riesiger Baum geworden ist. So riesig, dass er durch die Decke schiesst.
     
-    Als {s: seine|ihre} Schwester {s: ihn|sie} erblickt, schreit {s: er|sie} laut auf:
+    Als die Schwester {s: ihn|sie} erblickt, schreit diese laut auf:
     
     "{name}!"
 
@@ -425,7 +425,7 @@ Die Kröte schaut sich um und entdeckt die Bruchstücke im Wasser.
 
 -- "Also doch du..." Die Kröte quakt laut, es hört sich fast wie ein Lachen an.
 
--blabla bla für alle // SELINE
+- "Ich hoffe für dich einfach, dass deine Entscheidung nicht auch den Wald ins Ungleichgewicht gestürzt hat..."
 
 * ["Was weisst du über die Verwandlung?"]
 
@@ -447,7 +447,9 @@ Die Kröte schaut sich um und entdeckt die Bruchstücke im Wasser.
 
 "Ich war gerade auf Durchreise und muss zurück in den Sumpf. Aber ich kenne da eine Hexe, die dir vielleicht helfen könnte..."
 
-"Ich heisse übrigens Alexa.", und damit hüpft sie ins Wasser.
+"Ich heisse übrigens Alexa. Und um ganz deutlich zu sein: Ich bin ein Frosch!", und damit hüpft sie ins Wasser.
+
+{name} runzelt die Stirn. Für einen Frosch sah sie aber ganz schön krötig aus...
 
 Nach einigen Metern blickt sie zurück auf {name}, {s: der|welche} sich immer noch auf dem Steg befand.
 
@@ -496,7 +498,7 @@ Ein bisschen angewidert und unsicher klettert {name} auf das Schiff. Es schwankt
     //segelschiff small
     #CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat-small"]}],"container":"b1-boat"}
 
-    “Was soll ich damit? Ich kann gut schwimmen.”, ohne ein weiteres Wort springt Alexa wieder ins Wasser und zeigt {name} den Weg.
+    “Was soll ich damit? Frösche können gut schwimmen...”, ohne ein weiteres Wort springt Alexa wieder ins Wasser und zeigt {name} den Weg.
 
 --> bubble2
 
