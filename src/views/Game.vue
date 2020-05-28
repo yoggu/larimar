@@ -277,7 +277,7 @@ export default {
   flex-flow: column;
   background-color: $white;
   color: black;
-  font-size: 17px;
+  font-size: 16px;
   height: 100vh;
   overflow: hidden;
 
@@ -366,7 +366,7 @@ export default {
   }
 
   .text-container {
-    min-height: 140px;
+    min-height: 150px;
     padding: 6px 12px 0 12px;
     display: flex;
     flex-flow: column;
@@ -400,7 +400,7 @@ export default {
     }
 
   .arrow {
-    font-size: 14px;
+    font-size: 12px;
   }
   }
 

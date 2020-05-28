@@ -69,16 +69,21 @@ export default {
 <style scoped lang="scss">
 .textbox {
   display: flex;
-  justify-content: space-between;
   flex: 1;
   width:100%;
+  position: relative;
+  padding-right: 16px;
+
   p {
     width:100%;
     margin: 0;
   }
 
   .arrow {
-    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 12px;
   }
 }
 
