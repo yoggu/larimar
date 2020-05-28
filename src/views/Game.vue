@@ -371,6 +371,11 @@ export default {
     display: flex;
     flex-flow: column;
     width: 100%;
+
+    @media screen and (min-width: $medium) {
+      min-height: 200px;
+  }
+
   }
 
 
@@ -394,14 +399,6 @@ export default {
       }
     }
   }
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-}
-
 
 }
 </style>
