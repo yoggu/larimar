@@ -370,11 +370,11 @@ Kleine Blasen steigen von den Wurzeln des Baumes an die Wasseroberfläche. {name
 
             ****[warten]
 
-    --#AUDIO_STOP
     // blasen_baum
     -- #CONTENT: {"type":"image","images":[{"src":"bubble1/oktopusbaum_blasen/baum-background.png","classes":["background"]}],"container":"b1-bubbles"}   
     -- Die Blasen werden weniger, bis wieder nichts mehr zu sehen ist. {name} bekommt ein schlechtes Gewissen und langt trotzdem ins kalte Wasser.
-            
+
+-#AUDIO_STOP            
 - ...nach wenigen Sekunden zieht {s: er|sie} eine glitschige Kugel heraus.
 -> frosch
 
@@ -408,10 +408,14 @@ Die Kröte schaut sich um und entdeckt die Bruchstücke im Wasser.
     “Da du als einziger noch hier bist, denke ich mal, dass du den Fluch ausgelöst hast… Auch, wenn du mir nicht gerade sehr rebellisch aussiehst…”
 
 * ["dieser blöde Baum ist mein Onkel..."]
-
+    // frosch schnappen
+    #CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/frosch-schnappen.gif","classes":["frog"]}],"container":"b1-frog"}
     "Jetzt braus mal nicht gleich so auf, man.", die Kröte quakt und schnappt mit ihrer Zunge.
 
     "Ich wollte ja nur meine Runden drehen, da kann ich doch nix für, wenn da plötzlich irgendjemand den Fluch ausgelöst hat..."
+    
+    // frosch standbild
+    #CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/frosch-standbild.gif","classes":["frog"]}],"container":"b1-frog"}
 
     ** [“Was für ein Fluch?”]
     “Bist du überhaupt von hier? Aber du warst das schon, oder?”
@@ -434,7 +438,7 @@ Die Kröte schaut sich um und entdeckt die Bruchstücke im Wasser.
 "Rückgängig? Sehe ich aus wie ein Magier?", die Kröte lacht wieder.
 
 // frosch schnappen
-#CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/frosch-schnappen.gif","classes":["frog"]}],"container":"b1-frog"}
+- #CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/frosch-schnappen.gif","classes":["frog"]}],"container":"b1-frog"}
 
 - "Lass mal sehen, wie ich dir helfen kann. Schliesslich hast du mich ja gerettet...", während sie überlegt, schnappt sie nach einer dicken Fliege.
 

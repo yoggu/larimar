@@ -42,38 +42,43 @@
 
 
   .tree-1-stop {
+    opacity: 0;
     transform: scale(0.5);
     --scaleStart: 0.5;
     --scaleEnd: 1.5;
-    animation: forest-right-stop ease-out 6s 1s alternate forwards 2;
+    animation: forest-right-stop ease-out 6s 1s alternate forwards;
   }
 
   .tree-2-stop {
+    opacity: 0;
     transform: scale(0.5);
     --scaleStart: 0.5;
     --scaleEnd: 1.5;
-    animation: forest-left-stop ease-out 6s 1s alternate forwards 2;
+    animation: forest-left-stop ease-out 6s 1s alternate forwards;
   }
 
   .tree-5-stop {
+    opacity: 0;
     transform: scale(0.5);
     --scaleStart: 0.5;
     --scaleEnd: 1.5;
-    animation: forest-left-stop ease-out 6s 1s alternate forwards 2;
+    animation: forest-left-stop ease-out 6s 1s alternate forwards;
   }
 
   .tree-7-stop {
+    opacity: 0;
     transform: scale(0.5);
     --scaleStart: 0.5;
     --scaleEnd: 1.5;
-    animation: forest-left-stop ease-out 6s 1s alternate forwards 2;
+    animation: forest-left-stop ease-out 6s 1s alternate forwards;
   }
 
   .tree-8-stop {
+    opacity: 0;
     transform: scale(0.5);
     --scaleStart: 0.5;
     --scaleEnd: 1.5;
-    animation: forest-right-stop ease-out 6s 1s alternate forwards 2;
+    animation: forest-right-stop ease-out 6s 1s alternate forwards;
   }
 
 }

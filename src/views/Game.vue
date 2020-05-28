@@ -277,7 +277,7 @@ export default {
   flex-flow: column;
   background-color: $white;
   color: black;
-  font-size: 13px;
+  font-size: 14px;
   height: 100vh;
   overflow: hidden;
 
@@ -297,10 +297,12 @@ export default {
   height: 40px;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
   padding: 0 12px;
   z-index: 99;
   flex-shrink: 0;
-  max-width: 1440px;
+  max-width: 1024px;
+  width: 100%;
 
   a {
     color: inherit;
@@ -364,8 +366,8 @@ export default {
   }
 
   .text-container {
-    min-height: 120px;
-    padding: 4px 12px 0 12px;
+    min-height: 140px;
+    padding: 6px 12px 0 12px;
     display: flex;
     flex-flow: column;
     width: 100%;
@@ -375,10 +377,11 @@ export default {
   .choices {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    margin: 0 0 20px 0;
 
     .choice {
-      margin: 24px 0 24px 0;
+      margin: 20px 0 20px 0;
       padding: 0 12px;
       color: inherit;
       font-weight: 400;
