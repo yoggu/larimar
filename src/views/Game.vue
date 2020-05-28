@@ -31,11 +31,6 @@
           </div>
         </div>
     </div>
-    <div class="result" v-if="finished"> 
-      <p v-for="(category, index) in result" :key="'category' + index" >
-        {{category}}
-      </p>
-    </div>
   </div>
 </template>
 
@@ -207,8 +202,16 @@ export default {
       this.result.S = this.story.variablesState.$("S");
       this.result.E = this.story.variablesState.$("E");
       this.result.C = this.story.variablesState.$("C");
+
+      this.result.R = 4
+      this.result.I = 2
+      this.result.A = 1
+      this.result.S = 3
+      this.result.E = 0
+      this.result.C = 3
       console.log(this.result);
       this.$store.commit('saveResult', this.result);
+      this.$router.push('/result')
       this.finished = true;
     },
     save() {

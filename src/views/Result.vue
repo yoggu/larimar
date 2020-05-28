@@ -25,10 +25,9 @@ export default {
           color: 'rgba(255, 255, 255, 1)',
         },
         ticks: {
-            suggestedMin: 0,
-            suggestedMax: 5,
-            fontColor: '#FFF',
-            display: false,
+          beginAtZero: true,
+          display: false,
+          precision: 0
         }
     }
       }

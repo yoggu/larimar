@@ -9,12 +9,12 @@ export default new Vuex.Store({
     story: null,
     isDark: false,
     result: {
-      R: 5,
-      I: 2,
-      A: 1,
-      S: 3,
-      E: 4,
-      C: 2
+      R: Number,
+      I: Number,
+      A: Number,
+      S: Number,
+      E: Number,
+      C: Number
     }
   },
   mutations: {
