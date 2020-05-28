@@ -1,7 +1,7 @@
 <template>
     <div class="textbox" v-on:click="showAll()">
       <p>{{visibleText}}</p>
-      <span v-show="!this.isTyping">&#x25bd;</span>
+      <span class="arrow" v-show="!this.isTyping">&#x25bd;</span>
     </div>  
 </template>
 
@@ -75,6 +75,10 @@ export default {
   p {
     width:100%;
     margin: 0;
+  }
+
+  .arrow {
+    font-size: 14px;
   }
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="game" :class="{dark: dark}">
     <div class="navbar">
-      <router-link to="/menu">menU</router-link>
+      <router-link to="/menu">menü</router-link>
       <a v-on:click.prevent="toggleMute()" class="audio" :class="{'audio-dark': dark, 'mute': mute}">
       </a>
     </div> 
@@ -27,7 +27,7 @@
               v-on:click.prevent="select(choice)"
               v-for="(choice, index) in choices"
               :key="'choice-'+index"
-            >&#x25b7; {{choice.text}}</a>
+            ><span class="arrow">&#x25b7;</span> {{choice.text}}</a>
           </div>
         </div>
     </div>
@@ -277,7 +277,7 @@ export default {
   flex-flow: column;
   background-color: $white;
   color: black;
-  font-size: 14px;
+  font-size: 17px;
   height: 100vh;
   overflow: hidden;
 
@@ -398,6 +398,10 @@ export default {
         color: inherit;
       }
     }
+
+  .arrow {
+    font-size: 14px;
+  }
   }
 
 }
