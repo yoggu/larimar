@@ -207,7 +207,7 @@ export default {
       this.result.I = 2
       this.result.A = 1
       this.result.S = 3
-      this.result.E = 0
+      this.result.E = 2
       this.result.C = 3
       console.log(this.result);
       this.$store.commit('saveResult', this.result);
