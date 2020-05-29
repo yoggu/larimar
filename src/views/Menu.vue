@@ -6,14 +6,13 @@
     <div class="menu-list">
       <a v-on:click.prevent="newGame" class="menu-link">Neues Spiel</a>
       <router-link v-if="$store.state.story !== null" class="menu-link" to="/game">Spiel fortsetzen</router-link>
-      <router-link class="menu-link" to="/result">Dein Ergebnis</router-link>
+      <router-link class="menu-link" to="/result">Mein Ergebnis</router-link>
       <router-link class="menu-link" to="/">Credits (TODO)</router-link>
     </div> 
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 
 export default {
   name: 'Menu',

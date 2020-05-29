@@ -1,51 +1,68 @@
 <template>
   <div class="result">
-    <h1>Dein Ergebnis</h1>
-    <radar-chart :chartData="data" :options="options"></radar-chart>
-    <div class="code">
-      <span v-for="(category, index) in code" :key="index">{{category}}</span>
+    <div class="navbar">
+      <router-link class="back" to="/menu"></router-link>
     </div>
-    <div class="categories">
-      <div class="realistic">
-        <h2>Realistisch</h2>
-        <p>Personen dieses Typs arbeiten gerne mit den Händen und mit Gegenständen, sie interessieren sich für Werkzeuge und Maschinen. Sie sind gerne im Freien und betätigen sich körperlich. Im typischen Fall zeichnen sie sich durch folgende Eigenschaften aus: naturverbunden, bodenständig, praktisch, gesundes Selbstvertrauen und eher konservativ.</p>
+    <div class="content"> 
+      <h1>Mein Ergebnis</h1>
+      <radar-chart class="chart" :chartData="data" :options="options"></radar-chart>
+      <h2>Mein Code</h2>
+      <div class="code">
+        <span v-for="(letter, index) in code" :key="index">{{letter}}</span>
       </div>
-      <div class="investigative">
-        <h2>Intellektuell</h2>
-        <p>Personen dieses Typs vertiefen sich gerne in geistige oder naturwissenschaftliche Probleme. Sie analysieren, untersuchen, lernen, lesen, schreiben und rechnen gerne. Im typischen Fall zeichnen sie sich durch folgende Eigenschaften aus: neugierig, erfinderisch, intellektuell, kritisch, genau, logisch, rational und leistungsorientiert.</p>
-      </div>
-      <div class="artistic">
-        <h2>Künstlerisch</h2>
-        <p>Personen dieses Typs drücken sich gerne kreativ oder sprachlich aus. Sie beschäftigen sich gerne mit ausgefallenen Ideen, speziellen Materialien, Musik oder Kultur. Ästhetik ist ihnen wichtig. Im typischen Fall zeichnen sie sich durch folgende Eigenschaften aus: fantasievoll, schöpferisch, ausdrucksstark, intuitiv, offen, sensibel, unkonventionell, eigensinnig und idealistisch.</p>
-      </div>
-      <div class="social">
-        <h2>Sozial</h2>
-        <p>Personen dieses Typs kümmern sich gerne hilfreich um andere Menschen. Sie erziehen, lehren, beraten, pflegen, heilen und sorgen für körperliches, geistiges oder seelisches Wohlbefinden. Im typischen Fall zeichnen sie sich durch folgende Eigenschaften aus: freundlich, hilfsbereit, warmherzig, mitfühlend, verständnisvoll, kontaktfreudig, idealistisch und teilweise belehrend.</p>
-      </div>
-      <div class="enterprising">
-        <h2>Unternehmerisch</h2>
-        <p>Personen dieses Typs motivieren, überzeugen und führen gerne, sie leiten und organisieren. Sie kümmern sich um wirtschaftliche Planung und finanzielle Ziele. Im typischen Fall zeichnen sie sich durch folgende Eigenschaften aus: selbstbewusst, motiviert, mitreißend, erfolgsorientiert, ehrgeizig, dominant, verantwortungsbereit und gesellig.</p>
-      </div>
-      <div class="conventional">
-        <h2>Konventionell</h2>
-        <p>Personen dieses Typs arbeiten gerne ordentlich, genau und gut organisiert in einem Büro. Sie bearbeiten, kontrollieren und übermitteln Zahlen oder Texte. Klare Regeln sind ihnen wichtig. Im typischen Fall zeichnen sie sich durch folgende Eigenschaften aus: sorgfältig, genau, detailorientiert, ausdauernd, ordentlich, praktisch, angepasst, gewissenhaft.</p>
+      <h2>Kategorien</h2>
+      <div class="categories">
+        <category v-for="(category, index) in categories" :key="index" :type="category.type" :title="category.title" :description="category.description" :index="index"></category>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 import RadarChart from "../components/RadarChart";
+import Category from "../components/Category";
 
 export default {
   name: 'Result',
   components: {
-    RadarChart
+    RadarChart,
+    Category
   },
   data: function() {
     return {
       code: null,
+      categories:[
+        {
+          type: "realistic",
+          title: "Macher/in (R)",
+          description: "Personen dieses Typs arbeiten gerne mit den Händen und mit Gegenständen, sie interessieren sich für Werkzeuge und Maschinen. Sie sind gerne im Freien und betätigen sich körperlich. Im typischen Fall zeichnen sie sich durch folgende Eigenschaften aus: naturverbunden, bodenständig, praktisch, gesundes Selbstvertrauen und eher konservativ."
+        },
+        {
+          type: "investigative",
+          title: "Tüftler/in (I)",
+          description: "Personen dieses Typs vertiefen sich gerne in geistige oder naturwissenschaftliche Probleme. Sie analysieren, untersuchen, lernen, lesen, schreiben und rechnen gerne. Im typischen Fall zeichnen sie sich durch folgende Eigenschaften aus: neugierig, erfinderisch, intellektuell, kritisch, genau, logisch, rational und leistungsorientiert."
+        },
+        {
+          type: "artistic",
+          title: "Gestalter/in (A)",
+          description: "Personen dieses Typs drücken sich gerne kreativ oder sprachlich aus. Sie beschäftigen sich gerne mit ausgefallenen Ideen, speziellen Materialien, Musik oder Kultur. Ästhetik ist ihnen wichtig. Im typischen Fall zeichnen sie sich durch folgende Eigenschaften aus: fantasievoll, schöpferisch, ausdrucksstark, intuitiv, offen, sensibel, unkonventionell, eigensinnig und idealistisch."
+        },
+        {
+          type: "social",
+          title: "Helfer/in (S)",
+          description: "Personen dieses Typs kümmern sich gerne hilfreich um andere Menschen. Sie erziehen, lehren, beraten, pflegen, heilen und sorgen für körperliches, geistiges oder seelisches Wohlbefinden. Im typischen Fall zeichnen sie sich durch folgende Eigenschaften aus: freundlich, hilfsbereit, warmherzig, mitfühlend, verständnisvoll, kontaktfreudig, idealistisch und teilweise belehrend."
+        },
+        {
+          type: "enterprising",
+          title: "Unternehmer/in (E)",
+          description: "Personen dieses Typs motivieren, überzeugen und führen gerne, sie leiten und organisieren. Sie kümmern sich um wirtschaftliche Planung und finanzielle Ziele. Im typischen Fall zeichnen sie sich durch folgende Eigenschaften aus: selbstbewusst, motiviert, mitreißend, erfolgsorientiert, ehrgeizig, dominant, verantwortungsbereit und gesellig."
+        },
+        {
+          type: "conventional",
+          title: "Organistor/in (C)",
+          description: "Personen dieses Typs arbeiten gerne ordentlich, genau und gut organisiert in einem Büro. Sie bearbeiten, kontrollieren und übermitteln Zahlen oder Texte. Klare Regeln sind ihnen wichtig. Im typischen Fall zeichnen sie sich durch folgende Eigenschaften aus: sorgfältig, genau, detailorientiert, ausdauernd, ordentlich, praktisch, angepasst, gewissenhaft."
+        }
+      ],
       options: {
         responsive: true,
         legend: {
@@ -63,13 +80,16 @@ export default {
           },
           pointLabels: {
             fontColor:'rgba(255, 255, 255, 1)',
+            fontFamily: "'IM Fell Double Pica', serif",
+            fontSize: 16,
           },
           ticks: {
-            beginAtZero: true,
+            max: 5,
+            min: 0,
+            stepSize: 1,
             display: false,
-            precision: 0
+          }
         }
-      }
       }
     }
   },
@@ -79,13 +99,12 @@ export default {
   computed: {
       data() {
         return  {
-        labels: ['Realistisch', 'Intellektuell', 'Künstlerisch', 'Sozial', 'Unternehmerisch', 'Konventionell'],
+        labels: ['Macher/in', 'Tüftler/in', 'Gestalter/in', 'Helfer/in', 'Unternehmer/in', 'Organistor/in'],
         datasets: [{
           label: "Ergebnis",
           backgroundColor: 'rgba(92, 217, 255, 0.2)',
           borderColor: "rgba(92, 217, 255, 1)",
           data: [this.$store.state.result.R, this.$store.state.result.I, this.$store.state.result.A, this.$store.state.result.S, this.$store.state.result.E, this.$store.state.result.C],
-
         }]
         }
       }
@@ -94,9 +113,7 @@ export default {
     getCode() {
       let result = this.$store.state.result;
       let sorted = Object.keys(result).sort(function(a,b){return result[b]-result[a]});
-      console.log(sorted)
       this.code = Object.values(sorted.slice(0, 3));
-      console.log(this.code)
     }
   }
 }
@@ -105,10 +122,50 @@ export default {
 <style lang="scss" scoped>
 
 .result {
+
+  .navbar {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
   padding: 0 12px;
+  z-index: 99;
+  flex-shrink: 0;
+  max-width: 1024px;
+  width: 100%;
+
+  a {
+    color: inherit;
+    font-weight: 400;
+  }
+
+  .back {
+    background-image: url("../assets/images/icons/arrow-down.png");
+    background-size: contain;
+    height: 40px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(90deg);
+  }
+
+}
+
+.content{
+  padding: 0 12px;
+  max-width: 768px;
+  margin: 0 auto;
+  
   h1 {
   color:white;
+  }
+
 }
+
+
+
+
 }
 
 

@@ -292,10 +292,6 @@ export default {
 
 }
 
-.result {
-  
-}
-
 .navbar {
   display: flex;
   height: 40px;
@@ -336,7 +332,6 @@ export default {
     }
 
   }
-
 
 }
 
