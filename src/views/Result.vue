@@ -17,9 +17,9 @@
       <h2>Meine Antworten</h2>
       <ol>
         <li v-for="(question, index) in questions" :key="index">
-          <div>{{question.question}}</div>
-          <div :class="{'selected': getAnswer(index) == 0}">{{question.answer1.text}}</div>
-          <div :class="{'selected': getAnswer(index) == 1}">{{question.answer2.text}}</div>
+          <div class="question">{{question.question}}</div>
+          <div class="answer" :class="{'selected': getAnswer(index) == 0}"><span>{{question.answer1.category}}: </span>{{question.answer1.text}}</div>
+          <div class="answer" :class="{'selected': getAnswer(index) == 1}"><span>{{question.answer2.category}}: </span>{{question.answer2.text}}</div>
         </li>
       </ol>
     </div>

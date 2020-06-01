@@ -21,7 +21,6 @@ export default {
   methods: {
     toggleOpen() {
       this.open = !this.open;
-      console.log('open')
     }
   }
 }
