@@ -58,6 +58,7 @@ Nur wenig Licht erreicht den Waldboden und bereits nach wenigen Minuten scheint 
 // I
 *[Uhrzeit mit der Sonnenrichtung kombinieren, um die Richtung zu bestimmen]
     ~I++
+    ~q2 = 0
     // baumkrone
     #CONTENT: {"type":"image","images":[{"src":"bubble2/baumkrone/baumkrone_0000_baumkrone.png","classes":["trees"]}],"container":"b2-treetop"}
     
@@ -66,6 +67,7 @@ Nur wenig Licht erreicht den Waldboden und bereits nach wenigen Minuten scheint 
 // C
 *[Noch einmal alles im Rucksack durchgehen und nach Hilfsmöglichkeiten überprüfen]
     ~C++
+    ~q2 = 1
     // rucksack
      #CONTENT: {"type":"image","images":[{"src":"bubble2/rucksack/rucksack_0000_tasche.png","classes":["bag"]}],"container":"b2-backpack"}
      
@@ -122,14 +124,17 @@ Sie sind weniger deutlich zu sehen, weshalb sie {name} bis jetzt gar nicht aufge
 -Doch wie soll dies jetzt helfen, einen Weg zu finden?
 
 // I
-*[Gesichter untersuchen und analysieren]
+*[Gesichter genauer untersuchen]
     ~I++
+    ~q3 = 0
 
 // S
 *[versuchen mit den Bäumen zu kommunizieren]
     ~S++
+    ~q3 = 1
+    
 // baum Nahaufnahme
-#CONTENT: {"type":"image","images":[{"src":"bubble2/baum_nahaufnahme/baum-nahaufnahme_0000_baum-1.png","classes":["tree"]}],"container":"b2-tree-closeup"}
+-#CONTENT: {"type":"image","images":[{"src":"bubble2/baum_nahaufnahme/baum-nahaufnahme_0000_baum-1.png","classes":["tree"]}],"container":"b2-tree-closeup"}
 - {name} geht näher an einen Baum heran und betrachtet diesen.
 
 Zwei kleine, braune Augen blicken starr und milchig aus der Rinde entgegen.
@@ -165,10 +170,11 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     Jedoch versperrt ein riesiger Fels den Weg.
     
     // R
-    ** [Du versuchst darüber zu klettern, obwohl der Stein sehr glatt erscheint und wenig Halt aufweist]
+    ** [versuchen darüber zu klettern, obwohl der Stein sehr glatt erscheint und wenig Halt aufweist]
         //TODO Den Stein mit der Spitzhacke zerschlagen
         
         ~R++
+        ~q4 = 0
         // auf dem Stein
         #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein-ohne.png","classes":["stone"]}],"container":"b2-stone-top"} 
         
@@ -189,10 +195,10 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
         -> bruecke
 
     // I
-    ** [Du untersuchst das Gestein nach möglichen Rissen und Spuren]
+    ** [das Gestein nach möglichen Rissen und Spuren untersuchen]
         ~I++
-    
-    Der Stein ist zu glatt und es gibt keine Möglichkeit oder Halt, um zu klettern.
+        ~q4 = 1
+        Der Stein ist zu glatt und es gibt keine Möglichkeit oder Halt, um zu klettern.
     
     // schlucht stein maus
     #CONTENT: {"type":"image","images":[{"src":"bubble2/schlucht_stein/schlucht_stein_0001_stein.png","classes":["stone"]},{"src":"bubble2/schlucht_stein/schlucht_stein_0000_maus.png","classes":["mouse"]}],"container":"b2-canyon-stone-mouse"}
@@ -229,8 +235,9 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     Der Fels erscheint riesig und versperrt den Weg. {name} läuft in die eine Richtung und Alexa in die andere, jedoch geben sie nach wenigen Metern auf. Das Gebüsch ist zu dicht und voller Dornen.
 
     // R
-    ** [Du versuchst darüber zu klettern, obwohl der Stein sehr glatt erscheint und wenig Halt aufweist]
+    ** [versuchen darüber zu klettern, obwohl der Stein sehr glatt erscheint und wenig Halt aufweist]
         ~R++
+        ~q4 = 0
         // auf dem Stein
         #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein-ohne.png","classes":["stone"]}],"container":"b2-stone-top"}
     
@@ -240,8 +247,9 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
         -> bruecke
         
     // I
-    ** [Du untersuchst das Gestein nach möglichen Rissen und Spuren]
+    ** [das Gestein nach möglichen Rissen und Spuren untersuchen]
        ~I++ 
+       ~q4 = 1
         // auf dem Stein
         #CONTENT: {"type":"image","images":[{"src":"bubble2/auf_dem_stein/auf-dem-stein-ohne.png","classes":["stone"]}],"container":"b2-stone-top"}
         Der Stein ist zu glatt und es gibt keine Möglichkeit oder Halt, um zu klettern.
@@ -283,11 +291,13 @@ An der Brücke steht ein kleiner, runder Mann.
 
 // A
 *[Ein Lied singen, in welchem es darum geht, dass sie unbedingt über diese Brücke müssen]
-    ~A++   
+    ~A++ 
+    ~q5 = 0
 
 // E
 *[hartnäckig um einen niedrigeren Preis handeln]
     ~E++
+    ~q5 = 1
 
 -"Das ist ja schön und gut... Aber ich lebe von dieser Brücke."
 

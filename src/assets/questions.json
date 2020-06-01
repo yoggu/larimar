@@ -1,0 +1,167 @@
+{
+  "q1": {
+    "question": "Auf dem Segelschiff um den See zu überqueren",
+    "answer1": {
+      "category": "R",
+      "text": "das Segelschiff steuern"
+    },
+    "answer2": {
+      "category": "S",
+      "text": "ihr das Segeln beibringen"
+    }
+  },
+  "q2": {
+    "question": "Im Wald verirrt und die Orientierung verloren.",
+    "answer1": {
+      "category": "I",
+      "text": "Uhrzeit mit der Sonnenrichtung kombinieren, um die Richtung zu bestimmen"
+    },
+    "answer2": {
+      "category": "C",
+      "text": "Noch einmal alles im Rucksack durchgehen und nach Hilfsmöglichkeiten überprüfen"
+    }
+  },
+  "q3": {
+    "question": "Die Bäume haben Gesichter, wie helfen sie aus dem Wald zu kommen?",
+    "answer1": {
+      "category": "I",
+      "text": "Gesichter genauer untersuchen"
+    },
+    "answer2": {
+      "category": "S",
+      "text": "versuchen mit den Bäumen zu kommunizieren"
+    }
+  },
+  "q4": {
+    "question": "ein riesiger Fels versperrt den Weg",
+    "answer1": {
+      "category": "R",
+      "text": "versuchen darüber zu klettern, obwohl der Stein sehr glatt erscheint und wenig Halt aufweist"
+    },
+    "answer2": {
+      "category": "I",
+      "text": "das Gestein nach möglichen Rissen und Spuren untersuchen"
+    }
+  },
+  "q5": {
+    "question": "Eine Möglichkeit finden die Brücke zu überqueren",
+    "answer1": {
+      "category": "A",
+      "text": "Ein Lied singen, in welchem es darum geht, dass sie unbedingt über diese Brücke müssen"
+    },
+    "answer2": {
+      "category": "E",
+      "text": "hartnäckig um einen niedrigeren Preis handeln"
+    }
+  },
+  "q6": {
+    "question": "Es scheppert und Alexa ist ausversehen gegen eine umstehende Figur gekommen. Die Figur ist noch ganz aber von der Beschichtung hat sich Farbe gelöst",
+    "answer1": {
+      "category": "A",
+      "text": "die kaputte Stelle übermalen"
+    },
+    "answer2": {
+      "category": "S",
+      "text": "gemeinsam den Schaden melden gehen"
+    }
+  },
+  "q7": {
+    "question": "Den Plan der Füchse verhindern",
+    "answer1": {
+      "category": "R",
+      "text": "einen grossen Felsbrocken in den Durchgang zu schieben, um den Weg zu versperren"
+    },
+    "answer2": {
+      "category": "C",
+      "text": "den Plan der Füchse detailiert notieren"
+    }
+  },
+  "q8": {
+    "question": "Eine Wache wird auf euch aufmerksam",
+    "answer1": {
+      "category": "I",
+      "text": "berechnen, wie man mit dem Kieselstein einen Steinschlag auslösen kann"
+    },
+    "answer2": {
+      "category": "A",
+      "text": "die Wache mit einer erfundenen Geschichte verwirren"
+    }
+  },
+  "q9": {
+    "question": "sich aus dem Käfig im Lager befreien",
+    "answer1": {
+      "category": "S",
+      "text": "anderen Gefangenen ansprechen"
+    },
+    "answer2": {
+      "category": "C",
+      "text": "den Weg der Patrouille detailliert aufzeichnen"
+    }
+  },
+  "q10": {
+    "question": "unbemerkt einen Weg in die Küche finden",
+    "answer1": {
+      "category": "A",
+      "text": "mit der Kochschürze als Küchengehilfe verkleiden"
+    },
+    "answer2": {
+      "category": "C",
+      "text": "einen Koch beobachten und seine Bewegungen nachahmen um nicht aufzufallen"
+    }
+  },
+  "q11": {
+    "question": "über den Fluss fliehen",
+    "answer1": {
+      "category": "R",
+      "text": "Alexa mit den Händen packen und in die Tasche stecken"
+    },
+    "answer2": {
+      "category": "E",
+      "text": "Alexa überzeugen mit auf dem Steinweg zu fliehen"
+    }
+  },
+  "q12": {
+    "question": "ein Geschenk für die Frösche finden",
+    "answer1": {
+      "category": "R",
+      "text": "etwas aus Holz schnitzen"
+    },
+    "answer2": {
+      "category": "A",
+      "text": "Blumen pflücken und zu einem schönen Strauss binden"
+    }
+  },
+  "q13": {
+    "question": "den Fröschen bei den Vorbereitungen helfen",
+    "answer1": {
+      "category": "E",
+      "text": "anbieten einen Teil der Truppen zu leiten"
+    },
+    "answer2": {
+      "category": "C",
+      "text": "einen Plan für die Schlacht aufzeigen"
+    }
+  },
+  "q14": {
+    "question": "verletzten Fröschen helfen",
+    "answer1": {
+      "category": "S",
+      "text": "den verletzten helfen"
+    },
+    "answer2": {
+      "category": "E",
+      "text": "sich in den Kampf stürzen und andere anweisen, sich um die Verletzten zu kümmern"
+    }
+  },
+  "q15": {
+    "question": "einer der Gartenzwerge geht kaputt",
+    "answer1": {
+      "category": "I",
+      "text": "Bruchstücke untersuchen"
+    },
+    "answer2": {
+      "category": "E",
+      "text": "andere anweisen, die Gartenzwerge besser zu beschützen, damit nicht noch mehr zu Bruch gehen"
+    }
+  }
+}

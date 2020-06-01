@@ -56,21 +56,24 @@ Alexa schnauft laut auf: "Verstecken! Das sind die blutrünstigen Füchse."
 
 
 -{name} muss das verhindern...
-
-// C 
-*[Den Plan der Füchse detailiert notieren]
-    ~C++
-    {name} notiert schnell auf einem Papier, was er erfahren hat.
-
 //R
-*[Du versuchst einen grossen Felsbrocken in den Durchgang zu schieben, um den Weg zu versperren]
+*[einen grossen Felsbrocken in den Durchgang zu schieben, um den Weg zu versperren]
     ~R++
+    ~q7 = 0
     Gerade als {name} sich hervorstürzen möchte, kommt ein vierter Fuchs angelaufen:
     
     "Wir haben in der Schlucht einen Wagen gefunden und Fussspuren, die müssen hier noch irgendwo sein!"
+    
+// C 
+*[den Plan der Füchse detailiert notieren]
+    ~C++
+    ~q7 = 1
+    {name} notiert schnell auf einem Papier, was er erfahren hat.
 
-    // Ausgang
-    #CONTENT: {"type":"image","images":[{"src":"bubble4/ausgang/ausgang_0001_höhle.png","classes":["cave"]}],"container":"b4-exit"}
+
+
+// Ausgang
+-#CONTENT: {"type":"image","images":[{"src":"bubble4/ausgang/ausgang_0001_höhle.png","classes":["cave"]}],"container":"b4-exit"}
 -Alexa zieht ungeduldig an {name}s Ärmel Richtung Ausgang.
 
 // Ausgang mit Wache
@@ -84,9 +87,24 @@ Sie versuchen sich langsam vorbeizuschleichen.
     
 Doch Alexa tritt gegen einen Kieselstein und erzeugt ein lautes Geräusch. Die Wache dreht sich um.
     
+
+// I 
+*[berechnen, wie man mit dem Kieselstein einen Steinschlag auslösen kann]
+    ~I++
+    ~q8 = 0
+    
+    {name} wirft eine Handvoll kleiner Steine an die Decke über der Wache.
+    
+    Der Trick funktioniert und die Kraft reicht aus, um noch mehr Steine von der Decke zu lösen. Es kracht und ein riesiger Fels löst sich von der Decke.
+
+    // Wache tot
+    #CONTENT: {"type":"image","images":[{"src":"bubble4/wache/wache_0006_background.png","classes":["cave"]},{"src":"bubble4/wache/wache_0003_wache-tot.png","classes":["fox"]},{"src":"bubble4/wache/wache_0002_Stein-1.png","classes":["stone","stone-1"]},{"src":"bubble4/wache/wache_0001_Stein-2.png","classes":["stone","stone-2"]},{"src":"bubble4/wache/wache_0000_Stein-3.png","classes":["stone","stone-3"]}],"container":"b4-guard-dead"}
+    Er trifft die Wache und diese stürzt zu Boden.
+
 // A 
 *[die Wache mit einer erfundenen Geschichte verwirren]
     ~A++
+    ~q8 = 1
     
     // Wache mit Messer
     #CONTENT: {"type":"image","images":[{"src":"bubble4/wache/wache_0006_background.png","classes":["cave"]},{"src":"bubble4/wache/wache_0004_wache-messer.png","classes":["fox"]},{"src":"bubble4/wache/wache_0002_Stein-1.png","classes":["stone","stone-1"]},{"src":"bubble4/wache/wache_0001_Stein-2.png","classes":["stone","stone-2"]},{"src":"bubble4/wache/wache_0000_Stein-3.png","classes":["stone","stone-3"]}],"container":"b4-guard-knife"}
@@ -101,20 +119,7 @@ Doch Alexa tritt gegen einen Kieselstein und erzeugt ein lautes Geräusch. Die W
     #CONTENT: {"type":"image","images":[{"src":"bubble4/wache/wache_0006_background.png","classes":["cave"]},{"src":"bubble4/wache/wache_0003_wache-tot.png","classes":["fox"]},{"src":"bubble4/wache/wache_0002_Stein-1.png","classes":["stone","stone-1"]},{"src":"bubble4/wache/wache_0001_Stein-2.png","classes":["stone","stone-2"]},{"src":"bubble4/wache/wache_0000_Stein-3.png","classes":["stone","stone-3"]}],"container":"b4-guard-dead"}
     
     Dies führt jedoch dazu dass sich vereinzelt Steine von der Decke lösen und ein riesiger Felsbrocken direkt auf die Wache fällt.
-
-// I
-*[Mit Logik versuchen die Physik der Steine zu verändern]
-    ~I++
     
-    {name} wirft eine Handvoll kleiner Steine an die Decke über der Wache.
-    
-    Der Trick funktioniert und die Kraft reicht aus, um noch mehr Steine von der Decke zu lösen. Es kracht und ein riesiger Fels löst sich von der Decke.
-
-    // Wache tot
-    #CONTENT: {"type":"image","images":[{"src":"bubble4/wache/wache_0006_background.png","classes":["cave"]},{"src":"bubble4/wache/wache_0003_wache-tot.png","classes":["fox"]},{"src":"bubble4/wache/wache_0002_Stein-1.png","classes":["stone","stone-1"]},{"src":"bubble4/wache/wache_0001_Stein-2.png","classes":["stone","stone-2"]},{"src":"bubble4/wache/wache_0000_Stein-3.png","classes":["stone","stone-3"]}],"container":"b4-guard-dead"}
-    Er trifft die Wache und diese stürzt zu Boden.
-
-
 -"Ist sie tot?"
 *[nachsehen]
     {name} nähert sich vorsichtig der bewegungslosen Gestalt unter den Trümmern.
@@ -149,18 +154,20 @@ Dort angekommen wird der Käfig von {name} grob in eine Ecke geworfen.
 Doch sie geben nicht nach.
 
 // S 
-*[andere Gefangene ansprechen]
+*[anderen Gefangenen ansprechen]
     ~S++
+    ~q9 = 0
     // Maus
     #CONTENT:{"type":"image","images":[{"src":"bubble4/käfig_maus/käfig-maus_0001_überblende-unten.png","classes":["color"]},{"src":"bubble4/käfig_maus/käfig-maus_0002_Gitter.png","classes":["bars"]},{"src":"bubble4/käfig_maus/käfig-maus_0003_Maus-Käfig.png","classes":["cage"]},{"src":"bubble4/käfig_maus/käfig-maus_0004_Maus.png","classes":["mouse"]}],"container":"b4-cage-mouse"}
     Im Käfig nebenan befindet sich eine graue Maus.
     
     {name} spricht sie an und erzählt wie sie von den Füchsen gefangen genommen wurden.
 
-// C 
+// C TODO
 // du verschaffst dir eine Übersicht, in dem du den Weg der Patroullie der Bewacher aufzeichnest, um den Schlüssel zu klauen 
-*[mit einem Draht versuchen das Schloss strategisch zu knacken]
+*[den Weg der Patrouille detailliert aufzeichnen]
     ~C++
+    ~q9 = 1
 
 {name} versucht es ein paar Mal, aber das Schloss lässt sich nicht öffnen.
 
@@ -210,15 +217,17 @@ Eine Graue Maus im Käfig nebenan meldet  sich zu Wort:
 -Das Zelt mit der Küche ist kaum zu übersehen. Rauch dampft aus allen Öffnungen und gestresste Füchse mit Kochhaube laufen ein und aus.
 
 // A 
-*[verkleidest dich als Gehilfe mit der Kochschürze]
+*[mit der Kochschürze als Küchengehilfe verkleiden]
     ~A++
+    ~q10 = 0
     // Küche
     #CONTENT: {"type":"image","images":[{"src":"bubble4/küche/küche_0003_background.png","classes":["background"]},{"src":"bubble4/küche/küche_0002_kabel.png","classes":["cable"]},{"src":"bubble4/küche/küche_0001_lampe-animation.png","classes":["lamp"]},{"src":"bubble4/küche/küche_0000_füchse.png","classes":["fox"]}],"container":"b4-kitchen"}
     
     Um nicht aufzufallen schnappt sich {name} eine umliegende Kochschürze und zieht die Kochmütze tief ins Gesicht.
 // C 
-*[du beobachtest einen Koch und ahmst seine Bewegungen nach um nicht aufzufallen]
+*[einen Koch beobachten und seine Bewegungen nachahmen um nicht aufzufallen]
     ~C++
+    ~q10 = 1
     // Küche
     #CONTENT: {"type":"image","images":[{"src":"bubble4/küche/küche_0003_background.png","classes":["background"]},{"src":"bubble4/küche/küche_0002_kabel.png","classes":["cable"]},{"src":"bubble4/küche/küche_0001_lampe-animation.png","classes":["lamp"]},{"src":"bubble4/küche/küche_0000_füchse.png","classes":["fox"]}],"container":"b4-kitchen"}
     
@@ -317,17 +326,20 @@ Draussen springt Alexa sofort über den anliegenden Fluss.
 
 Doch {name} ist zu Fuss viel schneller und {s: er|sie} möchte nicht schon wieder gefangen werden...
 
-// E 
-*[Alexa überzeugen mit auf dem Steinweg zu fliehen]
-    ~E++
-
-    Alexa wird nur wütend und schnauft.
-    
-    Aus dem Lager hört er Füchse schreien. Seine Flucht muss entdeckt worden sein.
 
 // R 
 *[Alexa mit den Händen packen und in die Tasche stecken]
     ~R++
+    ~q11 = 0
+
+// E 
+*[Alexa überzeugen mit auf dem Steinweg zu fliehen]
+    ~E++
+    ~q11 = 1
+
+    Alexa wird nur wütend und schnauft.
+    
+    Aus dem Lager hört er Füchse schreien. Seine Flucht muss entdeckt worden sein.
 
 - {name} packt Alexa kurzerhand einfach und steckt sie in die Tasche und rennt los.
 

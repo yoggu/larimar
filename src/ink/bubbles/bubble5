@@ -34,13 +34,15 @@ Nach einer längeren Strecke hält {name} an.
     
 = geschenk
 // R
-*[Etwas aus Holz schnitzen]
+*[etwas aus Holz schnitzen]
     ~R++
+    ~q12 = 0
     Mit einem spitzen Stein fängt {name} an, eine kleine Figur aus Holz zu schnitzen. Dies hatte {s: er|sie} von seinem Onkel gelernt.
     
 // A
 *[Blumen pflücken und zu einem schönen Strauss binden]
     ~A++
+    ~q12 = 1
     {name} macht einen kurzen Umweg über ein Blumenfeld und plückt ein paar schöne Blumen.
     
     
@@ -94,13 +96,15 @@ Als er sich beruhigt hat, spuckt er eine grüne, glitschige Masse auf den Boden.
 Wir wären natürlich sehr froh über deine Hilfe...
 
 // E 
-*(truppen) [Anbieten einen Teil der Truppen zu leiten]
+*(truppen) [anbieten einen Teil der Truppen zu leiten]
     ~E++
+    ~q13 = 0
     Selbstbewusst meint {name}, dass {s: er|sie} sich dazu bereitstellen würde, einen Teil der Gruppen zu leiten.
 
 // C 
-*(plan) [Einen Plan für die Strategie aufzeigen]
+*(plan) [einen Plan für die Schlacht aufzeigen]
     ~C++
+    ~q13 = 0
     {name} nimmt ein Stück Papier, welches im Raum liegt und zeichnet dem König einen ungefähren Strategieplan auf.
 
 
@@ -139,10 +143,12 @@ Ein riesiges Chaos entsteht und {name} hat überhaupt keinen Überblick.
 // S 
 *[den verletzten helfen]
     ~S++
+    ~q14 = 0
 
 // E
-*[sich in den Kampf stürzen und andere anweisen, sich um die Verletzten zu kümmern.]
+*[sich in den Kampf stürzen und andere anweisen, sich um die Verletzten zu kümmern]
     ~E++
+    ~q14 = 0
 
 // Fuchs
 #CONTENT: {"type":"image","images":[{"src":"bubble5/fuchs/fuchs_background-color.png","classes":["background"]},{"src":"bubble5/fuchs/fuchs_böse.gif","classes":["evil"]},{"src":"bubble5/fuchs/fuchs_fuchs.png","classes":["fox"]}],"container":"b5-fox"}
@@ -267,18 +273,18 @@ Es klirrt laut und einige Gartenzwerge gehen kaputt.
 
 Die Frösche schreien laut auf und wieder entfacht sich ein grosses Getümmel.
 
-
-// E 
-*[Andere anweisen, die Gartenzwerge besser zu beschützen, damit nicht noch mehr zu Bruch gehen]
-    ~E++
-
 // I 
-*[Bruchstücke analysieren und untersuchen]
+*[Bruchstücke untersuchen]
     ~I++
+    ~q15 = 0
     Die Gartenzwerge sind alle aus Porzellan, stellt {name} fest...
     
     Vielleicht liesse sich der Stein durch schütteln herausfinden...
 
+// E 
+*[andere anweisen, die Gartenzwerge besser zu beschützen, damit nicht noch mehr zu Bruch gehen]
+    ~E++
+    ~q15 = 1
 
 -{name} wird grob zur Seite geschoben.
 

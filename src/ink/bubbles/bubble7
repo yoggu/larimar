@@ -51,7 +51,7 @@ Was ist passiert? War das doch kein Traum?
 // schluss 
 #CONTENT: {"type":"image","images":[{"src":"bubble7/schluss/schluss_background.png","classes":["background"]},{"src":"bubble7/schluss/wolken.png","classes":["clouds"]},{"src":"bubble7/schluss/frosch-ins-bild-hüpfen.gif","classes":["frog"]}],"container":"b7-end"}
 
-{name} steckt den Stein zurück und  geht Richtung Dorf.
+{name} steckt den Stein zurück und geht Richtung Dorf.
 
 ->ending
 

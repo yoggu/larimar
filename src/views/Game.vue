@@ -5,7 +5,7 @@
       <a v-on:click.prevent="toggleMute()" class="audio" :class="{'audio-dark': dark, 'mute': mute}">
       </a>
     </div> 
-    <div class="story" ref="story" v-if="!finished">
+    <div class="story" ref="story">
         <div class="image-container" v-on:click="showText()">
           <div v-if="currentImage.type === 'image'" :class="currentImage.container" class="container">
             <transition-group name="fade">
@@ -57,8 +57,6 @@ export default {
       currentText: Object,
       currentImage: Object,
       currentAudio: Object,
-      finished: false,
-      result: {},
       showChoice: false,
       dark: false,
       mute: false
@@ -192,27 +190,51 @@ export default {
       this.$store.commit('setTheme', this.dark);
       this.story.ResetState();
       this.$store.commit('saveState', this.story.state.ToJson());
-      this.finished = false;
       this.continueStory();
     },
     ending() {
-      this.result.R = this.story.variablesState.$("R");
-      this.result.I = this.story.variablesState.$("I");
-      this.result.A = this.story.variablesState.$("A");
-      this.result.S = this.story.variablesState.$("S");
-      this.result.E = this.story.variablesState.$("E");
-      this.result.C = this.story.variablesState.$("C");
+      let result = {};
+      result.R = this.story.variablesState.$("R");
+      result.I = this.story.variablesState.$("I");
+      result.A = this.story.variablesState.$("A");
+      result.S = this.story.variablesState.$("S");
+      result.E = this.story.variablesState.$("E");
+      result.C = this.story.variablesState.$("C");
 
-      this.result.R = 4
-      this.result.I = 2
-      this.result.A = 1
-      this.result.S = 3
-      this.result.E = 2
-      this.result.C = 3
-      console.log(this.result);
-      this.$store.commit('saveResult', this.result);
+      
+      //test
+      result.R = 4
+      result.I = 2
+      result.A = 1
+      result.S = 3
+      result.E = 2
+      result.C = 3
+      console.log(result);
+      let answers = {
+        q1: this.story.variablesState.$("q1"),
+        q2: this.story.variablesState.$("q2"),
+        q3: this.story.variablesState.$("q3"),
+        q4: this.story.variablesState.$("q4"),
+        q5: this.story.variablesState.$("q5"),
+        q6: this.story.variablesState.$("q6"),
+        q7: this.story.variablesState.$("q7"),
+        q8: this.story.variablesState.$("q8"),
+        q9: this.story.variablesState.$("q9"),
+        q10: this.story.variablesState.$("q10"),
+        q11: this.story.variablesState.$("q11"),
+        q12: this.story.variablesState.$("q12"),
+        q13: this.story.variablesState.$("q13"),
+        q14: this.story.variablesState.$("q14"),
+        q15: this.story.variablesState.$("q15")
+      }
+      
+      console.log(answers);
+
+      this.$store.commit('saveResult', result);
+      this.$store.commit('setAnswers', answers)
+      this.$store.commit('setFinished', true)
       this.$router.push('/result')
-      this.finished = true;
+
     },
     save() {
       this.$store.commit('saveState', this.story.state.ToJson());

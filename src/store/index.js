@@ -15,7 +15,9 @@ export default new Vuex.Store({
       S: Number,
       E: Number,
       C: Number
-    }
+    },
+    isFinished: false,
+    answers: {}
   },
   mutations: {
     saveState (state, stateJson) {
@@ -26,6 +28,12 @@ export default new Vuex.Store({
     },
     saveResult (state, value) {
       state.result = value;
+    },
+    setFinished (state, value) {
+      state.isFinished = value;
+    },
+    setAnswers (state, value) {
+      state.answers = value;
     }
   },
   actions: {

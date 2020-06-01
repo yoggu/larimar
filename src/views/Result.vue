@@ -14,6 +14,14 @@
       <div class="categories">
         <category v-for="(category, index) in categories" :key="index" :type="category.type" :title="category.title" :description="category.description" :index="index"></category>
       </div>
+      <h2>Meine Antworten</h2>
+      <ol>
+        <li v-for="(question, index) in questions" :key="index">
+          <div>{{question.question}}</div>
+          <div :class="{'selected': getAnswer(index) == 0}">{{question.answer1.text}}</div>
+          <div :class="{'selected': getAnswer(index) == 1}">{{question.answer2.text}}</div>
+        </li>
+      </ol>
     </div>
   </div>
 </template>
@@ -21,6 +29,7 @@
 <script>
 import RadarChart from "../components/RadarChart";
 import Category from "../components/Category";
+import question_json from "../assets/questions.json";
 
 export default {
   name: 'Result',
@@ -63,6 +72,8 @@ export default {
           description: "Personen dieses Typs arbeiten gerne ordentlich, genau und gut organisiert in einem Büro. Sie bearbeiten, kontrollieren und übermitteln Zahlen oder Texte. Klare Regeln sind ihnen wichtig. Im typischen Fall zeichnen sie sich durch folgende Eigenschaften aus: sorgfältig, genau, detailorientiert, ausdauernd, ordentlich, praktisch, angepasst, gewissenhaft."
         }
       ],
+      questions: {},
+      answers: {},
       options: {
         responsive: true,
         legend: {
@@ -95,6 +106,8 @@ export default {
   },
   mounted() {
     this.getCode();
+    this.questions = question_json;
+    this.answers = this.$store.state.answers;
   },
   computed: {
       data() {
@@ -114,6 +127,10 @@ export default {
       let result = this.$store.state.result;
       let sorted = Object.keys(result).sort(function(a,b){return result[b]-result[a]});
       this.code = Object.values(sorted.slice(0, 3));
+    },
+    getAnswer(index) {
+      console.log(this.answers[index])
+      return this.answers[index];
     }
   }
 }
@@ -161,10 +178,12 @@ export default {
   color:white;
   }
 
+
+  .selected {
+    color: lightblue
+  }
+
 }
-
-
-
 
 }
 

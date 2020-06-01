@@ -32,10 +32,13 @@ Es ist doch unmöglich, dass {s:seine|ihre} Tat noch nicht bemerkt wurde.
 #AUDIO_STOP
 
 // wald
-#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/background.png","classes":["background"]},{"src":"bubble1/wald/wald_0007_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble1/wald/wald_0006_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble1/wald/wald_0003_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble1/wald/wald_0009_baum-7.png","classes":["tree","tree-7"]},{"src":"bubble1/wald/wald_0010_baum-8.png","classes":["tree","tree-8"]}],"container":"b1-forest"}
+#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/im-wald.gif","classes":["forest"]}],"container":"b1-forest"}
 
 Die Gegend erscheint {s: ihm|ihr} plötzlich anders als sonst. Eigentlich sollte {s: er|sie} doch schon längst im Dorf angekommen sein?
  War {s: er|sie} so tief in Gedanken versunken, dass {s: er|sie} sich verlaufen hat?
+ 
+// Wand im Wald auftauchen 
+#CONTENT: {"type":"image","images":[{"src":"bubble1/wand_im_wald/wand-auftauchen.gif","classes":["wall-appear"]}],"container":"b1-wall"} 
  
 Wieso sind hier so viele Bäume? Und die Äste sind ungewöhnlich dicht und erschweren den Weg.
 
@@ -48,9 +51,12 @@ Wieso sind hier so viele Bäume? Und die Äste sind ungewöhnlich dicht und ersc
     
 = haus
 // haus
-#CONTENT: {"type":"image","images":[{"src":"bubble1/haus/haus-animation.gif","classes":["house"]}],"container":"b1-house"}
+#CONTENT: {"type":"image","images":[{"src":"bubble1/haus/haus-auftauchen.gif","classes":["house-appear"]}],"container":"b1-house"}
     
  Etwas weiter erkennt {name} {s: sein|ihr} Haus. Das Haus ist voller Moos und Äste hängen aus den Fenstern.
+ 
+ // haus
+#CONTENT: {"type":"image","images":[{"src":"bubble1/haus/haus-animation.gif","classes":["house"]}],"container":"b1-house"}
     
     Aus dem Dach ragen drei grosse Bäume.
     
@@ -64,10 +70,14 @@ Wieso sind hier so viele Bäume? Und die Äste sind ungewöhnlich dicht und ersc
     -> schwester
     
 = schwester
+
+// schwester auftauchen
+#CONTENT: {"type":"image","images":[{"src":"bubble1/schwester/schwester-auftauchen.gif","classes":["sister-appear"]}],"container":"b1-sister"}
+
+    {name} kommt nur langsam vorwärts.
+    
 // schwester
 #CONTENT: {"type":"image","images":[{"src":"bubble1/schwester/schwester-normal-animation.gif","classes":["sister"]}],"container":"b1-sister"}
-
-    {name} kommt nur langsam vorwärts.     
     Was ist hier passiert?
     
     "{name}!", ruft {s: seine|ihre} Schwester erneut. {s: Er|Sie} folgt der Stimme und kommt ins von Ästen überwucherte Esszimmer. 
@@ -151,7 +161,10 @@ Welchen Gegenstand soll {name} noch einpacken?
 
 = ausserhalb_des_dorfs
 // wald anhalten
-#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/background.png","classes":["background"]},{"src":"bubble1/wald/wald_0007_baum-1.png","classes":["tree","tree-1-stop"]},{"src":"bubble1/wald/wald_0006_baum-2.png","classes":["tree","tree-2-stop"]},{"src":"bubble1/wald/wald_0003_baum-5.png","classes":["tree","tree-5-stop"]},{"src":"bubble1/wald/wald_0009_baum-7.png","classes":["tree","tree-7-stop"]},{"src":"bubble1/wald/wald_0010_baum-8.png","classes":["tree","tree-8-stop"]}],"container":"b1-forest"}
+// wald
+#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/im-wald.gif","classes":["forest"]}],"container":"b1-forest"}
+
+/*#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/background.png","classes":["background"]},{"src":"bubble1/wald/wald_0007_baum-1.png","classes":["tree","tree-1-stop"]},{"src":"bubble1/wald/wald_0006_baum-2.png","classes":["tree","tree-2-stop"]},{"src":"bubble1/wald/wald_0003_baum-5.png","classes":["tree","tree-5-stop"]},{"src":"bubble1/wald/wald_0009_baum-7.png","classes":["tree","tree-7-stop"]},{"src":"bubble1/wald/wald_0010_baum-8.png","classes":["tree","tree-8-stop"]}],"container":"b1-forest"}*/
 
 Bereits tief einige Schritte hinter dem Dorf, fällt {s: ihm|ihr} ein, dass {s: er|sie} etwas vergessen hat.
 
@@ -162,7 +175,7 @@ Der alte Familienkompass! Dieser besondere Kompass führt {s: ihn|sie} immer nac
 * [noch einmal zurückgehen?]
 
     // tor
-    #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.png","classes":["gate"]}],"container":"b1-gate"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.gif","classes":["gate"]}],"container":"b1-gate"}
 
     Als {name} beim Tor ankommt, schlingen sich dicke Äste um den Eingang zum Dorf und Wurzeln quellen aus jeder Ritze. Als {s:er|sie} sich nähert schlagen die Wurzeln nach {s: ihm|ihr}.
 
@@ -174,7 +187,7 @@ Der alte Familienkompass! Dieser besondere Kompass führt {s: ihn|sie} immer nac
         // whip audio
         #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5, "fade": 0}
         // tor schlag
-        #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.png","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag.gif","classes":["hit"]}],"container":"b1-gate"}
+        #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.gif","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag.gif","classes":["hit"]}],"container":"b1-gate"}
        {name} nähert sich dem Tor. Die Wurzeln fangen sich an zu bewegen und eine schlägt nach {s: ihm|ihr}. 
        
        Gerade rechtzeitig kann {s:er|sie} dem Schlag noch ausweichen...
@@ -185,18 +198,18 @@ Der alte Familienkompass! Dieser besondere Kompass führt {s: ihn|sie} immer nac
             // whip audio
             #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5, "fade": 0}
             // tor schlag 2
-            #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.png","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag-2.gif","classes":["hit-2"]}],"container":"b1-gate"}
+            #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.gif","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag-2.gif","classes":["hit-2"]}],"container":"b1-gate"}
             Wieder schlagen die Wurzeln nach {s: ihm|ihr} aus. {name} weicht aus.
             // whip audio
             #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5, "fade": 0}
             // tor schlag 3
-            #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.png","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag-3.gif","classes":["hit-3"]}],"container":"b1-gate"}
+            #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.gif","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag-3.gif","classes":["hit-3"]}],"container":"b1-gate"}
             
             Doch dabei trifft {s: ihn|sie} ein zweiter Schlag am Bein. {s: Er|Sie} fällt zu Boden.
             // whip audio
             #CONTENT: {"type": "audio", "src": "bubble1/whip.wav", "loop": false, "volume": 0.5, "fade": 0}
             // tor schlag 4
-            #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.png","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag-4.gif","classes":["hit-4"]}],"container":"b1-gate"}
+            #CONTENT: {"type":"image","images":[{"src":"bubble1/tor/tor.gif","classes":["gate"]},{"src":"bubble1/tor/tor_animation-schlag-4.gif","classes":["hit-4"]}],"container":"b1-gate"}
             
             Ein dritter Schlag, aber {name} rollt schnell zur Seite und steht auf.
             
@@ -220,17 +233,19 @@ Als {s: er|sie} beim Ufer ankommt, scheint dies komplett verlassen. Onkel Willis
 Was ist hier passiert?
 * [Ufer untersuchen]
 // uferteile
-#CONTENT: {"type":"image","images":[{"src":"bubble1/uferteile/ufer-teile.gif","classes":["parts"]}],"container":"b1-shore"}
+#CONTENT: {"type":"image","images":[{"src":"bubble1/uferteile/ufer-teile.gif","classes":["parts"]},{"src":"bubble1/uferteile/ufer-teile-wolken.png","classes":["clouds"]}],"container":"b1-shore"}
 {name} nähert sich dem Ufer und betritt den wackeligen Steg. Das Holz ist morsch und rutschig. 
 -> uferteile
 
 * [nach Onkel rufen]
 // uferteile
-#CONTENT: {"type":"image","images":[{"src":"bubble1/uferteile/ufer-teile.gif","classes":["parts"]}],"container":"b1-shore"}
+#CONTENT: {"type":"image","images":[{"src":"bubble1/uferteile/ufer-teile.gif","classes":["parts"]},{"src":"bubble1/uferteile/ufer-teile-wolken.png","classes":["clouds"]}],"container":"b1-shore"}
 {name} ruft laut nach Onkel Willi, doch es kommt keine Antwort. Vorsichtig nähert sich {name} dem Ufer und betritt den alten Steg. Das Holz ist morsch und rutschig.
 -> uferteile
 
 = uferteile
+// uferteile untersuchen
+#CONTENT: {"type":"image","images":[{"src":"bubble1/uferteile/ufer-teile-untersuchen.gif","classes":["parts"]}],"container":"b1-shore-close"}
 Etwas Rotes schwimmt im Wasser. {name} geht noch näher und erkennt die Bruchstücke sofort. 
 
 "AHOI" steht immer noch deutlich auf dem roten Lack. Etwas muss das Boot zerstört haben...
@@ -294,7 +309,7 @@ Wie soll {s:er|sie} den Teich ohne Boot überqueren?
 =uferteile2
 
 // uferteile
-#CONTENT: {"type":"image","images":[{"src":"bubble1/uferteile/ufer-teile.gif","classes":["parts"]}],"container":"b1-shore"}
+#CONTENT: {"type":"image","images":[{"src":"bubble1/uferteile/ufer-teile.gif","classes":["parts"]},{"src":"bubble1/uferteile/ufer-teile-wolken.png","classes":["clouds"]}],"container":"b1-shore"}
 
 {name} steht wieder am Ufer und betrachtet die Bruchstücke, welche im Wasser schwimmen...
 
@@ -486,7 +501,7 @@ Ein bisschen angewidert und unsicher klettert {name} auf das Schiff. Es schwankt
 // R
 * [das Segelschiff steuern]
     ~R++
-    
+    ~q1 = 0
     //segelschiff small
     #CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat-small"]}],"container":"b1-boat"}
     {name} zieht das Segel auf und ein Windstoss trägt {s: ihn|sie} über den Teich.
@@ -494,7 +509,7 @@ Ein bisschen angewidert und unsicher klettert {name} auf das Schiff. Es schwankt
 // S
 * [ihr das Segeln beibringen]
     ~S++
-    
+    ~q1 = 1
     //segelschiff small
     #CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat-small"]}],"container":"b1-boat"}
 

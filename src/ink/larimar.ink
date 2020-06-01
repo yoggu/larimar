@@ -11,6 +11,22 @@ VAR S = 0
 VAR E = 0
 VAR C = 0
 
+VAR q1 = 0
+VAR q2 = 0
+VAR q3 = 0
+VAR q4 = 0
+VAR q5 = 0
+VAR q6 = 0
+VAR q7 = 0
+VAR q8 = 0
+VAR q9 = 0
+VAR q10 = 0
+VAR q11 = 0
+VAR q12 = 0
+VAR q13 = 0
+VAR q14 = 0
+VAR q15 = 0
+
 VAR name = ""
 VAR s = ""
 VAR item = ""

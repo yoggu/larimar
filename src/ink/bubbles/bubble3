@@ -117,6 +117,7 @@ Es scheppert und Alexa ist ausversehen gegen eine umstehende Figur gekommen. Die
 // A
 *[die kaputte Stelle übermalen]
 ~A++
+~q6 = 0
 // falls Malkasten
 { item == "Malkasten":
     {name} ist so froh den Malkasten eingepackt zu haben und übermalt die Stelle. Sie sieht aus wie zuvor und nichts ist zu sehen.
@@ -131,6 +132,7 @@ Es scheppert und Alexa ist ausversehen gegen eine umstehende Figur gekommen. Die
 // S
 *[gemeinsam den Schaden melden gehen]
 ~S++
+~q6 = 1
     "Willst du uns umbringen?", quakt Alexa. Also ich gehe sicher nicht zu dieser Hexe...
 
     ->garten

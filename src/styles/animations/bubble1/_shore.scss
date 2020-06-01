@@ -1,0 +1,18 @@
+.b1-shore {
+
+  .clouds {
+    transform: translateX(100%);
+    animation: clouds 60s linear infinite;
+  } 
+
+  @keyframes clouds {
+    
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
