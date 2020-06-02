@@ -388,7 +388,7 @@ export default {
 
   .text-container {
     min-height: 150px;
-    padding: 6px 12px 0 12px;
+    padding: 6px 30px 0 30px;
     display: flex;
     flex-flow: column;
     width: 100%;

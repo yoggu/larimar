@@ -529,7 +529,7 @@ Ein bisschen angewidert und unsicher klettert {name} auf das Schiff. Es schwankt
     ~R++
     ~q1 = 0
     //segelschiff small
-    #CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat-small"]}],"container":"b1-boat"}
+    /*#CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat-small"]}],"container":"b1-boat"}*/
     {name} zieht das Segel auf und ein Windstoss trägt {s: ihn|sie} über den Teich.
 
 // S
@@ -537,7 +537,7 @@ Ein bisschen angewidert und unsicher klettert {name} auf das Schiff. Es schwankt
     ~S++
     ~q1 = 1
     //segelschiff small
-    #CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat-small"]}],"container":"b1-boat"}
+    /*#CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat-small"]}],"container":"b1-boat"}*/
 
     “Was soll ich damit? Frösche können gut schwimmen...”, ohne ein weiteres Wort springt Alexa wieder ins Wasser und zeigt {name} den Weg.
     

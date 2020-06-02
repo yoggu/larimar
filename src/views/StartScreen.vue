@@ -5,7 +5,7 @@
     </div>
     <div class="stone">
       <router-link to="/menu">
-        <img class="move-stone" :src="require('@/assets/images/stone.png')">
+        <img class="" :src="require('@/assets/images/frog_sleep.gif')">
       </router-link>
     </div>
     <div class="start">

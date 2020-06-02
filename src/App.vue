@@ -20,7 +20,7 @@ html {
 
 body {
   min-height: 100%;
-  background: $black;
+  background: black;
   color: $white;
 }
 
