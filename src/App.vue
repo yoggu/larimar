@@ -35,10 +35,6 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  color: #85d0e7;
-}
-
 img {
   max-width: 100%;
   height: 100%;
@@ -46,8 +42,7 @@ img {
 
 
 a {
-  font-weight: bold;
-  color: $white;
+  color: white;
   text-decoration: none;
 
   &:hover {
