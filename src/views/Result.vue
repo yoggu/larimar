@@ -8,7 +8,8 @@
       <radar-chart class="chart" :chartData="data" :options="options"></radar-chart>
       <h2>Mein Code</h2>
       <div class="code">
-        <span v-for="(letter, index) in code" :key="index">{{letter}}</span>
+        <div><span v-for="(letter, index) in code" :key="index">{{letter}}</span></div>
+        <div><a href="https://www.lmrl.lu/wp/wp-content/uploads/2015/01/Explorix-par-code.pdf">Berufsliste</a></div>
       </div>
       <h2>Kategorien</h2>
       <div class="categories">
@@ -92,7 +93,7 @@ export default {
           pointLabels: {
             fontColor:'rgba(255, 255, 255, 1)',
             fontFamily: "'IM Fell Double Pica', serif",
-            fontSize: 16,
+            fontSize: 14,
           },
           ticks: {
             max: 5,

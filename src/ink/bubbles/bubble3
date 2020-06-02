@@ -212,7 +212,7 @@ Wieder im Turm angekommen fährt sie fort:
 #CONTENT: {"type":"image","images":[{"src":"bubble3/wagen/wagen_0004_background-color.png","classes":["color"]},{"src":"bubble3/wagen/wagen_0003_background-stehen.png","classes":["background-standing"]},{"src":"bubble3/wagen/wagen_0002_background-fahren.png","classes":["background-driving"]},{"src":"bubble3/wagen/wagen_0001_wagen.png","classes":["vehicle"]},{"src":"bubble3/wagen/wagen_0000_wolken.png","classes":["clouds"]}],"container":"b3-wagon"}
 
 // wagen audio
-#CONTENT: {"type": "audio", "src": "bubble3/cart.wav", "loop": true, "volume": 1, fade: 1000}
+#CONTENT: {"type": "audio", "src": "bubble3/cart.mp3", "loop": true, "volume": 1, fade: 1000}
 
 {name} bleibt keine andere Möglichkeit, wenn er erfahren möchte, wo sich der Stein befindet und steigt ein.
 

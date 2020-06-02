@@ -334,8 +334,8 @@ export default {
   .audio {
     background-image: url("../assets/images/icons/sound-on-black.png");
     background-size: contain;
-    height: 40px;
-    width: 30px;
+    height: 30px;
+    width: 20px;
     background-repeat: no-repeat;
     background-position: center;
     transform: rotate(180deg);
