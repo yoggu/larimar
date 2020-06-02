@@ -37,8 +37,6 @@ export default {
   flex-direction: column;
 
   .title {
-    grid-row: 1;
-    grid-column: 2;
     text-align: center;
 
     h1 {

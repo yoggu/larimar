@@ -21,7 +21,7 @@ html {
 body {
   min-height: 100%;
   background: black;
-  color: $white;
+  color: white;
 }
 
 * {

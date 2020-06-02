@@ -301,11 +301,15 @@ export default {
 .game {
   display: flex;
   flex-flow: column;
-  background-color: $white;
+  background-color: white;
   color: black;
-  font-size: 16px;
+  font-size: 14px;
   height: 100vh;
   overflow: hidden;
+
+  @media screen and (min-width: $medium) {
+      font-size: 16px;
+    }
 
   &.dark {
     color:white;
@@ -395,7 +399,7 @@ export default {
 
     @media screen and (min-width: $medium) {
       min-height: 200px;
-  }
+    }
 
   }
 
