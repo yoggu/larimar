@@ -64,6 +64,7 @@ export default {
       color: white;
       text-decoration: none;
       margin: 12px 0;
+      font-size: 18px;
       font-weight: bold;
       cursor: pointer;
   

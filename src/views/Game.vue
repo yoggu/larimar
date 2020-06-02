@@ -20,14 +20,14 @@
           <draw-svg v-else-if="currentImage.type === 'svg'" :duration=200 :class = currentImage.container :vivusId ="'vivus'+index" :file= currentImage.src type="delayed" :ref="'vivus'+index"></draw-svg>
         </div>  
         <div class="text-container">
-          <typed-text ref="typedText" :typeSpeed="20" :text="currentText.text" :class="currentText.classes" @next="continueStory()" @onComplete="showChoice = true"></typed-text>
+          <typed-text ref="typedText" :dark="dark" :typeSpeed="20" :text="currentText.text" :class="currentText.classes" @next="continueStory()" @onComplete="showChoice = true"></typed-text>
           <div class="choices" v-show="showChoice">
             <a
-              class="choice"
+              class="choice" :class="{'arrow-dark': dark}"
               v-on:click.prevent="select(choice)"
               v-for="(choice, index) in choices"
               :key="'choice-'+index"
-            ><span class="arrow">&#x25b7;</span> {{choice.text}}</a>
+            >{{choice.text}}</a>
           </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-let counter = 0
+//let counter = 0
 import { Story } from "inkjs";
 import {Howl, Howler} from 'howler';
 import json from "../ink/export/story.json";
@@ -248,49 +248,49 @@ export default {
       this.story.state.LoadJson(this.$store.state.story);
       this.continueStory();
     },
-    deviceOrientation(e) {
-      //console.log(e.gamma);
-      const limit = 45;
-      if(counter++ % 10 === 0) {
-        let leftToRight = Math.round(e.gamma);
-        if (Math.abs(leftToRight) > limit) {
-        if (leftToRight > limit) {
-              leftToRight = limit;
-          } else {
-              leftToRight = -limit;
-          }
-        }
-        let frontToBack = Math.round(e.beta);
-        if (Math.abs(frontToBack) > limit) {
-        if (frontToBack > limit) {
-              frontToBack = limit;
-          } else {
-              frontToBack = -limit;
-          }
-        }    
-        leftToRight = leftToRight * -1;
-        frontToBack = frontToBack * -1;
-        console.log(leftToRight +", "+ frontToBack)
-        let translate = "translate(" + leftToRight + "px," + frontToBack +"px)";
-        this.$el.querySelectorAll(".orient").forEach((el) => {
-          el.style.transform = translate;
-        });
-      }
-    },
-    checkPermission() {
-      console.log("checkPermission");
-      if (typeof DeviceOrientationEvent.requestPermission === 'function') {
-        DeviceOrientationEvent.requestPermission()
-          .then(permissionState => {
-            if (permissionState === 'granted') {
-              window.addEventListener('deviceorientation', (e) => {this.deviceOrientation(e)});
-            }
-          })
-          .catch(console.error);
-      } else {
-        window.addEventListener('deviceorientation', (e)=> {this.deviceOrientation(e);});
-      }
-    }
+    // deviceOrientation(e) {
+    //   //console.log(e.gamma);
+    //   const limit = 45;
+    //   if(counter++ % 10 === 0) {
+    //     let leftToRight = Math.round(e.gamma);
+    //     if (Math.abs(leftToRight) > limit) {
+    //     if (leftToRight > limit) {
+    //           leftToRight = limit;
+    //       } else {
+    //           leftToRight = -limit;
+    //       }
+    //     }
+    //     let frontToBack = Math.round(e.beta);
+    //     if (Math.abs(frontToBack) > limit) {
+    //     if (frontToBack > limit) {
+    //           frontToBack = limit;
+    //       } else {
+    //           frontToBack = -limit;
+    //       }
+    //     }    
+    //     leftToRight = leftToRight * -1;
+    //     frontToBack = frontToBack * -1;
+    //     console.log(leftToRight +", "+ frontToBack)
+    //     let translate = "translate(" + leftToRight + "px," + frontToBack +"px)";
+    //     this.$el.querySelectorAll(".orient").forEach((el) => {
+    //       el.style.transform = translate;
+    //     });
+    //   }
+    // },
+    // checkPermission() {
+    //   console.log("checkPermission");
+    //   if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+    //     DeviceOrientationEvent.requestPermission()
+    //       .then(permissionState => {
+    //         if (permissionState === 'granted') {
+    //           window.addEventListener('deviceorientation', (e) => {this.deviceOrientation(e)});
+    //         }
+    //       })
+    //       .catch(console.error);
+    //   } else {
+    //     window.addEventListener('deviceorientation', (e)=> {this.deviceOrientation(e);});
+    //   }
+    // }
   }
 };
 </script>
@@ -412,22 +412,32 @@ export default {
 
     .choice {
       margin: 20px 0 20px 0;
-      padding: 0 12px;
+      padding: 0 12px 0 20px;
       color: inherit;
       font-weight: 400;
       max-width: 50%;
       text-decoration: none;
       cursor: pointer;
+      position: relative;
 
       &:hover {
         color: inherit;
       }
+
+      &:before {
+        content: '';
+        background-image: url("../assets/images/icons/continue.png");
+        background-size: contain;
+        height: 10px;
+        width: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(-90deg);
+        left: 0;
+        top: 2px;
+        position: absolute
+      }
     }
-
-  .arrow {
-    font-size: 12px;
   }
-  }
-
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="textbox" v-on:click="showAll()">
       <p>{{visibleText}}</p>
-      <span class="arrow" v-show="!this.isTyping">&#x25bd;</span>
+      <span :class="{'arrow-dark': dark}" class="arrow" v-show="!this.isTyping"></span>
     </div>  
 </template>
 
@@ -13,6 +13,7 @@ export default {
     typeSpeed: Number,
     delay: Number,
     onComplete: Function,
+    dark: Boolean
   },
   watch: { 
     text: function() { // watch it
@@ -72,7 +73,7 @@ export default {
   flex: 1;
   width:100%;
   position: relative;
-  padding-right: 16px;
+  padding-right: 14px;
 
   p {
     width:100%;
@@ -80,10 +81,15 @@ export default {
   }
 
   .arrow {
-    position: absolute;
-    right: 0;
-    top: 2px;
-    font-size: 12px;
+      background-image: url("../assets/images/icons/continue.png");
+      background-size: contain;
+      height: 14px;
+      width: 14px;
+      background-repeat: no-repeat;
+      background-position: center;
+      right:0;
+      top:0;
+      position: absolute
   }
 }
 
