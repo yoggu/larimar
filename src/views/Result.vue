@@ -15,14 +15,7 @@
       <div class="categories">
         <category v-for="(category, index) in categories" :key="index" :type="category.type" :title="category.title" :description="category.description" :index="index"></category>
       </div>
-      <h2>Meine Antworten</h2>
-      <ol>
-        <li v-for="(question, index) in questions" :key="index">
-          <div class="question">{{question.question}}</div>
-          <div class="answer" :class="{'selected': getAnswer(index) == 0}"><span>{{question.answer1.category}}: </span>{{question.answer1.text}}</div>
-          <div class="answer" :class="{'selected': getAnswer(index) == 1}"><span>{{question.answer2.category}}: </span>{{question.answer2.text}}</div>
-        </li>
-      </ol>
+      <answers :questions="questions" :answers="answers"></answers>
     </div>
   </div>
 </template>
@@ -30,13 +23,15 @@
 <script>
 import RadarChart from "../components/RadarChart";
 import Category from "../components/Category";
+import Answers from "../components/Answers";
 import question_json from "../assets/questions.json";
 
 export default {
   name: 'Result',
   components: {
     RadarChart,
-    Category
+    Category,
+    Answers
   },
   data: function() {
     return {
@@ -128,10 +123,6 @@ export default {
       let result = this.$store.state.result;
       let sorted = Object.keys(result).sort(function(a,b){return result[b]-result[a]});
       this.code = Object.values(sorted.slice(0, 3));
-    },
-    getAnswer(index) {
-      console.log(this.answers[index])
-      return this.answers[index];
     }
   }
 }
@@ -177,11 +168,6 @@ export default {
   
   h1 {
   color:white;
-  }
-
-
-  .selected {
-    color: lightblue
   }
 
 }

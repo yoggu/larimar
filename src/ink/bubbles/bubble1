@@ -6,8 +6,8 @@ INCLUDE bubbles/bubble2
 // wiese
 #CONTENT: {"type":"image","images":[{"src":"bubble1/wiese/wiese-background.png","classes":["background"]},{"src":"bubble1/wiese/wolken.png","classes":["clouds"]},{"src":"bubble1/wiese/flower-1-animation.gif","classes":["flower-1"]},{"src":"bubble1/wiese/flower-2-animation.gif","classes":["flower-2"]}],"container":"b1-meadow"}
 
-// wind audioo
-#CONTENT: {"type": "audio", "src": "bubble1/wind.mp3", "loop": true, "volume": 0.3, "fade": 3000}
+// wind audio
+#CONTENT: {"type": "audio", "src": "bubble1/wind.mp3", "loop": true, "volume": 0.3, "fade": 2000}
 
 Etwas abseits vom Dorf auf einer Wiese liegt {name}.
 Die Sonne steht bereits im Zenit und scheint {s: ihm|ihr} heiss ins Gesicht.
@@ -28,8 +28,6 @@ Es ist doch unmöglich, dass {s:seine|ihre} Tat noch nicht bemerkt wurde.
     -> weg_ins_dorf
     
 = weg_ins_dorf
-// audio stop
-#AUDIO_STOP
 
 // wald
 #CONTENT: {"type":"image","images":[{"src":"bubble1/wald/im-wald.gif","classes":["forest"]}],"container":"b1-forest"}
@@ -59,12 +57,18 @@ Wieso sind hier so viele Bäume? Und die Äste sind ungewöhnlich dicht und ersc
 #CONTENT: {"type":"image","images":[{"src":"bubble1/haus/haus-animation.gif","classes":["house"]}],"container":"b1-house"}
     
     Aus dem Dach ragen drei grosse Bäume.
-    
+
+    // walking audio
+#CONTENT: {"type": "audio", "src": "bubble1/walking.mp3", "loop": true, "volume": 0.1, "fade": 1000}    
     Als sich {name} dem Haus nähert knackt es unter {s: seinen|ihren} Füssen.
     
     "{name}?", eine verzweifelte Stimme kommt aus dem Inneren des Hauses.
     
     {name} erkennt die Stimme. Es ist die Stimme {s: seiner|ihrer} Schwester.
+    
+    #AUDIO_STOP
+        // branches audio
+#CONTENT: {"type": "audio", "src": "bubble1/branches.mp3", "loop": true, "volume": 0.5, "fade": 1000} 
     
     Eilig kämpft sich {name} durch das Buschwerk ins Haus.
     -> schwester
@@ -79,6 +83,9 @@ Wieso sind hier so viele Bäume? Und die Äste sind ungewöhnlich dicht und ersc
 // schwester
 #CONTENT: {"type":"image","images":[{"src":"bubble1/schwester/schwester-normal-animation.gif","classes":["sister"]}],"container":"b1-sister"}
     Was ist hier passiert?
+    
+        // moan audio
+#CONTENT: {"type": "audio", "src": "bubble1/moan.mp3", "loop": true, "volume": 0.3, "fade": 0}
     
     "{name}!", ruft {s: seine|ihre} Schwester erneut. {s: Er|Sie} folgt der Stimme und kommt ins von Ästen überwucherte Esszimmer. 
     
@@ -115,13 +122,20 @@ Die Schwester weint.
 
 * ["Ich will dich aber nicht verlassen..."]
 
+#AUDIO_STOP
 // schwester tot
 - #CONTENT: {"type":"image","images":[{"src":"bubble1/schwester/schwester-tot-animation.gif","classes":["sister"]}],"container":"b1-sister-dead"}
 
 - Doch die Schwester gibt keine Antwort mehr.
 
 Warum bin ich noch kein Baum geworden? 
+
+// searching audio
+#CONTENT: {"type": "audio", "src": "bubble1/searching.mp3", "loop": true, "volume": 0.1, "fade": 3000}
+
 Doch {name} hat keine Zeit länger darüber nachzudenken. {s: Er|Sie} packt {s: seine|ihre} Tasche mit Werkzeugen und Proviant.
+
+
 Nur noch ein Gegenstand passt hinein.
 
 -> items
@@ -136,32 +150,37 @@ Welchen Gegenstand soll {name} noch einpacken?
 *[Spitzhacke]
 ~item = "Spitzhacke"
 
-// I
-*[Lupe]
-~item = "Lupe"
+// S
+*[Verband]
+~item = "Verband"
 
 // A
 *[Malkasten]
 ~item = "Malkasten"
 
-// S
-*[Verband]
-~item = "Verband"
-
-// E
-*[Geldstücke]
-~item = "Geldstücke"
+// I
+*[Lupe]
+~item = "Lupe"
 
 // C
 *[Gesetzbuch]
 ~item = "Gesetzbuch"
 
+// E
+*[Geldstücke]
+~item = "Geldstücke"
+
 - {name} packt {item} in {s: seinen|ihren} Rucksack und stürmt aus der Tür.
 -> ausserhalb_des_dorfs
 
 = ausserhalb_des_dorfs
-// wald anhalten
-// wald
+
+#AUDIO_STOP
+
+// wind audio
+#CONTENT: {"type": "audio", "src": "bubble1/wind.mp3", "loop": true, "volume": 0.3, "fade": 2000}
+
+// wald (anhalten)
 #CONTENT: {"type":"image","images":[{"src":"bubble1/wald/im-wald.gif","classes":["forest"]}],"container":"b1-forest"}
 
 /*#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/background.png","classes":["background"]},{"src":"bubble1/wald/wald_0007_baum-1.png","classes":["tree","tree-1-stop"]},{"src":"bubble1/wald/wald_0006_baum-2.png","classes":["tree","tree-2-stop"]},{"src":"bubble1/wald/wald_0003_baum-5.png","classes":["tree","tree-5-stop"]},{"src":"bubble1/wald/wald_0009_baum-7.png","classes":["tree","tree-7-stop"]},{"src":"bubble1/wald/wald_0010_baum-8.png","classes":["tree","tree-8-stop"]}],"container":"b1-forest"}*/
@@ -224,8 +243,9 @@ Der alte Familienkompass! Dieser besondere Kompass führt {s: ihn|sie} immer nac
 
 Als {s: er|sie} beim Ufer ankommt, scheint dies komplett verlassen. Onkel Willis Boot ist nicht zu sehen und nichts ist zu hören. Wieder Totenstille.
 
+#AUDIO_STOP
 // waves audio
-#CONTENT: {"type": "audio", "src": "bubble1/waves.mp3", "loop": true, "volume": 0.2, "fade": 3000}
+#CONTENT: {"type": "audio", "src": "bubble1/waves.mp3", "loop": true, "volume": 0.1, "fade": 2000}
 
 // weg zum wasser 2
 #CONTENT: {"type":"image","images":[{"src":"bubble1/weg_zum_wasser/ufer-nähern-2.gif","classes":["water-2"]}],"container":"b1-go-to-shore"}
@@ -334,16 +354,17 @@ Vielleicht gibt es ein Boot, welches nur wenig beschädigt ist?
 {name} nähert sich dem Baum und erkennt zwei traurige, braune Augen aus den Furchen der Rinde hervorlugen. {s: Er|Sie} konnte sogar den grossen Schnurrbart von Onkel Willi erkennen. 
 
 Das kann doch alles doch nicht wahr sein...
-// audio stop
+
 #AUDIO_STOP
+// bubbles audio
+#CONTENT: {"type": "audio", "src": "bubble1/bubbles.mp3", "loop": true, "volume": 0.3, "fade": 0}
 
 "Blub."
 
 -> blasen
 
 = blasen
-// bubbles audio
-#CONTENT: {"type": "audio", "src": "bubble1/bubbles.mp3", "loop": true, "volume": 0.3, "fade": 0}
+
 // blasen_baum schwach
 #CONTENT: {"type":"image","images":[{"src":"bubble1/oktopusbaum_blasen/baum-background.png","classes":["background"]},{"src":"bubble1/oktopusbaum_blasen/blasen-schwach-animation.gif","classes":["bubbles-small"]}],"container":"b1-bubbles"}
 
@@ -389,13 +410,18 @@ Kleine Blasen steigen von den Wurzeln des Baumes an die Wasseroberfläche. {name
     -- #CONTENT: {"type":"image","images":[{"src":"bubble1/oktopusbaum_blasen/baum-background.png","classes":["background"]}],"container":"b1-bubbles"}   
     -- Die Blasen werden weniger, bis wieder nichts mehr zu sehen ist. {name} bekommt ein schlechtes Gewissen und langt trotzdem ins kalte Wasser.
 
--#AUDIO_STOP            
+-#AUDIO_STOP
+// waves audio
+#CONTENT: {"type": "audio", "src": "bubble1/waves.mp3", "loop": true, "volume": 0.05, "fade": 3000}           
 - ...nach wenigen Sekunden zieht {s: er|sie} eine glitschige Kugel heraus.
 -> frosch
 
 = frosch
 // frosch kugel
 #CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/kugel-standbild.gif","classes":["frog"]}],"container":"b1-frog"}
+
+// wet plop audio
+#CONTENT: {"type": "audio", "src": "bubble1/wet_plop.mp3", "loop": false, "volume": 0.5, "fade": 0}
 
 Die braune Kugel rollt {name} aus der Hand und landet mit einem lauten Klatschen auf dem morschen Holz.
 
@@ -404,6 +430,9 @@ Die braune Kugel rollt {name} aus der Hand und landet mit einem lauten Klatschen
 
 Die Kugel fängt an zu husten, keucht und vier kurze Beine strecken sich.
 {name} erblickt vor sich eine fette Kröte.
+
+// frog audio
+- #CONTENT: {"type": "audio", "src": "bubble1/frog.mp3", "loop": true, "volume": 0.5, "fade": 0}  
 
 // frosch standbild
 #CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/frosch-standbild.gif","classes":["frog"]}],"container":"b1-frog"}
@@ -485,9 +514,6 @@ Nach einigen Metern blickt sie zurück auf {name}, {s: der|welche} sich immer no
 
 Als {name} genügend Teile gesammelt hat, fängt Alexa an, diese mit ihrer Spucke zusammenzukleben.
 
-// waves audio
-#CONTENT: {"type": "audio", "src": "bubble1/waves.mp3", "loop": true, "volume": 0.2, "fade": 3000}
-
 //segelschiff
 #CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat"]}],"container":"b1-boat"}
 
@@ -514,6 +540,10 @@ Ein bisschen angewidert und unsicher klettert {name} auf das Schiff. Es schwankt
     #CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat-small"]}],"container":"b1-boat"}
 
     “Was soll ich damit? Frösche können gut schwimmen...”, ohne ein weiteres Wort springt Alexa wieder ins Wasser und zeigt {name} den Weg.
+    
+-#AUDIO_STOP
+// waves audio
+#CONTENT: {"type": "audio", "src": "bubble1/waves.mp3", "loop": true, "volume": 0.1, "fade": 1000}    
 
 --> bubble2
 
