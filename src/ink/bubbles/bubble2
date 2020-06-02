@@ -29,7 +29,7 @@ Die Kröte springt aus dem Wasser und landet mit einem grossen Sprung vor dem an
 - "Jaaa, jetzt guck nicht so. Gehen wir einfach mal rein da, du zuerst."
 
 * ["Geh du doch zuerst..."]
-    "Werd' jetzt nicht frech, sonst kannst du dich gleich selbst auf die Suche machen..."
+   "Werd' jetzt nicht frech, sonst kannst du dich gleich allein auf die Suche machen..."
 
 * [In den Wald gehen.]
 
@@ -40,9 +40,11 @@ Die Kröte springt aus dem Wasser und landet mit einem grossen Sprung vor dem an
 
 -{name} betritt also den Wald.
 
-Die Bäume stehen ziemlich dicht, bereits nach wenigen Schritten scheinen sie vollständig eingeschlossen zu sein.
+Die Bäume stehen ziemlich dicht und bereits nach wenigen Schriten scheinen sie vollständig
+eingeschlossen zu sein.
 
-Nur wenig Licht erreicht den Waldboden und bereits nach wenigen Minuten scheint {name} die Orientierung verloren zu haben.
+Nur wenig Licht erreicht den Waldboden und bereits nach wenigen Minuten hat {name} die
+Orientierung verloren.
 
 {name} hält an...
 
@@ -83,7 +85,8 @@ Nur wenig Licht erreicht den Waldboden und bereits nach wenigen Minuten scheint 
 "Ich wusste nicht, dass du so einfach aufgibst?" kräht Alexa laut.
 
 *[Alexa um Rat fragen]
-    "Fragst du mich gerade ernsthaft, ob ich einen Kompass dabei habe? Sehe ich aus, als hätte ich einen Rucksack dabei?"
+    "Fragst du mich gerade ernsthan, ob ich einen Kompass dabei habe? Sehe ich aus, als häte ich
+einen Rucksack?"
 
 *[Umgebung untersuchen]
 
@@ -95,7 +98,8 @@ Nur wenig Licht erreicht den Waldboden und bereits nach wenigen Minuten scheint 
 // bäume mit gesichter
 #CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"b2-forest-faces"}
 
-Als {name} dabei die Bäume einmal genauer untersucht, stellt {s: er|sie} fest, dass da überall ebenfalls Gesichter waren.
+Als {name} dabei die Bäume einmal genauer untersucht, stellt {s: er|sie} fest, dass überall ebenfalls
+Gesichter zu erkennen sind.
 
 Sie sind weniger deutlich zu sehen, weshalb sie {name} bis jetzt gar nicht aufgefallen sind.
 
@@ -113,7 +117,8 @@ Sie sind weniger deutlich zu sehen, weshalb sie {name} bis jetzt gar nicht aufge
 
 *["Gibt es eine Möglichkeit sie zu befreien?"]
 
-- "Man, du kennst dich echt nicht aus? ...Also... Man sagt es gäbe einen Stein, welcher die Waldgötter heraufbeschwört."
+- "Man, du kennst dich echt nicht aus? ...Also... Man sagt es gäbe einen Stein, der die Waldgöter
+heraufbeschwören kann."
 
 *["Protester?"]
     "Keine Ahnung man, ich sag dir auch nur, was ich weiss. Aber auf jeden Fall brauchst du den Stein."
@@ -121,7 +126,7 @@ Sie sind weniger deutlich zu sehen, weshalb sie {name} bis jetzt gar nicht aufge
 *["Stein?"]
     "Seuftz... Jaaa. Ein Kristall oder so. Und vielleicht haben sie Mitleid mit dir und lösen den Fluch auf."
 
--Doch wie soll dies jetzt helfen, einen Weg zu finden?
+- Doch wie soll dies jetzt helfen, einen Weg zu finden?
 
 // I
 *[Gesichter genauer untersuchen]
@@ -137,7 +142,7 @@ Sie sind weniger deutlich zu sehen, weshalb sie {name} bis jetzt gar nicht aufge
 -#CONTENT: {"type":"image","images":[{"src":"bubble2/baum_nahaufnahme/baum-nahaufnahme_0000_baum-1.png","classes":["tree"]}],"container":"b2-tree-closeup"}
 - {name} geht näher an einen Baum heran und betrachtet diesen.
 
-Zwei kleine, braune Augen blicken starr und milchig aus der Rinde entgegen.
+Zwei kleine, braune Augen blicken {s: ihm|ihr} starr und milchig aus der Rinde entgegen.
 // Schrei
 #CONTENT: {"type":"image","images":[{"src":"bubble2/schrei/schrei_0002_animation-1.png","classes":["scream-1"]},{"src":"bubble2/schrei/schrei_0001_animation-2.png","classes":["scream-2"]},{"src":"bubble2/schrei/schrei_0000_animation-3.png","classes":["scream-3"]}],"container":"b2-scream"}
 
@@ -185,7 +190,7 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
         
         Auf dem Stein sitzt eine kleine, graue Maus. Sie kneift die Augen zu und kurz danach schreit sie: "KIAAAA"
         
-        "Gesundheit!" meint Alexa. "Das war also dieses gruselige Geräusch? Man, dass so ein kleines Wesen so laut niesen kann..."
+        "Gesundheit!" meint Alexa. "Das war also dieses gruselige Geräusch? Mann, dass so ein kleines Wesen so laut niesen kann..."
         
         // spalt
         #CONTENT: {"type":"image","images":[{"src":"bubble2/spalt/spalt_0000_spalt.png","classes":["gap-1"]}],"container":"b2-gap"}
@@ -216,7 +221,7 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     
     Plötzlich hören sie ein lautes Krachen und die Erde bebt.
     
-    Da wo vorhin noch die Maus auf dem Stein sass lag jetzt noch ein grösser Felsbrocken, der sich gerade eben gelöst hatte.
+   Da wo vorhin noch die Maus auf dem Stein sass, lag jetzt noch ein grösser Felsbrocken, der sich gerade eben gelöst hate.
     
     Schnell geht {name} weiter und der Weg führt sie hinaus ans Licht.
     -> bruecke
@@ -227,7 +232,7 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     
     Die Gesichter zeigen alle in die gleiche Richtung...
     
-    Alle Bäume zeigen in die Richtung eines grossen Felsens...
+    Alle in Richtung eines grossen Felsens...
     
     // wald stein
     # CONTENT: {"type":"image","images":[{"src":"bubble2/wald_stein/wald-stein_0000_maus.png","classes":["mouse"]},{"src":"bubble2/wald_stein/wald-stein_0001_stein.png","classes":["stone"]},{"src":"bubble2/wald_stein/wald-stein_0002_bäume.png","classes":["trees"]}],"container":"b2-forest-stone"}
@@ -276,7 +281,7 @@ An der Brücke steht ein kleiner, runder Mann.
 
 "Wer nicht zahlt, kommt nicht durch!!!", schreit dieser, sobald er {name} und Alexa erblickt.
 
-*["Wir haben aber nichts, was wir geben können..."]
+*["Wir haben aber nichts, das wir geben können..."]
 
 *[ignorieren und einfach durchmarschieren]
 
@@ -355,7 +360,7 @@ Die erst Frage lautet: "Wie viele Tote würde es bei einem Asteroideneinschlag (
 *["Das kommt drauf an..."]
     "Und worauf, bitteschön?", der kleine Mann lacht schelmisch.
     
-    "Boa man bist du blöd! Das kommt voll drauf an, wo der Asteroid einschlägt. Im grossen Meer ist es natürlich 0 und in einem belebten Gebiet natürlich viel mehr.", quakt Alexa ins Gespräch.
+    "Boa, Mann, bist du blöd! Das kommt voll drauf an, wo der Asteroid einschlägt. Im grossen Meer ist es natürlich 0 und in einem belebten Gebiet natürlich viel mehr.", quakt Alexa ins Gespräch.
     
     Der kleine Mann ist offensichtlich beeindruckt von ihrer Antwort und fährt schnell weiter...
     
@@ -396,9 +401,9 @@ Die erst Frage lautet: "Wie viele Tote würde es bei einem Asteroideneinschlag (
 
 "Wir haben ihm etwas gegeben, also sollten wir jetzt durchgelassen werden."
 
-Sie konnten tatsächlich passieren und die unsichtbare Mauer war plötzlich verschwunden.
+Die unsichtbare Mauer ist wirklich verschwunden und sie können passieren.
 
-"Au wei, dann geht halt durch, so wie es die Brücke will. Meine Frau wird mich heute Abend so oder so schlagen, wenn ich mit leeren Händen nach Hause gehe...." Der kleine Mann reibt sich den Baum und winkt ihnen zum Abschied.
+"Auwei, dann geht halt durch, so wie es die Brücke will. Meine Frau wird mich heute Abend so oder so schlagen, wenn ich mit leeren Händen nach Hause komme...." Der kleine Mann reibt sich den Bauch und winkt ihnen zum Abschied.
 ->turm
 
 =turm

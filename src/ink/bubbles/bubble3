@@ -12,14 +12,14 @@ Ein paar Treppen führen zu einer riesigen Tür.
 *[Klopfen]
 
 *[Einfach eintreten]
-    {name} legt seine Hand an den schweren Türgriff und versucht die Tür aufzustossen.
+    {name} legt {s: seine|ihre} Hand an den schweren Türgriff und versucht die Tür aufzustossen.
     
 - "Wer wagt es, mich hier einfach unangekündigt aufzusuchen?", erklingt eine hohe Stimme durch die Tür hindurch.
 
 //  tür Auge
 #CONTENT: {"type":"image","images":[{"src":"bubble3/tür_auge/tür-auge_0002_Hintergrund.png","classes":["background"]},{"src":"bubble3/tür_auge/tür-auge_0000_Auge-zu.png","classes":["eye-closed"]},{"src":"bubble3/tür_auge/tür-auge_0001_Auge-auf.png","classes":["eye-open"]}],"container":"b3-door-eye"}
 
-Die Tür öffnet sich einen spaltbreit und ein langes Auge schaut hervor und mustert die Beiden.
+Die Tür öffnet sich einen spaltbreit und ein langes Auge schaut hervor und mustert die beiden.
 
 "Was wollt ihr? Ich empfange keinen Besuch."
 
@@ -49,14 +49,14 @@ Dann nach einer Weile sind schlurfende Schritte zu hören.
 
 // tür auf
 #CONTENT: {"type":"image","images":[{"src":"bubble3/tür_auf/tür-auf_0000_tür.png","classes":["door"]}],"container":"b3-door-open"}
-Die Tür öffnet sich und die hohe Stimme meint breitwillig:
+Die Tür öffnet sich und die hohe Stimme meint bereitwillig:
 
 "Dann kommt halt rein, ich habe im Moment sowieso nichts vor..."
 
 // turm innen
 #CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]}],"container":"b3-tower-inside"}
 
-{name} betritt als erstes den Turm. Gleich schlägt ihr eine dicke Duftwolke aus Blumen und Kräutern entgegen. Alexa hustet und keucht.
+{name} betrit den Turm zuerst. Gleich schlägt {s: ihm|ihr} eine dicke Dunwolke aus Blumen und Kräutern entgegen. Alexa hustet und keucht.
 
 // turm innen mit Hexe
 #CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0001_hexe.png","classes":["witch"]},{"src":"bubble3/im_turm/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"b3-tower-inside-witch"}
@@ -77,7 +77,7 @@ Die Tür öffnet sich und die hohe Stimme meint breitwillig:
     
         {name} erzählt wie sein ganzes Dorf sich in grosse Bäume verwandelt hat.
         
-        {name} erzählt auch, dass er von einem Stein gehört hat, der dies wieder rückgängig machen kann.
+        {name} erzählt auch, dass {s: er|sie} von einem Stein gehört hat, der das alles wieder rückgängig machen kann.
         
         ->interessant
         
@@ -85,7 +85,7 @@ Die Tür öffnet sich und die hohe Stimme meint breitwillig:
 *[Geschichte erzählen]
     {name} erzählt wie sein ganzes Dorf sich in grosse Bäume verwandelt hat.
     
-    {name} erzählt auch, dass er von einem Stein gehört hat, der dies wieder rückgängig machen kann.
+    {name} erzählt auch, dass {s: er|sie} von einem Stein gehört hat, der das alles wieder rückgängig machen kann.
     
     ->interessant
 
@@ -95,7 +95,7 @@ Die Tür öffnet sich und die hohe Stimme meint breitwillig:
 
 "Der Stein...", fährt die Hexe fort "ist ein Kompass."
 
-"Es handelt sich dabei um einen Kristall, der Larimar. Er soll bei richtiger Anwendung die Fähigkeit haben, die Götter des Waldes hervorzurufen..."
+"Es handelt sich dabei um einen Kristall, den Larimar. Er soll bei richNger Anwendung die Fähigkeit haben, die Göter des Waldes hervorzurufen..."
 
 "Aber jetzt entschuldigt mich einen Moment. Ich muss noch in den Garten und meine Kobolde füttern... Ihr könnt hier warten."
 
@@ -103,7 +103,7 @@ Die Tür öffnet sich und die hohe Stimme meint breitwillig:
 #CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]}],"container":"b3-tower-inside"}
 Und damit verschwindet die Hexe durch die Hintertür hinaus in ihren Garten.
 
-{name} schaut sich noch genauer um. Überall stehen Kerzen, Kräuter und eingelegte Tiere, von denen er gar nicht wissen möchte, wie die da hin kamen.
+{name} schaut sich genauer um. Überall stehen Kerzen, Kräuter und eingelegte Tiere, von denen er gar nicht wissen möchte, wie die da hin gekommen sind.
 
 // typo im bild?
 "SCHEPPER...KNALL"
@@ -111,7 +111,7 @@ Und damit verschwindet die Hexe durch die Hintertür hinaus in ihren Garten.
 
 // Figur
 #CONTENT: {"type":"image","images":[{"src":"bubble3/figur/figur_0000_figur.png","classes":["figur-1"]},{"src":"bubble3/figur/figur_0001_hintergrund.png","classes":["background"]}],"container":"b3-figur"}
-Es scheppert und Alexa ist ausversehen gegen eine umstehende Figur gekommen. Die Figur ist noch ganz aber von der Beschichtung hat sich Farbe gelöst
+Es scheppert. Alexa ist aus Versehen gegen eine auf dem Kaminsims stehende Figur gestossen. Die Figur ist noch ganz aber etwas Farbe hat sich abgelöst.
 
 
 // A
@@ -120,9 +120,9 @@ Es scheppert und Alexa ist ausversehen gegen eine umstehende Figur gekommen. Die
 ~q6 = 0
 // falls Malkasten
 { item == "Malkasten":
-    {name} ist so froh den Malkasten eingepackt zu haben und übermalt die Stelle. Sie sieht aus wie zuvor und nichts ist zu sehen.
+    {name} ist so froh den Malkasten eingepackt zu haben und übermalt die Stelle. Vom Schaden ist nichts mehr zu sehen.
 -else:
-    {name} hat aber natürlich keinen Malkasten dabei. "Hätte ich einen Malkasten dabei, könnte ich den jetzt gebrauchen..."
+    {name} hat aber natürlich keinen Malkasten dabei. "Häte ich einen Malkasten dabei, könnte ich den jetzt gut gebrauchen..."
         
             
      "Dabei hast du doch extra diese fette Tasche dabei... hahahah", lacht Alexa und stellt die Figur wieder hin, jedoch mit der kaputten Stelle zur Wand gedreht.
@@ -142,15 +142,15 @@ Es scheppert und Alexa ist ausversehen gegen eine umstehende Figur gekommen. Die
 // typo im bild?
 "NEEEEIIIINNNNN"
 
-Der Schrei kommt von der Hexe aus dem Garten, schnell läuft {name} in den Graten hinaus.
+Der Schrei kommt von der Hexe aus dem Garten, schnell läun {name} hinaus.
 
 // im Garten
 #CONTENT: {"type":"image","images":[{"src":"bubble3/garten/garten_0002_background-color.png","classes":["color"]},{"src":"bubble3/garten/garten_0001_bachground.png","classes":["background"]}],"container":"b3-garden"}
-Als sie dort ankommen kniet die Hexe am Boden und starrt auf einen Zettel in der Hand
+Die Hexe kniet auf dem Boden und starrt auf einen Zetel in ihrer Hand.
 
 Sie hält den Zettel genau so, dass {name} lesen kann, was drauf steht.
 
-"Wir haben deinen Gartenzwerg an uns genommen. Er ist jetzt gut in unserer Sammlung aufgehoben. Danke!"
+"Wir haben deinen Gartenzwerg an uns genommen. Er ist in unserer Sammlung besser aufgehoben. Danke!"
 
 Darunter ist ein Pfotenabdruck zu erkennen.
 
@@ -165,7 +165,7 @@ Darunter ist ein Pfotenabdruck zu erkennen.
     ...da dreht sich diese mit einem Ruck um und entdeckt die beiden.
 
 *[zurück ins Haus gehen]
-    {name} will leise zurück in den Turm schleichen, weil {s: er|sie} das Gefühl hat, dass sie nicht hier sein sollten.
+    {name} versucht unbemerkt in den Turm zurück zu schleichen, weil {s: er|sie} das Gefühl hat, dass {s: er|sie} diese Szene nicht gesehen haben sollte.
     
     Doch genau in dem Moment dreht sich die Hexe um und entdeckt sie.
 
@@ -177,15 +177,15 @@ Darunter ist ein Pfotenabdruck zu erkennen.
 #CONTENT: {"type":"image","images":[{"src":"bubble3/garten/garten_0002_background-color.png","classes":["color"]},{"src":"bubble3/garten/garten_0001_bachground.png","classes":["background"]},{"src":"bubble3/garten/im-turm_0001_hexe.png","classes":["witch-front"]},{"src":"bubble3/garten/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"b3-garden-eyes"}
 Funken sprühen aus ihren Augen: "Was sucht ihr hier???"
 
-Doch sie beruhigt sich sofort wieder und spricht weiter süsser Stimme:
+Doch sie beruhigt sich sofort wieder und spricht mit süsser SNmme:
 
-"Jetzt habt ihr mich total erschrocken, gehen wir doch wieder rein..."
+"Jetzt habt ihr mich total erschreckt, gehen wir doch wieder rein..."
 
 // Turm innen mit Hexe
 #CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0001_hexe.png","classes":["witch"]}],"container":"b3-tower-inside-witch"}
-Wieder im Turm angekommen fährt sie fort:
+Wieder im Turm fährt sie fort:
 
-"Also wegen eurem Stein... Ich habe ihn natürlich nicht hier, aber ich weiss genau, wie ihr zu ihm kommt..."
+"Also wegen eurem Stein... Ich habe ihn natürlich nicht hier, aber ich weiss genau, wie ihr an ihn kommt..."
 
 *[zuhören]
 
@@ -195,7 +195,7 @@ Wieder im Turm angekommen fährt sie fort:
     #CONTENT: {"type":"image","images":[{"src":"bubble3/im_turm/im-turm_0003_background-color.png","classes":["color"]},{"src":"bubble3/im_turm/im-turm_0002_background.png","classes":["background"]},{"src":"bubble3/im_turm/im-turm_0001_hexe.png","classes":["witch"]},{"src":"bubble3/im_turm/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"b3-tower-inside-eyes"}
     Ihre Augen blitzen kurz auf, aber sie lächelt nur.
     
-    "Das habe ich schon gewusst, aber schön, dass du es mir noch sagst..."
+    "Das habe ich schon gewusst, aber schön, dass du es mir sagst..."
 
 - "Also..."
 
@@ -214,7 +214,7 @@ Wieder im Turm angekommen fährt sie fort:
 // wagen audio
 #CONTENT: {"type": "audio", "src": "bubble3/cart.mp3", "loop": true, "volume": 1, fade: 1000}
 
-{name} bleibt keine andere Möglichkeit, wenn er erfahren möchte, wo sich der Stein befindet und steigt ein.
+{name} bleibt keine andere Möglichkeit, wenn {s: er|sie} erfahren möchte, wo sich der Stein befindet und steigt ein.
 
 Sofort fängt der Wagen an, sich zu bewegen und steuert ins Unbekannte.
 

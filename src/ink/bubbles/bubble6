@@ -17,7 +17,7 @@ INCLUDE bubbles/bubble7
 // larimar bewegen
 #CONTENT: {"type":"image","images":[{"src":"bubble6/einzelnes_echo/larimar-bewegen.gif","classes":["larimar"]}],"container":"b6-larimar"}
 
-Der Stein in {s: seiner |ihrer} Tasche wird warm und fängt an zu leuchten, {name} nimmt ihn in die Hand.
+Der Stein in {s: seiner|ihrer} Tasche wird warm und fängt an zu leuchten, {name} nimmt ihn in die Hand.
 
 "Es ist nicht mehr weit, {name}"
 
@@ -36,7 +36,7 @@ Tropf, tropf.... tropf..
 
 Ein dicker Tropfen landet auf {name}s Kopf. {s: Er|Sie} schaut sich um.
 
-{name} befindet sich plötzlich in einer Höhle und er hat keine Ahnung, wie er hier hingekommen ist.
+{name} befindet sich plötzlich in einer Höhle und hat keine Ahnung, wie {s: er|sie} hier hingekommen ist.
 
 *[sprechen]
     {name} Worte hallen an den feuchten Wänden wieder.
@@ -86,7 +86,7 @@ Etwas huscht im Schatten der Höhle umher.
 
 "Aber ich sehe, dass du es aufrichtig meinst."
 
-"Wir denken, haben nur eine Chance im Leben. Aber in Wahrheit haben wir unzählige."
+"Wir meinen, wir hätten nur eine Chance im Leben. Aber in Wahrheit haben wir unzählige."
 
 "Es gibt immer Möglichkeiten, auch wenn man eine Entscheidung schon getroffen hat..."
 

@@ -9,7 +9,7 @@
 // Auge
 #CONTENT: {"type":"image","images":[{"src":"bubble7/auge/Auge-animation-2.gif","classes":["eye"]}],"container":"b6-eye"}
 
-"Komm du Schnarchnase.."
+"Komm, du Schnarchnase.."
 
 Etwas kitzelt an {name}s Gesicht.
 
@@ -29,7 +29,7 @@ Etwas kitzelt an {name}s Gesicht.
 
 *["Was ist passiert?"]
 
--"Jetzt guck' nicht so blöd. Das fest fängt gleich an, die Vorbereitungen sind fast abgeschlossen..."
+-"Jetzt guck' nicht so blöd. Das Fest fängt gleich an, die Vorbereitungen für das Ritual sind fast abgeschlossen... Ich bin schon sehr gespannt, wofür du ausgewählt wirst..."
 
 "Du wachst jetzt lieber richtig auf, damit du fit für das Ritual bist...", damit rennt die Schwester wieder davon zurück Richtung Dorf.
 
@@ -49,9 +49,9 @@ Der Larimar?
 Was ist passiert? War das doch kein Traum?
 
 // schluss 
-#CONTENT: {"type":"image","images":[{"src":"bubble7/schluss/schluss_background.png","classes":["background"]},{"src":"bubble7/schluss/wolken.png","classes":["clouds"]},{"src":"bubble7/schluss/frosch-ins-bild-hüpfen.gif","classes":["frog"]}],"container":"b7-end"}
+//#CONTENT: {"type":"image","images":[{"src":"bubble7/schluss/schluss_background.png","classes":["background"]},{"src":"bubble7/schluss/wolken.png","classes":["clouds"]},{"src":"bubble7/schluss/frosch-ins-bild-hüpfen.gif","classes":["frog"]}],"container":"b7-end"}
+//hier kommt neu der Larimar nochmals
 
-{name} steckt den Stein zurück und geht Richtung Dorf.
 
 ->ending
 

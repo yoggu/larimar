@@ -5,7 +5,7 @@ VAR mouse_free = false
 // Am Abgrund
 #CONTENT: {"type":"image","images":[{"src":"bubble4/abgrund/abgrund_0001_background-color.png","classes":["color"]},{"src":"bubble4/abgrund/abgrund_0000_spur.png","classes":["track"]}],"container":"b4-abyss-edge"}
 
-{name} konnte sich und Alexa gerade noch rechtzeitig aus dem Wagen befreien, bevor dieser in die Tiefe stürzte.
+{name} kann sich und Alexa gerade noch rechtzeiNg aus dem Wagen befreien, bevor er in die Tiefe stürzt.
 
 "Was zur Hölle war denn das?", quakt Alexa
 
@@ -22,7 +22,7 @@ VAR mouse_free = false
 // Höhle
 #CONTENT: {"type":"image","images":[{"src":"bubble4/höhle/höhle_0003_background.png","classes":["color"]},{"src":"bubble4/höhle/höhle_0002_fakel-animation-1.png","classes":["flame","flame-1"]},{"src":"bubble4/höhle/höhle_0001_fakel-animation-2.png","classes":["flame","flame-2"]},{"src":"bubble4/höhle/höhle_0000_fakel-animation-3.png","classes":["flame","flame-3"]}],"container":"b4-cave"}
 
-Immer noch geschockt von diesem Ereignis begeben sich die beiden in die Höhle, die als Abkürzung durch einen Berg führen sollte.
+Immer noch geschockt von diesem Ereignis begeben sich die beiden in die Höhle, die eine Abkürzung durch den Berg sein soll.
 
 Als sie die Höhle betreten, hören sie Stimmen.
 
@@ -32,7 +32,7 @@ Als sie die Höhle betreten, hören sie Stimmen.
 
 Alexa schnauft laut auf: "Verstecken! Das sind die blutrünstigen Füchse."
 
-"Das ist eine Gruppe von Füchsen die seit längerer Zeit ihr Unwesen im Wald treibt."
+"Das ist eine Gruppe, die seit längerer Zeit ihr Unwesen im Wald treibt."
 
 "Und seit die Nahrung durch den trockenen Sommer so knapp wurde, sind sie besonders auf uns Frösche aus."
 
@@ -42,17 +42,17 @@ Alexa schnauft laut auf: "Verstecken! Das sind die blutrünstigen Füchse."
     
     "Hihihi, ich habe gehört, dass der Froschkönig bald seine Krone weitergibt..."
     
-    "Der perfekte Zeitpunkt, um diese nervigen Klöten aus dem Weg zu räumen, hihihi"
+    "Der perfekte Zeitpunkt, um diese nervigen Kröten aus dem Weg zu räumen, hihihi"
 
 *[sich den Füchsen nähern]
     // Fuchs in Höhle
     #CONTENT: {"type":"image","images":[{"src":"bubble4/fuchs_in_höhle/fuchs-in-höhle_0001_background-color.png","classes":["color"]},{"src":"bubble4/fuchs_in_höhle/fuchs-in-höhle_0000_Outlines.png","classes":["outline"]}],"container":"b4-cave"}
     
-    Alexa faucht aber {name} schleicht sich leise näher an das Geschehen heran.
+    Alexa faucht, aber {name} schleicht sich leise näher an das Geschehen heran.
     
-    {s: er|sie} sieht drei Füchse um ein Lagerfeuer sitzen.
+{s: Er|Sie} sieht drei Füchse um ein Lagerfeuer sitzen.
 
-    Als sich {name} noch näher heranschleicht erkennt {s: er|sie} eine Karte. Darauf erkennt {s: er|sie} ein rotes X und darunter etwas, das wie ein Sumpf aussah...
+    Als sich {name} näher heranschleicht, bemerkt {s: er|sie} eine Karte . Darauf erkennt {s: er|sie} ein rotes X und darunter etwas, das wie ein Sumpf aussieht...
 
 
 -{name} muss das verhindern...
@@ -60,15 +60,15 @@ Alexa schnauft laut auf: "Verstecken! Das sind die blutrünstigen Füchse."
 *[einen grossen Felsbrocken in den Durchgang zu schieben, um den Weg zu versperren]
     ~R++
     ~q7 = 0
-    Gerade als {name} sich hervorstürzen möchte, kommt ein vierter Fuchs angelaufen:
+    Gerade als {name} sich hervor stürzen möchte, kommt ein vierter Fuchs angelaufen:
     
     "Wir haben in der Schlucht einen Wagen gefunden und Fussspuren, die müssen hier noch irgendwo sein!"
     
 // C 
-*[den Plan der Füchse detailiert notieren]
+*[den Plan der Füchse detaiLliert notieren]
     ~C++
     ~q7 = 1
-    {name} notiert schnell auf einem Papier, was er erfahren hat.
+    {name} noNert schnell auf einem Papier, was {s: er|sie} erfahren hat.
 
 
 
@@ -85,7 +85,7 @@ Sie versuchen sich langsam vorbeizuschleichen.
 // Wache umdrehen
     #CONTENT: {"type":"image","images":[{"src":"bubble4/wache/wache_0006_background.png","classes":["cave"]},{"src":"bubble4/wache/wache_0005_wache-umdrehen.png","classes":["fox"]},{"src":"bubble4/wache/wache_0002_Stein-1.png","classes":["stone","stone-1"]},{"src":"bubble4/wache/wache_0001_Stein-2.png","classes":["stone","stone-2"]},{"src":"bubble4/wache/wache_0000_Stein-3.png","classes":["stone","stone-3"]}],"container":"b4-guard"}
     
-Doch Alexa tritt gegen einen Kieselstein und erzeugt ein lautes Geräusch. Die Wache dreht sich um.
+Doch Alexa trit gegen einen Kieselstein und ein lautes Geräusch hallt durch die Höhle. Die Wache dreht sich um.
     
 
 // I 
@@ -109,16 +109,16 @@ Doch Alexa tritt gegen einen Kieselstein und erzeugt ein lautes Geräusch. Die W
     // Wache mit Messer
     #CONTENT: {"type":"image","images":[{"src":"bubble4/wache/wache_0006_background.png","classes":["cave"]},{"src":"bubble4/wache/wache_0004_wache-messer.png","classes":["fox"]},{"src":"bubble4/wache/wache_0002_Stein-1.png","classes":["stone","stone-1"]},{"src":"bubble4/wache/wache_0001_Stein-2.png","classes":["stone","stone-2"]},{"src":"bubble4/wache/wache_0000_Stein-3.png","classes":["stone","stone-3"]}],"container":"b4-guard-knife"}
     
-    {name} fängt verwirrt an eine Ausrede zu erfinden, die Wache bleibt kurz stehen, doch als sie Alexa erblickt, zückt sie ihre Waffe im Gürtel.
+    {name} fängt verwirrt an eine Ausrede zu erfinden. Die Wache bleibt kurz stehen, doch als sie Alexa erblickt, zückt sie ihre Waffe im Gürtel.
     
-    "Nein!", {name} hört Alexa panisch schreien und sieht, wie diese mit Kieselsteinen versucht die Wache zu bewerfen.
+    "Nein!", {name} hört Alexa panisch schreien und sieht, wie diese mit Kieselsteinen versucht, die Wache zu bewerfen.
     
-    Sie trifft jedoch nicht und die Steine treffen die Decke.
+    Werfen ist nicht wirklich ihre Stärke und die Steine prallen daneben an die Decke.
     
     // Wache tot
     #CONTENT: {"type":"image","images":[{"src":"bubble4/wache/wache_0006_background.png","classes":["cave"]},{"src":"bubble4/wache/wache_0003_wache-tot.png","classes":["fox"]},{"src":"bubble4/wache/wache_0002_Stein-1.png","classes":["stone","stone-1"]},{"src":"bubble4/wache/wache_0001_Stein-2.png","classes":["stone","stone-2"]},{"src":"bubble4/wache/wache_0000_Stein-3.png","classes":["stone","stone-3"]}],"container":"b4-guard-dead"}
     
-    Dies führt jedoch dazu dass sich vereinzelt Steine von der Decke lösen und ein riesiger Felsbrocken direkt auf die Wache fällt.
+    {s: Er|Sie} tris die Wache und diese stürzt zu Boden.
     
 -"Ist sie tot?"
 *[nachsehen]
@@ -171,27 +171,27 @@ Doch sie geben nicht nach.
 
 {name} versucht es ein paar Mal, aber das Schloss lässt sich nicht öffnen.
 
-Eine Graue Maus im Käfig nebenan meldet  sich zu Wort:
+Eine graue Maus im Käfig nebenan meldet sich zu Wort:
 
 - "Ich sitze seit Wochen hier drin. Ich sag' dir, keine Chance, dass du hier lebend raus kommst."
 
-"Ich habe vorhin noch einen anderen Käfig gesehen, arme Kröte ey."
+"Ich habe vorhin noch einen anderen Käfig gesehen, arme Kröte, ey."
 
 "Grosses Bedauern habe ich mit ihr. Weisst du Froschsuppe lieben Füchse am meisten, kikiki.."
 
 // Gitterstäbe
 #CONTENT: {"type":"image","images":[{"src":"bubble4/käfig/käfig_0000_Gitter.png","classes":["bars"]}],"container":"b4-bars"}
 *[mit Gewalt versuchen am Tor zu rütteln]
-    Das Gitter Quietscht und plötzlich reisst die Halterung. Ohne diesen Halt bricht die gesamte Tür heraus.
+   Das Giter quietscht und plötzlich reisst die Halterung. Ohne diesen Halt bricht die gesamte Tür heraus.
 
 *[Versuchen durch die Gitterstäbe zu quetschen]
-    Die Gitterstäbe sehen eng aus, aber gerade noch so kann sich {name} hindurchquetschen, was für ein Glück?
+    Die Giterstäbe sehen eng aus, aber gerade noch so kann sich {name} hindurchquetschen! Was für ein Glück?
 
 
 // nur Mauskäfig
 -#CONTENT: {"type":"image","images":[{"src":"bubble4/käfig_maus/käfig-maus_0003_Maus-Käfig.png","classes":["cage"]},{"src":"bubble4/käfig_maus/käfig-maus_0004_Maus.png","classes":["mouse"]}],"container":"b4-mousecage"}
 
--{name} blickt noch einmal zurück, bevor er sich ins Lager der Füchse schleicht.
+- {name} blickt noch einmal zurück, bevor {s: er|sie} sich ins Lager der Füchse schleicht.
 
 *[Maus freilassen]
     ~mouse_free = true
@@ -223,7 +223,7 @@ Eine Graue Maus im Käfig nebenan meldet  sich zu Wort:
     // Küche
     #CONTENT: {"type":"image","images":[{"src":"bubble4/küche/küche_0003_background.png","classes":["background"]},{"src":"bubble4/küche/küche_0002_kabel.png","classes":["cable"]},{"src":"bubble4/küche/küche_0001_lampe-animation.png","classes":["lamp"]},{"src":"bubble4/küche/küche_0000_füchse.png","classes":["fox"]}],"container":"b4-kitchen"}
     
-    Um nicht aufzufallen schnappt sich {name} eine umliegende Kochschürze und zieht die Kochmütze tief ins Gesicht.
+    Um nicht aufzufallen schnappt sich {name} eine umliegende Kochschürze und zieht sich die Kochmütze Nef ins Gesicht.
 // C 
 *[einen Koch beobachten und seine Bewegungen nachahmen um nicht aufzufallen]
     ~C++
@@ -254,13 +254,13 @@ Als gerade niemand hinschaut, kippt {name} die Pilze aus dem Beutel ins Essen. H
 // Küche leer
 #CONTENT: {"type":"image","images":[{"src":"bubble4/küche/küche_0003_background.png","classes":["background"]},{"src":"bubble4/küche/küche_0002_kabel.png","classes":["cable"]},{"src":"bubble4/küche/küche_0001_lampe-animation.png","classes":["lamp"]}],"container":"b4-kitchen-empty"}
 
-Plötzlich wird es still und die ganze Küche verschwindet nach draussen. Das Essen wird wohl gerade serviert. Doch wo befindet sich Alexa?
+Plötzlich wird es sNll und das ganze Küchenpersonal verschwindet nach draussen. Das Essen wird wohl gerade serviert. Doch wo ist Alexa?
 
 // Alexa Käfig
 #CONTENT: {"type":"image","images":[{"src":"bubble4/alexa_käfig/alexa-käfig_0002_color-background.png","classes":["background"]},{"src":"bubble4/alexa_käfig/alexa-käfig_0001_käfig-zu.png","classes":["zu"]}],"container":"b4-alexa-cage"}
 {name} schaut sich noch einmal um und erkennt einen kleinen Käfig in der Ecke.
 
-"Boarr, endlich kommst du, konntest du dir ja noch länger Zeit lassen, eh.", tönt die vertraute Stimme von Alexa.
+"Boarr, endlich kommst du, hätest dir ja noch länger Zeit lassen können, eh.", tönt die vertraute SNmme von Alexa.
 
 
 // Alexa Käfig offen
@@ -271,7 +271,7 @@ Schnell befreit {name} sie aus ihrem Käfig.
 // tanzen 
 #CONTENT: {"type":"image","images":[{"src":"bubble4/küche/küche_0003_background.png","classes":["background"]},{"src":"bubble4/küche/küche_0002_kabel.png","classes":["cable"]},{"src":"bubble4/küche/küche_0001_lampe-animation.png","classes":["lamp"]},{"src":"bubble4/küche/tanzen/küche_0001_tanzen.png","classes":["fox"]},{"src":"bubble4/küche/tanzen/küche_0000_schwanz-animation.png","classes":["tail"]}],"container":"b4-dance"}
 
-Plötzlich kommt ein Fuchs hineingestürmt. Er torkelt und redet wirres Zeug.
+Plötzlich kommt ein Fuchs hereingestürmt. Er torkelt und redet wirres Zeug.
 
 Ein weiterer Fuchs betritt das Zelt und klammert sich an eine Kelle.
 
@@ -282,7 +282,7 @@ Ein weiterer Fuchs betritt das Zelt und klammert sich an eine Kelle.
 =alexa
 {name} hält Ausschau nach Alexa, doch er kann sie nirgends erkennen.
 
-{name} kann eigentlich überhaupt nicht kochen und kippt unbeholfen einen ganzen Behälter in die Sauce vor ihm.
+{name} kann eigentlich überhaupt nicht kochen und kippt unbeholfen einen ganzen Behälter irgendeiner Zutat in die Sauce vor {s: ihm|ihr}.
 
 "SALZ" steht in grossen, fetten Buchstaben auf der Rückseite...
 
@@ -292,14 +292,15 @@ Der Topf, vor {name} wird weggenommen und ans andere Ende der Küche gebracht.
 
 // Küche leer
 #CONTENT: {"type":"image","images":[{"src":"bubble4/küche/küche_0003_background.png","classes":["background"]},{"src":"bubble4/küche/küche_0002_kabel.png","classes":["cable"]},{"src":"bubble4/küche/küche_0001_lampe-animation.png","classes":["lamp"]},{"src":"bubble4/küche/küche_0000_füchse.png","classes":["fox"]}],"container":"b4-kitchen-empty"}
-Plötzlich wird es still und die ganze Küche verschwindet nach draussen. Das Essen wird wohl gerade serviert. Doch wo befindet sich Alexa?
+Plötzlich wird es still und das ganze Küchenpersonal verschwindet nach draussen. Das Essen wird
+wohl gerade serviert. Doch wo befindet sich Alexa?
 
 // Alexa Käfig
 #CONTENT: {"type":"image","images":[{"src":"bubble4/alexa_käfig/alexa-käfig_0002_color-background.png","classes":["background"]},{"src":"bubble4/alexa_käfig/alexa-käfig_0001_käfig-zu.png","classes":["zu"]}],"container":"b4-alexa-cage"}
 
 {name} schaut sich noch einmal um und erkennt einen kleinen Käfig in der Ecke.
 
-"Boarr, endlich kommst du, konntest du dir ja noch länger Zeit lassen, eh.", tönt die vertraute Stimme von Alexa.
+"Boarr, endlich kommst du, hätest dir ja noch länger Zeit lassen können, eh.", tönt die vertraute Stimme von Alexa.
 
 // Alexa Käfig offen
 #CONTENT: {"type":"image","images":[{"src":"bubble4/alexa_käfig/alexa-käfig_0002_color-background.png","classes":["background"]},{"src":"bubble4/alexa_käfig/alexa-käfig_0001_käfig-zu.png","classes":["zu"]},{"src":"bubble4/alexa_käfig/alexa-käfig_0000_käfig-offen.png","classes":["offen"]}],"container":"b4-alexa-cage-open"}
@@ -324,7 +325,7 @@ Draussen springt Alexa sofort über den anliegenden Fluss.
 
 "Ich habe keine Lust schon wieder so viel zu laufen, sieh selbst, wie du über den Fluss kommst...", mault Alexa plötzlich...
 
-Doch {name} ist zu Fuss viel schneller und {s: er|sie} möchte nicht schon wieder gefangen werden...
+Doch {name} ist zu Fuss viel schneller und {s: er|sie} möchte nicht noch mal gefangen werden...
 
 
 // R 
@@ -339,7 +340,7 @@ Doch {name} ist zu Fuss viel schneller und {s: er|sie} möchte nicht schon wiede
 
     Alexa wird nur wütend und schnauft.
     
-    Aus dem Lager hört er Füchse schreien. Seine Flucht muss entdeckt worden sein.
+    Aus dem Lager hört er Füchse schreien. {s: Seine|Ihre} Flucht muss entdeckt worden sein.
 
 - {name} packt Alexa kurzerhand einfach und steckt sie in die Tasche und rennt los.
 
