@@ -12,7 +12,7 @@ INCLUDE bubbles/bubble2
 Etwas abseits vom Dorf auf einer Wiese liegt {name}.
 Die Sonne steht bereits im Zenit und scheint {s: ihm|ihr} heiss ins Gesicht.
 
-Seltsam, dass niemand nach {s: ihm|ihr} sucht... Vom Dorf ist nichts zu hören. Keine Schreie, nur Totenstille.
+Seltsam, dass niemand nach {s: ihm|ihr} sucht... Vom Dorf ist nichts zu hören. Kein Geschrei, nur Totenstille.
 
 Es ist doch unmöglich, dass {s:seine|ihre} Tat noch nicht bemerkt wurde.
 
@@ -51,7 +51,7 @@ Wieso sind hier so viele Bäume? Und die Äste sind ungewöhnlich dicht und ersc
 // haus
 #CONTENT: {"type":"image","images":[{"src":"bubble1/haus/haus-auftauchen.gif","classes":["house-appear"]}],"container":"b1-house"}
     
- Etwas weiter erkennt {name} {s: sein|ihr} Haus. Das Haus ist voller Moos und Äste hängen aus den Fenstern.
+ Da vorne ist {s: sein|ihr} Haus. Es ist voller Moos und Äste bersten durch die Fenstern.
  
  // haus
 #CONTENT: {"type":"image","images":[{"src":"bubble1/haus/haus-animation.gif","classes":["house"]}],"container":"b1-house"}
@@ -97,14 +97,16 @@ Wieso sind hier so viele Bäume? Und die Äste sind ungewöhnlich dicht und ersc
 
 * ["Was ist passiert?"]
 
-"{name}... Es ist schlimm... Wir waren alle dabei das Fest vorzubereiten. Und plötzlich waren meine Füsse am Boden festgewachsen. Ich war gerade dabei, Mamas Kuchen ins Festzelt zu tragen...
+"{name}... Es ist schlimm... Wir waren alle dabei das Fest für das Ritual vorzubereiten. Und plötzlich waren meine Füsse am Boden festgewachsen. Ich war gerade dabei, Mamas Kuchen ins Festzelt zu tragen...
 
 Mama... und Papa... Sie sind bereits...
 
 Die Schwester weint.
 
     ** ["Das ist meine Schuld."]
-    {name} erzählt verzweifelt von {s: seinem|ihrem} Wutausbruch.
+    {name} erzählt verzweifelt von {s: seinem|ihrem} Wutausbruch und {s: seiner|ihrer}
+unverzeihlichen Tat.
+
 “Du musst schnell hier weg. Hol Hilfe, renn zu Onkel Willi unten am Teich, bevor es zu spät ist.”
 
     
@@ -185,9 +187,10 @@ Welchen Gegenstand soll {name} noch einpacken?
 
 /*#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/background.png","classes":["background"]},{"src":"bubble1/wald/wald_0007_baum-1.png","classes":["tree","tree-1-stop"]},{"src":"bubble1/wald/wald_0006_baum-2.png","classes":["tree","tree-2-stop"]},{"src":"bubble1/wald/wald_0003_baum-5.png","classes":["tree","tree-5-stop"]},{"src":"bubble1/wald/wald_0009_baum-7.png","classes":["tree","tree-7-stop"]},{"src":"bubble1/wald/wald_0010_baum-8.png","classes":["tree","tree-8-stop"]}],"container":"b1-forest"}*/
 
-Bereits tief einige Schritte hinter dem Dorf, fällt {s: ihm|ihr} ein, dass {s: er|sie} etwas vergessen hat.
+Nur einige Schrite hinter dem Dorf, fällt {s: ihm|ihr} ein, dass {s: er|sie} etwas vergessen hat.
 
-Der alte Familienkompass! Dieser besondere Kompass führt {s: ihn|sie} immer nach Hause zurück...
+Der alte Familienkompass! Dieser besondere Kompass, der {s: ihn|sie} immer nach Hause zurück
+führt ...
 
 * [trotzdem weitergehen]
     -> see
@@ -241,7 +244,7 @@ Der alte Familienkompass! Dieser besondere Kompass führt {s: ihn|sie} immer nac
 // weg zum wasser
 #CONTENT: {"type":"image","images":[{"src":"bubble1/weg_zum_wasser/ufer-nähern.gif","classes":["water-1"]}],"container":"b1-go-to-shore"}
 
-Als {s: er|sie} beim Ufer ankommt, scheint dies komplett verlassen. Onkel Willis Boot ist nicht zu sehen und nichts ist zu hören. Wieder Totenstille.
+Als {s: er|sie} beim Ufer ankommt, scheint dieses komplett verlassen. Onkel Willis Boot ist nicht zu sehen und nichts ist zu hören. Wieder Totenstille.
 
 #AUDIO_STOP
 // waves audio
@@ -277,7 +280,7 @@ Fast, als möchte {s: ihn|sie} jemand aufhalten, das Dorf zu verlassen...
 //oktopusbaum
 #CONTENT: {"type":"image","images":[{"src":"bubble1/oktopus_teile/oktopus-teile.gif","classes":["parts"]}],"container":"b1-octopus-tree"}
 
-{name} bückt sich und hebt ein Bruchstück auf. Es stammt wirklich von Onkel Willis Boot. {s: Er|Sie} schaut sich um und bemerkt zur Rechten ein grosser Baum. 
+{name} bückt sich und hebt ein Bruchstück auf. Es stammt wirklich von Onkel Willis Boot. {s: Er|Sie} schaut sich um und bemerkt zur Rechten einen grossen Baum.
 
 Seit wann stehen Bäume im Wasser?
 -> oktopusbaum
@@ -331,16 +334,17 @@ Wie soll {s:er|sie} den Teich ohne Boot überqueren?
 // uferteile
 #CONTENT: {"type":"image","images":[{"src":"bubble1/uferteile/ufer-teile.gif","classes":["parts"]},{"src":"bubble1/uferteile/ufer-teile-wolken.png","classes":["clouds"]}],"container":"b1-shore"}
 
-{name} steht wieder am Ufer und betrachtet die Bruchstücke, welche im Wasser schwimmen...
+{name} steht wieder am Ufer und betrachtet die Bruchstücke, die im Wasser schwimmen...
 
 * [das Boot reparieren]
-Vielleicht gibt es ein Boot, welches nur wenig beschädigt ist? 
+Vielleicht gibt es ein Boot, das nur wenig beschädigt ist?
 
 {name} versucht einige Teile aus dem Wasser zu fischen, doch {s: er|sie} hat weder Werkzeuge noch Material, um die Teile zusammenzukleben.
 
 * [nach Karten oder anderen Wegweisern suchen]
 
-{name} kniet sich hin und betrachtet die Teile genauer. Das Meiste sind kleine Holzsplitter und alle anderen Boote sind tief auf den Grund des Teiches gesunken.
+{name} kniet sich hin und betrachtet die Teile genauer. Die Meisten sind kleine Holzspliter und alle
+anderen Boote sind Nef auf den Grund des Teiches gesunken.
 
 - Die knorrigen Äste des Oktopusbaumes knacken laut und ein dicker Ast fällt ins Wasser.
 
@@ -351,7 +355,8 @@ Vielleicht gibt es ein Boot, welches nur wenig beschädigt ist?
 // oktopusbaum (mit Gesicht)
 #CONTENT: {"type":"image","images":[{"src":"bubble1/oktopus_teile/oktopus-untersuchen-animation.gif","classes":["face"]}],"container":"b1-octopus-tree-face"}
 
-{name} nähert sich dem Baum und erkennt zwei traurige, braune Augen aus den Furchen der Rinde hervorlugen. {s: Er|Sie} konnte sogar den grossen Schnurrbart von Onkel Willi erkennen. 
+{name} nähert sich dem Baum und erkennt zwei traurige, braune Augen aus den Furchen der Rinde
+hervorlugen. {s: Er|Sie} kann sogar den grossen Schnurrbart von Onkel Willi erkennen.
 
 Das kann doch alles doch nicht wahr sein...
 
@@ -454,15 +459,16 @@ Die Kröte schaut sich um und entdeckt die Bruchstücke im Wasser.
 * ["dieser blöde Baum ist mein Onkel..."]
     // frosch schnappen
     #CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/frosch-schnappen.gif","classes":["frog"]}],"container":"b1-frog"}
-    "Jetzt braus mal nicht gleich so auf, man.", die Kröte quakt und schnappt mit ihrer Zunge.
+   "Jetzt braus mal nicht gleich so auf, Mann.", die Kröte quakt und schnappt mit ihrer Zunge.
 
-    "Ich wollte ja nur meine Runden drehen, da kann ich doch nix für, wenn da plötzlich irgendjemand den Fluch ausgelöst hat..."
+    "Ich wollte ja nur meine Runden drehen, da kann ich doch nix für, wenn da plötzlich irgendjemand
+den Fluch auslöst .."
     
     // frosch standbild
     #CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/frosch-standbild.gif","classes":["frog"]}],"container":"b1-frog"}
 
     ** [“Was für ein Fluch?”]
-    “Bist du überhaupt von hier? Aber du warst das schon, oder?”
+    “Bist du überhaupt von hier? Ach DU warst das, oder?”
 {name} nickt.
 
     **[“Ja, das war ich…”]
@@ -495,7 +501,8 @@ Die Kröte schaut sich um und entdeckt die Bruchstücke im Wasser.
 
 {name} runzelt die Stirn. Für einen Frosch sah sie aber ganz schön krötig aus...
 
-Nach einigen Metern blickt sie zurück auf {name}, {s: der|welche} sich immer noch auf dem Steg befand.
+Nach einigen Metern blickt sie zurück auf {name}, {s: der|die} sich immer noch auf dem Steg
+befindet.
 
 "Was, kommst du nicht mit?", quakt Alexa.
 
@@ -505,9 +512,11 @@ Nach einigen Metern blickt sie zurück auf {name}, {s: der|welche} sich immer no
 
 - "Natürlich, was erwarte ich auch..." , sie schwimmt zurück und murmelt etwas vor sich hin.
 
-"Hast du auch schon versucht die Boote zu reparieren? Los sammle ein paar Teile und bring sie mir, dann kann sie mit meiner Spucke zusammenkleben."
+"Hast du auch schon versucht die Boote zu reparieren? Los sammle ein paar Teile und bring sie mir,
+dann kann ich sie mit meiner Spucke zusammenkleben."
 
-{name} greift zum abgebrochenen Ast, welcher in der Nähe im Wasser treibt und fängt an einzelne Stücke ans Ufer zu angeln.
+{name} greift zum abgebrochenen Ast, der in der Nähe im Wasser treibt und fängt an einzelne Stücke
+ans Ufer zu angeln.
 -> segelschiff
 
 = segelschiff
