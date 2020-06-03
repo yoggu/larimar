@@ -1,7 +1,7 @@
 <template>
   <div class="game" :class="{dark: dark}">
     <div class="navbar">
-      <router-link to="/menu">menü</router-link>
+      <router-link class="menu" :class="{'menu-dark': dark}" to="/menu"></router-link>
       <a v-on:click.prevent="toggleMute()" class="audio" :class="{'audio-dark': dark, 'mute': mute}">
       </a>
     </div> 
@@ -339,9 +339,17 @@ export default {
   max-width: 1024px;
   width: 100%;
 
-  a {
-    color: inherit;
-    font-weight: 400;
+  .menu {
+    background-image: url("../assets/images/icons/menu-black.png");
+    background-size: contain;
+    height: 30px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.menu-dark { 
+      background-image: url("../assets/images/icons/menu-white.png");
+    } 
   }
 
   .audio {
@@ -401,7 +409,7 @@ export default {
 
   .text-container {
     min-height: 150px;
-    padding: 6px 30px 0 30px;
+    padding: 12px 30px 0 30px;
     display: flex;
     flex-flow: column;
     width: 100%;

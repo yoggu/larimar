@@ -1,7 +1,7 @@
 <template>
   <div class="result">
     <div class="navbar">
-      <router-link class="back" to="/menu"></router-link>
+      <router-link class="menu" to="/menu"></router-link>
     </div>
     <div class="content"> 
       <h1>Mein Ergebnis</h1>
@@ -144,19 +144,13 @@ export default {
   max-width: 1024px;
   width: 100%;
 
-  a {
-    color: inherit;
-    font-weight: 400;
-  }
-
-  .back {
-    background-image: url("../assets/images/icons/arrow-down.png");
+  .menu {
+    background-image: url("../assets/images/icons/menu-white.png");
     background-size: contain;
-    height: 40px;
+    height: 30px;
     width: 20px;
     background-repeat: no-repeat;
     background-position: center;
-    transform: rotate(90deg);
   }
 
 }
