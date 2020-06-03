@@ -7,7 +7,7 @@
     </div> 
     <div class="story" ref="story">
         <div class="image-container" v-on:click="showText()">
-          <div v-if="currentImage.type === 'image'" :class="currentImage.container" class="container">
+          <div :class="currentImage.container" class="container">
             <transition-group name="fade">
             <img
               v-for="(image, index) in currentImage.images"
@@ -17,7 +17,6 @@
             />
             </transition-group>
           </div>
-          <!-- <draw-svg v-else-if="currentImage.type === 'svg'" :duration=200 :class = currentImage.container :vivusId ="'vivus'+index" :file= currentImage.src type="delayed" :ref="'vivus'+index"></draw-svg> -->
         </div>  
         <div class="text-container">
           <typed-text ref="typedText" :dark="dark" :typeSpeed="20" :text="currentText.text" :class="currentText.classes" @next="continueStory()" @onComplete="showChoice = true"></typed-text>
@@ -35,17 +34,14 @@
 </template>
 
 <script>
-//let counter = 0
 import { Story } from "inkjs";
 import {Howl, Howler} from 'howler';
 import json from "../ink/export/story.json";
-// import DrawSvg from "../components/DrawSvg";
 import TypedText from "../components/TypedText";
 
 export default {
   name: "Game",
   components: {
-    // DrawSvg,
     TypedText
   },
   data: function() {
@@ -70,7 +66,6 @@ export default {
     } else {
       this.restart();
     }
-    //this.checkPermission();
 
   },
   destroyed() {
@@ -140,21 +135,14 @@ export default {
           console.log("Clear")
         } else if (tag.property === "AUDIO_STOP") {
           Howler.stop();
-          console.log("stop audio");
         } else if (tag.property === "CONTENT") {
           let content = JSON.parse(tag.val.replace("\\", ""));
-
           // images
           if (content.type === "image") {
             content.images.forEach(image => {
               image.src = require("@/assets/images/" + image.src);
               this.currentImage = content;
             });
-          } 
-          // svg 
-          else if (content.type === "svg") {
-            content.src = require("@/assets/images/" + content.src)
-            this.currentImage = content;
           // audio  
           } else if (content.type === "audio") {
             content.src = require("@/assets/audio/" + content.src)
@@ -257,49 +245,6 @@ export default {
       this.playAudio(this.$store.state.audio);
       this.continueStory();
     },
-    // deviceOrientation(e) {
-    //   //console.log(e.gamma);
-    //   const limit = 45;
-    //   if(counter++ % 10 === 0) {
-    //     let leftToRight = Math.round(e.gamma);
-    //     if (Math.abs(leftToRight) > limit) {
-    //     if (leftToRight > limit) {
-    //           leftToRight = limit;
-    //       } else {
-    //           leftToRight = -limit;
-    //       }
-    //     }
-    //     let frontToBack = Math.round(e.beta);
-    //     if (Math.abs(frontToBack) > limit) {
-    //     if (frontToBack > limit) {
-    //           frontToBack = limit;
-    //       } else {
-    //           frontToBack = -limit;
-    //       }
-    //     }    
-    //     leftToRight = leftToRight * -1;
-    //     frontToBack = frontToBack * -1;
-    //     console.log(leftToRight +", "+ frontToBack)
-    //     let translate = "translate(" + leftToRight + "px," + frontToBack +"px)";
-    //     this.$el.querySelectorAll(".orient").forEach((el) => {
-    //       el.style.transform = translate;
-    //     });
-    //   }
-    // },
-    // checkPermission() {
-    //   console.log("checkPermission");
-    //   if (typeof DeviceOrientationEvent.requestPermission === 'function') {
-    //     DeviceOrientationEvent.requestPermission()
-    //       .then(permissionState => {
-    //         if (permissionState === 'granted') {
-    //           window.addEventListener('deviceorientation', (e) => {this.deviceOrientation(e)});
-    //         }
-    //       })
-    //       .catch(console.error);
-    //   } else {
-    //     window.addEventListener('deviceorientation', (e)=> {this.deviceOrientation(e);});
-    //   }
-    // }
   }
 };
 </script>

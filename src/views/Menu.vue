@@ -10,11 +10,26 @@
 </template>
 
 <script>
-
+import {Howl} from 'howler';
 export default {
   name: 'Menu',
   components: {},
-  mounted() {},
+  data: function(){
+    return {
+      audio: null
+    }
+  },
+  mounted() {
+    this.audio = new Howl({
+        src: require("@/assets/audio/tropfen.mp3"),
+        loop: true,
+        volume: 1
+      });
+      this.audio.play();
+  },
+  destroyed() {
+    this.audio.stop();
+  },
   methods: {
     newGame() {
       this.$store.commit('saveState', null);

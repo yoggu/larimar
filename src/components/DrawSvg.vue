@@ -1,7 +1,7 @@
 <template>
   <div class="svg" :id = vivusId :ref= vivusId></div>
 </template>
-
+<!-- <draw-svg v-else-if="currentImage.type === 'svg'" :duration=200 :class = currentImage.container :vivusId ="'vivus'+index" :file= currentImage.src type="delayed" :ref="'vivus'+index"></draw-svg> -->
 <script>
 import Vivus from "vivus";
 

@@ -36,15 +36,13 @@ Die Kröte springt aus dem Wasser und landet mit einem grossen Sprung vor dem an
 -#THEME: dark
 
 // wald
--#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]}],"container":"b2-forest"}
+-#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald.png","classes":["forest"]}],"container":"b2-forest"}
 
 -{name} betritt also den Wald.
 
-Die Bäume stehen ziemlich dicht und bereits nach wenigen Schriten scheinen sie vollständig
-eingeschlossen zu sein.
+Die Bäume stehen ziemlich dicht und bereits nach wenigen Schriten scheinen sie vollständig eingeschlossen zu sein.
 
-Nur wenig Licht erreicht den Waldboden und bereits nach wenigen Minuten hat {name} die
-Orientierung verloren.
+Nur wenig Licht erreicht den Waldboden und bereits nach wenigen Minuten hat {name} die Orientierung verloren.
 
 {name} hält an...
 
@@ -80,26 +78,24 @@ Orientierung verloren.
 - Was jetzt?
 
 // wald frosch
-#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/frosch/frosch_0000_frosch-black.png","classes":["frog"]}],"container":"b2-forest-frog"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald.png","classes":["forest"]},{"src":"bubble2/frosch/frosch_0000_frosch-black.png","classes":["frog"]}],"container":"b2-forest-frog"}
 
 "Ich wusste nicht, dass du so einfach aufgibst?" kräht Alexa laut.
 
 *[Alexa um Rat fragen]
-    "Fragst du mich gerade ernsthan, ob ich einen Kompass dabei habe? Sehe ich aus, als häte ich
-einen Rucksack?"
+    "Fragst du mich gerade ernsthan, ob ich einen Kompass dabei habe? Sehe ich aus, als häte ich einen Rucksack?"
 
 *[Umgebung untersuchen]
 
 // wald
--#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]}],"container":"b2-forest"}
+-#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald.png","classes":["forest"]}],"container":"b2-forest"}
 
 {name} macht sich also auf, um die Umgebung abzusuchen. Vielleicht haben sie ja etwas übersehen...
 
 // bäume mit gesichter
-#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"b2-forest-faces"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald.png","classes":["forest"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"b2-forest-faces"}
 
-Als {name} dabei die Bäume einmal genauer untersucht, stellt {s: er|sie} fest, dass überall ebenfalls
-Gesichter zu erkennen sind.
+Als {name} dabei die Bäume einmal genauer untersucht, stellt {s: er|sie} fest, dass überall ebenfalls Gesichter zu erkennen sind.
 
 Sie sind weniger deutlich zu sehen, weshalb sie {name} bis jetzt gar nicht aufgefallen sind.
 
@@ -108,7 +104,7 @@ Sie sind weniger deutlich zu sehen, weshalb sie {name} bis jetzt gar nicht aufge
 *["Was ist mit denen passiert?"]
 
 // wald frosch gesichter
-#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/frosch/frosch_0000_frosch-black.png","classes":["frog"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"b2-forest-frog-faces"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald.png","classes":["forest"]},{"src":"bubble2/frosch/frosch_0000_frosch-black.png","classes":["frog"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"b2-forest-frog-faces"}
 
 -"Ahh, der Gesichterwald... Ja, eigentlich hätte ich mir denken können, dass das hier der Gesichterwald sein muss.."
 
@@ -117,8 +113,7 @@ Sie sind weniger deutlich zu sehen, weshalb sie {name} bis jetzt gar nicht aufge
 
 *["Gibt es eine Möglichkeit sie zu befreien?"]
 
-- "Man, du kennst dich echt nicht aus? ...Also... Man sagt es gäbe einen Stein, der die Waldgöter
-heraufbeschwören kann."
+- "Man, du kennst dich echt nicht aus? ...Also... Man sagt es gäbe einen Stein, der die Waldgöter heraufbeschwören kann."
 
 *["Protester?"]
     "Keine Ahnung man, ich sag dir auch nur, was ich weiss. Aber auf jeden Fall brauchst du den Stein."
@@ -140,6 +135,7 @@ heraufbeschwören kann."
     
 // baum Nahaufnahme
 -#CONTENT: {"type":"image","images":[{"src":"bubble2/baum_nahaufnahme/baum-nahaufnahme_0000_baum-1.png","classes":["tree"]}],"container":"b2-tree-closeup"}
+
 - {name} geht näher an einen Baum heran und betrachtet diesen.
 
 Zwei kleine, braune Augen blicken {s: ihm|ihr} starr und milchig aus der Rinde entgegen.
@@ -160,7 +156,7 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     
 = schrei
     // wald
-    #CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]}],"container":"b2-forest"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald.png","classes":["forest"]}],"container":"b2-forest"}
     
     Der Schrei ertönt noch einmal, diesmal lauter. {name} und die Kröte bewegen sich in die Richtung, aus welcher sie den Schrei vernehmen.
 
@@ -228,7 +224,7 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     
 = gesichter
     // bäume mit gesichter
-    #CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald_0005_baum-1.png","classes":["tree","tree-1"]},{"src":"bubble2/wald/wald_0004_baum-2.png","classes":["tree","tree-2"]},{"src":"bubble2/wald/wald_0003_baum-3.png","classes":["tree","tree-3"]},{"src":"bubble2/wald/wald_0002_baum-4.png","classes":["tree","tree-4"]},{"src":"bubble2/wald/wald_0001_baum-5.png","classes":["tree","tree-5"]},{"src":"bubble2/wald/wald_0000_baum-6.png","classes":["tree","tree-6"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"b2-forest-faces"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald.png","classes":["forest"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"b2-forest-faces"}
     
     Die Gesichter zeigen alle in die gleiche Richtung...
     
