@@ -17,7 +17,9 @@ export default new Vuex.Store({
       C: Number
     },
     isFinished: false,
-    answers: {}
+    answers: {},
+    image: null,
+    audio: null
   },
   mutations: {
     saveState (state, stateJson) {
@@ -34,6 +36,12 @@ export default new Vuex.Store({
     },
     setAnswers (state, value) {
       state.answers = value;
+    },
+    setImage (state, value) {
+      state.image = value;
+    },
+    setAudio (state, value) {
+      state.audio = value;
     }
   },
   actions: {

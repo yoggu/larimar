@@ -17,7 +17,7 @@
             />
             </transition-group>
           </div>
-          <draw-svg v-else-if="currentImage.type === 'svg'" :duration=200 :class = currentImage.container :vivusId ="'vivus'+index" :file= currentImage.src type="delayed" :ref="'vivus'+index"></draw-svg>
+          <!-- <draw-svg v-else-if="currentImage.type === 'svg'" :duration=200 :class = currentImage.container :vivusId ="'vivus'+index" :file= currentImage.src type="delayed" :ref="'vivus'+index"></draw-svg> -->
         </div>  
         <div class="text-container">
           <typed-text ref="typedText" :dark="dark" :typeSpeed="20" :text="currentText.text" :class="currentText.classes" @next="continueStory()" @onComplete="showChoice = true"></typed-text>
@@ -39,13 +39,13 @@
 import { Story } from "inkjs";
 import {Howl, Howler} from 'howler';
 import json from "../ink/export/story.json";
-import DrawSvg from "../components/DrawSvg";
+// import DrawSvg from "../components/DrawSvg";
 import TypedText from "../components/TypedText";
 
 export default {
   name: "Game",
   components: {
-    DrawSvg,
+    // DrawSvg,
     TypedText
   },
   data: function() {
@@ -59,7 +59,8 @@ export default {
       currentAudio: Object,
       showChoice: false,
       dark: false,
-      mute: false
+      mute: false,
+      audio: {},
     };
   },
   mounted () {
@@ -157,15 +158,10 @@ export default {
           // audio  
           } else if (content.type === "audio") {
             content.src = require("@/assets/audio/" + content.src)
-            this.currentAudio = new Howl({
-              src: [content.src],
-              loop: content.loop,
-              volume: content.volume
-            });
-            this.currentAudio.play();
-            this.currentAudio.fade(0.0, this.currentAudio.volume(), content.fade);
+            this.audio = content;
+            this.playAudio(this.audio);
           }
-
+        // set dark or light theme
         } else if (tag.property === "THEME") { 
           if (tag.val == 'dark') {
             this.dark = true;
@@ -178,6 +174,15 @@ export default {
     },
     showText() {
       this.$refs.typedText.showAll();
+    },
+    playAudio(audio) {
+      this.currentAudio = new Howl({
+        src: [audio.src],
+        loop: audio.loop,
+        volume: audio.volume
+      });
+      this.currentAudio.play();
+      this.currentAudio.fade(0.0, this.currentAudio.volume(), audio.fade);
     },
     toggleMute() {
       this.mute = !this.mute;
@@ -238,6 +243,8 @@ export default {
     },
     save() {
       this.$store.commit('saveState', this.story.state.ToJson());
+      this.$store.commit('setImage', this.currentImage);
+      this.$store.commit('setAudio', this.audio);
       //console.log(JSON.parse(this.$store.state.story))
     },
     load() {
@@ -246,6 +253,8 @@ export default {
       this.customClasses = [];
       this.dark = this.$store.state.isDark;
       this.story.state.LoadJson(this.$store.state.story);
+      this.currentImage = this.$store.state.image;
+      this.playAudio(this.$store.state.audio);
       this.continueStory();
     },
     // deviceOrientation(e) {
@@ -434,7 +443,7 @@ export default {
         background-position: center;
         transform: rotate(-90deg);
         left: 0;
-        top: 2px;
+        top: 4px;
         position: absolute
       }
     }
