@@ -454,6 +454,12 @@ export default {
         top: 4px;
         position: absolute
       }
+
+      &.arrow-dark {
+        &:before {
+          background-image: url("../assets/images/icons/continue-white.png");
+        }
+      }  
     }
   }
 }

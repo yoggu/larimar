@@ -48,7 +48,8 @@ Wieso sind hier so viele Bäume? Und die Äste sind ungewöhnlich dicht und ersc
     -> haus
     
 = haus
-    // walking audio
+
+// walking audio
 #CONTENT: {"type": "audio", "src": "bubble1/walking.mp3", "loop": true, "volume": 0.1, "fade": 1000}
 // haus
 #CONTENT: {"type":"image","images":[{"src":"bubble1/haus/haus-auftauchen.gif","classes":["house-appear"]}],"container":"b1-house"}
@@ -524,6 +525,10 @@ ans Ufer zu angeln.
 
 Als {name} genügend Teile gesammelt hat, fängt Alexa an, diese mit ihrer Spucke zusammenzukleben.
 
+#AUDIO_STOP
+// waves audio
+#CONTENT: {"type": "audio", "src": "bubble1/waves.mp3", "loop": true, "volume": 0.1, "fade": 1000} 
+
 //segelschiff
 #CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat"]}],"container":"b1-boat"}
 
@@ -550,10 +555,6 @@ Ein bisschen angewidert und unsicher klettert {name} auf das Schiff. Es schwankt
     /*#CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat-small"]}],"container":"b1-boat"}*/
 
     “Was soll ich damit? Frösche können gut schwimmen...”, ohne ein weiteres Wort springt Alexa wieder ins Wasser und zeigt {name} den Weg.
-    
--#AUDIO_STOP
-// waves audio
-#CONTENT: {"type": "audio", "src": "bubble1/waves.mp3", "loop": true, "volume": 0.1, "fade": 1000}    
 
 --> bubble2
 

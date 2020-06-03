@@ -73,7 +73,7 @@ export default {
   flex: 1;
   width:100%;
   position: relative;
-  padding-right: 14px;
+  padding-right: 20px;
 
   p {
     width:100%;
@@ -90,6 +90,10 @@ export default {
       right:0;
       top:0;
       position: absolute
+  }
+
+  .arrow-dark {
+    background-image: url("../assets/images/icons/continue-white.png");
   }
 }
 

@@ -65,7 +65,7 @@ Alexa schnauft laut auf: "Verstecken! Das sind die blutrünstigen Füchse."
     "Wir haben in der Schlucht einen Wagen gefunden und Fussspuren, die müssen hier noch irgendwo sein!"
     
 // C 
-*[den Plan der Füchse detaiLliert notieren]
+*[den Plan der Füchse detailiert notieren]
     ~C++
     ~q7 = 1
     {name} noNert schnell auf einem Papier, was {s: er|sie} erfahren hat.
