@@ -11,18 +11,33 @@
     </div>
     <div class="start">
       <router-link to="/menu">
-        zum Beginnen hier klicken
+        Geschichte beginnen...
       </router-link>
     </div> 
   </div>
 </template>
 
 <script>
-
+import {Howl} from 'howler';
 export default {
   name: 'StartScreen',
   components: {},
-  mounted() {},
+  data: function(){
+    return {
+      audio: null
+    }
+  },
+  mounted() {
+    this.audio = new Howl({
+        src: require("@/assets/audio/frog_sleep.mp3"),
+        loop: true,
+        volume: 1
+      });
+      this.audio.play();
+  },
+  destroyed() {
+    this.audio.stop();
+  },
   methods: {}
 }
 </script>
