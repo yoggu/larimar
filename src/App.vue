@@ -46,11 +46,14 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: $l-light;
+    color: $l-medium;
   }
 
   &.router-link-exact-active {
-    color: $l-light;
+    color: $l-medium;
   }
 }
+
+
+
 </style>

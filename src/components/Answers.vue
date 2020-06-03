@@ -1,13 +1,13 @@
 <template>
-  <div :class="[open ? 'open' : '', type]" class="answers">
+  <div :class="{open: open}" class="answers">
     <h2 class="title" v-on:click="toggleOpen()">Meine Antworten</h2>
-    <ol class="list">
-      <li v-for="(question, index) in questions" :key="index">
+    <div class="items">
+      <div class="item" v-for="(question, index) in questions" :key="index">
         <div class="question">{{question.question}}</div>
-        <div class="answer" :class="{'selected': getAnswer(index) == 0}"><span>{{question.answer1.category}}: </span>{{question.answer1.text}}</div>
-        <div class="answer" :class="{'selected': getAnswer(index) == 1}"><span>{{question.answer2.category}}: </span>{{question.answer2.text}}</div>
-      </li>
-    </ol>
+        <div class="answer" :class="{'selected': getAnswer(index) == 0}">{{question.answer1.text}} <span>{{question.answer1.category}}</span></div>
+        <div class="answer" :class="{'selected': getAnswer(index) == 1}">{{question.answer2.text}} <span>{{question.answer2.category}}</span></div>
+      </div>
+    </div> 
   </div>
 </template>
 
@@ -40,14 +40,15 @@ export default {
 <style scoped lang="scss">
 
 .answers {
+  margin: 60px 0 40px 0;
+  padding: 0 20px;
 
   .title {
-    padding: 12px 0;
     position:relative;
-
-    h2 {
-      margin: 0;
-    }
+    cursor: default;
+    margin-bottom: 0;
+    width: 250px;
+    margin: 0 auto;
 
     &:after {
       position: absolute;
@@ -60,21 +61,67 @@ export default {
       background-position: center;
       width: 20px;
       height: 100%;
-      transform: rotate(180deg);
+      transform: rotate(-180deg);
       transition: all 0.3s ease;
     }
   }
 
-  .list {
+  .items {
     max-height: 0;
     opacity: 0;
     transition: all 0.3s ease;
     overflow: hidden;
+
+    .item {
+      margin: 40px auto;
+      max-width: $small;
+      text-align: left;
+    }
+
+    .question {
+      font-size: 18px;
+    }
+
+    .answer {
+      color: grey;
+      position: relative;
+      padding-left: 25px;
+      margin: 10px 0;
+
+      span {
+        margin-left: 15px;
+        color: $l-medium;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top:0;
+        background-image: url("../assets/images/icons/arrow-down.png");
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: center;
+        width: 15px;
+        height: 100%;
+        transform: rotate(-90deg);
+      }
+    }
+
+    .selected {
+      color: white;
+
+      &:before {
+        background-image: url("../assets/images/icons/arrow-filled.png");
+      }
+    }
+
+
   }
 
   &.open {
 
-    .list {
+    .items {
         opacity: 1;
         max-height: 5000px;
     }
@@ -86,10 +133,6 @@ export default {
       }
     }
 
-  }
-
-  .selected {
-    color: lightblue
   }
 }
 </style>

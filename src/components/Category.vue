@@ -1,7 +1,7 @@
 <template>
-  <div :class="[open ? 'open' : '', type]" class="category">
-    <div class="title" v-on:click="toggleOpen()"><h3>{{title}}</h3></div>
-    <div class="description">{{description}}</div>
+  <div :class="[open ? 'open' : '', category.type]" class="category">
+    <div class="title" v-on:click="toggleOpen()"><span class="letter">{{category.letter}}</span><h3>{{category.title}}</h3></div>
+    <div class="description">{{category.description}}</div>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 
 export default {
   name: 'Category',
-  props: ['type','title','description','index'],
+  props: ['category','index'],
   data: function() {
     return{
       open: false
@@ -30,29 +30,47 @@ export default {
 <style scoped lang="scss">
 
 .category {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
 
   .title {
-    padding: 12px 0;
-    position:relative;
+    padding: 12px;
+    text-align: left;
+    width: 200px;
+    display: flex;
+
 
     h3 {
       margin: 0;
+      cursor: default;
+      position:relative;
+      padding-right: 30px;
+      font-size: 20px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 4px;
+        background-image: url("../assets/images/icons/arrow-down.png");
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: center;
+        width: 15px;
+        height: 15px;
+        transform: rotate(-180deg);
+        transition: transform 0.3s ease;
+      }
+    }
+    .letter {
+      margin-right: 20px;
+      font-size: 20px;
+      color: $l-medium;
     }
 
-    &:after {
-      position: absolute;
-      right: 0;
-      top:0;
-      content: '';
-      background-image: url("../assets/images/icons/arrow-down.png");
-      background-repeat: no-repeat;
-      background-size:contain;
-      background-position: center;
-      width: 20px;
-      height: 100%;
-      transform: rotate(180deg);
-      transition: all 0.3s ease;
-    }
   }
 
   .description {
@@ -60,6 +78,9 @@ export default {
     opacity: 0;
     transition: all 0.3s ease;
     overflow: hidden;
+    max-width: $small;
+    margin: 0 auto;
+    text-align: left;
   }
 
   &.open {
@@ -70,10 +91,12 @@ export default {
     }
 
     .title {
-
-      &:after {
-        transform: rotate(0);
+      h3 {
+        &:after {
+          transform: rotate(0);
+        }
       }
+
     }
 
   }
