@@ -48,6 +48,8 @@ Wieso sind hier so viele Bäume? Und die Äste sind ungewöhnlich dicht und ersc
     -> haus
     
 = haus
+    // walking audio
+#CONTENT: {"type": "audio", "src": "bubble1/walking.mp3", "loop": true, "volume": 0.1, "fade": 1000}
 // haus
 #CONTENT: {"type":"image","images":[{"src":"bubble1/haus/haus-auftauchen.gif","classes":["house-appear"]}],"container":"b1-house"}
     
@@ -58,8 +60,6 @@ Wieso sind hier so viele Bäume? Und die Äste sind ungewöhnlich dicht und ersc
     
     Aus dem Dach ragen drei grosse Bäume.
 
-    // walking audio
-#CONTENT: {"type": "audio", "src": "bubble1/walking.mp3", "loop": true, "volume": 0.1, "fade": 1000}    
     Als sich {name} dem Haus nähert knackt es unter {s: seinen|ihren} Füssen.
     
     "{name}?", eine verzweifelte Stimme kommt aus dem Inneren des Hauses.
@@ -124,7 +124,7 @@ unverzeihlichen Tat.
 
 * ["Ich will dich aber nicht verlassen..."]
 
-#AUDIO_STOP
+-#AUDIO_STOP
 // schwester tot
 - #CONTENT: {"type":"image","images":[{"src":"bubble1/schwester/schwester-tot-animation.gif","classes":["sister"]}],"container":"b1-sister-dead"}
 
@@ -189,8 +189,7 @@ Welchen Gegenstand soll {name} noch einpacken?
 
 Nur einige Schrite hinter dem Dorf, fällt {s: ihm|ihr} ein, dass {s: er|sie} etwas vergessen hat.
 
-Der alte Familienkompass! Dieser besondere Kompass, der {s: ihn|sie} immer nach Hause zurück
-führt ...
+Der alte Familienkompass! Dieser besondere Kompass, der {s: ihn|sie} immer nach Hause zurück führt ...
 
 * [trotzdem weitergehen]
     -> see
@@ -241,14 +240,14 @@ führt ...
     
 = see
 
+#AUDIO_STOP
+// waves audio
+#CONTENT: {"type": "audio", "src": "bubble1/waves.mp3", "loop": true, "volume": 0.1, "fade": 2000}
+
 // weg zum wasser
 #CONTENT: {"type":"image","images":[{"src":"bubble1/weg_zum_wasser/ufer-nähern.gif","classes":["water-1"]}],"container":"b1-go-to-shore"}
 
 Als {s: er|sie} beim Ufer ankommt, scheint dieses komplett verlassen. Onkel Willis Boot ist nicht zu sehen und nichts ist zu hören. Wieder Totenstille.
-
-#AUDIO_STOP
-// waves audio
-#CONTENT: {"type": "audio", "src": "bubble1/waves.mp3", "loop": true, "volume": 0.1, "fade": 2000}
 
 // weg zum wasser 2
 #CONTENT: {"type":"image","images":[{"src":"bubble1/weg_zum_wasser/ufer-nähern-2.gif","classes":["water-2"]}],"container":"b1-go-to-shore"}
@@ -291,6 +290,8 @@ Seit wann stehen Bäume im Wasser?
 #CONTENT: {"type":"image","images":[{"src":"bubble1/oktopus_teile/oktopus-teile.gif","classes":["parts"]}],"container":"b1-octopus-tree"}
 
 {s: Er|Sie} schaut sich um. Das Ufer scheint unbewegt und leer. Es gibt keine Anzeichen, dass sich hier noch jemand anderes befinden könnte.
+
+
 Da bemerkt {name} einen Baum, der im Wasser steht. Seit wann stehen Bäume im Wasser?
 -> oktopusbaum
 
@@ -411,6 +412,7 @@ Kleine Blasen steigen von den Wurzeln des Baumes an die Wasseroberfläche. {name
 
             ****[warten]
 
+    --#AUDIO_STOP
     // blasen_baum
     -- #CONTENT: {"type":"image","images":[{"src":"bubble1/oktopusbaum_blasen/baum-background.png","classes":["background"]}],"container":"b1-bubbles"}   
     -- Die Blasen werden weniger, bis wieder nichts mehr zu sehen ist. {name} bekommt ein schlechtes Gewissen und langt trotzdem ins kalte Wasser.
@@ -501,8 +503,7 @@ den Fluch auslöst .."
 
 {name} runzelt die Stirn. Für einen Frosch sah sie aber ganz schön krötig aus...
 
-Nach einigen Metern blickt sie zurück auf {name}, {s: der|die} sich immer noch auf dem Steg
-befindet.
+Nach einigen Metern blickt sie zurück auf {name}, {s: der|die} sich immer noch auf dem Steg befindet.
 
 "Was, kommst du nicht mit?", quakt Alexa.
 
