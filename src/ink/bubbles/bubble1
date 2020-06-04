@@ -313,7 +313,13 @@ Wie soll {s:er|sie} den Teich ohne Boot überqueren?
 
     {name} kennt sich im Moor nicht aus und es wäre zu gefährlich weiterzugehen. Nur mit einem Boot lässt sich der Teich überqueren.
 
-    ->weg
+    {schwimmen:
+        {name} kehrt zum Steg zurück
+        -> uferteile2
+    - else:
+        ->weg
+    }
+    
     
     
 * (schwimmen)[schwimmen]
@@ -321,11 +327,16 @@ Wie soll {s:er|sie} den Teich ohne Boot überqueren?
 // kaltes_wasser
 #CONTENT: {"type":"image","images":[{"src":"bubble1/kaltes_wasser/kaltes-wasser-animation.gif","classes":["water"]}],"container":"b1-cold-water"}
 
-{name} zieht {s: seine|ihre} Schuhe aus und steigt ins Wasser. Kalt! {s: Er|Sie} schreckt sofort zurück. Bei dieser Kälte würde {name} sofort erfrieren...
+    {name} zieht {s: seine|ihre} Schuhe aus und steigt ins Wasser. Kalt! {s: Er|Sie} schreckt sofort zurück. Bei dieser Kälte würde {name} sofort erfrieren...
 
-    ->weg
+    {land:
+        {name} kehrt zum Steg zurück
+        -> uferteile2
+    - else:
+        ->weg
+    }
     
-+ {land && schwimmen }[zurück zum Steg gehen]
++ {land || schwimmen }[zurück zum Steg gehen]
    ->uferteile2
 
 =uferteile2
