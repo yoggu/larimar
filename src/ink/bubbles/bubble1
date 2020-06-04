@@ -105,8 +105,7 @@ Mama... und Papa... Sie sind bereits...
 Die Schwester weint.
 
     ** ["Das ist meine Schuld."]
-    {name} erzählt verzweifelt von {s: seinem|ihrem} Wutausbruch und {s: seiner|ihrer}
-unverzeihlichen Tat.
+    {name} erzählt verzweifelt von {s: seinem|ihrem} Wutausbruch und {s: seiner|ihrer} unverzeihlichen Tat.
 
 “Du musst schnell hier weg. Hol Hilfe, renn zu Onkel Willi unten am Teich, bevor es zu spät ist.”
 
@@ -185,8 +184,6 @@ Welchen Gegenstand soll {name} noch einpacken?
 
 // wald (anhalten)
 #CONTENT: {"type":"image","images":[{"src":"bubble1/wald/im-wald.gif","classes":["forest"]}],"container":"b1-forest"}
-
-/*#CONTENT: {"type":"image","images":[{"src":"bubble1/wald/background.png","classes":["background"]},{"src":"bubble1/wald/wald_0007_baum-1.png","classes":["tree","tree-1-stop"]},{"src":"bubble1/wald/wald_0006_baum-2.png","classes":["tree","tree-2-stop"]},{"src":"bubble1/wald/wald_0003_baum-5.png","classes":["tree","tree-5-stop"]},{"src":"bubble1/wald/wald_0009_baum-7.png","classes":["tree","tree-7-stop"]},{"src":"bubble1/wald/wald_0010_baum-8.png","classes":["tree","tree-8-stop"]}],"container":"b1-forest"}*/
 
 Nur einige Schrite hinter dem Dorf, fällt {s: ihm|ihr} ein, dass {s: er|sie} etwas vergessen hat.
 
@@ -339,14 +336,13 @@ Wie soll {s:er|sie} den Teich ohne Boot überqueren?
 {name} steht wieder am Ufer und betrachtet die Bruchstücke, die im Wasser schwimmen...
 
 * [das Boot reparieren]
-Vielleicht gibt es ein Boot, das nur wenig beschädigt ist?
-
-{name} versucht einige Teile aus dem Wasser zu fischen, doch {s: er|sie} hat weder Werkzeuge noch Material, um die Teile zusammenzukleben.
+    Vielleicht gibt es ein Boot, das nur wenig beschädigt ist?
+    
+    {name} versucht einige Teile aus dem Wasser zu fischen, doch {s: er|sie} hat weder Werkzeuge noch Material, um die Teile zusammenzukleben.
 
 * [nach Karten oder anderen Wegweisern suchen]
 
-{name} kniet sich hin und betrachtet die Teile genauer. Die Meisten sind kleine Holzspliter und alle
-anderen Boote sind Nef auf den Grund des Teiches gesunken.
+    {name} kniet sich hin und betrachtet die Teile genauer. Die Meisten sind kleine Holzspliter und alle anderen Boote sind auf den Grund des Teiches gesunken.
 
 - Die knorrigen Äste des Oktopusbaumes knacken laut und ein dicker Ast fällt ins Wasser.
 
@@ -357,8 +353,7 @@ anderen Boote sind Nef auf den Grund des Teiches gesunken.
 // oktopusbaum (mit Gesicht)
 #CONTENT: {"type":"image","images":[{"src":"bubble1/oktopus_teile/oktopus-untersuchen-animation.gif","classes":["face"]}],"container":"b1-octopus-tree-face"}
 
-{name} nähert sich dem Baum und erkennt zwei traurige, braune Augen aus den Furchen der Rinde
-hervorlugen. {s: Er|Sie} kann sogar den grossen Schnurrbart von Onkel Willi erkennen.
+{name} nähert sich dem Baum und erkennt zwei traurige, braune Augen aus den Furchen der Rinde hervorlugen. {s: Er|Sie} kann sogar den grossen Schnurrbart von Onkel Willi erkennen.
 
 Das kann doch alles doch nicht wahr sein...
 
@@ -429,7 +424,7 @@ Kleine Blasen steigen von den Wurzeln des Baumes an die Wasseroberfläche. {name
 #CONTENT: {"type":"image","images":[{"src":"bubble1/frosch/kugel-standbild.gif","classes":["frog"]}],"container":"b1-frog"}
 
 // wet plop audio
-#CONTENT: {"type": "audio", "src": "bubble1/wet_plop.mp3", "loop": false, "volume": 0.5, "fade": 0}
+#CONTENT: {"type": "audio", "src": "bubble1/wet_plop.mp3", "loop": false, "volume": 0.8, "fade": 0}
 
 Die braune Kugel rollt {name} aus der Hand und landet mit einem lauten Klatschen auf dem morschen Holz.
 
@@ -555,6 +550,8 @@ Ein bisschen angewidert und unsicher klettert {name} auf das Schiff. Es schwankt
     /*#CONTENT: {"type":"image","images":[{"src":"bubble1/segelschiff/segelschiff.gif","classes":["boat-small"]}],"container":"b1-boat"}*/
 
     “Was soll ich damit? Frösche können gut schwimmen...”, ohne ein weiteres Wort springt Alexa wieder ins Wasser und zeigt {name} den Weg.
+
+-#AUDIO_STOP
 
 --> bubble2
 

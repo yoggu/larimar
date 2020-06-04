@@ -8,8 +8,6 @@ INCLUDE bubbles/bubble3
 
 Nach einem längeren Weg über den Teich kommen {name} und Alexa endlich auf der anderen Seite des Ufers an.
 
-#AUDIO_STOP
-
 Die Kröte springt aus dem Wasser und landet mit einem grossen Sprung vor dem anliegenden Wald.
 
 "Hmmmm", murmelt Alexa.
@@ -161,8 +159,6 @@ Sie werden von einem merkwürdigen Geräusch aus der Ferne unterbrochen.
     Der Schrei ertönt noch einmal, diesmal lauter. {name} und die Kröte bewegen sich in die Richtung, aus welcher sie den Schrei vernehmen.
 
     Plötzlich treten sie hinaus aus dem Wald und es ist alles hell.
-    
-    #THEME: light
     
     // schlucht stein -> background ist noch falsch
     #CONTENT: {"type":"image","images":[{"src":"bubble2/schlucht_stein/schlucht_stein_0001_stein.png","classes":["stone"]}],"container":"b2-canyon-stone"}

@@ -33,10 +33,10 @@ Etwas kitzelt an {name}s Gesicht.
 
 "Du wachst jetzt lieber richtig auf, damit du fit für das Ritual bist...", damit rennt die Schwester wieder davon zurück Richtung Dorf.
 
-{name} schaut sich um.
-
 // wiese
 #CONTENT: {"type":"image","images":[{"src":"bubble1/wiese/flower-1-animation.gif","classes":["flower-1"]},{"src":"bubble1/wiese/wolken.png","classes":["clouds"]}],"container":"b1-meadow"}
+
+{name} schaut sich um.
 
 {s: Er|Sie} liegt in seinem Versteck im Gras.
 

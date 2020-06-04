@@ -251,8 +251,9 @@ Der Wagen ruckelt plötzlich.
 // Abgrund
 #CONTENT: {"type":"image","images":[{"src":"bubble3/abgrund/abgrund_0002_schwarz.png","classes":["color"]},{"src":"bubble3/abgrund/abgrund_0001_boden.png","classes":["ground"]},{"src":"bubble3/abgrund/abgrund_0000_wolken.png","classes":["clouds"]}],"container":"b3-abyss"}
 
-Alexa schreit und als {name} über den Rand des Wagens schaut, sieht  {s: er|sie} nur ein dunkler Abgrund
+Alexa schreit und als {name} über den Rand des Wagens schaut, sieht  {s: er|sie} nur ein dunkler Abgrund.
 
-*[SPRINGEN]
-    ->bubble4
+SPRINGEN!
+
+->bubble4
 

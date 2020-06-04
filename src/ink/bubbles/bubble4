@@ -5,7 +5,7 @@ VAR mouse_free = false
 // Am Abgrund
 #CONTENT: {"type":"image","images":[{"src":"bubble4/abgrund/abgrund_0001_background-color.png","classes":["color"]},{"src":"bubble4/abgrund/abgrund_0000_spur.png","classes":["track"]}],"container":"b4-abyss-edge"}
 
-{name} kann sich und Alexa gerade noch rechtzeiNg aus dem Wagen befreien, bevor er in die Tiefe stürzt.
+{name} kann sich und Alexa gerade noch rechtzeitig aus dem Wagen befreien, bevor er in die Tiefe stürzt.
 
 "Was zur Hölle war denn das?", quakt Alexa
 
@@ -198,7 +198,7 @@ Eine graue Maus im Käfig nebenan meldet sich zu Wort:
     Das Schloss lässt sich glücklicherweise ganz einfach von aussen öffnen.
     
     // Pilze
-    #CONTENT: {"type":"image","images":[{"src":"bubble4/pilze/pilze_0000_Pilze-gross.png","classes":["mushroom-1"]},{"src":"bubble4/pilze/pilze_0001_Pilze-mittel.png","classes":["mushroom-2"]},{"src":"bubble4/pilze/pilze_0002_Pilze-klein.png","classes":["mushroom-3"]},{"src":"bubble4/pilze/pilze_0006_Maus.png","classes":["mouse"]}],"container":"b4-mushrooms"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble4/pilze/pilze_0002_Pilze-klein.png","classes":["mushroom-3"]},{"src":"bubble4/pilze/pilze_0006_Maus.png","classes":["mouse"]}],"container":"b4-mushrooms"}
     
     Die Maus bedankt sich und schenkt {name} ein Tütchen mit Pilzen.
     
@@ -254,13 +254,13 @@ Als gerade niemand hinschaut, kippt {name} die Pilze aus dem Beutel ins Essen. H
 // Küche leer
 #CONTENT: {"type":"image","images":[{"src":"bubble4/küche/küche_0003_background.png","classes":["background"]},{"src":"bubble4/küche/küche_0002_kabel.png","classes":["cable"]},{"src":"bubble4/küche/küche_0001_lampe-animation.png","classes":["lamp"]}],"container":"b4-kitchen-empty"}
 
-Plötzlich wird es sNll und das ganze Küchenpersonal verschwindet nach draussen. Das Essen wird wohl gerade serviert. Doch wo ist Alexa?
+Plötzlich wird es still und das ganze Küchenpersonal verschwindet nach draussen. Das Essen wird wohl gerade serviert. Doch wo ist Alexa?
 
 // Alexa Käfig
 #CONTENT: {"type":"image","images":[{"src":"bubble4/alexa_käfig/alexa-käfig_0002_color-background.png","classes":["background"]},{"src":"bubble4/alexa_käfig/alexa-käfig_0001_käfig-zu.png","classes":["zu"]}],"container":"b4-alexa-cage"}
 {name} schaut sich noch einmal um und erkennt einen kleinen Käfig in der Ecke.
 
-"Boarr, endlich kommst du, hätest dir ja noch länger Zeit lassen können, eh.", tönt die vertraute SNmme von Alexa.
+"Boarr, endlich kommst du, hätest dir ja noch länger Zeit lassen können, eh.", tönt die vertraute Stimme von Alexa.
 
 
 // Alexa Käfig offen

@@ -68,12 +68,12 @@ Die Stimmen sind durcheinander und laut und sie drängen die beiden in ein gross
 
 Der Vorhang wird angehoben und {name} findet sich in einem geräumigen Zelt wieder.
 
-In der Mitte sitzt ein dünner Frosch.
+In der Mitte sitzt ein dicker Frosch.
 
 Er ist grün und sieht überhaupt nicht aus, wie Alexa...
 
 
-"hh... Ahhhhhhhhh.", der dünne Frosch röchelt und fängt an zu husten.
+"hh... Ahhhhhhhhh.", der dicke Frosch röchelt und fängt an zu husten.
 
 // Zelt
 #CONTENT: {"type":"image","images":[{"src":"bubble5/zelt/zelt_background.png","classes":["background"]},{"src":"bubble5/zelt/zelt_könig_blinzeln.gif","classes":["eyes"]},{"src":"bubble5/zelt/zelt_0006_spucke-1.png","classes":["pucke-1"]},{"src":"bubble5/zelt/zelt_0005_spucke-2.png","classes":["pucke-2"]},{"src":"bubble5/zelt/zelt_0004_spucke-3.png","classes":["pucke-3"]},{"src":"bubble5/zelt/zelt_0003_spucke-4.png","classes":["pucke-4"]},{"src":"bubble5/zelt/zelt_0002_spucke-5.png","classes":["pucke-5"]},{"src":"bubble5/zelt/zelt_0001_spucke-6.png","classes":["pucke-6"]},{"src":"bubble5/zelt/zelt_0000_spucke-7.png","classes":["pucke-7"]}],"container":"b5-tent-pucke"}
@@ -89,7 +89,7 @@ Als er sich beruhigt hat, spuckt er eine grüne, glitschige Masse auf den Boden.
     {name} erzählt schnell und ausführlich, was sie in der Höhle gehört haben.
 
 
--"Hhhhhhhh...", der dünne frosch hustet erneut.
+-"Hhhhhhhh...", der dicke frosch hustet erneut.
 
 "Dann werden wir... hhhh.. alle möglichen Vorbereitungen sofort treffen....", fährt er fort.
 
@@ -403,7 +403,6 @@ Wenn sich {name} jetzt auf den Weg machen würde, würde es nicht auffallen...
     
     Sie antwortet nicht mehr.
 
-    gehen
     ->gehen
     
 =gehen
