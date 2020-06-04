@@ -61,7 +61,7 @@ export default {
       background-position: center;
       width: 20px;
       height: 100%;
-      transform: rotate(-180deg);
+      transform: rotate(-90deg);
       transition: all 0.3s ease;
     }
   }

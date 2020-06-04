@@ -50,6 +50,7 @@ export default {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  background-color: #030303;
 
   .title {
     text-align: center;
