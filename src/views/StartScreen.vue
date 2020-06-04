@@ -1,20 +1,18 @@
 <template>
+<div class="start-screen-container">
   <div class="start-screen">
     <div class="title">
       <h1>Larimar</h1>
-      <h2 class="subtitle">sag mir, was soll ich werden</h2>
+      <h2 class="subtitle">eine Geschichte deiner Interessen</h2>
     </div>
-    <div class="frog">
-      <router-link to="/menu">
-        <!-- <img class="" :src="require('@/assets/images/frog_sleep.gif')"> -->
-      </router-link>
-    </div>
+    <div class="frog"></div>
     <div class="start">
       <router-link to="/menu">
         Geschichte beginnen...
       </router-link>
     </div> 
   </div>
+</div>  
 </template>
 
 <script>
@@ -43,6 +41,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.start-screen-container {
+  background-color: #030303;
+}
+
 .start-screen {
   max-width: 768px;
   margin: 0 auto;
@@ -50,23 +52,24 @@ export default {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-color: #030303;
 
   .title {
     text-align: center;
+    z-index: 1;
 
     h1 {
-      font-size: 60px;
+      font-size: 70px;
       margin-bottom: 0;
     }
 
     .subtitle {
-      font-size: 14px;
-      margin: 0;
+      font-size: 17px;
+      margin: -6px 0 0 0;
     }
   }
 
   .frog {
+    margin-top: -40px;
     background-image: url("../assets/images/frog_sleep.gif");
     height: 100%;
     background-repeat: no-repeat;
@@ -76,10 +79,11 @@ export default {
   }
 
   .start {
-    height: 100px;
+    height: 150px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    font-size: 18px;
+    padding-top: 30px;
   }
 }
 
