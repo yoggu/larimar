@@ -1,5 +1,4 @@
 INCLUDE bubbles/bubble1
-INCLUDE intro
 
 
 
@@ -35,8 +34,10 @@ VAR item = ""
 
 === start ===
 
-Wähle deinen Namen
+//character
+#CONTENT: {"type":"image","images":[{"src":"start/background.gif","classes":["background"]},{"src":"start/character.gif","classes":["character"]}],"container":"start"}
 
+Wähle deinen Namen
 
 
 * [Nio]
