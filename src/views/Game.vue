@@ -396,8 +396,13 @@ export default {
         background-position: center;
         transform: rotate(-90deg);
         left: 0;
-        top: 4px;
-        position: absolute
+        top: 2px;
+        position: absolute;
+
+        @media screen and (min-width: $medium) {
+          height: 12px;
+          width: 15px;
+        }
       }
 
       &.arrow-dark {

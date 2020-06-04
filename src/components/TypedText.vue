@@ -83,13 +83,18 @@ export default {
   .arrow {
       background-image: url("../assets/images/icons/continue.png");
       background-size: contain;
-      height: 14px;
-      width: 14px;
+      height: 12px;
+      width: 12px;
       background-repeat: no-repeat;
       background-position: center;
       right:0;
       top:0;
-      position: absolute
+      position: absolute;
+
+    @media screen and (min-width: $medium) {
+      height: 14px;
+      width: 14px;
+    }
   }
 
   .arrow-dark {

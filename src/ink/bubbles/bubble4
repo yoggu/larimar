@@ -142,14 +142,15 @@ Sie sind von einer Gruppe von Füchsen umzingelt.
 
 Nachfolgende Handlungen passieren schnell. {name} wird von Alexa getrennt und in einen grossen Käfig gesperrt.
 
+// Gitterstäbe
+#CONTENT: {"type":"image","images":[{"src":"bubble4/käfig/käfig_0000_Gitter.png","classes":["bars"]}],"container":"b4-bars"}
+
 In diesem werden sie ins Lager der Füchse transportiert.
 
 Dort angekommen wird der Käfig von {name} grob in eine Ecke geworfen.
 
 {name} versucht sich sofort zu befreien und rüttelt verzweifelt an den Gitterstäben.
 
-// Gitterstäbe
-#CONTENT: {"type":"image","images":[{"src":"bubble4/käfig/käfig_0000_Gitter.png","classes":["bars"]}],"container":"b4-bars"}
 
 Doch sie geben nicht nach.
 
@@ -158,7 +159,7 @@ Doch sie geben nicht nach.
     ~S++
     ~q9 = 0
     // Maus
-    #CONTENT:{"type":"image","images":[{"src":"bubble4/käfig_maus/käfig-maus_0001_überblende-unten.png","classes":["color"]},{"src":"bubble4/käfig_maus/käfig-maus_0002_Gitter.png","classes":["bars"]},{"src":"bubble4/käfig_maus/käfig-maus_0003_Maus-Käfig.png","classes":["cage"]},{"src":"bubble4/käfig_maus/käfig-maus_0004_Maus.png","classes":["mouse"]}],"container":"b4-cage-mouse"}
+    #CONTENT:{"type":"image","images":[{"src":"bubble4/käfig_maus/käfig-maus_0001_überblende-unten.png","classes":["color"]},{"src":"bubble4/käfig_maus/käfig-maus_0004_Maus.png","classes":["mouse"]},{"src":"bubble4/käfig_maus/käfig-maus_0003_Maus-Käfig.png","classes":["cage"]},{"src":"bubble4/käfig_maus/käfig-maus_0002_Gitter.png","classes":["bars"]}],"container":"b4-cage-mouse"}
     Im Käfig nebenan befindet sich eine graue Maus.
     
     {name} spricht sie an und erzählt wie sie von den Füchsen gefangen genommen wurden.
@@ -320,7 +321,7 @@ Ein Fuchs kommt ins Zelt gestürzt und kotzt {name} direkt vor die Füsse.
 "Ich denke, es wird Zeit schnell abzuhauen", meint Alexa nur und sie verlassen das Zelt.
 
 // fluss
-#CONTENT: {"type":"image","images":[{"src":"bubble4/fluss/fluss_0000_vordergrund.png","classes":["outline"]},{"src":"bubble4/fluss/fluss_0001_wasser-animation-1.png","classes":["water-1"]},{"src":"bubble4/fluss/fluss_0002_wasser-animation-2.png","classes":["water-2"]},{"src":"bubble4/fluss/fluss_0003_wasser-animation-3.png","classes":["water-3"]}],"container":"b4-river"}
+#CONTENT: {"type":"image","images":[{"src":"bubble4/fluss/fluss_0001_wasser-animation-1.png","classes":["water-1"]},{"src":"bubble4/fluss/fluss_0002_wasser-animation-2.png","classes":["water-2"]},{"src":"bubble4/fluss/fluss_0003_wasser-animation-3.png","classes":["water-3"]},{"src":"bubble4/fluss/fluss_0000_vordergrund.png","classes":["outline"]}],"container":"b4-river"}
 Draussen springt Alexa sofort über den anliegenden Fluss.
 
 "Ich habe keine Lust schon wieder so viel zu laufen, sieh selbst, wie du über den Fluss kommst...", mault Alexa plötzlich...
