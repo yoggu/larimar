@@ -35,8 +35,8 @@ Etwas kitzelt an {name}s Gesicht.
 
 {name} schaut sich um.
 
-// Wiese
-#CONTENT: {"type":"image","images":[{"src":"bubble7/wiese/wiese-background.png","classes":["background"]},{"src":"bubble7/wiese/wolken.png","classes":["clouds"]},{"src":"bubble7/wiese/flower-1-animation.gif","classes":["flower-1"]},{"src":"bubble7/wiese/flower-2-animation.gif","classes":["flower-2"]}],"container":"b7-meadow"}
+// wiese
+#CONTENT: {"type":"image","images":[{"src":"bubble1/wiese/flower-1-animation.gif","classes":["flower-1"]},{"src":"bubble1/wiese/wolken.png","classes":["clouds"]}],"container":"b1-meadow"}
 
 {s: Er|Sie} liegt in seinem Versteck im Gras.
 
