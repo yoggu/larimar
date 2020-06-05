@@ -269,7 +269,7 @@ export default {
   .content{
     padding: 0 12px;
     max-width: 768px;
-    margin: 0 auto;
+    margin: 0 auto 40px 0;
     text-align: center;
 
     .subtitle {

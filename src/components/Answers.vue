@@ -39,7 +39,7 @@ export default {
 <style scoped lang="scss">
 
 .answers {
-  margin: 60px 0 40px 0;
+  margin: 60px 0 0 0;
   padding: 0 20px;
 
   .title {
