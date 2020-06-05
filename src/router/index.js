@@ -13,25 +13,22 @@ Vue.use(VueRouter)
   {
     path: '/menu',
     name: 'Menu',
-    component: () => import(/* webpackChunkName: "menu" */ '../views/Menu.vue')
+    component: '../views/Menu.vue'
   },
   {
     path: '/result',
     name: 'Result',
-    component: () => import(/* webpackChunkName: "menu" */ '../views/Result.vue')
+    component: () => import(/* webpackChunkName: "result" */ '../views/Result.vue')
   },
   {
     path: '/credits',
     name: 'Credits',
-    component: () => import(/* webpackChunkName: "menu" */ '../views/Credits.vue')
+    component: () => import(/* webpackChunkName: "credits" */ '../views/Credits.vue')
   },
   {
     path: '/game',
     name: 'Game',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "game" */ '../views/Game.vue')
+    component: '../views/Game.vue'
   }
 ]
 
