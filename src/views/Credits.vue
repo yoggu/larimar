@@ -13,11 +13,14 @@
       <p>Research</p>
       <h3>Yannick Bättig</h3>
       <p>Programming</p>
-      <p>Audio</p>
+      <p><a href="/credits.txt">Audio</a></p>
       <p>Research</p>
 
-      <div>
+      <div class="more">
         <p>Besonderen Dank an unsere Mentorinnen und Mentor und das BIZ Zug für die Unterstützung</p> 
+        <p>Susanne Hofer</p>
+        <p>Dragica Kahlina</p>
+        <p>Sebastian Hollstein</p>
       </div>
     </div>  
 
@@ -60,10 +63,15 @@ export default {
   }
 
   .content {
-    padding: 0 12px;
+    padding: 0 30px;
     max-width: 768px;
     margin: 0 auto;
     text-align: center;
+
+    .more {
+      max-width: $small;
+      margin: 60px auto;
+    }
   }
 }
 
