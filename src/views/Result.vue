@@ -1,7 +1,23 @@
 <template>
   <div class="result">
+    <div v-show="info" class="infobox">
+        <div class="close">
+          <a class="close-button" v-on:click.prevent="toggleInfo"></a>
+        </div>
+        <div class="faq">
+          <h1>Und jetzt?</h1>
+          <div class="text">
+            <p class="q">Dein Code ergibt dir nicht die gewünschten Berufe an?</p>
+            <p class="a">Die drei Buchstaben lassen sich in der Reihenfolge vertauschen, vielleicht findest du in einer anderen Kombination etwas?</p>
+            <p class="q">Das hilft auch nicht weiter?</p>
+            <p class="a">Das Ergebnis bleibt abgespeichert, du kannst es zu einem Termin bei der Berufsberatung mitnehmen.</p>
+          </div>
+          <p class="bottom">"Immerhin weisst du jetzt was du nicht willst Hihihiii"</p>
+        </div> 
+    </div>
     <div class="navbar">
       <router-link class="menu" to="/menu"></router-link>
+      <a class="info-button" v-on:click.prevent="toggleInfo"></a>
     </div>
     <div class="content"> 
       <h1>Mein Ergebnis</h1>
@@ -36,6 +52,7 @@ export default {
   data: function() {
     return {
       code: null,
+      info: false,
       categories:[
         {
           type: "realistic",
@@ -129,6 +146,10 @@ export default {
       let result = this.$store.state.result;
       let sorted = Object.keys(result).sort(function(a,b){return result[b]-result[a]});
       this.code = Object.values(sorted.slice(0, 3));
+    },
+    toggleInfo() {
+      this.info = !this.info;
+      document.body.classList.toggle("stop-scrolling");
     }
   }
 }
@@ -137,6 +158,78 @@ export default {
 <style lang="scss" scoped>
 
 .result {
+
+  .infobox {
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+    .close {
+      display: flex;
+      height: 40px;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0 12px;
+      z-index: 99;
+      flex-shrink: 0;
+      max-width: 1024px;
+      width: 100%;
+
+      .close-button {
+        background-image: url("../assets/images/icons/x-black.png");
+        background-size: contain;
+        height: 30px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+
+    .faq {
+      max-width: 768px;
+      margin: 0 auto;
+      background-image: url("../assets/images/info/alexa.gif"),url("../assets/images/info/background.png");
+      background-size: contain;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+
+      .text {
+        max-width: 400px;
+        padding: 0 30px;
+        flex-grow: 1;
+
+        .q {
+          margin-top: 40px;
+        }
+
+        .a {
+          padding-left: 16px;
+        }
+      }
+
+      .bottom {
+        margin: 40px 0;
+        font-size: 14px;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
 
   .navbar {
   display: flex;
@@ -152,6 +245,15 @@ export default {
 
   .menu {
     background-image: url("../assets/images/icons/menu-white.png");
+    background-size: contain;
+    height: 30px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .info-button {
+    background-image: url("../assets/images/icons/info-white.png");
     background-size: contain;
     height: 30px;
     width: 20px;
@@ -230,8 +332,6 @@ export default {
         margin-bottom: 0;
       }
     }
-
-
   }
 
 }

@@ -143,33 +143,33 @@ Nur noch ein Gegenstand passt hinein.
 
 Welchen Gegenstand soll {name} noch einpacken?
 
-VAR articel = ""
+VAR article = ""
 // R
 *[Spitzhacke]
 ~item = "Spitzhacke"
-~articel = "die"
+~article = "die"
 // S
 *[Verband]
 ~item = "Verband"
-~articel = "den"
+~article = "den"
 // A
 *[Malkasten]
 ~item = "Malkasten"
-~articel = "den"
+~article = "den"
 // I
 *[Lupe]
 ~item = "Lupe"
-~articel = "die"
+~article = "die"
 // C
 *[Gesetzbuch]
 ~item = "Gesetzbuch"
-~articel = "das"
+~article = "das"
 // E
 *[Geldstücke]
 ~item = "Geldstücke"
-~articel = "das"
+~article = "die"
 
-- {name} packt {articel} {item} in {s: seinen|ihren} Rucksack und stürmt aus der Tür.
+- {name} packt {article} {item} in {s: seinen|ihren} Rucksack und stürmt aus der Tür.
 -> ausserhalb_des_dorfs
 
 = ausserhalb_des_dorfs
@@ -536,20 +536,10 @@ Als {name} genügend Teile gesammelt hat, fängt Alexa an, diese mit ihrer Spuck
 
 Eine Weile später schwimmt ein wackeliges Segelschiff auf dem Wasser.
 
-“So und jetzt rauf da!”, Alexa klingt stolz und gibt {name} einen kleinen Schubs. 
+“So und jetzt rauf da!”, Alexa klingt stolz.
+Ein bisschen angewidert und unsicher klettert {name} auf das Schiff. Es schwankt kurz gefährlich, aber scheint {s:sein|ihr} Gewicht tragen zu können 
 
-Dabei rutscht sie jeodch auf dem morschen Steg aus.
-
-"AAAhhhhhhh...."
-
-Sie ist auf einen Splitter getreten. {name} Reicht ihr die Hand und hilft ihr auf.
-
-"Hmpf, wenn es dir nichts ausmacht, würde ich gerne mitfahren. So blöd, jetzt muss ich mein kleines Füsschen ausruhen...", und damit hüpft sie mit dem anderen Fuss zu {name} ins Segelschiff.
-
-"Wow, das fühlt sich ja lustig an!", meint sie sofort und beginnt hin und her zu wippen.
-
-"Ich bin noch nie Segelschiff gefahren, wozu auch? Im Gegensatz zu dir kann ich schwimmen... Aber jetzt looooos, fahren wir!"
-
+“Zieh nicht so ein Gesicht, das ist nicht giftig!”, Alexa ist gleich wieder beleidigt.
 
 // R
 * [das Segelschiff steuern]

@@ -54,4 +54,9 @@ a {
   }
 }
 
+.stop-scrolling {
+  overflow: hidden;
+  height: 100vh;
+}
+
 </style>
