@@ -559,7 +559,7 @@ Sie ist auf einen Splitter getreten. {name} Reicht ihr die Hand und hilft ihr au
 * [ihr das Segeln beibringen]
     ~S++
     ~q1 = 1
-    “Was soll ich damit? Frösche können gut schwimmen...”, ohne ein weiteres Wort springt Alexa wieder ins Wasser und zeigt {name} den Weg.
+    "Hihihi, du kannst ja doch was!" Mit diesen Worten von Alexa segeln sie über den Teich.
 
 -#AUDIO_STOP
 
