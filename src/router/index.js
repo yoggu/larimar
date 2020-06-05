@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import StartScreen from '../views/StartScreen.vue'
+import Menu from '../views/Menu.vue'
+import Game from '../views/Game.vue'
 
 Vue.use(VueRouter)
 
@@ -13,7 +15,7 @@ Vue.use(VueRouter)
   {
     path: '/menu',
     name: 'Menu',
-    component: '../views/Menu.vue'
+    component: Menu
   },
   {
     path: '/result',
@@ -28,7 +30,7 @@ Vue.use(VueRouter)
   {
     path: '/game',
     name: 'Game',
-    component: '../views/Game.vue'
+    component: Game
   }
 ]
 
