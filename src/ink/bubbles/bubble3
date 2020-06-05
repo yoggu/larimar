@@ -139,13 +139,16 @@ Es scheppert. Alexa ist aus Versehen gegen eine auf dem Kaminsims stehende Figur
 
 
 =garten
-// typo im bild?
+
 "NEEEEIIIINNNNN"
-
-Der Schrei kommt von der Hexe aus dem Garten, schnell läun {name} hinaus.
-
 // im Garten
-#CONTENT: {"type":"image","images":[{"src":"bubble3/garten/garten_0002_background-color.png","classes":["color"]},{"src":"bubble3/garten/garten_0001_bachground.png","classes":["background"]}],"container":"b3-garden"}
+#CONTENT: {"type":"image","images":[{"src":"bubble3/garten/garten_0001_bachground.png","classes":["background"]}],"container":"b3-garden"}
+
+Der Schrei kommt von der Hexe aus dem Garten, schnell läuft {name} hinaus.
+
+// im Garten mit Hexe
+#CONTENT: {"type":"image","images":[{"src":"bubble3/garten/garten_0001_bachground.png","classes":["background"]},{"src":"bubble3/garten/garten_0000_hexe-hinten.png","classes":["witch-back"]}],"container":"b3-garden-witch-back"}
+
 Die Hexe kniet auf dem Boden und starrt auf einen Zetel in ihrer Hand.
 
 Sie hält den Zettel genau so, dass {name} lesen kann, was drauf steht.
@@ -154,8 +157,6 @@ Sie hält den Zettel genau so, dass {name} lesen kann, was drauf steht.
 
 Darunter ist ein Pfotenabdruck zu erkennen.
 
-// im Garten mit Hexe
-#CONTENT: {"type":"image","images":[{"src":"bubble3/garten/garten_0002_background-color.png","classes":["color"]},{"src":"bubble3/garten/garten_0001_bachground.png","classes":["background"]},{"src":"bubble3/garten/garten_0000_hexe-hinten.png","classes":["witch-back"]}],"container":"b3-garden-witch-back"}
 "Nein, mein Stein..." murmelt die Hexe.
 
 *[ansprechen]
@@ -170,14 +171,14 @@ Darunter ist ein Pfotenabdruck zu erkennen.
     Doch genau in dem Moment dreht sich die Hexe um und entdeckt sie.
 
 // im Garten mit Hexe von vorne
-#CONTENT: {"type":"image","images":[{"src":"bubble3/garten/garten_0002_background-color.png","classes":["color"]},{"src":"bubble3/garten/garten_0001_bachground.png","classes":["background"]},{"src":"bubble3/garten/im-turm_0001_hexe.png","classes":["witch-front"]}],"container":"b3-garden-witch-front"}
+-#CONTENT: {"type":"image","images":[{"src":"bubble3/garten/garten_0001_bachground.png","classes":["background"]},{"src":"bubble3/garten/im-turm_0001_hexe.png","classes":["witch-front"]}],"container":"b3-garden-witch-front"}
 -Die Hexe erschrickt und steckt das Papier schnell in die Tasche.
 
 // im Garten mit Hexe augen
-#CONTENT: {"type":"image","images":[{"src":"bubble3/garten/garten_0002_background-color.png","classes":["color"]},{"src":"bubble3/garten/garten_0001_bachground.png","classes":["background"]},{"src":"bubble3/garten/im-turm_0001_hexe.png","classes":["witch-front"]},{"src":"bubble3/garten/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"b3-garden-eyes"}
+#CONTENT: {"type":"image","images":[{"src":"bubble3/garten/garten_0001_bachground.png","classes":["background"]},{"src":"bubble3/garten/im-turm_0001_hexe.png","classes":["witch-front"]},{"src":"bubble3/garten/im-turm_0000_böse-augen.png","classes":["eyes"]}],"container":"b3-garden-eyes"}
 Funken sprühen aus ihren Augen: "Was sucht ihr hier???"
 
-Doch sie beruhigt sich sofort wieder und spricht mit süsser SNmme:
+Doch sie beruhigt sich sofort wieder und spricht mit süsser Stimme:
 
 "Jetzt habt ihr mich total erschreckt, gehen wir doch wieder rein..."
 
@@ -209,10 +210,10 @@ Wieder im Turm fährt sie fort:
 -"Ich habe bereits alles vorbereitet. Er steht direkt vor dem Ausgang und sobald ihr einsteigt, fährt er los."
 
 // wagen
-#CONTENT: {"type":"image","images":[{"src":"bubble3/wagen/wagen_0004_background-color.png","classes":["color"]},{"src":"bubble3/wagen/wagen_0003_background-stehen.png","classes":["background-standing"]},{"src":"bubble3/wagen/wagen_0002_background-fahren.png","classes":["background-driving"]},{"src":"bubble3/wagen/wagen_0001_wagen.png","classes":["vehicle"]},{"src":"bubble3/wagen/wagen_0000_wolken.png","classes":["clouds"]}],"container":"b3-wagon"}
+#CONTENT: {"type":"image","images":[{"src":"bubble3/wagen/wagen_0004_background-color.png","classes":["background"]},{"src":"bubble3/wagen/wagen_0001_wagen.png","classes":["vehicle"]},{"src":"bubble3/wagen/wagen_0000_wolken.png","classes":["clouds"]}],"container":"b3-wagon"}
 
 // wagen audio
-#CONTENT: {"type": "audio", "src": "bubble3/cart.mp3", "loop": true, "volume": 1, fade: 1000}
+#CONTENT: {"type": "audio", "src": "bubble3/cart.mp3", "loop": true, "volume": 1, "fade": 1000}
 
 {name} bleibt keine andere Möglichkeit, wenn {s: er|sie} erfahren möchte, wo sich der Stein befindet und steigt ein.
 
@@ -249,7 +250,7 @@ Der Wagen ruckelt plötzlich.
 #AUDIO_STOP
 
 // Abgrund
-#CONTENT: {"type":"image","images":[{"src":"bubble3/abgrund/abgrund_0002_schwarz.png","classes":["color"]},{"src":"bubble3/abgrund/abgrund_0001_boden.png","classes":["ground"]},{"src":"bubble3/abgrund/abgrund_0000_wolken.png","classes":["clouds"]}],"container":"b3-abyss"}
+#CONTENT: {"type":"image","images":[{"src":"bubble3/abgrund/abgrund_0002_schwarz.png","classes":["abyss"]}],"container":"b3-abyss"}
 
 Alexa schreit und als {name} über den Rand des Wagens schaut, sieht  {s: er|sie} nur ein dunkler Abgrund.
 

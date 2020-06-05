@@ -29,7 +29,6 @@ export default {
       this.open = !this.open;
     },
     getAnswer(index) {
-      console.log(this.answers[index])
       return this.answers[index];
     }
   }

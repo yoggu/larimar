@@ -227,7 +227,7 @@ Der Froschkönig zeigt auf einen Gartenzwerg.
 
 Und er fährt fort: "Hhh, doch als Dank darfst du dir hhh einer von unserer Sammlung aussuchen."
 
-*["..."]
+*["In welchem befindet sich der Stein?"]
 
 *["Welches ist der richtige?"]
 
@@ -256,7 +256,7 @@ Und er fährt fort: "Hhh, doch als Dank darfst du dir hhh einer von unserer Samm
 -"GENAU DER GEHÖRT MIIIRR", meint laut eine hohe Stimme hinter {name}.
 
 // Hexe  
-#CONTENT: {"type":"image","images":[{"src":"bubble5/hexe/hexe_0001_hintergrund.png","classes":["background"]},{"src":"bubble5/hexe/hexe_0000_hexe.png","classes":["witch"]}],"container":"b5-witch"}
+#CONTENT: {"type":"image","images":[{"src":"bubble5/hexe/hexe_0001_hintergrund.png","classes":["background"]}],"container":"b5-witch"}
 
 {name} dreht sich um und erkennt die Hexe.
 
@@ -407,7 +407,7 @@ Wenn sich {name} jetzt auf den Weg machen würde, würde es nicht auffallen...
     
 =gehen
 // wald  
-#CONTENT: {"type":"image","images":[{"src":"bubble5/wald/wald_0002_wald-background.png","classes":["background"]},{"src":"bubble5/wald/wald_0001_baum-1.png","classes":["tree-1"]},{"src":"bubble5/wald/wald_0000_baum-2.png","classes":["tree-2"]}],"container":"b5-forest"}
+#CONTENT: {"type":"image","images":[{"src":"bubble5/wald/wald_0000_baum-2.png","classes":["tree-2"]}],"container":"b5-forest"}
 
 Alle sind so beschäftigt, dass niemand bemerkt, wie {name} zurück in den Wald geht...
 

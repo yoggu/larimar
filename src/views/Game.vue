@@ -76,11 +76,9 @@ export default {
     continueStory() {
       if (this.story.canContinue) {
         this.showChoice = false;
-        //console.log(this.content);
         let paragraphText = this.story.Continue();
 
         this.tags = this.splitTags(this.story.currentTags);
-        //console.log(this.story.currentTags);
 
         this.checkTags(this.tags);
 
@@ -131,8 +129,6 @@ export default {
         // css classes
         if (tag.property === "CLASS") {
           this.customClasses.push(tag.val);
-        } else if (tag.property === "CLEAR") {
-          console.log("Clear")
         } else if (tag.property === "AUDIO_STOP") {
           Howler.stop();
         } else if (tag.property === "CONTENT") {
@@ -220,9 +216,6 @@ export default {
         q14: this.story.variablesState.$("q14"),
         q15: this.story.variablesState.$("q15")
       }
-      
-      console.log(answers);
-
       this.$store.commit('saveResult', result);
       this.$store.commit('setAnswers', answers)
       this.$store.commit('setFinished', true)
@@ -233,7 +226,6 @@ export default {
       this.$store.commit('saveState', this.story.state.ToJson());
       this.$store.commit('setImage', this.currentImage);
       this.$store.commit('setAudio', this.audio);
-      //console.log(JSON.parse(this.$store.state.story))
     },
     load() {
       this.choices = [];

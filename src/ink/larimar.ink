@@ -67,6 +67,6 @@ Wähle deinen Namen
     ->bubble7
 
 === ending ===
-story end
+Ende
 
 -> END

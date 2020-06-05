@@ -3,7 +3,7 @@ INCLUDE bubbles/bubble5
 VAR mouse_free = false
 
 // Am Abgrund
-#CONTENT: {"type":"image","images":[{"src":"bubble4/abgrund/abgrund_0001_background-color.png","classes":["color"]},{"src":"bubble4/abgrund/abgrund_0000_spur.png","classes":["track"]}],"container":"b4-abyss-edge"}
+#CONTENT: {"type":"image","images":[{"src":"bubble4/abgrund/abgrund_0000_spur.png","classes":["track"]}],"container":"b4-abyss-edge"}
 
 {name} kann sich und Alexa gerade noch rechtzeitig aus dem Wagen befreien, bevor er in die Tiefe stürzt.
 
@@ -20,7 +20,7 @@ VAR mouse_free = false
 #THEME: dark
 
 // Höhle
-#CONTENT: {"type":"image","images":[{"src":"bubble4/höhle/höhle_0003_background.png","classes":["color"]},{"src":"bubble4/höhle/höhle_0002_fakel-animation-1.png","classes":["flame","flame-1"]},{"src":"bubble4/höhle/höhle_0001_fakel-animation-2.png","classes":["flame","flame-2"]},{"src":"bubble4/höhle/höhle_0000_fakel-animation-3.png","classes":["flame","flame-3"]}],"container":"b4-cave"}
+#CONTENT: {"type":"image","images":[{"src":"bubble4/höhle/höhle_0003_background.png","classes":["background"]}],"container":"b4-cave"}
 
 Immer noch geschockt von diesem Ereignis begeben sich die beiden in die Höhle, die eine Abkürzung durch den Berg sein soll.
 
@@ -37,8 +37,6 @@ Alexa schnauft laut auf: "Verstecken! Das sind die blutrünstigen Füchse."
 "Und seit die Nahrung durch den trockenen Sommer so knapp wurde, sind sie besonders auf uns Frösche aus."
 
 *[die Füchse belauschen]
-    // Höhle
-    #CONTENT: {"type":"image","images":[{"src":"bubble4/höhle/höhle_0003_background.png","classes":["color"]},{"src":"bubble4/höhle/höhle_0002_fakel-animation-1.png","classes":["flame","flame-1"]},{"src":"bubble4/höhle/höhle_0001_fakel-animation-2.png","classes":["flame","flame-2"]},{"src":"bubble4/höhle/höhle_0000_fakel-animation-3.png","classes":["flame","flame-3"]}],"container":"b4-cave"}
     
     "Hihihi, ich habe gehört, dass der Froschkönig bald seine Krone weitergibt..."
     
@@ -135,12 +133,12 @@ Doch Alexa trit gegen einen Kieselstein und ein lautes Geräusch hallt durch die
 
 Sie sind von einer Gruppe von Füchsen umzingelt.
 
-#THEME: light
-
 // Käfig
 #CONTENT: {"type":"image","images":[{"src":"bubble4/wache/wache_0006_background.png","classes":["cave"]},{"src":"bubble4/wache/wache_0003_wache-tot.png","classes":["fox"]},{"src":"bubble4/wache/wache_0002_Stein-1.png","classes":["stone","stone-1"]},{"src":"bubble4/wache/wache_0001_Stein-2.png","classes":["stone","stone-2"]},{"src":"bubble4/wache/wache_0000_Stein-3.png","classes":["stone","stone-3"]},{"src":"bubble4/käfig/käfig_0000_Gitter.png","classes":["bars"]}],"container":"b4-cave-cage"}
 
 Nachfolgende Handlungen passieren schnell. {name} wird von Alexa getrennt und in einen grossen Käfig gesperrt.
+
+#THEME: light
 
 // Gitterstäbe
 #CONTENT: {"type":"image","images":[{"src":"bubble4/käfig/käfig_0000_Gitter.png","classes":["bars"]}],"container":"b4-bars"}
@@ -172,6 +170,9 @@ Doch sie geben nicht nach.
 
 {name} versucht es ein paar Mal, aber das Schloss lässt sich nicht öffnen.
 
+    // Maus
+    #CONTENT:{"type":"image","images":[{"src":"bubble4/käfig_maus/käfig-maus_0001_überblende-unten.png","classes":["color"]},{"src":"bubble4/käfig_maus/käfig-maus_0004_Maus.png","classes":["mouse"]},{"src":"bubble4/käfig_maus/käfig-maus_0003_Maus-Käfig.png","classes":["cage"]},{"src":"bubble4/käfig_maus/käfig-maus_0002_Gitter.png","classes":["bars"]}],"container":"b4-cage-mouse"}
+
 Eine graue Maus im Käfig nebenan meldet sich zu Wort:
 
 - "Ich sitze seit Wochen hier drin. Ich sag' dir, keine Chance, dass du hier lebend raus kommst."
@@ -199,7 +200,7 @@ Eine graue Maus im Käfig nebenan meldet sich zu Wort:
     Das Schloss lässt sich glücklicherweise ganz einfach von aussen öffnen.
     
     // Pilze
-    #CONTENT: {"type":"image","images":[{"src":"bubble4/pilze/pilze_0002_Pilze-klein.png","classes":["mushroom-3"]},{"src":"bubble4/pilze/pilze_0006_Maus.png","classes":["mouse"]}],"container":"b4-mushrooms"}
+    #CONTENT: {"type":"image","images":[{"src":"bubble4/pilze/pilze_0006_Maus.png","classes":["mouse"]},{"src":"bubble4/pilze/pilze_0002_Pilze-klein.png","classes":["mushroom"]}],"container":"b4-mushrooms"}
     
     Die Maus bedankt sich und schenkt {name} ein Tütchen mit Pilzen.
     
@@ -320,7 +321,7 @@ Ein Fuchs kommt ins Zelt gestürzt und kotzt {name} direkt vor die Füsse.
 "Ich denke, es wird Zeit schnell abzuhauen", meint Alexa nur und sie verlassen das Zelt.
 
 // fluss
-#CONTENT: {"type":"image","images":[{"src":"bubble4/fluss/fluss_0001_wasser-animation-1.png","classes":["water-1"]},{"src":"bubble4/fluss/fluss_0002_wasser-animation-2.png","classes":["water-2"]},{"src":"bubble4/fluss/fluss_0003_wasser-animation-3.png","classes":["water-3"]},{"src":"bubble4/fluss/fluss_0000_vordergrund.png","classes":["outline"]}],"container":"b4-river"}
+#CONTENT: {"type":"image","images":[{"src":"bubble4/fluss/fluss_0001_wasser-animation-1.png","classes":["water"]},{"src":"bubble4/fluss/fluss_0000_vordergrund.png","classes":["outline"]}],"container":"b4-river"}
 Draussen springt Alexa sofort über den anliegenden Fluss.
 
 "Ich habe keine Lust schon wieder so viel zu laufen, sieh selbst, wie du über den Fluss kommst...", mault Alexa plötzlich...
