@@ -135,7 +135,7 @@ Sie sind weniger deutlich zu sehen, weshalb sie {name} bis jetzt gar nicht aufge
 
 Zwei kleine, braune Augen blicken {s: ihm|ihr} starr und milchig aus der Rinde entgegen.
 // Schrei
-#CONTENT: {"type":"image","images":[{"src":"bubble2/schrei/schrei_0002_animation-1.png","classes":["scream-1"]},{"src":"bubble2/schrei/schrei_0001_animation-2.png","classes":["scream-2"]},{"src":"bubble2/schrei/schrei_0000_animation-3.png","classes":["scream-3"]}],"container":"b2-scream"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/schrei/schrei.gif","classes":["scream"]}],"container":"b2-scream"}
 
 "KRIAAAAAAAAAAAAAAAAAAAAAAAA"
 
