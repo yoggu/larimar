@@ -206,6 +206,7 @@ export default {
       flex-direction: column;
       align-items: center;
       flex: 1;
+      max-height: 660px;
 
       .text {
         max-width: 400px;
