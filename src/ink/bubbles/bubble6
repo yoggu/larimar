@@ -100,6 +100,8 @@ Etwas huscht im Schatten der Höhle umher.
 // es wird hell
 -#CONTENT: {"type":"image","images":[{"src":"bubble6/einzelnes_echo/es-wird-hell.gif","classes":["light"]}],"container":"b6-light"}
 
+-#THEME: light
+
 -Der Stein wird auf einmal hell und alles wird weiss. {name} ist blind.
 
 

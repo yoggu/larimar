@@ -253,7 +253,7 @@ Und er fährt fort: "Hhh, doch als Dank darfst du dir hhh einer von unserer Samm
 
 *[blauen Zwerg]
 
--"GENAU DER GEHÖRT MIIIRR", meint laut eine hohe Stimme hinter {name}
+-"GENAU DER GEHÖRT MIIIRR", meint laut eine hohe Stimme hinter {name}.
 
 // Hexe  
 #CONTENT: {"type":"image","images":[{"src":"bubble5/hexe/hexe_0001_hintergrund.png","classes":["background"]},{"src":"bubble5/hexe/hexe_0000_hexe.png","classes":["witch"]}],"container":"b5-witch"}

@@ -53,7 +53,7 @@ Wieso sind hier so viele Bäume? Und die Äste sind ungewöhnlich dicht und ersc
     // haus
 #CONTENT: {"type":"image","images":[{"src":"bubble1/haus/haus-animation.gif","classes":["house"]},{"src":"bubble1/haus/äste.gif","classes":["branches"]}],"container":"b1-house"}
 
- Da vorne ist {s: sein|ihr} Haus. Es ist voller Moos und Äste bersten durch die Fenstern.
+ Da vorne ist {s: sein|ihr} Haus. Es ist voller Moos und Äste bersten durch die Fenster.
     
     Aus dem Dach ragen drei grosse Bäume.
 
@@ -75,12 +75,13 @@ Wieso sind hier so viele Bäume? Und die Äste sind ungewöhnlich dicht und ersc
 
     {name} kommt nur langsam vorwärts.
     
-// schwester
-#CONTENT: {"type":"image","images":[{"src":"bubble1/schwester/schwester-normal-animation.gif","classes":["sister"]},{"src":"bubble1/schwester/äste.gif","classes":["branches"]}],"container":"b1-sister"}
     Was ist hier passiert?
     
         // moan audio
 #CONTENT: {"type": "audio", "src": "bubble1/moan.mp3", "loop": true, "volume": 0.3, "fade": 0}
+
+// schwester
+#CONTENT: {"type":"image","images":[{"src":"bubble1/schwester/schwester-normal-animation.gif","classes":["sister"]},{"src":"bubble1/schwester/äste.gif","classes":["branches"]}],"container":"b1-sister"}
     
     "{name}!", ruft {s: seine|ihre} Schwester erneut. {s: Er|Sie} folgt der Stimme und kommt ins von Ästen überwucherte Esszimmer. 
     
@@ -142,31 +143,33 @@ Nur noch ein Gegenstand passt hinein.
 
 Welchen Gegenstand soll {name} noch einpacken?
 
+VAR articel = ""
 // R
 *[Spitzhacke]
 ~item = "Spitzhacke"
-
+~articel = "die"
 // S
 *[Verband]
 ~item = "Verband"
-
+~articel = "den"
 // A
 *[Malkasten]
 ~item = "Malkasten"
-
+~articel = "den"
 // I
 *[Lupe]
 ~item = "Lupe"
-
+~articel = "die"
 // C
 *[Gesetzbuch]
 ~item = "Gesetzbuch"
-
+~articel = "das"
 // E
 *[Geldstücke]
 ~item = "Geldstücke"
+~articel = "das"
 
-- {name} packt {item} in {s: seinen|ihren} Rucksack und stürmt aus der Tür.
+- {name} packt {articel} {item} in {s: seinen|ihren} Rucksack und stürmt aus der Tür.
 -> ausserhalb_des_dorfs
 
 = ausserhalb_des_dorfs
@@ -179,7 +182,7 @@ Welchen Gegenstand soll {name} noch einpacken?
 // wald
 #CONTENT: {"type":"image","images":[{"src":"bubble1/wald/im-wald.gif","classes":["forest"]},{"src":"bubble1/wald/äste.gif","classes":["branches"]}],"container":"b1-forest"}
 
-Nur einige Schrite hinter dem Dorf, fällt {s: ihm|ihr} ein, dass {s: er|sie} etwas vergessen hat.
+Nur einige Schritte hinter dem Dorf, fällt {s: ihm|ihr} ein, dass {s: er|sie} etwas vergessen hat.
 
 Der alte Familienkompass! Dieser besondere Kompass, der {s: ihn|sie} immer nach Hause zurück führt ...
 
@@ -308,7 +311,7 @@ Wie soll {s:er|sie} den Teich ohne Boot überqueren?
     {name} kennt sich im Moor nicht aus und es wäre zu gefährlich weiterzugehen. Nur mit einem Boot lässt sich der Teich überqueren.
 
     {schwimmen:
-        {name} kehrt zum Steg zurück
+        {name} kehrt zum Steg zurück.
         -> uferteile2
     - else:
         ->weg
@@ -517,8 +520,7 @@ Nach einigen Metern blickt sie zurück auf {name}, {s: der|die} sich immer noch 
 "Hast du auch schon versucht die Boote zu reparieren? Los sammle ein paar Teile und bring sie mir,
 dann kann ich sie mit meiner Spucke zusammenkleben."
 
-{name} greift zum abgebrochenen Ast, der in der Nähe im Wasser treibt und fängt an einzelne Stücke
-ans Ufer zu angeln.
+{name} greift zum abgebrochenen Ast, der in der Nähe im Wasser treibt und fängt an einzelne Stücke ans Ufer zu angeln.
 -> segelschiff
 
 = segelschiff

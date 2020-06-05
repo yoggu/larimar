@@ -293,8 +293,7 @@ Der Topf, vor {name} wird weggenommen und ans andere Ende der Küche gebracht.
 
 // Küche leer
 #CONTENT: {"type":"image","images":[{"src":"bubble4/küche/küche_0003_background.png","classes":["background"]},{"src":"bubble4/küche/küche_0002_kabel.png","classes":["cable"]},{"src":"bubble4/küche/küche_0001_lampe-animation.png","classes":["lamp"]},{"src":"bubble4/küche/küche_0000_füchse.png","classes":["fox"]}],"container":"b4-kitchen-empty"}
-Plötzlich wird es still und das ganze Küchenpersonal verschwindet nach draussen. Das Essen wird
-wohl gerade serviert. Doch wo befindet sich Alexa?
+Plötzlich wird es still und das ganze Küchenpersonal verschwindet nach draussen. Das Essen wird wohl gerade serviert. Doch wo befindet sich Alexa?
 
 // Alexa Käfig
 #CONTENT: {"type":"image","images":[{"src":"bubble4/alexa_käfig/alexa-käfig_0002_color-background.png","classes":["background"]},{"src":"bubble4/alexa_käfig/alexa-käfig_0001_käfig-zu.png","classes":["zu"]}],"container":"b4-alexa-cage"}

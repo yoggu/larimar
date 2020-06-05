@@ -22,7 +22,7 @@ Die Kröte springt aus dem Wasser und landet mit einem grossen Sprung vor dem an
 
 *["Dein Ernst?"]
 
-*["..."]
+*["Das kann nicht so schwer sein."]
 
 - "Jaaa, jetzt guck nicht so. Gehen wir einfach mal rein da, du zuerst."
 
@@ -75,8 +75,8 @@ Nur wenig Licht erreicht den Waldboden und bereits nach wenigen Minuten hat {nam
 
 - Was jetzt?
 
-// wald frosch
-#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald.png","classes":["forest"]},{"src":"bubble2/frosch/frosch_0000_frosch-black.png","classes":["frog"]}],"container":"b2-forest-frog"}
+// wald
+-#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald.png","classes":["forest"]}],"container":"b2-forest"}
 
 "Ich wusste nicht, dass du so einfach aufgibst?" kräht Alexa laut.
 
@@ -84,9 +84,6 @@ Nur wenig Licht erreicht den Waldboden und bereits nach wenigen Minuten hat {nam
     "Fragst du mich gerade ernsthan, ob ich einen Kompass dabei habe? Sehe ich aus, als häte ich einen Rucksack?"
 
 *[Umgebung untersuchen]
-
-// wald
--#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald.png","classes":["forest"]}],"container":"b2-forest"}
 
 {name} macht sich also auf, um die Umgebung abzusuchen. Vielleicht haben sie ja etwas übersehen...
 
@@ -102,7 +99,7 @@ Sie sind weniger deutlich zu sehen, weshalb sie {name} bis jetzt gar nicht aufge
 *["Was ist mit denen passiert?"]
 
 // wald frosch gesichter
-#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald.png","classes":["forest"]},{"src":"bubble2/frosch/frosch_0000_frosch-black.png","classes":["frog"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"b2-forest-frog-faces"}
+#CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald.png","classes":["forest"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"b2-forest-frog-faces"}
 
 -"Ahh, der Gesichterwald... Ja, eigentlich hätte ich mir denken können, dass das hier der Gesichterwald sein muss.."
 
