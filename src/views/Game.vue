@@ -192,13 +192,13 @@ export default {
 
       
       //test
-      result.R = 4
-      result.I = 2
-      result.A = 1
-      result.S = 3
-      result.E = 2
-      result.C = 3
-      console.log(result);
+      // result.R = 4
+      // result.I = 2
+      // result.A = 1
+      // result.S = 3
+      // result.E = 2
+      // result.C = 3
+      // console.log(result);
       let answers = {
         q1: this.story.variablesState.$("q1"),
         q2: this.story.variablesState.$("q2"),

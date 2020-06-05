@@ -6,21 +6,21 @@
     <div class="content">
       <h1>Credits</h1>
       <h2>Ideation & Creation</h2>
-      <h3>Seline Schwab</h3>
-      <p>Design</p>
-      <p>Story</p>
-      <p>Illustrationen</p>
-      <p>Research</p>
-      <h3>Yannick Bättig</h3>
-      <p>Programming</p>
-      <p><a href="/credits.txt">Audio</a></p>
-      <p>Research</p>
-
+      <div class="list">
+        <h3>Seline Schwab</h3>
+        <p>Design</p>
+        <p>Story</p>
+        <p>Illustrations</p>
+        <p>Research</p>
+      </div>  
+      <div class="list">
+        <h3>Yannick Bättig</h3>
+        <p>Programming</p>
+        <p><a href="/credits.txt">Audio</a></p>
+        <p>Research</p>
+      </div>
       <div class="more">
-        <p>Besonderen Dank an unsere Mentorinnen und Mentor und das BIZ Zug für die Unterstützung</p> 
-        <p>Susanne Hofer</p>
-        <p>Dragica Kahlina</p>
-        <p>Sebastian Hollstein</p>
+        <p>Besonderen Dank an unsere Mentor/-innen und das BIZ Zug für die Unterstützung</p> 
       </div>
     </div>  
 
@@ -64,13 +64,30 @@ export default {
 
   .content {
     padding: 0 30px;
-    max-width: 768px;
+    max-width: 300px;
     margin: 0 auto;
     text-align: center;
 
+    .list {
+      width: max-content;
+      margin: 40px auto;
+
+      h3 {
+        margin: 0;
+      }
+
+      p {
+        padding-left: 12px;
+        margin: 12px 0;
+      }
+    }
+
+    p {
+      text-align: left;
+    }
+
     .more {
-      max-width: $small;
-      margin: 60px auto;
+      margin: 60px 0;
     }
   }
 }

@@ -167,7 +167,7 @@ VAR articel = ""
 // E
 *[Geldstücke]
 ~item = "Geldstücke"
-~articel = "das"
+~articel = "die"
 
 - {name} packt {articel} {item} in {s: seinen|ihren} Rucksack und stürmt aus der Tür.
 -> ausserhalb_des_dorfs
