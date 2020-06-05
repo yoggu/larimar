@@ -22,13 +22,15 @@
     <div class="content"> 
       <h1>Mein Ergebnis</h1>
       <p class="subtitle big">Die getroffenen Entscheidungen wurden ausgewertet...</p>
-      <radar-chart class="chart" :chartData="data" :options="options"></radar-chart>
+      <div class="chart">
+        <radar-chart :chartData="data" :options="options"></radar-chart>
+      </div>
       <p class="big">...und daraus ergibt sich ein Code</p>    
       <div class="code"><span v-for="(letter, index) in code" :key="index">{{letter}}</span></div>
       <p class="big">Code entziffern mit der <a class="external-link" target="_blank" href="https://www.lmrl.lu/wp/wp-content/uploads/2015/01/Explorix-par-code.pdf">Berufsliste</a></p>
       <div class="categories">
         <h2>Kategorien</h2>
-        <p class="subtitle">Erfahre mehr über die einzelnen Kategorien</p>
+        <p class="subtitle">Jeder Buchstabe steht für eine bestimmte Kategorie:</p>
         <category v-for="(category, index) in categories" :key="index" :category="category" :index="index"></category>
       </div>
       <answers :questions="questions" :answers="answers"></answers>
@@ -285,6 +287,7 @@ export default {
     .chart {
       max-width: $small;
       margin: 0 auto;
+
     } 
 
     .external-link {

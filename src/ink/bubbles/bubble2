@@ -85,7 +85,7 @@ Nur wenig Licht erreicht den Waldboden und bereits nach wenigen Minuten hat {nam
 
 *[Umgebung untersuchen]
 
-{name} macht sich also auf, um die Umgebung abzusuchen. Vielleicht haben sie ja etwas übersehen...
+-{name} macht sich also auf, um die Umgebung abzusuchen. Vielleicht haben sie ja etwas übersehen...
 
 // bäume mit gesichter
 #CONTENT: {"type":"image","images":[{"src":"bubble2/wald/wald.png","classes":["forest"]},{"src":"bubble2/bäume_gesichter/wald_0000_gesichter.png","classes":["faces"]}],"container":"b2-forest-faces"}

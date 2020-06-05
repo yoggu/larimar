@@ -55,7 +55,6 @@ export default {
       this.$emit("next");
     },
     completed() {
-      //console.log("complete")
       this.$emit("onComplete");
     },
     reset() {
@@ -78,6 +77,7 @@ export default {
   p {
     width:100%;
     margin: 0;
+    user-select: none;
   }
 
   .arrow {

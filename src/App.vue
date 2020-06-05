@@ -6,14 +6,10 @@
 
 <style lang="scss">
 @import "node_modules/normalize-scss/sass/normalize/import-now";
-@import url("https://use.typekit.net/lsr4kai.css");
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap');
 
 html {
   height: 100%;
-  //font-family: 'Nanum Gothic Coding', monospace;
-  //font-family: ocr-a-std,monospace;
   font-weight: 400;
   font-style: normal;
 }
