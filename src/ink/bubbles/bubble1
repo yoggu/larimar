@@ -41,7 +41,7 @@ Wieso sind hier so viele Bäume? Und die Äste sind ungewöhnlich dicht und ersc
 // Wand im Wald 
 #CONTENT: {"type":"image","images":[{"src":"bubble1/wand_im_wald/wand-auftauchen.gif","classes":["wall-appear"]},{"src":"bubble1/wand_im_wald/äste.gif","classes":["branches"]}],"container":"b1-wall"}
 
-{s: Er|Sie} geht um eine grosse Eiche und prallt gegen eine weisse Wand. {s: Er|Sie}blickt durch das Fenster und erkennt das Haus {s: seines|ihres} Nachbarn Kurt. Was ist hier passiert?
+{s: Er|Sie} geht um eine grosse Eiche und prallt gegen eine weisse Wand. {s: Er|Sie} blickt durch das Fenster und erkennt das Haus {s: seines|ihres} Nachbarn Kurt. Was ist hier passiert?
     
     -> haus
     
